@@ -196,12 +196,12 @@ export default function Header({
 
           {/* Live Clock & Sync indicator */}
           <div className="text-right hidden lg:block">
-            <div className="flex items-center justify-end gap-1.5 text-xs text-rose-200 font-medium">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            <div className="flex items-center justify-end gap-1.5 text-xs font-semibold">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <span>Online v{version}</span>
+              <span className="text-emerald-300 font-extrabold tracking-wide uppercase">ONLINE REAL-TIME (v{version})</span>
             </div>
             <p className="text-[11px] text-rose-300/80 font-mono mt-0.5">{currentTime}</p>
           </div>
@@ -228,9 +228,9 @@ export default function Header({
               </button>
             </div>
           ) : (
-            <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-800/60 border border-rose-600/40 text-xs text-rose-200">
-              <Wifi className="w-3.5 h-3.5 text-rose-400 animate-pulse" />
-              <span>Dasbor Warga</span>
+            <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/50 text-xs font-bold text-emerald-300 shadow-sm">
+              <Wifi className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
+              <span>Dasbor Warga • Online</span>
             </div>
           )}
         </div>
