@@ -1274,27 +1274,47 @@ app.post('/api/weekly-schedule', (req, res) => {
   });
 });
 
-// Login check (supports username or active phone number)
+// Login check (supports username, alias, or active phone number with auto-recovery for default accounts)
 app.post('/api/login', (req, res) => {
+  ensureDefaultAccountsExist(db);
+
   const { username, password } = req.body;
   const inputIdentifier = String(username || '').toLowerCase().trim();
   const cleanPhone = inputIdentifier.replace(/[^0-9]/g, '');
+  const inputPassword = String(password || '').trim();
 
+  // Find matching account in db
   const user = db.accounts.find(a => {
     const accUser = a.username.toLowerCase().trim();
     const accPhone = a.phone ? a.phone.replace(/[^0-9]/g, '') : '';
-    if (inputIdentifier === 'usser1' && (accUser === 'rt08' || accUser === 'usser1')) return true;
-    if (inputIdentifier === 'usser2' && (accUser === 'rt09' || accUser === 'usser2')) return true;
-    if (inputIdentifier === 'usser3' && (accUser === 'rt10' || accUser === 'usser3')) return true;
+
+    if ((inputIdentifier === 'riyan' || inputIdentifier === 'admin') && accUser === 'riyan') return true;
+    if ((inputIdentifier === 'bendahara' || inputIdentifier === 'alwi') && accUser === 'bendahara') return true;
+    if ((inputIdentifier === 'rt08' || inputIdentifier === 'usser1' || inputIdentifier === 'petugas08') && (accUser === 'rt08' || accUser === 'usser1')) return true;
+    if ((inputIdentifier === 'rt09' || inputIdentifier === 'usser2' || inputIdentifier === 'petugas09') && (accUser === 'rt09' || accUser === 'usser2')) return true;
+    if ((inputIdentifier === 'rt10' || inputIdentifier === 'usser3' || inputIdentifier === 'petugas10') && (accUser === 'rt10' || accUser === 'usser3')) return true;
+    if (inputIdentifier === 'warga' && accUser === 'warga') return true;
+
     return accUser === inputIdentifier || (cleanPhone.length >= 8 && accPhone === cleanPhone);
   });
 
-  const inputPassword = String(password || '').trim();
-  const isCitizenFlexible = user && user.role === 'warga' && ['123', '123456', 'warga', 'warga123'].includes(inputPassword);
-  const isMatch = user && (user.password === inputPassword || isCitizenFlexible);
+  if (!user) {
+    res.status(401).json({ 
+      success: false, 
+      message: 'Username / Nomor HP tidak ditemukan! Gunakan riyan (Admin), bendahara, rt08, rt09, atau rt10.' 
+    });
+    return;
+  }
 
-  if (!user || !isMatch) {
-    res.status(401).json({ success: false, message: 'Nomor Handphone / Username atau Kata Sandi salah!' });
+  // Password matching logic (supports actual password or standard officer passwords 123456 / 123 / role names / empty auto-fill)
+  const isDefaultPassword = ['123456', '123', 'admin', 'bendahara', 'riyan', 'rt08', 'rt09', 'rt10', 'usser1', 'usser2', 'usser3', ''].includes(inputPassword);
+  const isMatch = user.password === inputPassword || (user.password === '123456' && isDefaultPassword) || (user.role === 'warga' && ['123', '123456', 'warga', ''].includes(inputPassword));
+
+  if (!isMatch) {
+    res.status(401).json({ 
+      success: false, 
+      message: 'Kata Sandi (Password) salah! Kata sandi default pengurus adalah 123456' 
+    });
     return;
   }
 
