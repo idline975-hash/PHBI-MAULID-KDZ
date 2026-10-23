@@ -601,7 +601,7 @@ export default function DashboardUsser({
           onClick={() => setActiveTab('warga')}
           className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'warga'
-              ? 'bg-rose-800 text-white shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+              ? 'bg-emerald-800 text-white shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
               : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
           }`}
         >
@@ -615,7 +615,7 @@ export default function DashboardUsser({
           onClick={() => setActiveTab('sukarela')}
           className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'sukarela'
-              ? 'bg-rose-800 text-white shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+              ? 'bg-emerald-800 text-white shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
               : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
           }`}
         >
@@ -629,11 +629,11 @@ export default function DashboardUsser({
           onClick={() => setActiveTab('total')}
           className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'total'
-              ? 'bg-rose-800 text-white shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+              ? 'bg-emerald-800 text-white shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
               : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
           }`}
         >
-          <Calculator className="w-4 h-4 text-blue-600" />
+          <Calculator className="w-4 h-4 text-emerald-600" />
           <span>Cek Total & PDF</span>
         </button>
 
@@ -643,11 +643,11 @@ export default function DashboardUsser({
           onClick={() => setActiveTab('rekap')}
           className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'rekap'
-              ? 'bg-rose-800 text-white shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+              ? 'bg-emerald-800 text-white shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
               : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
           }`}
         >
-          <Calendar className="w-4 h-4 text-indigo-600" />
+          <Calendar className="w-4 h-4 text-emerald-600" />
           <span>Rekap 12 Minggu</span>
         </button>
 
@@ -657,7 +657,7 @@ export default function DashboardUsser({
           onClick={() => setActiveTab('proposal')}
           className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'proposal'
-              ? 'bg-rose-800 text-white shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+              ? 'bg-emerald-800 text-white shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
               : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
           }`}
         >
@@ -671,11 +671,11 @@ export default function DashboardUsser({
           onClick={() => setActiveTab('arsip_periode')}
           className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'arsip_periode'
-              ? 'bg-indigo-900 text-white shadow-md border-2 border-indigo-950 ring-2 ring-indigo-300'
-              : 'bg-indigo-100 hover:bg-indigo-200 text-indigo-950 border-2 border-indigo-300 font-bold'
+              ? 'bg-emerald-900 text-white shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
+              : 'bg-emerald-100 hover:bg-emerald-200 text-emerald-950 border-2 border-emerald-300 font-bold'
           }`}
         >
-          <Archive className={`w-4 h-4 ${activeTab === 'arsip_periode' ? 'text-amber-300' : 'text-indigo-700'}`} />
+          <Archive className={`w-4 h-4 ${activeTab === 'arsip_periode' ? 'text-amber-300' : 'text-emerald-700'}`} />
           <span>Arsip Multi-Tahun ({periodArchives.length})</span>
         </button>
       </div>
@@ -687,16 +687,16 @@ export default function DashboardUsser({
         <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
           {/* Left Form: Input Donasi Warga */}
-          <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-rose-100 p-4 sm:p-6 space-y-4">
-            <div className="flex items-center justify-between pb-3 border-b border-rose-50">
+          <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-emerald-100 p-4 sm:p-6 space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-emerald-50">
               <div className="flex items-center gap-2">
-                <div className="p-2 rounded-xl bg-rose-100 text-rose-800">
+                <div className="p-2 rounded-xl bg-emerald-100 text-emerald-800">
                   <HeartHandshake className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-base">Input Donasi Warga</h3>
                   <p className="text-xs text-slate-500">
-                    Otomatis diarahkan ke <strong className="text-rose-700">Minggu ke-{activeSystemWeek}</strong>
+                    Otomatis diarahkan ke <strong className="text-emerald-700">Minggu ke-{activeSystemWeek}</strong>
                   </p>
                 </div>
               </div>
@@ -704,8 +704,8 @@ export default function DashboardUsser({
             </div>
 
             {wargaError && (
-              <div className="p-3 bg-rose-50 border border-rose-200 text-rose-700 rounded-xl text-xs flex items-start gap-2 animate-shake">
-                <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5 text-rose-600" />
+              <div className="p-3 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-xl text-xs flex items-start gap-2 animate-shake">
+                <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5 text-emerald-600" />
                 <div>
                   <p className="font-bold">Peringatan Validasi</p>
                   <p>{wargaError}</p>
@@ -714,8 +714,8 @@ export default function DashboardUsser({
             )}
 
             {wargaSuccess && (
-              <div className="p-3 bg-rose-50 border border-rose-200 text-rose-800 rounded-xl text-xs flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 flex-shrink-0 text-rose-600" />
+              <div className="p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl text-xs flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 flex-shrink-0 text-emerald-600" />
                 <span>{wargaSuccess}</span>
               </div>
             )}
@@ -733,7 +733,7 @@ export default function DashboardUsser({
                       RT {currentUser.assignedRt} (Terkunci)
                     </span>
                   ) : (
-                    <span className="text-[10px] font-extrabold text-rose-800 bg-rose-100 border border-rose-300 px-2 py-0.5 rounded-md">
+                    <span className="text-[10px] font-extrabold text-emerald-800 bg-emerald-100 border border-emerald-300 px-2 py-0.5 rounded-md">
                       {selectedRtFilter === 'all' ? 'Semua RT' : `RT ${selectedRtFilter}`}
                     </span>
                   )}
@@ -774,7 +774,7 @@ export default function DashboardUsser({
                           }}
                           className={`py-2 px-2 rounded-lg text-xs font-black transition-all cursor-pointer text-center ${
                             selectedRtFilter === rtVal
-                              ? 'bg-rose-800 text-white shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                              ? 'bg-emerald-800 text-white shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                               : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
                           }`}
                         >
@@ -793,12 +793,12 @@ export default function DashboardUsser({
               <div>
                 <label className="block text-xs font-bold text-slate-700 uppercase mb-1.5 flex items-center justify-between">
                   <span>Tanggal & Waktu Input</span>
-                  <span className="text-[10px] text-rose-600 font-bold bg-rose-50 px-2 py-0.5 rounded">
+                  <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded">
                     Otomatis Real-Time
                   </span>
                 </label>
                 <div className="flex items-center gap-2 p-2.5 bg-slate-100 border border-slate-200 rounded-xl text-xs font-mono font-medium text-slate-700">
-                  <Calendar className="w-4 h-4 text-rose-600 flex-shrink-0" />
+                  <Calendar className="w-4 h-4 text-emerald-600 flex-shrink-0" />
                   <span>{realtimeClock}</span>
                 </div>
               </div>
@@ -810,7 +810,7 @@ export default function DashboardUsser({
                     Pembayaran (Minggu Ke)
                   </label>
                   {wargaWeek === activeSystemWeek ? (
-                    <span className="text-[10px] font-bold text-rose-800 bg-rose-100 px-2 py-0.5 rounded">
+                    <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
                       Otomatis Minggu Aktif (M-{activeSystemWeek})
                     </span>
                   ) : (
@@ -836,7 +836,7 @@ export default function DashboardUsser({
                       setHistorySelectedWeek(chosen);
                     }
                   }}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold text-rose-900 focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold text-emerald-900 focus:bg-white focus:border-emerald-600"
                 >
                   {scheduleInfo.weeks.map((wk) => (
                     <option key={wk.week} value={wk.week} disabled={wk.week < activeSystemWeek}>
@@ -852,14 +852,14 @@ export default function DashboardUsser({
                   <label className="block text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
                     <span>Nama Warga</span>
                     {isNameNotMatched && (
-                      <span className="text-[10px] font-bold text-rose-700 bg-rose-100 border border-rose-300 px-2 py-0.5 rounded-full flex items-center gap-1 animate-pulse">
-                        <AlertTriangle className="w-3 h-3 text-rose-600" />
+                      <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 border border-emerald-300 px-2 py-0.5 rounded-full flex items-center gap-1 animate-pulse">
+                        <AlertTriangle className="w-3 h-3 text-emerald-600" />
                         Nama Tidak Cocok
                       </span>
                     )}
                     {activeMatchedCitizen && !isNameNotMatched && (
-                      <span className="text-[10px] font-bold text-rose-800 bg-rose-100 border border-rose-300 px-2 py-0.5 rounded-full flex items-center gap-1">
-                        <CheckCircle2 className="w-3 h-3 text-rose-600" />
+                      <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-300 px-2 py-0.5 rounded-full flex items-center gap-1">
+                        <CheckCircle2 className="w-3 h-3 text-emerald-600" />
                         Terdaftar
                       </span>
                     )}
@@ -885,7 +885,7 @@ export default function DashboardUsser({
                         setWargaError('');
                         setIsCitizenDropdownOpen(false);
                       }}
-                      className="text-[11px] text-rose-700 hover:text-rose-900 font-semibold cursor-pointer underline"
+                      className="text-[11px] text-emerald-700 hover:text-emerald-900 font-semibold cursor-pointer underline"
                     >
                       {isAddingNewCitizen ? 'Batal' : '+ Warga Baru'}
                     </button>
@@ -901,7 +901,7 @@ export default function DashboardUsser({
                       value={newCitizenInput}
                       onChange={(e) => setNewCitizenInput(e.target.value)}
                       placeholder="Ketik nama warga baru..."
-                      className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20"
+                      className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20"
                     />
                     <p className="text-[11px] text-slate-500 mt-1">
                       * Warga baru akan otomatis terdaftar di tabel Rekapitulasi 12 Minggu.
@@ -919,7 +919,7 @@ export default function DashboardUsser({
                         const c = activeRtCitizens.find((item) => item.id === selId);
                         setCitizenInputText(c ? c.name : '');
                       }}
-                      className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20"
+                      className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20"
                     >
                       <option value="">-- Pilih Nama Warga RT {selectedRtFilter === 'all' ? 'Gabungan' : selectedRtFilter} ({wargaUtamaCount} terdaftar) --</option>
                       {activeRtCitizens.map((c) => (
@@ -933,7 +933,7 @@ export default function DashboardUsser({
                   <div>
                     <div className="relative">
                       <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-                        <Search className={`w-4 h-4 ${isNameNotMatched ? 'text-rose-500' : 'text-slate-400'}`} />
+                        <Search className={`w-4 h-4 ${isNameNotMatched ? 'text-emerald-500' : 'text-slate-400'}`} />
                       </div>
                       <input
                         type="text"
@@ -945,10 +945,10 @@ export default function DashboardUsser({
                         autoComplete="off"
                         className={`w-full pl-10 pr-20 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                           isNameNotMatched
-                            ? 'bg-rose-50/60 border-2 border-rose-500 text-rose-900 focus:border-rose-600 focus:ring-2 focus:ring-rose-200'
+                            ? 'bg-emerald-50/60 border-2 border-emerald-500 text-emerald-900 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-200'
                             : activeMatchedCitizen
-                            ? 'bg-rose-50/50 border-2 border-rose-500 text-rose-900 focus:border-rose-600 focus:ring-2 focus:ring-rose-200'
-                            : 'bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20'
+                            ? 'bg-emerald-50/50 border-2 border-emerald-500 text-emerald-900 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-200'
+                            : 'bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20'
                         }`}
                       />
                       <div className="absolute inset-y-0 right-0 pr-2 flex items-center gap-1">
@@ -975,17 +975,17 @@ export default function DashboardUsser({
                     {isNameNotMatched && (
                       <div 
                         id="peringatan-nama-tidak-cocok"
-                        className="mt-2 p-3 bg-rose-50 border-2 border-rose-400 rounded-xl text-xs text-rose-800 flex items-start gap-2.5 animate-shake shadow-sm"
+                        className="mt-2 p-3 bg-emerald-50 border-2 border-emerald-400 rounded-xl text-xs text-emerald-800 flex items-start gap-2.5 animate-shake shadow-sm"
                       >
-                        <AlertTriangle className="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                         <div>
-                          <p className="font-bold text-rose-900 text-xs flex items-center gap-1">
+                          <p className="font-bold text-emerald-900 text-xs flex items-center gap-1">
                             Peringatan: Nama Tidak Cocok!
                           </p>
-                          <p className="text-[11px] text-rose-700 mt-0.5">
-                            Nama &ldquo;<span className="font-bold text-rose-950 underline">{citizenInputText}</span>&rdquo; tidak terdaftar di sistem ({wargaUtamaCount} data warga resmi PHBI RT 011 / RW 04).
+                          <p className="text-[11px] text-emerald-700 mt-0.5">
+                            Nama &ldquo;<span className="font-bold text-emerald-950 underline">{citizenInputText}</span>&rdquo; tidak terdaftar di sistem ({wargaUtamaCount} data warga resmi PHBI RT 011 / RW 04).
                           </p>
-                          <p className="text-[10px] text-rose-600 mt-1">
+                          <p className="text-[10px] text-emerald-600 mt-1">
                             Silakan ketik nama yang sesuai atau klik &ldquo;Pilih dari Dropdown&rdquo; untuk melihat seluruh daftar warga.
                           </p>
                         </div>
@@ -994,9 +994,9 @@ export default function DashboardUsser({
 
                     {/* INFO NAMA COCOK */}
                     {activeMatchedCitizen && !isNameNotMatched && (
-                      <div className="mt-1.5 p-2 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-800 flex items-center justify-between">
+                      <div className="mt-1.5 p-2 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-800 flex items-center justify-between">
                         <div className="flex items-center gap-1.5">
-                          <CheckCircle2 className="w-4 h-4 text-rose-600 flex-shrink-0" />
+                          <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
                           <span>Nama Cocok: <strong>{activeMatchedCitizen.name}</strong></span>
                           {activeMatchedCitizen.isNgontrak && (
                             <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300">
@@ -1004,7 +1004,7 @@ export default function DashboardUsser({
                             </span>
                           )}
                         </div>
-                        <span className="text-[11px] text-rose-700 font-mono">
+                        <span className="text-[11px] text-emerald-700 font-mono">
                           Total Iuran: Rp {formatRupiah(activeMatchedCitizen.totalPaid)}
                         </span>
                       </div>
@@ -1031,11 +1031,11 @@ export default function DashboardUsser({
                               type="button"
                               onClick={() => handleSelectCitizen(c)}
                               className={`w-full text-left px-3.5 py-2.5 text-xs flex items-center justify-between transition-colors cursor-pointer ${
-                                isSelected ? 'bg-rose-50 text-rose-900 font-bold' : 'hover:bg-slate-50 text-slate-800'
+                                isSelected ? 'bg-emerald-50 text-emerald-900 font-bold' : 'hover:bg-slate-50 text-slate-800'
                               }`}
                             >
                               <div className="flex items-center gap-2">
-                                <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-rose-600' : 'bg-slate-300'}`} />
+                                <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-emerald-600' : 'bg-slate-300'}`} />
                                 <span>{c.name}</span>
                                 {c.isNgontrak && (
                                   <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300">
@@ -1045,7 +1045,7 @@ export default function DashboardUsser({
                               </div>
                               <div className="text-right">
                                 {c.totalPaid > 0 ? (
-                                  <span className="text-[10px] font-semibold text-rose-700 bg-rose-100 px-2 py-0.5 rounded">
+                                  <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">
                                     Rp {formatRupiah(c.totalPaid)}
                                   </span>
                                 ) : (
@@ -1080,7 +1080,7 @@ export default function DashboardUsser({
                     value={wargaAmount}
                     onChange={(e) => setWargaAmount(formatInputNumber(e.target.value))}
                     placeholder="10.000"
-                    className="w-full pl-10 pr-12 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-base font-bold font-mono text-rose-900 focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20"
+                    className="w-full pl-10 pr-12 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-base font-bold font-mono text-emerald-900 focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20"
                   />
 
                 </div>
@@ -1093,7 +1093,7 @@ export default function DashboardUsser({
                     key={nominal}
                     type="button"
                     onClick={() => setWargaAmount(formatRupiah(nominal))}
-                    className="px-2.5 py-1 text-xs font-semibold bg-rose-50 text-rose-700 hover:bg-rose-100 rounded-lg border border-rose-200 cursor-pointer"
+                    className="px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 rounded-lg border border-emerald-200 cursor-pointer"
                   >
                     Rp {formatRupiah(nominal)}
                   </button>
@@ -1105,7 +1105,7 @@ export default function DashboardUsser({
                 type="submit"
                 id="btn-simpan-donasi-warga"
                 disabled={wargaLoading}
-                className="w-full py-3 px-4 bg-rose-700 hover:bg-rose-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-md flex items-center justify-center gap-2 cursor-pointer text-sm disabled:opacity-50"
+                className="w-full py-3 px-4 bg-emerald-700 hover:bg-emerald-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-md flex items-center justify-center gap-2 cursor-pointer text-sm disabled:opacity-50"
               >
                 <CheckCircle2 className="w-4 h-4" />
                 <span>{wargaLoading ? 'Menyimpan...' : `Simpan Donasi Minggu Ke-${wargaWeek}`}</span>
@@ -1117,10 +1117,10 @@ export default function DashboardUsser({
                   type="button"
                   id="btn-quick-download-pdf-warga-week"
                   onClick={() => generatePdfLaporanMingguanUsser(wargaWeek, citizens, wargaPayments, currentUser.name)}
-                  className="w-full py-2 px-3 bg-rose-50 hover:bg-rose-100 active:scale-[0.99] text-rose-900 border border-rose-300 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all cursor-pointer shadow-xs"
+                  className="w-full py-2 px-3 bg-emerald-50 hover:bg-emerald-100 active:scale-[0.99] text-emerald-900 border border-emerald-300 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all cursor-pointer shadow-xs"
                   title={`Download cetak PDF laporan resmi khusus Minggu Ke-${wargaWeek}`}
                 >
-                  <FileDown className="w-4 h-4 text-rose-700 flex-shrink-0" />
+                  <FileDown className="w-4 h-4 text-emerald-700 flex-shrink-0" />
                   <span>Download PDF Iuran Minggu Ke-{wargaWeek}</span>
                 </button>
               </div>
@@ -1133,7 +1133,7 @@ export default function DashboardUsser({
               <div>
                 <h3 className="font-bold text-slate-800 text-sm sm:text-base flex items-center gap-2">
                   <span>Riwayat Donasi Warga Per Minggu</span>
-                  <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
                     {historyViewMode === 'per_week' ? `Minggu Ke-${historySelectedWeek}` : 'Arsip 12 Minggu'}
                   </span>
                 </h3>
@@ -1142,7 +1142,7 @@ export default function DashboardUsser({
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-1.5">
-                <span className="text-xs font-bold text-rose-700 bg-rose-50 px-2.5 py-1 rounded-lg border border-rose-200 font-mono">
+                <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 font-mono">
                   Total Kas: Rp {formatRupiah(totalDonasiWarga)}
                 </span>
                 {totalDonasiWargaExcluded > 0 && (
@@ -1164,7 +1164,7 @@ export default function DashboardUsser({
                   }}
                   className={`px-3 py-1.5 rounded-xl text-xs transition-colors cursor-pointer whitespace-nowrap ${
                     historyViewMode === 'per_week'
-                      ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950'
+                      ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950'
                       : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
                   }`}
                 >
@@ -1175,7 +1175,7 @@ export default function DashboardUsser({
                   onClick={() => setHistoryViewMode('grouped_archive')}
                   className={`px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap ${
                     historyViewMode === 'grouped_archive'
-                      ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950'
+                      ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950'
                       : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
                   }`}
                 >
@@ -1188,7 +1188,7 @@ export default function DashboardUsser({
                 <button
                   type="button"
                   onClick={() => setHistorySelectedWeek(activeSystemWeek)}
-                  className="text-[11px] font-black text-rose-800 hover:text-rose-950 bg-rose-100 border border-rose-300 px-2.5 py-1 rounded-lg cursor-pointer"
+                  className="text-[11px] font-black text-emerald-800 hover:text-emerald-950 bg-emerald-100 border border-emerald-300 px-2.5 py-1 rounded-lg cursor-pointer"
                 >
                   Lihat Minggu Ini (M-{activeSystemWeek})
                 </button>
@@ -1209,11 +1209,11 @@ export default function DashboardUsser({
                       onClick={() => setHistorySelectedWeek(wk.week)}
                       className={`py-1.5 px-1 rounded-xl border-2 text-center transition-all cursor-pointer flex flex-col items-center justify-center relative ${
                         isSel
-                          ? 'bg-rose-800 text-white border-rose-950 font-black shadow-md ring-2 ring-rose-300'
+                          ? 'bg-emerald-800 text-white border-emerald-950 font-black shadow-md ring-2 ring-emerald-300'
                           : isCurr
                           ? 'bg-amber-100 text-slate-950 border-amber-500 font-black'
                           : countInWeek > 0
-                          ? 'bg-rose-100 text-rose-950 border-rose-300 font-bold hover:bg-rose-200'
+                          ? 'bg-emerald-100 text-emerald-950 border-emerald-300 font-bold hover:bg-emerald-200'
                           : 'bg-white text-slate-700 border-slate-300 font-semibold hover:bg-slate-100'
                       }`}
                       title={`Minggu ke-${wk.week} (${wk.rangeLabel}) • ${countInWeek} transaksi`}
@@ -1222,7 +1222,7 @@ export default function DashboardUsser({
                         M-{wk.week}
                       </span>
                       <span className={`text-[9px] font-mono leading-tight ${
-                        isSel ? 'text-amber-300 font-black' : countInWeek > 0 ? 'text-rose-900 font-black' : 'text-slate-600'
+                        isSel ? 'text-amber-300 font-black' : countInWeek > 0 ? 'text-emerald-900 font-black' : 'text-slate-600'
                       }`}>
                         {countInWeek} data
                       </span>
@@ -1250,24 +1250,24 @@ export default function DashboardUsser({
                   return (
                     <div className="space-y-2.5">
                       {/* Ringkasan Minggu Terpilih */}
-                      <div className="p-3 rounded-xl bg-rose-50/80 border border-rose-200 flex flex-wrap items-center justify-between gap-2">
+                      <div className="p-3 rounded-xl bg-emerald-50/80 border border-emerald-200 flex flex-wrap items-center justify-between gap-2">
                         <div>
                           <div className="flex flex-wrap items-center gap-2">
-                            <span className="text-xs sm:text-sm font-black text-rose-950">
+                            <span className="text-xs sm:text-sm font-black text-emerald-950">
                               Buku Riwayat Minggu Ke-{historySelectedWeek}
                             </span>
-                            <span className="text-[11px] font-mono text-rose-800">
+                            <span className="text-[11px] font-mono text-emerald-800">
                               ({weekMeta.rangeLabel})
                             </span>
                             <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${
                               historySelectedWeek === activeSystemWeek
                                 ? 'bg-amber-300 text-slate-950'
-                                : 'bg-white text-rose-800 border border-rose-200'
+                                : 'bg-white text-emerald-800 border border-emerald-200'
                             }`}>
                               {weekMeta.statusLabel}
                             </span>
                           </div>
-                          <p className="text-[11px] text-rose-800 mt-0.5 font-mono">
+                          <p className="text-[11px] text-emerald-800 mt-0.5 font-mono">
                             {weekPayments.length} Transaksi · Masuk Kas: <strong>Rp {formatRupiah(weekTotalIncluded)}</strong>
                             {weekTotalExcluded > 0 && ` · Ditahan: Rp ${formatRupiah(weekTotalExcluded)}`}
                           </p>
@@ -1276,7 +1276,7 @@ export default function DashboardUsser({
                         <button
                           type="button"
                           onClick={() => generatePdfLaporanMingguanUsser(historySelectedWeek, citizens, wargaPayments, currentUser.name)}
-                          className="px-2.5 py-1.5 bg-rose-700 hover:bg-rose-800 text-white rounded-lg text-[11px] font-bold flex items-center gap-1 cursor-pointer shadow-xs"
+                          className="px-2.5 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg text-[11px] font-bold flex items-center gap-1 cursor-pointer shadow-xs"
                         >
                           <FileDown className="w-3.5 h-3.5 text-amber-300" />
                           <span>PDF M-{historySelectedWeek}</span>
@@ -1305,7 +1305,7 @@ export default function DashboardUsser({
                               className={`p-3 rounded-xl border transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-2 ${
                                 isExcl
                                   ? 'bg-amber-50/70 border-amber-300'
-                                  : 'bg-slate-50 hover:bg-rose-50/40 border-slate-200'
+                                  : 'bg-slate-50 hover:bg-emerald-50/40 border-slate-200'
                               }`}
                             >
                               <div>
@@ -1313,7 +1313,7 @@ export default function DashboardUsser({
                                   <span className="font-bold text-slate-900 text-sm">
                                     {citizens.find(c => c.id === payment.citizenId)?.rt === '08' ? 'Warga (Identitas Terhapus)' : payment.citizenName}
                                   </span>
-                                  <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">
+                                  <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
                                     Minggu ke-{payment.week}
                                   </span>
                                   {isExcl && (
@@ -1338,7 +1338,7 @@ export default function DashboardUsser({
                               </div>
 
                               <div className="flex items-center justify-between sm:justify-end gap-2 pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-200">
-                                <span className={`font-bold font-mono text-sm sm:text-base ${isExcl ? 'text-amber-800 line-through' : 'text-rose-800'}`}>
+                                <span className={`font-bold font-mono text-sm sm:text-base ${isExcl ? 'text-amber-800 line-through' : 'text-emerald-800'}`}>
                                   Rp {formatRupiah(payment.amount)}
                                 </span>
                                 <button
@@ -1348,7 +1348,7 @@ export default function DashboardUsser({
                                   className={`px-2.5 py-1.5 rounded-lg text-[11px] font-bold cursor-pointer transition-colors whitespace-nowrap ${
                                     isExcl
                                       ? 'bg-amber-200 hover:bg-amber-300 text-amber-950'
-                                      : 'bg-rose-100 hover:bg-rose-200 text-rose-800'
+                                      : 'bg-emerald-100 hover:bg-emerald-200 text-emerald-800'
                                   }`}
                                   title={
                                     isExcl
@@ -1361,7 +1361,7 @@ export default function DashboardUsser({
                                 <button
                                   type="button"
                                   onClick={() => handleOpenEditWarga(payment)}
-                                  className="p-1.5 text-blue-700 hover:bg-blue-100 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer"
+                                  className="p-1.5 text-emerald-700 hover:bg-emerald-100 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer"
                                   title="Edit Nama Warga / Uang Masuk"
                                 >
                                   <Edit3 className="w-3.5 h-3.5" />
@@ -1398,7 +1398,7 @@ export default function DashboardUsser({
                         key={wk.week}
                         className={`rounded-xl border overflow-hidden ${
                           wk.week === activeSystemWeek
-                            ? 'border-rose-400 bg-rose-50/30'
+                            ? 'border-emerald-400 bg-emerald-50/30'
                             : 'border-slate-200 bg-white'
                         }`}
                       >
@@ -1414,7 +1414,7 @@ export default function DashboardUsser({
                           <div className="flex flex-wrap items-center gap-2">
                             <span className={`px-2.5 py-0.5 rounded-md text-xs font-black ${
                               wk.week === activeSystemWeek
-                                ? 'bg-rose-700 text-white'
+                                ? 'bg-emerald-700 text-white'
                                 : 'bg-slate-800 text-white'
                             }`}>
                               Minggu Ke-{wk.week}
@@ -1428,7 +1428,7 @@ export default function DashboardUsser({
                           </div>
 
                           <div className="flex items-center gap-2">
-                            <span className="text-xs font-bold font-mono text-rose-800">
+                            <span className="text-xs font-bold font-mono text-emerald-800">
                               Rp {formatRupiah(weekIncluded)}
                             </span>
                             {weekExcluded > 0 && (
@@ -1442,7 +1442,7 @@ export default function DashboardUsser({
                                 e.stopPropagation();
                                 generatePdfLaporanMingguanUsser(wk.week, citizens, wargaPayments, currentUser.name);
                               }}
-                              className="px-2 py-1 bg-white hover:bg-rose-50 text-rose-800 border border-rose-300 rounded text-[10px] font-bold flex items-center gap-1 cursor-pointer"
+                              className="px-2 py-1 bg-white hover:bg-emerald-50 text-emerald-800 border border-emerald-300 rounded text-[10px] font-bold flex items-center gap-1 cursor-pointer"
                             >
                               <FileDown className="w-3 h-3" />
                               <span>PDF</span>
@@ -1487,7 +1487,7 @@ export default function DashboardUsser({
                                     </div>
 
                                     <div className="flex items-center gap-2">
-                                      <span className={`font-bold font-mono text-xs sm:text-sm ${isExcl ? 'text-amber-800 line-through' : 'text-rose-800'}`}>
+                                      <span className={`font-bold font-mono text-xs sm:text-sm ${isExcl ? 'text-amber-800 line-through' : 'text-emerald-800'}`}>
                                         Rp {formatRupiah(payment.amount)}
                                       </span>
                                       <button
@@ -1495,7 +1495,7 @@ export default function DashboardUsser({
                                         disabled={isBusy}
                                         onClick={() => handleTogglePaymentExclude(payment)}
                                         className={`px-2 py-1 rounded text-[10px] font-bold cursor-pointer ${
-                                          isExcl ? 'bg-amber-200 text-amber-950' : 'bg-rose-100 text-rose-800'
+                                          isExcl ? 'bg-amber-200 text-amber-950' : 'bg-emerald-100 text-emerald-800'
                                         }`}
                                       >
                                         {isExcl ? 'Masukkan' : 'Tahan'}
@@ -1503,7 +1503,7 @@ export default function DashboardUsser({
                                       <button
                                         type="button"
                                         onClick={() => handleOpenEditWarga(payment)}
-                                        className="p-1 text-blue-700 hover:bg-blue-100 rounded text-xs font-semibold cursor-pointer"
+                                        className="p-1 text-emerald-700 hover:bg-emerald-100 rounded text-xs font-semibold cursor-pointer"
                                       >
                                         <Edit3 className="w-3.5 h-3.5" />
                                       </button>
@@ -1529,8 +1529,8 @@ export default function DashboardUsser({
       {activeTab === 'sukarela' && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
           {/* Form Donasi Suka Rela */}
-          <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-rose-100 p-4 sm:p-6 space-y-4">
-            <div className="flex items-center justify-between pb-3 border-b border-rose-50">
+          <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-emerald-100 p-4 sm:p-6 space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-emerald-50">
               <div className="flex items-center gap-2">
                 <div className="p-2 rounded-xl bg-amber-100 text-amber-800">
                   <Gift className="w-5 h-5" />
@@ -1550,8 +1550,8 @@ export default function DashboardUsser({
             </div>
 
             {sukarelaError && (
-              <div className="p-3 bg-rose-50 border border-rose-200 text-rose-700 rounded-xl text-xs flex items-start gap-2 animate-shake">
-                <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5 text-rose-600" />
+              <div className="p-3 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-xl text-xs flex items-start gap-2 animate-shake">
+                <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5 text-emerald-600" />
                 <div>
                   <p className="font-bold">Peringatan Validasi</p>
                   <p>{sukarelaError}</p>
@@ -1560,8 +1560,8 @@ export default function DashboardUsser({
             )}
 
             {sukarelaSuccess && (
-              <div className="p-3 bg-rose-50 border border-rose-200 text-rose-800 rounded-xl text-xs flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 flex-shrink-0 text-rose-600" />
+              <div className="p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl text-xs flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 flex-shrink-0 text-emerald-600" />
                 <span>{sukarelaSuccess}</span>
               </div>
             )}
@@ -1580,7 +1580,7 @@ export default function DashboardUsser({
                     value={sukarelaName}
                     onChange={(e) => setSukarelaName(e.target.value)}
                     placeholder="Contoh: H. Apipi / Hamba Allah / Bpk. Samsul"
-                    className="w-full pl-3.5 pr-10 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20"
+                    className="w-full pl-3.5 pr-10 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20"
                   />
 
                 </div>
@@ -1608,7 +1608,7 @@ export default function DashboardUsser({
                       setSukarelaHistoryWeek(w);
                     }
                   }}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold text-amber-950 focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold text-amber-950 focus:bg-white focus:border-emerald-600"
                 >
                   {scheduleInfo.weeks.map((wk) => (
                     <option key={wk.week} value={wk.week} disabled={wk.week < activeSystemWeek}>
@@ -1651,7 +1651,7 @@ export default function DashboardUsser({
                     value={sukarelaAmount}
                     onChange={(e) => setSukarelaAmount(formatInputNumber(e.target.value))}
                     placeholder="50.000"
-                    className="w-full pl-10 pr-12 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-base font-bold font-mono text-rose-900 focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20"
+                    className="w-full pl-10 pr-12 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-base font-bold font-mono text-emerald-900 focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20"
                   />
 
                 </div>
@@ -1667,7 +1667,7 @@ export default function DashboardUsser({
                   value={sukarelaKet}
                   onChange={(e) => setSukarelaKet(e.target.value)}
                   placeholder="Contoh: Titipan donasi konsumsi / infak shodaqoh"
-                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs font-medium focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs font-medium focus:bg-white focus:border-emerald-600"
                 />
               </div>
 
@@ -1676,7 +1676,7 @@ export default function DashboardUsser({
                 type="submit"
                 id="btn-simpan-donasi-sukarela"
                 disabled={sukarelaLoading}
-                className="w-full py-3 px-4 bg-rose-700 hover:bg-rose-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-md flex items-center justify-center gap-2 cursor-pointer text-sm disabled:opacity-50"
+                className="w-full py-3 px-4 bg-emerald-700 hover:bg-emerald-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-md flex items-center justify-center gap-2 cursor-pointer text-sm disabled:opacity-50"
               >
                 <CheckCircle2 className="w-4 h-4" />
                 <span>{sukarelaLoading ? 'Menyimpan...' : `Simpan Donasi Suka Rela (M-${sukarelaWeek})`}</span>
@@ -1839,7 +1839,7 @@ export default function DashboardUsser({
                               <button
                                 type="button"
                                 onClick={() => handleOpenEditSukarela(item)}
-                                className="p-1.5 text-blue-700 hover:bg-blue-100 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer"
+                                className="p-1.5 text-emerald-700 hover:bg-emerald-100 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer"
                                 title="Edit Donasi Suka Rela"
                               >
                                 <Edit3 className="w-3.5 h-3.5" />
@@ -1896,7 +1896,7 @@ export default function DashboardUsser({
                                   <button
                                     type="button"
                                     onClick={() => handleOpenEditSukarela(item)}
-                                    className="p-1 text-blue-700 hover:bg-blue-100 rounded cursor-pointer"
+                                    className="p-1 text-emerald-700 hover:bg-emerald-100 rounded cursor-pointer"
                                   >
                                     <Edit3 className="w-3.5 h-3.5" />
                                   </button>
@@ -1917,7 +1917,7 @@ export default function DashboardUsser({
 
       {/* 3. CEK TOTAL DONASI WARGA DAN DONASI SUKA RELA TAB */}
       {activeTab === 'total' && (
-        <div className="bg-white rounded-2xl shadow-sm border border-rose-100 p-5 sm:p-8 space-y-6">
+        <div className="bg-white rounded-2xl shadow-sm border border-emerald-100 p-5 sm:p-8 space-y-6">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <h3 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
               Cek Total Donasi Warga & Donasi Suka Rela
@@ -1930,16 +1930,16 @@ export default function DashboardUsser({
           {/* Metric Highlight Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {/* Donasi Warga Card */}
-            <div className="p-5 rounded-2xl bg-rose-50 border border-rose-200/80 text-rose-950 flex flex-col justify-between">
+            <div className="p-5 rounded-2xl bg-emerald-50 border border-emerald-200/80 text-emerald-950 flex flex-col justify-between">
               <div>
-                <span className="text-xs font-bold text-rose-800 uppercase tracking-wider block mb-1">
+                <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider block mb-1">
                   1. Donasi Warga ({wargaUtamaCount} Warga)
                 </span>
-                <p className="text-2xl sm:text-3xl font-black font-mono text-rose-900">
+                <p className="text-2xl sm:text-3xl font-black font-mono text-emerald-900">
                   Rp {formatRupiah(totalDonasiWarga)}
                 </p>
               </div>
-              <p className="text-[11px] text-rose-700 mt-3 font-medium">
+              <p className="text-[11px] text-emerald-700 mt-3 font-medium">
                 {wargaUtamaCount} warga terdaftar • {wargaPayments.length} transaksi tercatat dari 12 minggu
               </p>
             </div>
@@ -1960,33 +1960,33 @@ export default function DashboardUsser({
             </div>
 
             {/* Grand Total Card */}
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-rose-900 to-teal-950 text-white shadow-md flex flex-col justify-between">
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-emerald-900 to-teal-950 text-white shadow-md flex flex-col justify-between">
               <div>
-                <span className="text-xs font-bold text-rose-300 uppercase tracking-wider block mb-1">
+                <span className="text-xs font-bold text-emerald-300 uppercase tracking-wider block mb-1">
                   TOTAL KESELURUHAN DANA MASUK
                 </span>
                 <p className="text-2xl sm:text-3xl font-black font-mono text-amber-300">
                   Rp {formatRupiah(totalGabungan)}
                 </p>
               </div>
-              <p className="text-[11px] text-rose-200 mt-3 font-medium flex items-center gap-1">
-                <CheckCircle2 className="w-3.5 h-3.5 text-rose-400" />
+              <p className="text-[11px] text-emerald-200 mt-3 font-medium flex items-center gap-1">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                 Data terverifikasi panitia real-time
               </p>
             </div>
           </div>
 
           {/* MODUL DOWNLOAD PDF PER MINGGU (Permintaan Khusus Usser) */}
-          <div className="p-5 sm:p-6 bg-white border-2 border-rose-300 rounded-2xl shadow-sm space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-rose-100">
+          <div className="p-5 sm:p-6 bg-white border-2 border-emerald-300 rounded-2xl shadow-sm space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-emerald-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2.5 rounded-xl bg-rose-100 text-rose-800">
+                <div className="p-2.5 rounded-xl bg-emerald-100 text-emerald-800">
                   <Calendar className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-black text-slate-900 text-base sm:text-lg flex items-center gap-2">
                     <span>Download Laporan PDF Per Minggu (1 s/d 12)</span>
-                    <span className="px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 text-[10px] font-bold">
+                    <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold">
                       Resmi
                     </span>
                   </h4>
@@ -1996,7 +1996,7 @@ export default function DashboardUsser({
                 </div>
               </div>
 
-              <span className="text-xs font-semibold text-rose-800 bg-rose-50 px-3 py-1 rounded-full border border-rose-200 self-start sm:self-center">
+              <span className="text-xs font-semibold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 self-start sm:self-center">
                 Format KOP Surat PHBI
               </span>
             </div>
@@ -2018,12 +2018,12 @@ export default function DashboardUsser({
                       onClick={() => setSelectedPdfWeek(w)}
                       className={`py-2 px-1 rounded-xl text-center flex flex-col items-center justify-center transition-all cursor-pointer border ${
                         isSelected
-                          ? 'bg-rose-700 text-white border-rose-700 shadow-md ring-2 ring-rose-400/50 scale-[1.03]'
-                          : 'bg-slate-50 hover:bg-rose-50 hover:border-rose-300 text-slate-700 border-slate-200'
+                          ? 'bg-emerald-700 text-white border-emerald-700 shadow-md ring-2 ring-emerald-400/50 scale-[1.03]'
+                          : 'bg-slate-50 hover:bg-emerald-50 hover:border-emerald-300 text-slate-700 border-slate-200'
                       }`}
                     >
                       <span className="text-xs font-black">M-{w}</span>
-                      <span className={`text-[10px] truncate max-w-full font-semibold ${isSelected ? 'text-rose-100' : 'text-slate-500'}`}>
+                      <span className={`text-[10px] truncate max-w-full font-semibold ${isSelected ? 'text-emerald-100' : 'text-slate-500'}`}>
                         {weekPaidCount} Warga
                       </span>
                     </button>
@@ -2040,16 +2040,16 @@ export default function DashboardUsser({
               const percentage = wargaUtamaCount > 0 ? Math.min(100, Math.round((activeWeekPaid / wargaUtamaCount) * 100)) : 0;
 
               return (
-                <div className="p-4 sm:p-5 rounded-xl bg-gradient-to-br from-rose-50 to-teal-50/60 border border-rose-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div className="p-4 sm:p-5 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50/60 border border-emerald-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="space-y-1">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-sm sm:text-base font-black text-rose-950">
+                      <span className="text-sm sm:text-base font-black text-emerald-950">
                         Laporan Iuran Minggu Ke-{selectedPdfWeek}
                       </span>
-                      <span className="px-2.5 py-0.5 rounded-lg bg-rose-700 text-white text-xs font-bold font-mono shadow-xs">
+                      <span className="px-2.5 py-0.5 rounded-lg bg-emerald-700 text-white text-xs font-bold font-mono shadow-xs">
                         Rp {formatRupiah(activeWeekSum)}
                       </span>
-                      <span className="px-2 py-0.5 rounded-md bg-white border border-rose-200 text-rose-800 text-xs font-semibold">
+                      <span className="px-2 py-0.5 rounded-md bg-white border border-emerald-200 text-emerald-800 text-xs font-semibold">
                         {percentage}% Warga Lunas
                       </span>
                     </div>
@@ -2062,7 +2062,7 @@ export default function DashboardUsser({
                     type="button"
                     id={`btn-download-pdf-minggu-${selectedPdfWeek}`}
                     onClick={() => generatePdfLaporanMingguanUsser(selectedPdfWeek, citizens, wargaPayments, currentUser.name)}
-                    className="w-full md:w-auto px-5 py-3 bg-rose-700 hover:bg-rose-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-md shadow-rose-700/20 flex items-center justify-center gap-2 cursor-pointer text-xs sm:text-sm whitespace-nowrap"
+                    className="w-full md:w-auto px-5 py-3 bg-emerald-700 hover:bg-emerald-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-md shadow-emerald-700/20 flex items-center justify-center gap-2 cursor-pointer text-xs sm:text-sm whitespace-nowrap"
                   >
                     <FileDown className="w-4 h-4 text-amber-300" />
                     <span>Download PDF Minggu Ke-{selectedPdfWeek}</span>
@@ -2076,7 +2076,7 @@ export default function DashboardUsser({
           <div className="p-5 sm:p-6 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <h4 className="font-bold text-slate-800 text-sm sm:text-base flex items-center gap-2">
-                <FileDown className="w-5 h-5 text-rose-700" />
+                <FileDown className="w-5 h-5 text-emerald-700" />
                 Download Laporan PDF Rekapitulasi Keseluruhan (Warga + Suka Rela)
               </h4>
               <p className="text-xs text-slate-600 mt-1 max-w-xl">
@@ -2092,7 +2092,7 @@ export default function DashboardUsser({
               onClick={() => generatePdfLaporanUsser(wargaPayments, sukarelaPayments, currentUser.name)}
               className="w-full sm:w-auto px-5 py-3 bg-slate-800 hover:bg-slate-900 active:scale-[0.99] text-white font-bold rounded-xl shadow-md flex items-center justify-center gap-2 cursor-pointer text-xs sm:text-sm whitespace-nowrap"
             >
-              <FileDown className="w-4 h-4 text-rose-400" />
+              <FileDown className="w-4 h-4 text-emerald-400" />
               <span>Download PDF Rekap Gabungan</span>
             </button>
           </div>
@@ -2147,11 +2147,11 @@ export default function DashboardUsser({
       {/* MODAL EDIT DONASI WARGA */}
       {editingPayment && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-100 animate-in fade-in zoom-in-95">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-100 animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div>
                 <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
-                  <Edit3 className="w-4 h-4 text-blue-600" />
+                  <Edit3 className="w-4 h-4 text-emerald-600" />
                   Edit Data Donasi Warga
                 </h3>
                 <p className="text-xs text-slate-500">Ubah nama atau uang masuk</p>
@@ -2167,7 +2167,7 @@ export default function DashboardUsser({
 
             <form onSubmit={handleSaveEditWarga} className="mt-4 space-y-4">
               {wargaError && (
-                <div className="p-3 bg-rose-50 text-rose-700 rounded-xl text-xs font-semibold border border-rose-200">
+                <div className="p-3 bg-emerald-50 text-emerald-700 rounded-xl text-xs font-semibold border border-emerald-200">
                   {wargaError}
                 </div>
               )}
@@ -2182,7 +2182,7 @@ export default function DashboardUsser({
                   id="input-edit-donasi-nama"
                   value={editPaymentName}
                   onChange={(e) => setEditPaymentName(e.target.value)}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600"
                 />
               </div>
 
@@ -2193,7 +2193,7 @@ export default function DashboardUsser({
                 <select
                   value={editPaymentWeek}
                   onChange={(e) => setEditPaymentWeek(parseInt(e.target.value, 10))}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold focus:bg-white focus:border-emerald-600"
                 >
                   {Array.from({ length: 12 }, (_, i) => i + 1).map((w) => (
                     <option key={w} value={w}>
@@ -2217,7 +2217,7 @@ export default function DashboardUsser({
                     id="input-edit-donasi-jumlah"
                     value={editPaymentAmount}
                     onChange={(e) => setEditPaymentAmount(formatInputNumber(e.target.value))}
-                    className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold font-mono text-rose-900 focus:bg-white focus:border-rose-600"
+                    className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold font-mono text-emerald-900 focus:bg-white focus:border-emerald-600"
                   />
                 </div>
               </div>
@@ -2237,7 +2237,7 @@ export default function DashboardUsser({
                   <button
                     type="submit"
                     disabled={wargaLoading}
-                    className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50"
+                    className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50"
                   >
                     {wargaLoading ? 'Menyimpan...' : 'Simpan Perubahan'}
                   </button>
@@ -2251,7 +2251,7 @@ export default function DashboardUsser({
       {/* MODAL EDIT DONASI SUKA RELA */}
       {editingSukarela && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-100 animate-in fade-in zoom-in-95">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-100 animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div>
                 <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
@@ -2271,7 +2271,7 @@ export default function DashboardUsser({
 
             <form onSubmit={handleSaveEditSukarela} className="mt-4 space-y-4">
               {sukarelaError && (
-                <div className="p-3 bg-rose-50 text-rose-700 rounded-xl text-xs font-semibold border border-rose-200">
+                <div className="p-3 bg-emerald-50 text-emerald-700 rounded-xl text-xs font-semibold border border-emerald-200">
                   {sukarelaError}
                 </div>
               )}
@@ -2286,7 +2286,7 @@ export default function DashboardUsser({
                   id="input-edit-sukarela-nama"
                   value={editSukarelaName}
                   onChange={(e) => setEditSukarelaName(e.target.value)}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600"
                 />
               </div>
 
@@ -2304,7 +2304,7 @@ export default function DashboardUsser({
                     id="input-edit-sukarela-jumlah"
                     value={editSukarelaAmount}
                     onChange={(e) => setEditSukarelaAmount(formatInputNumber(e.target.value))}
-                    className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold font-mono text-amber-900 focus:bg-white focus:border-rose-600"
+                    className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold font-mono text-amber-900 focus:bg-white focus:border-emerald-600"
                   />
                 </div>
               </div>

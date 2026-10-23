@@ -236,14 +236,14 @@ export default function BaganStrukturOrganisasi({
         <div 
           className={`p-3 rounded-xl text-xs font-semibold flex items-center gap-2 animate-in fade-in ${
             exportStatus.type === 'success' 
-              ? 'bg-rose-50 text-rose-900 border border-rose-300' 
-              : 'bg-rose-50 text-rose-900 border border-rose-300'
+              ? 'bg-emerald-50 text-emerald-900 border border-emerald-300' 
+              : 'bg-emerald-50 text-emerald-900 border border-emerald-300'
           }`}
         >
           {exportStatus.type === 'success' ? (
-            <CheckCircle2 className="w-4 h-4 text-rose-600 flex-shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
           ) : (
-            <ShieldAlert className="w-4 h-4 text-rose-600 flex-shrink-0" />
+            <ShieldAlert className="w-4 h-4 text-emerald-600 flex-shrink-0" />
           )}
           <span>{exportStatus.message}</span>
         </div>
@@ -261,7 +261,7 @@ export default function BaganStrukturOrganisasi({
               onClick={() => setLayoutMode('mobile')}
               className={`flex-1 sm:flex-initial px-3 py-2 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
                 layoutMode === 'mobile'
-                  ? 'bg-rose-700 text-white shadow-xs'
+                  ? 'bg-emerald-700 text-white shadow-xs'
                   : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/70'
               }`}
               title="Tampilan Alur Vertikal khusus layar Handphone (Pas 100% tanpa geser kanan-kiri)"
@@ -276,7 +276,7 @@ export default function BaganStrukturOrganisasi({
               onClick={() => setLayoutMode('desktop')}
               className={`flex-1 sm:flex-initial px-3 py-2 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
                 layoutMode === 'desktop'
-                  ? 'bg-rose-700 text-white shadow-xs'
+                  ? 'bg-emerald-700 text-white shadow-xs'
                   : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/70'
               }`}
               title="Tampilan Diagram Pohon Lebar / Meja (Format Landscape/Cetak A4)"
@@ -295,7 +295,7 @@ export default function BaganStrukturOrganisasi({
                 id="btn-download-a4-menu"
                 onClick={() => setShowExportMenu(!showExportMenu)}
                 disabled={isExporting}
-                className="w-full sm:w-auto px-4 py-2 bg-gradient-to-r from-rose-600 to-teal-700 hover:from-rose-700 hover:to-teal-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center justify-center gap-2 cursor-pointer transition-all disabled:opacity-50 min-h-[38px]"
+                className="w-full sm:w-auto px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center justify-center gap-2 cursor-pointer transition-all disabled:opacity-50 min-h-[38px]"
                 title="Pilihan Unduh Gambar / PDF Pas Ukuran Kertas A4"
               >
                 <Download className="w-4 h-4 text-amber-300" />
@@ -313,13 +313,13 @@ export default function BaganStrukturOrganisasi({
                   <button
                     type="button"
                     onClick={() => handleExportA4Image('landscape')}
-                    className="w-full text-left px-3 py-2 rounded-lg hover:bg-rose-50 text-slate-800 hover:text-rose-900 text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer"
+                    className="w-full text-left px-3 py-2 rounded-lg hover:bg-emerald-50 text-slate-800 hover:text-emerald-900 text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer"
                   >
                     <span className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-rose-500"></span>
+                      <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                       <span>A4 Landscape (Mendatar)</span>
                     </span>
-                    <span className="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">
+                    <span className="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">
                       Rekomendasi
                     </span>
                   </button>
@@ -327,7 +327,7 @@ export default function BaganStrukturOrganisasi({
                   <button
                     type="button"
                     onClick={() => handleExportA4Image('portrait')}
-                    className="w-full text-left px-3 py-2 rounded-lg hover:bg-rose-50 text-slate-800 hover:text-rose-900 text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
+                    className="w-full text-left px-3 py-2 rounded-lg hover:bg-emerald-50 text-slate-800 hover:text-emerald-900 text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
                   >
                     <span className="w-2 h-2 rounded-full bg-teal-500"></span>
                     <span>A4 Portrait (Tegak)</span>
@@ -385,7 +385,7 @@ export default function BaganStrukturOrganisasi({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Cari nama anggota / koordinator..."
-              className="w-full pl-9 pr-8 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-rose-600 focus:border-rose-600 transition-all min-h-[38px]"
+              className="w-full pl-9 pr-8 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-emerald-600 focus:border-emerald-600 transition-all min-h-[38px]"
             />
             {searchQuery && (
               <button
@@ -437,7 +437,7 @@ export default function BaganStrukturOrganisasi({
       <div className="flex flex-wrap items-center justify-between gap-2 px-2 text-[11px] text-slate-500 font-medium">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5">
-            <span className="w-3.5 h-0.5 bg-rose-600 inline-block"></span>
+            <span className="w-3.5 h-0.5 bg-emerald-600 inline-block"></span>
             <span>Garis Komando Resmi</span>
           </div>
           <div className="flex items-center gap-1.5">
@@ -446,7 +446,7 @@ export default function BaganStrukturOrganisasi({
           </div>
         </div>
         <div className="text-slate-500">
-          Format Gambar: <strong className="text-rose-700">Pas Kertas A4 (297 x 210 mm)</strong> ({totalPersonel} Personel)
+          Format Gambar: <strong className="text-emerald-700">Pas Kertas A4 (297 x 210 mm)</strong> ({totalPersonel} Personel)
         </div>
       </div>
 
@@ -459,8 +459,8 @@ export default function BaganStrukturOrganisasi({
           className="bg-white p-3.5 sm:p-6 rounded-2xl border border-slate-300 shadow-md space-y-4 relative w-full overflow-hidden"
         >
           {/* KOP HEADER HANDPHONE */}
-          <div className="text-center pb-4 border-b-2 border-rose-700 relative">
-            <div className="inline-flex items-center gap-1.5 px-3 py-0.5 bg-rose-50 border border-rose-200 text-rose-800 text-[10px] sm:text-[11px] font-bold uppercase rounded-full mb-1.5">
+          <div className="text-center pb-4 border-b-2 border-emerald-700 relative">
+            <div className="inline-flex items-center gap-1.5 px-3 py-0.5 bg-emerald-50 border border-emerald-200 text-emerald-800 text-[10px] sm:text-[11px] font-bold uppercase rounded-full mb-1.5">
               <Sparkles className="w-3 h-3 text-amber-500" />
               BAGAN STRUKTUR ORGANISASI PHBI
             </div>
@@ -497,11 +497,11 @@ export default function BaganStrukturOrganisasi({
               <div 
                 className={`p-3 rounded-xl border-2 transition-all shadow-xs relative text-center ${
                   penasehatList.some(p => isMatch(p))
-                    ? 'bg-rose-100 border-rose-500 ring-2 ring-rose-400'
-                    : 'bg-gradient-to-b from-rose-50 to-rose-100/60 border-rose-300'
+                    ? 'bg-emerald-100 border-emerald-500 ring-2 ring-emerald-400'
+                    : 'bg-gradient-to-b from-emerald-50 to-emerald-100/60 border-emerald-300'
                 }`}
               >
-                <div className="inline-flex items-center gap-1 px-2 py-0.5 bg-rose-700 text-white font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs mb-1">
+                <div className="inline-flex items-center gap-1 px-2 py-0.5 bg-emerald-700 text-white font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs mb-1">
                   <Heart className="w-2.5 h-2.5" />
                   <span>Penasehat</span>
                 </div>
@@ -516,7 +516,7 @@ export default function BaganStrukturOrganisasi({
                 className={`p-3 rounded-xl border-2 transition-all shadow-xs relative text-center ${
                   penanggungJawabList.some(p => isMatch(p))
                     ? 'bg-teal-100 border-teal-500 ring-2 ring-teal-400'
-                    : 'bg-gradient-to-b from-teal-50 to-rose-50 border-teal-300'
+                    : 'bg-gradient-to-b from-teal-50 to-emerald-50 border-teal-300'
                 }`}
               >
                 <div className="inline-flex items-center gap-1 px-2 py-0.5 bg-teal-600 text-white font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs mb-1">
@@ -531,8 +531,8 @@ export default function BaganStrukturOrganisasi({
             </div>
 
             {/* Vertical Flow Connector */}
-            <div className="w-0.5 h-5 bg-rose-600 mx-auto relative">
-              <div className="w-2 h-2 rounded-full bg-rose-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
+            <div className="w-0.5 h-5 bg-emerald-600 mx-auto relative">
+              <div className="w-2 h-2 rounded-full bg-emerald-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
             </div>
           </div>
 
@@ -542,34 +542,34 @@ export default function BaganStrukturOrganisasi({
             <div 
               className={`w-full p-4 rounded-2xl border-2 transition-all shadow-md relative text-center ${
                 isMatch(ketuaName)
-                  ? 'bg-rose-100 border-rose-600 ring-4 ring-rose-300'
-                  : 'bg-gradient-to-br from-rose-900 via-rose-800 to-teal-900 border-amber-400 text-white'
+                  ? 'bg-emerald-100 border-emerald-600 ring-4 ring-emerald-300'
+                  : 'bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 border-amber-400 text-white'
               }`}
             >
               <div className="inline-flex items-center gap-1 px-2.5 py-0.5 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs mb-1">
                 <Award className="w-3 h-3 text-slate-950" />
                 <span>Pimpinan Utama Harian</span>
               </div>
-              <div className="text-[10px] font-bold uppercase tracking-wider text-rose-200">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-emerald-200">
                 KETUA PELAKSANA
               </div>
               <div className="text-lg font-black tracking-tight text-white mt-0.5">
                 {ketuaName || '—'}
               </div>
-              <div className="text-[10px] text-rose-200/90 font-medium mt-0.5">
+              <div className="text-[10px] text-emerald-200/90 font-medium mt-0.5">
                 Komando & Penanggung Jawab Kegiatan
               </div>
             </div>
 
             {/* Short Connector */}
-            <div className="w-0.5 h-3 bg-rose-600 mx-auto"></div>
+            <div className="w-0.5 h-3 bg-emerald-600 mx-auto"></div>
 
             {/* Wakil Ketua Card */}
             <div 
               className={`w-full p-3 rounded-xl border-2 transition-all shadow-sm relative text-center ${
                 isMatch(wakilKetuaName)
                   ? 'bg-teal-100 border-teal-600 ring-4 ring-teal-300'
-                  : 'bg-gradient-to-br from-teal-800 to-rose-900 border-teal-300 text-white'
+                  : 'bg-gradient-to-br from-teal-800 to-emerald-900 border-teal-300 text-white'
               }`}
             >
               <div className="inline-flex items-center gap-1 px-2 py-0.5 bg-teal-400 text-slate-950 font-black text-[8px] uppercase tracking-wider rounded-full shadow-xs mb-1">
@@ -588,8 +588,8 @@ export default function BaganStrukturOrganisasi({
             </div>
 
             {/* Vertical Flow Connector */}
-            <div className="w-0.5 h-5 bg-rose-600 mx-auto relative">
-              <div className="w-2 h-2 rounded-full bg-rose-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
+            <div className="w-0.5 h-5 bg-emerald-600 mx-auto relative">
+              <div className="w-2 h-2 rounded-full bg-emerald-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
             </div>
           </div>
 
@@ -600,14 +600,14 @@ export default function BaganStrukturOrganisasi({
               <div 
                 className={`p-3 rounded-xl border-2 transition-all shadow-xs text-center ${
                   isMatch(sekretarisName)
-                    ? 'bg-blue-100 border-blue-500 ring-2 ring-blue-400'
-                    : 'bg-white border-blue-200'
+                    ? 'bg-emerald-100 border-emerald-500 ring-2 ring-emerald-400'
+                    : 'bg-white border-emerald-200'
                 }`}
               >
-                <div className="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mx-auto mb-1">
+                <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-1">
                   <FileText className="w-3 h-3" />
                 </div>
-                <div className="text-[9px] font-extrabold uppercase text-blue-800 tracking-wider">
+                <div className="text-[9px] font-extrabold uppercase text-emerald-800 tracking-wider">
                   SEKRETARIS
                 </div>
                 <div className="text-xs sm:text-sm font-black text-slate-900 mt-0.5">
@@ -640,14 +640,14 @@ export default function BaganStrukturOrganisasi({
               <div 
                 className={`p-3 rounded-xl border-2 transition-all shadow-xs text-center ${
                   isMatch(adminName)
-                    ? 'bg-indigo-100 border-indigo-500 ring-2 ring-indigo-400'
-                    : 'bg-white border-indigo-200'
+                    ? 'bg-emerald-100 border-emerald-500 ring-2 ring-emerald-400'
+                    : 'bg-white border-emerald-200'
                 }`}
               >
-                <div className="w-6 h-6 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center mx-auto mb-1">
+                <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-1">
                   <Laptop className="w-3 h-3" />
                 </div>
-                <div className="text-[9px] font-extrabold uppercase text-indigo-800 tracking-wider">
+                <div className="text-[9px] font-extrabold uppercase text-emerald-800 tracking-wider">
                   ADMIN SISTEM
                 </div>
                 <div className="text-xs sm:text-sm font-black text-slate-900 mt-0.5">
@@ -658,15 +658,15 @@ export default function BaganStrukturOrganisasi({
             </div>
 
             {/* Vertical Flow Connector */}
-            <div className="w-0.5 h-5 bg-rose-600 mx-auto relative">
-              <div className="w-2 h-2 rounded-full bg-rose-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
+            <div className="w-0.5 h-5 bg-emerald-600 mx-auto relative">
+              <div className="w-2 h-2 rounded-full bg-emerald-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
             </div>
           </div>
 
           {/* LEVEL 4: 9 SEKSI BIDANG PELAKSANA (LENGKAP DENGAN BAGAN SUB-STRUKTUR INTERNAL) */}
           <div className="space-y-4">
             <div className="text-center">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-rose-900 text-white font-black text-[11px] uppercase tracking-wider rounded-full shadow-xs">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-900 text-white font-black text-[11px] uppercase tracking-wider rounded-full shadow-xs">
                 <Users className="w-3 h-3 text-amber-300" />
                 <span>BAGAN SEKSI – SEKSI BIDANG PELAKSANA ({sections.length} DIVISI)</span>
               </span>
@@ -690,20 +690,20 @@ export default function BaganStrukturOrganisasi({
                     className={`rounded-2xl border-2 transition-all p-3.5 sm:p-4 shadow-xs relative ${
                       isSectionHighlighted
                         ? 'bg-amber-50/90 border-amber-500 ring-2 ring-amber-300'
-                        : 'bg-white border-slate-200 hover:border-rose-400'
+                        : 'bg-white border-slate-200 hover:border-emerald-400'
                     }`}
                   >
                     {/* Header Seksi */}
                     <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-slate-100 mb-3">
                       <div className="flex items-center gap-2">
-                        <span className="w-5 h-5 rounded-md bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
+                        <span className="w-5 h-5 rounded-md bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
                           {idx + 1}
                         </span>
                         <span className="font-extrabold text-xs sm:text-sm text-slate-900">
                           {section.name}
                         </span>
                       </div>
-                      <span className="text-[10px] font-bold text-rose-800 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200">
+                      <span className="text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
                         {membersArr.length} Personel
                       </span>
                     </div>
@@ -715,21 +715,21 @@ export default function BaganStrukturOrganisasi({
                         className={`p-2.5 rounded-xl border text-center transition-all ${
                           hasMatchingCoord
                             ? 'bg-amber-100 border-amber-500 ring-2 ring-amber-300 shadow-xs'
-                            : 'bg-gradient-to-r from-rose-50 via-teal-50 to-rose-50 border-rose-300'
+                            : 'bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border-emerald-300'
                         }`}
                       >
-                        <div className="flex items-center justify-center gap-1.5 text-[9px] font-bold uppercase tracking-wider text-rose-800">
+                        <div className="flex items-center justify-center gap-1.5 text-[9px] font-bold uppercase tracking-wider text-emerald-800">
                           <Crown className="w-3 h-3 text-amber-500" />
                           <span>Koordinator Seksi</span>
                         </div>
-                        <div className="font-black text-sm text-rose-950 mt-0.5">
+                        <div className="font-black text-sm text-emerald-950 mt-0.5">
                           {section.coordinator}
                         </div>
                       </div>
 
                       {/* Garis Komando Alur Seksi ke Bawah */}
-                      <div className="w-0.5 h-3 bg-rose-600 mx-auto relative">
-                        <div className="w-1.5 h-1.5 rounded-full bg-rose-700 absolute -bottom-0.5 left-1/2 -translate-x-1/2"></div>
+                      <div className="w-0.5 h-3 bg-emerald-600 mx-auto relative">
+                        <div className="w-1.5 h-1.5 rounded-full bg-emerald-700 absolute -bottom-0.5 left-1/2 -translate-x-1/2"></div>
                       </div>
 
                       {/* Ranting Pohon Bagan Anggota Seksi */}
@@ -739,13 +739,13 @@ export default function BaganStrukturOrganisasi({
                             🤝 Seluruh Panitia & Warga Kp Kedung Sapi Terlibat
                           </div>
                         ) : (
-                          <div className="space-y-1.5 pl-3 border-l-2 border-rose-400 ml-3">
+                          <div className="space-y-1.5 pl-3 border-l-2 border-emerald-400 ml-3">
                             {membersArr.map((member, mIdx) => {
                               const match = isMatch(member);
                               return (
                                 <div key={mIdx} className="relative flex items-center gap-2">
                                   {/* Branch connector */}
-                                  <div className="w-3 h-0.5 bg-rose-400 -ml-3"></div>
+                                  <div className="w-3 h-0.5 bg-emerald-400 -ml-3"></div>
 
                                   {/* Member Node Box */}
                                   <div 
@@ -756,7 +756,7 @@ export default function BaganStrukturOrganisasi({
                                     }`}
                                   >
                                     <span className="flex items-center gap-2">
-                                      <span className="w-4 h-4 rounded-full bg-rose-100 text-rose-800 text-[9px] font-black flex items-center justify-center flex-shrink-0">
+                                      <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-800 text-[9px] font-black flex items-center justify-center flex-shrink-0">
                                         {mIdx + 1}
                                       </span>
                                       <span className="truncate">{member}</span>
@@ -795,8 +795,8 @@ export default function BaganStrukturOrganisasi({
             className="min-w-[1060px] mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-300 shadow-md transition-transform duration-150 relative"
           >
             {/* BAGAN KOP HEADER */}
-            <div className="text-center pb-6 border-b-2 border-rose-700 mb-8 relative">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-rose-50 border border-rose-200 text-rose-800 text-[11px] font-bold uppercase rounded-full mb-2">
+            <div className="text-center pb-6 border-b-2 border-emerald-700 mb-8 relative">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-bold uppercase rounded-full mb-2">
                 <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                 BAGAN STRUKTUR ORGANISASI KEPANITIAAN RESMI
               </div>
@@ -845,15 +845,15 @@ export default function BaganStrukturOrganisasi({
                 <div 
                   className={`w-72 p-3.5 rounded-xl border-2 transition-all shadow-sm relative text-center ${
                     penasehatList.some(p => isMatch(p))
-                      ? 'bg-rose-100 border-rose-500 ring-2 ring-rose-400'
-                      : 'bg-gradient-to-b from-rose-50 to-rose-100/60 border-rose-300'
+                      ? 'bg-emerald-100 border-emerald-500 ring-2 ring-emerald-400'
+                      : 'bg-gradient-to-b from-emerald-50 to-emerald-100/60 border-emerald-300'
                   }`}
                 >
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-2.5 py-0.5 bg-rose-700 text-white font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs flex items-center gap-1">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-2.5 py-0.5 bg-emerald-700 text-white font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs flex items-center gap-1">
                     <Heart className="w-2.5 h-2.5" />
                     <span>Penasehat</span>
                   </div>
-                  <div className="text-[11px] font-extrabold text-rose-900 mt-1 uppercase tracking-wide">
+                  <div className="text-[11px] font-extrabold text-emerald-900 mt-1 uppercase tracking-wide">
                     DEWAN PENASEHAT
                   </div>
                   <div className="text-sm font-black text-slate-900 mt-0.5">
@@ -865,8 +865,8 @@ export default function BaganStrukturOrganisasi({
                 </div>
 
                 {/* Garis Koordinasi Horizontal 2 */}
-                <div className="w-10 border-t-2 border-dashed border-rose-400 relative">
-                  <span className="absolute -top-2 left-1/2 -translate-x-1/2 px-1 bg-white text-[8px] font-bold text-rose-700">
+                <div className="w-10 border-t-2 border-dashed border-emerald-400 relative">
+                  <span className="absolute -top-2 left-1/2 -translate-x-1/2 px-1 bg-white text-[8px] font-bold text-emerald-700">
                     Koordinasi
                   </span>
                 </div>
@@ -876,7 +876,7 @@ export default function BaganStrukturOrganisasi({
                   className={`w-64 p-3.5 rounded-xl border-2 transition-all shadow-sm relative text-center ${
                     penanggungJawabList.some(p => isMatch(p))
                       ? 'bg-teal-100 border-teal-500 ring-2 ring-teal-400'
-                      : 'bg-gradient-to-b from-teal-50 to-rose-50 border-teal-300'
+                      : 'bg-gradient-to-b from-teal-50 to-emerald-50 border-teal-300'
                   }`}
                 >
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-2.5 py-0.5 bg-teal-600 text-white font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs flex items-center gap-1">
@@ -896,8 +896,8 @@ export default function BaganStrukturOrganisasi({
               </div>
 
               {/* Vertical Connector Line from Level 1 to Level 2 */}
-              <div className="w-0.5 h-8 bg-rose-600 mx-auto mt-2 relative">
-                <div className="w-2 h-2 rounded-full bg-rose-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
+              <div className="w-0.5 h-8 bg-emerald-600 mx-auto mt-2 relative">
+                <div className="w-2 h-2 rounded-full bg-emerald-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
               </div>
             </div>
 
@@ -908,8 +908,8 @@ export default function BaganStrukturOrganisasi({
                 <div 
                   className={`w-72 p-4 rounded-2xl border-2 transition-all shadow-md relative text-center ${
                     isMatch(ketuaName)
-                      ? 'bg-rose-100 border-rose-600 ring-4 ring-rose-300'
-                      : 'bg-gradient-to-br from-rose-900 via-rose-800 to-teal-900 border-amber-400 text-white'
+                      ? 'bg-emerald-100 border-emerald-600 ring-4 ring-emerald-300'
+                      : 'bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 border-amber-400 text-white'
                   }`}
                 >
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-black text-[10px] uppercase tracking-wider rounded-full shadow-xs flex items-center gap-1">
@@ -917,20 +917,20 @@ export default function BaganStrukturOrganisasi({
                     <span>Pimpinan Utama</span>
                   </div>
 
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-rose-200 mt-1">
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-200 mt-1">
                     KETUA PELAKSANA
                   </div>
                   <div className="text-lg font-black tracking-tight text-white mt-0.5">
                     {ketuaName || '—'}
                   </div>
-                  <div className="text-[10px] text-rose-200/90 font-medium mt-0.5">
+                  <div className="text-[10px] text-emerald-200/90 font-medium mt-0.5">
                     Komando & Penanggung Jawab Kegiatan
                   </div>
                 </div>
 
                 {/* Horizontal Connector to Wakil */}
-                <div className="w-10 border-t-2 border-rose-600 relative">
-                  <div className="w-1.5 h-1.5 rounded-full bg-rose-600 absolute -top-[3px] left-1/2 -translate-x-1/2"></div>
+                <div className="w-10 border-t-2 border-emerald-600 relative">
+                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-600 absolute -top-[3px] left-1/2 -translate-x-1/2"></div>
                 </div>
 
                 {/* Node Wakil */}
@@ -938,7 +938,7 @@ export default function BaganStrukturOrganisasi({
                   className={`w-64 p-3.5 rounded-2xl border-2 transition-all shadow-md relative text-center ${
                     isMatch(wakilKetuaName)
                       ? 'bg-teal-100 border-teal-600 ring-4 ring-teal-300'
-                      : 'bg-gradient-to-br from-teal-800 to-rose-900 border-teal-300 text-white'
+                      : 'bg-gradient-to-br from-teal-800 to-emerald-900 border-teal-300 text-white'
                   }`}
                 >
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-2.5 py-0.5 bg-teal-400 text-slate-950 font-black text-[9px] uppercase tracking-wider rounded-full shadow-xs flex items-center gap-1">
@@ -959,18 +959,18 @@ export default function BaganStrukturOrganisasi({
               </div>
 
               {/* Vertical Connector Line from Level 2 to Level 3 */}
-              <div className="w-0.5 h-8 bg-rose-600 mx-auto mt-2 relative">
-                <div className="w-2 h-2 rounded-full bg-rose-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
+              <div className="w-0.5 h-8 bg-emerald-600 mx-auto mt-2 relative">
+                <div className="w-2 h-2 rounded-full bg-emerald-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
               </div>
             </div>
 
             {/* LEVEL 3: TIGA PILAR */}
             <div className="relative mb-10 max-w-4xl mx-auto">
               <div className="relative pb-6">
-                <div className="h-0.5 bg-rose-600 w-3/4 mx-auto relative">
-                  <div className="absolute top-0 left-0 w-0.5 h-4 bg-rose-600"></div>
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-4 bg-rose-600"></div>
-                  <div className="absolute top-0 right-0 w-0.5 h-4 bg-rose-600"></div>
+                <div className="h-0.5 bg-emerald-600 w-3/4 mx-auto relative">
+                  <div className="absolute top-0 left-0 w-0.5 h-4 bg-emerald-600"></div>
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-4 bg-emerald-600"></div>
+                  <div className="absolute top-0 right-0 w-0.5 h-4 bg-emerald-600"></div>
                 </div>
 
                 <div className="grid grid-cols-3 gap-4 pt-4">
@@ -978,14 +978,14 @@ export default function BaganStrukturOrganisasi({
                   <div 
                     className={`p-3.5 rounded-xl border-2 transition-all shadow-xs text-center relative ${
                       isMatch(sekretarisName)
-                        ? 'bg-blue-100 border-blue-500 ring-2 ring-blue-400'
-                        : 'bg-white border-blue-200 hover:border-blue-400'
+                        ? 'bg-emerald-100 border-emerald-500 ring-2 ring-emerald-400'
+                        : 'bg-white border-emerald-200 hover:border-emerald-400'
                     }`}
                   >
-                    <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mx-auto mb-1">
+                    <div className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-1">
                       <FileText className="w-3.5 h-3.5" />
                     </div>
-                    <div className="text-[10px] font-extrabold uppercase text-blue-800 tracking-wider">
+                    <div className="text-[10px] font-extrabold uppercase text-emerald-800 tracking-wider">
                       SEKRETARIS
                     </div>
                     <div className="text-sm font-black text-slate-900 mt-0.5">
@@ -1022,14 +1022,14 @@ export default function BaganStrukturOrganisasi({
                   <div 
                     className={`p-3.5 rounded-xl border-2 transition-all shadow-xs text-center relative ${
                       isMatch(adminName)
-                        ? 'bg-indigo-100 border-indigo-500 ring-2 ring-indigo-400'
-                        : 'bg-white border-indigo-200 hover:border-indigo-400'
+                        ? 'bg-emerald-100 border-emerald-500 ring-2 ring-emerald-400'
+                        : 'bg-white border-emerald-200 hover:border-emerald-400'
                     }`}
                   >
-                    <div className="w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center mx-auto mb-1">
+                    <div className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-1">
                       <Laptop className="w-3.5 h-3.5" />
                     </div>
-                    <div className="text-[10px] font-extrabold uppercase text-indigo-800 tracking-wider">
+                    <div className="text-[10px] font-extrabold uppercase text-emerald-800 tracking-wider">
                       ADMIN SISTEM
                     </div>
                     <div className="text-sm font-black text-slate-900 mt-0.5">
@@ -1043,22 +1043,22 @@ export default function BaganStrukturOrganisasi({
               </div>
 
               {/* Central Connector */}
-              <div className="w-0.5 h-8 bg-rose-600 mx-auto relative">
-                <div className="w-2 h-2 rounded-full bg-rose-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
+              <div className="w-0.5 h-8 bg-emerald-600 mx-auto relative">
+                <div className="w-2 h-2 rounded-full bg-emerald-700 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
               </div>
             </div>
 
             {/* LEVEL 4: 9 SEKSI BIDANG PELAKSANA (TREE NODES DENGAN SUB-BAGAN ANGGOTA LENGKAP) */}
             <div className="relative">
               <div className="text-center mb-6">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-rose-900 text-white font-extrabold text-xs uppercase tracking-wider rounded-full shadow-xs">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-900 text-white font-extrabold text-xs uppercase tracking-wider rounded-full shadow-xs">
                   <Users className="w-3.5 h-3.5 text-amber-300" />
                   <span>SEKSI – SEKSI BIDANG PELAKSANA ({sections.length} DIVISI)</span>
                 </div>
               </div>
 
-              <div className="h-0.5 bg-rose-600 w-full mb-6 relative">
-                <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-rose-700"></div>
+              <div className="h-0.5 bg-emerald-600 w-full mb-6 relative">
+                <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-emerald-700"></div>
               </div>
 
               {sections.length === 0 ? (
@@ -1079,22 +1079,22 @@ export default function BaganStrukturOrganisasi({
                       className={`rounded-2xl border-2 transition-all p-4 flex flex-col justify-between relative shadow-xs ${
                         isSectionHighlighted
                           ? 'bg-amber-50/90 border-amber-500 ring-2 ring-amber-300'
-                          : 'bg-white border-slate-200 hover:border-rose-400 hover:shadow-sm'
+                          : 'bg-white border-slate-200 hover:border-emerald-400 hover:shadow-sm'
                       }`}
                     >
                       {/* Top Connector to Main Branch */}
-                      <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-3 h-2 bg-rose-600 rounded-t-sm"></div>
+                      <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-3 h-2 bg-emerald-600 rounded-t-sm"></div>
 
                       <div>
                         {/* Section Header */}
                         <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-slate-100 mb-3">
                           <span className="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center gap-1.5">
-                            <span className="w-5 h-5 rounded-md bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
+                            <span className="w-5 h-5 rounded-md bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
                               {idx + 1}
                             </span>
                             <span>{section.name}</span>
                           </span>
-                          <span className="text-[10px] font-bold text-rose-800 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200">
+                          <span className="text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
                             {membersArr.length} Personel
                           </span>
                         </div>
@@ -1104,21 +1104,21 @@ export default function BaganStrukturOrganisasi({
                           className={`p-2.5 rounded-xl border text-center transition-all ${
                             hasMatchingCoord
                               ? 'bg-amber-100 border-amber-500 ring-2 ring-amber-300'
-                              : 'bg-gradient-to-r from-rose-50 via-teal-50 to-rose-50 border-rose-300'
+                              : 'bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border-emerald-300'
                           }`}
                         >
-                          <div className="flex items-center justify-center gap-1 text-[9px] font-bold uppercase tracking-wider text-rose-800">
+                          <div className="flex items-center justify-center gap-1 text-[9px] font-bold uppercase tracking-wider text-emerald-800">
                             <Crown className="w-3 h-3 text-amber-500" />
                             <span>Koordinator Seksi</span>
                           </div>
-                          <div className="font-black text-sm text-rose-950 mt-0.5">
+                          <div className="font-black text-sm text-emerald-950 mt-0.5">
                             {section.coordinator}
                           </div>
                         </div>
 
                         {/* Garis Komando Alur Seksi ke Bawah */}
-                        <div className="w-0.5 h-3 bg-rose-600 mx-auto relative my-1">
-                          <div className="w-1.5 h-1.5 rounded-full bg-rose-700 absolute -bottom-0.5 left-1/2 -translate-x-1/2"></div>
+                        <div className="w-0.5 h-3 bg-emerald-600 mx-auto relative my-1">
+                          <div className="w-1.5 h-1.5 rounded-full bg-emerald-700 absolute -bottom-0.5 left-1/2 -translate-x-1/2"></div>
                         </div>
 
                         {/* SUB-BAGAN SEKSI: GARIS CABANG & NODE ANGGOTA */}
@@ -1130,8 +1130,8 @@ export default function BaganStrukturOrganisasi({
                           ) : (
                             <>
                               {/* Garis Cabang Horizontal Mini */}
-                              <div className="h-0.5 bg-rose-400 w-3/4 mx-auto relative mb-2">
-                                <div className="absolute -top-[2px] left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-rose-600"></div>
+                              <div className="h-0.5 bg-emerald-400 w-3/4 mx-auto relative mb-2">
+                                <div className="absolute -top-[2px] left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-emerald-600"></div>
                               </div>
 
                               {/* Grid Node-Node Anggota Seksi */}
@@ -1148,7 +1148,7 @@ export default function BaganStrukturOrganisasi({
                                       }`}
                                     >
                                       {/* Mini Connector to Branch Line */}
-                                      <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0.5 h-2 bg-rose-400"></div>
+                                      <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0.5 h-2 bg-emerald-400"></div>
 
                                       <div className="text-[8px] font-bold text-slate-400 uppercase tracking-wider flex items-center justify-center gap-1">
                                         <User className="w-2.5 h-2.5" />

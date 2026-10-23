@@ -853,7 +853,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('saldo')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'saldo'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
@@ -868,11 +868,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('target')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'target'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
-            <Target className="w-4 h-4 text-rose-600" />
+            <Target className="w-4 h-4 text-emerald-600" />
             <span className="leading-tight">Set Target</span>
           </button>
 
@@ -883,11 +883,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('buat_akun')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'buat_akun'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
-            <UserPlus className="w-4 h-4 text-blue-600" />
+            <UserPlus className="w-4 h-4 text-emerald-600" />
             <span className="leading-tight">Buat Akun</span>
           </button>
 
@@ -898,7 +898,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('donasi_warga')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'donasi_warga'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
@@ -913,7 +913,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('donasi_sukarela')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'donasi_sukarela'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
@@ -928,11 +928,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('bendahara')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'bendahara'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
-            <Wallet className="w-4 h-4 text-rose-600" />
+            <Wallet className="w-4 h-4 text-emerald-600" />
             <span className="leading-tight">Pengeluaran</span>
           </button>
 
@@ -943,11 +943,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('rekap_mingguan')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'rekap_mingguan'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
-            <Users className="w-4 h-4 text-indigo-600" />
+            <Users className="w-4 h-4 text-emerald-600" />
             <span className="leading-tight">Rekap 12 Minggu</span>
           </button>
 
@@ -958,11 +958,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('perubahan_data')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'perubahan_data'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
-            <History className="w-4 h-4 text-cyan-600" />
+            <History className="w-4 h-4 text-emerald-600" />
             <span className="leading-tight">Perubahan Data</span>
           </button>
 
@@ -973,11 +973,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('pengaturan')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'pengaturan'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
-            <Settings className="w-4 h-4 text-rose-600" />
+            <Settings className="w-4 h-4 text-emerald-600" />
             <span className="leading-tight">Pengaturan</span>
           </button>
 
@@ -988,7 +988,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('struktur')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'struktur'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
@@ -1003,7 +1003,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('proposal')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center ${
               activeTab === 'proposal'
-                ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                 : 'bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
             }`}
           >
@@ -1018,11 +1018,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('arsip_periode')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center relative ${
               activeTab === 'arsip_periode'
-                ? 'bg-indigo-900 text-white font-black shadow-md border-2 border-indigo-950 ring-2 ring-indigo-300'
-                : 'bg-indigo-100 hover:bg-indigo-200 text-indigo-950 border-2 border-indigo-300 font-bold'
+                ? 'bg-emerald-900 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
+                : 'bg-emerald-100 hover:bg-emerald-200 text-emerald-950 border-2 border-emerald-300 font-bold'
             }`}
           >
-            <Archive className={`w-4 h-4 ${activeTab === 'arsip_periode' ? 'text-amber-300' : 'text-indigo-700'}`} />
+            <Archive className={`w-4 h-4 ${activeTab === 'arsip_periode' ? 'text-amber-300' : 'text-emerald-700'}`} />
             <span className="leading-tight">Arsip Periode</span>
             {periodArchives.length > 0 && (
               <span className="px-1.5 py-0.2 rounded-full text-[9px] font-black bg-amber-400 text-slate-950">
@@ -1038,14 +1038,14 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             onClick={() => setActiveTab('pengunjung')}
             className={`p-2 sm:p-2.5 rounded-xl text-xs flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer text-center relative ${
               activeTab === 'pengunjung'
-                ? 'bg-blue-900 text-white font-black shadow-md border-2 border-blue-950 ring-2 ring-blue-300'
-                : 'bg-blue-100 hover:bg-blue-200 text-blue-950 border-2 border-blue-300 font-bold'
+                ? 'bg-emerald-900 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
+                : 'bg-emerald-100 hover:bg-emerald-200 text-emerald-950 border-2 border-emerald-300 font-bold'
             }`}
           >
-            <Activity className={`w-4 h-4 ${activeTab === 'pengunjung' ? 'text-cyan-300' : 'text-blue-700'}`} />
+            <Activity className={`w-4 h-4 ${activeTab === 'pengunjung' ? 'text-emerald-300' : 'text-emerald-700'}`} />
             <span className="leading-tight">Akses Link</span>
             {visitorStats && visitorStats.todayVisits > 0 && (
-              <span className="px-1.5 py-0.2 rounded-full text-[9px] font-black bg-blue-700 text-white">
+              <span className="px-1.5 py-0.2 rounded-full text-[9px] font-black bg-emerald-700 text-white">
                 {visitorStats.todayVisits}
               </span>
             )}
@@ -1072,15 +1072,15 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {activeTab === 'saldo' && (
         <div className="space-y-4 bg-white p-4 sm:p-6 rounded-2xl border border-slate-200">
           {/* Quick Live Visitor Counter Card */}
-          <div className="bg-gradient-to-r from-blue-950 via-indigo-900 to-slate-900 text-white rounded-2xl p-4 sm:p-5 shadow-xs border border-blue-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-slate-900 text-white rounded-2xl p-4 sm:p-5 shadow-xs border border-emerald-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-cyan-400 text-slate-950 flex items-center gap-1">
+                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-emerald-400 text-slate-950 flex items-center gap-1">
                   <Activity className="w-3 h-3 animate-pulse" />
                   Live Counter Pengunjung Link
                 </span>
-                <span className="text-blue-300 text-xs hidden sm:inline">•</span>
-                <span className="text-blue-200 text-xs font-semibold hidden sm:inline">
+                <span className="text-emerald-300 text-xs hidden sm:inline">•</span>
+                <span className="text-emerald-200 text-xs font-semibold hidden sm:inline">
                   Real-time Multi-Perangkat
                 </span>
               </div>
@@ -1092,18 +1092,18 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   <Globe className="w-3.5 h-3.5" />
                   {(visitorStats?.totalVisits || 0).toLocaleString('id-ID')} Total Akses
                 </span>
-                <span className="text-blue-400">·</span>
-                <span className="inline-flex items-center gap-1 text-rose-300">
+                <span className="text-emerald-400">·</span>
+                <span className="inline-flex items-center gap-1 text-emerald-300">
                   <Calendar className="w-3.5 h-3.5" />
                   {(visitorStats?.todayVisits || 0).toLocaleString('id-ID')} Hari Ini
                 </span>
-                <span className="text-blue-400">·</span>
-                <span className="inline-flex items-center gap-1 text-cyan-300">
+                <span className="text-emerald-400">·</span>
+                <span className="inline-flex items-center gap-1 text-emerald-300">
                   <Activity className="w-3.5 h-3.5" />
                   {(visitorStats?.weekVisits || 0).toLocaleString('id-ID')} 7 Hari Terakhir
                 </span>
-                <span className="text-blue-400">·</span>
-                <span className="inline-flex items-center gap-1 text-purple-300">
+                <span className="text-emerald-400">·</span>
+                <span className="inline-flex items-center gap-1 text-emerald-300">
                   <Smartphone className="w-3.5 h-3.5" />
                   {(visitorStats?.uniqueVisitors || 0).toLocaleString('id-ID')} Perangkat Unik
                 </span>
@@ -1113,7 +1113,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <button
               type="button"
               onClick={() => setActiveTab('pengunjung')}
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-2 cursor-pointer transition-colors shrink-0"
+              className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-2 cursor-pointer transition-colors shrink-0"
             >
               <Eye className="w-4 h-4" />
               <span>Buka Rincian Pengunjung</span>
@@ -1123,14 +1123,14 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
 
           {/* Main Financial Overview Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-            <div className="p-5 rounded-2xl bg-rose-50 border border-rose-200 text-rose-950">
-              <span className="text-xs font-bold text-rose-800 uppercase tracking-wider block">
+            <div className="p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950">
+              <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider block">
                 Total Donasi Warga ({wargaUtama.length} Warga)
               </span>
-              <p className="text-2xl sm:text-3xl font-black font-mono text-rose-900 mt-2">
+              <p className="text-2xl sm:text-3xl font-black font-mono text-emerald-900 mt-2">
                 Rp {formatRupiah(totalWarga)}
               </p>
-              <p className="text-[11px] text-rose-700 mt-2">
+              <p className="text-[11px] text-emerald-700 mt-2">
                 {wargaUtama.length} Warga • {wargaPayments.length} Pembayaran Terdata
               </p>
               {totalWargaExcluded > 0 && (
@@ -1150,25 +1150,25 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               <p className="text-[11px] text-amber-700 mt-2">{sukarelaPayments.length} Donatur Terdata</p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-rose-50 border border-rose-200 text-rose-950">
-              <span className="text-xs font-bold text-rose-800 uppercase tracking-wider block">
+            <div className="p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950">
+              <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider block">
                 Total Pengeluaran Kas
               </span>
-              <p className="text-2xl sm:text-3xl font-black font-mono text-rose-900 mt-2">
+              <p className="text-2xl sm:text-3xl font-black font-mono text-emerald-900 mt-2">
                 Rp {formatRupiah(totalKeluar)}
               </p>
-              <p className="text-[11px] text-rose-700 mt-2">{pengeluaranList.length} Transaksi Keluar</p>
+              <p className="text-[11px] text-emerald-700 mt-2">{pengeluaranList.length} Transaksi Keluar</p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-rose-950 via-slate-900 to-teal-950 text-white shadow-lg">
-              <span className="text-xs font-bold text-rose-300 uppercase tracking-wider block">
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 text-white shadow-lg">
+              <span className="text-xs font-bold text-emerald-300 uppercase tracking-wider block">
                 SISA SALDO KAS BERSIH
               </span>
               <p className="text-2xl sm:text-3xl font-black font-mono text-amber-300 mt-2">
                 Rp {formatRupiah(sisaSaldo)}
               </p>
-              <p className="text-[11px] text-rose-200 mt-2 flex items-center gap-1">
-                <CheckCircle2 className="w-3.5 h-3.5 text-rose-400" />
+              <p className="text-[11px] text-emerald-200 mt-2 flex items-center gap-1">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                 Uang Masuk - Pengeluaran
               </p>
             </div>
@@ -1177,7 +1177,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
           {/* Master PDF Download Buttons Banner */}
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 space-y-4">
             <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
-              <FileDown className="w-5 h-5 text-rose-700" />
+              <FileDown className="w-5 h-5 text-emerald-700" />
               Ekspor Laporan Master Panitia Isra Miraj (PDF)
             </h3>
             <p className="text-xs sm:text-sm text-slate-500">
@@ -1193,7 +1193,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 className="p-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm flex items-center justify-between shadow-md cursor-pointer transition-transform active:scale-[0.99]"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-rose-600/30 text-rose-300">
+                  <div className="p-2 rounded-lg bg-emerald-600/30 text-emerald-300">
                     <Users className="w-5 h-5" />
                   </div>
                   <div className="text-left">
@@ -1216,7 +1216,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   sukarelaPayments.length, pengeluaranList.length,
                   pengeluaranList, citizens, committeeSettings
                 )}
-                className="p-4 rounded-xl bg-gradient-to-r from-rose-800 to-teal-800 hover:from-rose-900 hover:to-teal-900 text-white font-bold text-xs sm:text-sm flex items-center justify-between shadow-md cursor-pointer transition-transform active:scale-[0.99]"
+                className="p-4 rounded-xl bg-gradient-to-r from-emerald-800 to-teal-800 hover:from-emerald-900 hover:to-teal-900 text-white font-bold text-xs sm:text-sm flex items-center justify-between shadow-md cursor-pointer transition-transform active:scale-[0.99]"
               >
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-lg bg-amber-400/20 text-amber-300">
@@ -1224,7 +1224,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </div>
                   <div className="text-left">
                     <p className="font-bold">DOWNLOAD LAPORAN KESELURUHAN</p>
-                    <p className="text-[11px] text-rose-200 font-normal">
+                    <p className="text-[11px] text-emerald-200 font-normal">
                       Master Financial Audit: Donasi Warga + Suka Rela - Kas Bendahara
                     </p>
                   </div>
@@ -1240,9 +1240,9 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {activeTab === 'target' && (
         <div className="space-y-4 bg-white p-4 sm:p-6 rounded-2xl border border-slate-200">
           {/* Target Config Card */}
-          <div className="bg-white rounded-2xl shadow-sm border border-rose-100 p-5 sm:p-6">
+          <div className="bg-white rounded-2xl shadow-sm border border-emerald-100 p-5 sm:p-6">
             <div className="flex items-center gap-3 mb-4 pb-3 border-b border-slate-100">
-              <div className="p-2.5 rounded-xl bg-rose-100 text-rose-800">
+              <div className="p-2.5 rounded-xl bg-emerald-100 text-emerald-800">
                 <Target className="w-6 h-6" />
               </div>
               <div>
@@ -1270,7 +1270,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     id="input-set-target-nominal"
                     value={targetInput}
                     onChange={(e) => setTargetInput(formatInputNumber(e.target.value))}
-                    className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-base font-bold font-mono text-rose-900 focus:bg-white focus:border-rose-600"
+                    className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-base font-bold font-mono text-emerald-900 focus:bg-white focus:border-emerald-600"
                   />
                 </div>
               </div>
@@ -1279,15 +1279,15 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 type="submit"
                 id="btn-simpan-target"
                 disabled={targetLoading}
-                className="py-2.5 px-6 bg-rose-700 hover:bg-rose-800 text-white font-bold rounded-xl text-xs sm:text-sm shadow-md cursor-pointer transition-all disabled:opacity-50"
+                className="py-2.5 px-6 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs sm:text-sm shadow-md cursor-pointer transition-all disabled:opacity-50"
               >
                 {targetLoading ? 'Menyimpan...' : 'Terapkan Target'}
               </button>
             </form>
 
             {targetMsg && (
-              <div className="mt-3 p-3 bg-rose-50 text-rose-800 border border-rose-200 rounded-xl text-xs font-semibold flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-rose-600" />
+              <div className="mt-3 p-3 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-xl text-xs font-semibold flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                 <span>{targetMsg}</span>
               </div>
             )}
@@ -1316,10 +1316,10 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[550px] overflow-y-auto pr-1">
               {filteredTargetCitizens.length === 0 ? (
-                <div className="col-span-full p-6 text-center bg-rose-50 border border-rose-200 rounded-xl text-rose-800">
-                  <AlertTriangle className="w-5 h-5 text-rose-600 mx-auto mb-1.5" />
-                  <p className="font-bold text-xs text-rose-900">Peringatan: Nama Tidak Cocok!</p>
-                  <p className="text-[11px] text-rose-700 mt-0.5">
+                <div className="col-span-full p-6 text-center bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-800">
+                  <AlertTriangle className="w-5 h-5 text-emerald-600 mx-auto mb-1.5" />
+                  <p className="font-bold text-xs text-emerald-900">Peringatan: Nama Tidak Cocok!</p>
+                  <p className="text-[11px] text-emerald-700 mt-0.5">
                     Tidak ditemukan warga bernama &ldquo;{targetSearch}&rdquo; dalam daftar target.
                   </p>
                 </div>
@@ -1334,7 +1334,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     key={citizen.id}
                     className={`p-3 rounded-xl border transition-all ${
                       isLunas
-                        ? 'bg-rose-50/70 border-rose-300'
+                        ? 'bg-emerald-50/70 border-emerald-300'
                         : 'bg-white border-slate-200 hover:border-slate-300'
                     }`}
                   >
@@ -1343,7 +1343,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                         {citizen.name}
                       </span>
                       {isLunas ? (
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-600 text-white">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-600 text-white">
                           LUNAS
                         </span>
                       ) : (
@@ -1356,7 +1356,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     {/* Progress Bar */}
                     <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden mb-2">
                       <div
-                        className={`h-full transition-all duration-300 ${isLunas ? 'bg-rose-600' : 'bg-rose-500'}`}
+                        className={`h-full transition-all duration-300 ${isLunas ? 'bg-emerald-600' : 'bg-emerald-500'}`}
                         style={{ width: `${percent}%` }}
                       />
                     </div>
@@ -1365,7 +1365,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       <span className="text-slate-600">
                         Terbayar: <strong>Rp {formatRupiah(citizen.totalPaid)}</strong>
                       </span>
-                      <span className={sisa === 0 ? 'text-rose-700 font-bold' : 'text-rose-600 font-bold'}>
+                      <span className={sisa === 0 ? 'text-emerald-700 font-bold' : 'text-emerald-600 font-bold'}>
                         {sisa === 0 ? 'Tuntas' : `Kurang: Rp ${formatRupiah(sisa)}`}
                       </span>
                     </div>
@@ -1383,9 +1383,9 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
         <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
           {/* Form Buat Akun */}
-          <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-rose-100 p-5 sm:p-6 space-y-4">
-            <div className="flex items-center gap-3 pb-3 border-b border-rose-50">
-              <div className="p-2.5 rounded-xl bg-blue-100 text-blue-800">
+          <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-emerald-100 p-5 sm:p-6 space-y-4">
+            <div className="flex items-center gap-3 pb-3 border-b border-emerald-50">
+              <div className="p-2.5 rounded-xl bg-emerald-100 text-emerald-800">
                 <UserPlus className="w-5 h-5" />
               </div>
               <div>
@@ -1395,15 +1395,15 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             </div>
 
             {accError && (
-              <div className="p-3 bg-rose-50 border border-rose-200 text-rose-700 rounded-xl text-xs flex items-center gap-2">
-                <AlertTriangle className="w-4 h-4 flex-shrink-0 text-rose-600" />
+              <div className="p-3 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-xl text-xs flex items-center gap-2">
+                <AlertTriangle className="w-4 h-4 flex-shrink-0 text-emerald-600" />
                 <span>{accError}</span>
               </div>
             )}
 
             {accSuccess && (
-              <div className="p-3 bg-rose-50 border border-rose-200 text-rose-800 rounded-xl text-xs flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 flex-shrink-0 text-rose-600" />
+              <div className="p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl text-xs flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 flex-shrink-0 text-emerald-600" />
                 <span>{accSuccess}</span>
               </div>
             )}
@@ -1421,7 +1421,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   value={accName}
                   onChange={(e) => setAccName(e.target.value)}
                   placeholder="Contoh: Bpk. Rohman (Petugas Lapangan)"
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600"
                 />
               </div>
 
@@ -1437,7 +1437,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   value={accUsername}
                   onChange={(e) => setAccUsername(e.target.value.toLowerCase().replace(/\s+/g, ''))}
                   placeholder="Contoh: usser3 / bendahara2"
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600 font-mono"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600 font-mono"
                 />
               </div>
 
@@ -1454,12 +1454,12 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     value={accPassword}
                     onChange={(e) => setAccPassword(e.target.value)}
                     placeholder="Masukkan password"
-                    className="w-full pl-3.5 pr-12 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600 font-mono"
+                    className="w-full pl-3.5 pr-12 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600 font-mono"
                   />
                   <button
                     type="button"
                     onClick={() => setShowAccPassword(!showAccPassword)}
-                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-rose-700 cursor-pointer"
+                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-emerald-700 cursor-pointer"
                   >
                     {showAccPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                   </button>
@@ -1477,7 +1477,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={() => setAccRole('usser1')}
                     className={`py-2 px-2 rounded-xl text-xs font-bold border transition-all cursor-pointer text-center ${
                       accRole === 'usser1'
-                        ? 'bg-rose-700 text-white border-rose-700 shadow-sm'
+                        ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
                         : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                     }`}
                   >
@@ -1489,7 +1489,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={() => setAccRole('usser2')}
                     className={`py-2 px-2 rounded-xl text-xs font-bold border transition-all cursor-pointer text-center ${
                       accRole === 'usser2'
-                        ? 'bg-rose-700 text-white border-rose-700 shadow-sm'
+                        ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
                         : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                     }`}
                   >
@@ -1501,7 +1501,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={() => setAccRole('bendahara')}
                     className={`py-2 px-2 rounded-xl text-xs font-bold border transition-all cursor-pointer text-center ${
                       accRole === 'bendahara'
-                        ? 'bg-rose-700 text-white border-rose-700 shadow-sm'
+                        ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
                         : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                     }`}
                   >
@@ -1527,7 +1527,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 type="submit"
                 id="btn-submit-buat-akun"
                 disabled={accLoading}
-                className="w-full py-3.5 px-4 bg-gradient-to-r from-rose-700 to-teal-700 hover:from-rose-800 hover:to-teal-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-lg shadow-rose-700/20 flex items-center justify-center gap-2 cursor-pointer text-sm disabled:opacity-50"
+                className="w-full py-3.5 px-4 bg-gradient-to-r from-emerald-700 to-teal-700 hover:from-emerald-800 hover:to-teal-800 active:scale-[0.99] text-white font-bold rounded-xl shadow-lg shadow-emerald-700/20 flex items-center justify-center gap-2 cursor-pointer text-sm disabled:opacity-50"
               >
                 <UserPlus className="w-4 h-4" />
                 <span>{accLoading ? 'Menyimpan Akun...' : 'Buat Akun Sekarang'}</span>
@@ -1568,7 +1568,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     <button
                       type="button"
                       onClick={() => handleDeleteAccount(acc)}
-                      className="p-2 text-rose-600 hover:bg-rose-100 rounded-lg transition-colors cursor-pointer"
+                      className="p-2 text-emerald-600 hover:bg-emerald-100 rounded-lg transition-colors cursor-pointer"
                       title="Hapus Akun"
                     >
                       <Trash2 className="w-4 h-4" />
@@ -1590,15 +1590,15 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {activeTab === 'donasi_warga' && (
         <div className="space-y-4">
           {/* Panel Kontrol Jadwal Pembayaran Mingguan Otomatis (Admin) */}
-          <div className="bg-white rounded-2xl shadow-sm border border-rose-200 p-4 sm:p-5 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+          <div className="bg-white rounded-2xl shadow-sm border border-emerald-200 p-4 sm:p-5 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
             <div className="space-y-1">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-rose-700 text-amber-300 text-xs font-black tracking-wide">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-700 text-amber-300 text-xs font-black tracking-wide">
                   <Calendar className="w-3.5 h-3.5" />
                   MINGGU AKTIF BERJALAN: MINGGU KE-{activeSystemWeek}
                 </span>
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-rose-50 text-rose-800 border border-rose-200 text-xs font-bold">
-                  <Clock className="w-3.5 h-3.5 text-rose-600" />
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold">
+                  <Clock className="w-3.5 h-3.5 text-emerald-600" />
                   Periode: {weeklySchedule.currentWeekRangeLabel}
                 </span>
                 <button
@@ -1638,7 +1638,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 value={activeSystemWeek}
                 disabled={updatingWeekSchedule}
                 onChange={(e) => handleAdminChangeActiveWeek(Number(e.target.value))}
-                className="px-2.5 py-1.5 rounded-lg bg-rose-50 border border-rose-300 text-rose-950 font-black text-xs cursor-pointer focus:outline-none"
+                className="px-2.5 py-1.5 rounded-lg bg-emerald-50 border border-emerald-300 text-emerald-950 font-black text-xs cursor-pointer focus:outline-none"
               >
                 {weeklySchedule.weeks.map((s) => (
                   <option key={s.week} value={s.week}>
@@ -1650,7 +1650,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 type="button"
                 disabled={updatingWeekSchedule || activeSystemWeek >= 12}
                 onClick={() => handleAdminChangeActiveWeek(activeSystemWeek + 1)}
-                className="px-2.5 py-1.5 rounded-lg bg-rose-700 hover:bg-rose-800 disabled:opacity-40 text-white text-xs font-bold flex items-center gap-1 cursor-pointer"
+                className="px-2.5 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 disabled:opacity-40 text-white text-xs font-bold flex items-center gap-1 cursor-pointer"
               >
                 <span>M-{Math.min(12, activeSystemWeek + 1)}</span>
                 <ChevronRight className="w-3.5 h-3.5" />
@@ -1662,11 +1662,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
               <div>
                 <h3 className="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
-                  <FolderArchive className="w-5 h-5 text-rose-700" />
+                  <FolderArchive className="w-5 h-5 text-emerald-700" />
                   <span>Cek Data &amp; Arsip Mingguan Donasi Warga ({wargaPayments.length} Data)</span>
                 </h3>
                 <p className="text-xs text-slate-500">
-                  Data penerimaan iuran warga mingguan • Masuk Total Kas: <strong className="text-rose-700 font-mono">Rp {formatRupiah(totalWarga)}</strong>
+                  Data penerimaan iuran warga mingguan • Masuk Total Kas: <strong className="text-emerald-700 font-mono">Rp {formatRupiah(totalWarga)}</strong>
                   {totalWargaExcluded > 0 && (
                     <span className="ml-2 text-amber-700 font-semibold">
                       • Ditahan Sementara: <strong className="font-mono">Rp {formatRupiah(totalWargaExcluded)}</strong>
@@ -1677,11 +1677,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
 
               {/* Button Download PDF Lampiran Copysurat */}
               <div className="flex flex-wrap items-center gap-2">
-                <div className="flex items-center gap-1 bg-rose-50 border border-rose-300 rounded-xl p-1">
+                <div className="flex items-center gap-1 bg-emerald-50 border border-emerald-300 rounded-xl p-1">
                   <select
                     value={adminPdfWeek}
                     onChange={(e) => setAdminPdfWeek(Number(e.target.value))}
-                    className="bg-white text-rose-950 font-bold text-xs py-1.5 px-2 rounded-lg border border-rose-200 cursor-pointer focus:outline-none"
+                    className="bg-white text-emerald-950 font-bold text-xs py-1.5 px-2 rounded-lg border border-emerald-200 cursor-pointer focus:outline-none"
                     title="Pilih minggu laporan"
                   >
                     {Array.from({ length: 12 }, (_, i) => i + 1).map((w) => (
@@ -1694,7 +1694,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     type="button"
                     id="btn-admin-pdf-mingguan"
                     onClick={() => generatePdfLaporanMingguanUsser(adminPdfWeek, citizens, wargaPayments, 'Admin')}
-                    className="px-3 py-1.5 bg-rose-700 hover:bg-rose-800 text-white font-bold rounded-lg text-xs shadow-xs flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
+                    className="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-lg text-xs shadow-xs flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
                     title={`Download PDF Resmi Minggu Ke-${adminPdfWeek}`}
                   >
                     <FileDown className="w-3.5 h-3.5 text-amber-300" />
@@ -1708,7 +1708,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   onClick={() => generatePdfDonasiWargaAdmin(wargaPayments)}
                   className="px-4 py-2 bg-slate-800 hover:bg-slate-900 text-white font-bold rounded-xl text-xs shadow-md flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
                 >
-                  <FileDown className="w-4 h-4 text-rose-400" />
+                  <FileDown className="w-4 h-4 text-emerald-400" />
                   <span>Download Semua (PDF)</span>
                 </button>
               </div>
@@ -1738,11 +1738,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={() => setAdminWargaFilterWeek(s.week)}
                     className={`px-2.5 py-1.5 rounded-xl text-xs font-black transition-colors cursor-pointer flex items-center gap-1 border-2 ${
                       isSelected
-                        ? 'bg-rose-800 text-white border-rose-950 shadow-md ring-2 ring-rose-300'
+                        ? 'bg-emerald-800 text-white border-emerald-950 shadow-md ring-2 ring-emerald-300'
                         : s.week === activeSystemWeek
                         ? 'bg-amber-100 text-amber-950 border-amber-400 hover:bg-amber-200'
                         : count > 0
-                        ? 'bg-white text-rose-950 border-rose-300 hover:bg-rose-100'
+                        ? 'bg-white text-emerald-950 border-emerald-300 hover:bg-emerald-100'
                         : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-100'
                     }`}
                   >
@@ -1750,7 +1750,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     {count > 0 && (
                       <span
                         className={`px-1.5 py-0.2 rounded text-[10px] font-mono ${
-                          isSelected ? 'bg-rose-950 text-amber-300' : 'bg-rose-200 text-rose-950'
+                          isSelected ? 'bg-emerald-950 text-amber-300' : 'bg-emerald-200 text-emerald-950'
                         }`}
                       >
                         {count}
@@ -1797,20 +1797,20 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                         <tr
                           key={p.id}
                           className={`transition-colors ${
-                            isExcl ? 'bg-amber-50/60 hover:bg-amber-50' : 'hover:bg-rose-50/50'
+                            isExcl ? 'bg-amber-50/60 hover:bg-amber-50' : 'hover:bg-emerald-50/50'
                           }`}
                         >
                           <td className="py-2.5 px-3 text-center text-slate-400">{idx + 1}</td>
                           <td className="py-2.5 px-3 font-bold text-slate-800">
                             {citizens.find(c => c.id === p.citizenId)?.rt === '08' ? 'Warga (Identitas Terhapus)' : p.citizenName}
                           </td>
-                          <td className="py-2.5 px-3 font-semibold text-rose-800">
-                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-rose-100 text-rose-900 text-[11px] font-bold">
+                          <td className="py-2.5 px-3 font-semibold text-emerald-800">
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 text-[11px] font-bold">
                               Minggu ke-{p.week}
                             </span>
                           </td>
                           <td className="py-2.5 px-3 font-mono text-slate-600">{p.timestamp}</td>
-                          <td className={`py-2.5 px-3 text-right font-mono font-bold ${isExcl ? 'text-amber-800 line-through' : 'text-rose-700'}`}>
+                          <td className={`py-2.5 px-3 text-right font-mono font-bold ${isExcl ? 'text-amber-800 line-through' : 'text-emerald-700'}`}>
                             Rp {formatRupiah(p.amount)}
                           </td>
                           <td className="py-2.5 px-3 text-center">
@@ -1821,7 +1821,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                               className={`px-2.5 py-1 rounded-lg text-[11px] font-bold cursor-pointer transition-colors whitespace-nowrap ${
                                 isExcl
                                   ? 'bg-amber-200 hover:bg-amber-300 text-amber-950'
-                                  : 'bg-rose-100 hover:bg-rose-200 text-rose-800'
+                                  : 'bg-emerald-100 hover:bg-emerald-200 text-emerald-800'
                               }`}
                               title={
                                 isExcl
@@ -1846,7 +1846,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                                 field2Label: '',
                                 field2Value: ''
                               })}
-                              className="p-1.5 text-blue-600 hover:bg-blue-100 rounded cursor-pointer"
+                              className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded cursor-pointer"
                               title="Admin Edit"
                             >
                               <Edit3 className="w-3.5 h-3.5" />
@@ -1989,7 +1989,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                             field2Label: 'Uang Masuk (Rp)',
                             field2Value: formatRupiah(s.amount)
                           })}
-                          className="p-1.5 text-blue-600 hover:bg-blue-100 rounded cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded cursor-pointer"
                           title="Admin Edit"
                         >
                           <Edit3 className="w-3.5 h-3.5" />
@@ -2022,7 +2022,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               type="button"
               id="btn-admin-pdf-pengeluaran-bendahara"
               onClick={() => generatePdfPengeluaranAdmin(pengeluaranList)}
-              className="px-4 py-2.5 bg-rose-700 hover:bg-rose-800 text-white font-bold rounded-xl text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
+              className="px-4 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
             >
               <FileDown className="w-4 h-4 text-white" />
               <span>Download PDF Pengeluaran (Kop Resmi)</span>
@@ -2051,12 +2051,12 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </tr>
                 ) : (
                   pengeluaranList.map((item, idx) => (
-                    <tr key={item.id} className="hover:bg-rose-50/50 transition-colors">
+                    <tr key={item.id} className="hover:bg-emerald-50/50 transition-colors">
                       <td className="py-2.5 px-3 text-center text-slate-400">{idx + 1}</td>
                       <td className="py-2.5 px-3 font-bold text-slate-800">{item.description}</td>
                       <td className="py-2.5 px-3 text-slate-600">{item.recipient}</td>
                       <td className="py-2.5 px-3 font-mono text-slate-600">{item.timestamp}</td>
-                      <td className="py-2.5 px-3 text-right font-mono font-bold text-rose-700">
+                      <td className="py-2.5 px-3 text-right font-mono font-bold text-emerald-700">
                         Rp {formatRupiah(item.amount)}
                       </td>
                       <td className="py-2.5 px-3 text-slate-600">{item.recordedBy}</td>
@@ -2072,7 +2072,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                             field2Label: 'Nominal Pengeluaran (Rp)',
                             field2Value: formatRupiah(item.amount)
                           })}
-                          className="p-1.5 text-blue-600 hover:bg-blue-100 rounded cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded cursor-pointer"
                           title="Admin Edit"
                         >
                           <Edit3 className="w-3.5 h-3.5" />
@@ -2105,14 +2105,14 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
             <div>
               <h3 className="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
-                <History className="w-5 h-5 text-indigo-600" />
+                <History className="w-5 h-5 text-emerald-600" />
                 Catatan Perubahan Data & Audit Trail Real-time
               </h3>
               <p className="text-xs text-slate-500">
                 Menampilkan data hari, tanggal, tahun dirubah dengan waktu secara real-time dan akun yang merubahnya.
               </p>
             </div>
-            <span className="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200">
+            <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
               Total {auditLogs.length} Aktivitas Terekam
             </span>
           </div>
@@ -2127,16 +2127,16 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               auditLogs.map((log) => (
                 <div
                   key={log.id}
-                  className="p-3 bg-slate-50 hover:bg-indigo-50/40 rounded-xl border border-slate-200 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2"
+                  className="p-3 bg-slate-50 hover:bg-emerald-50/40 rounded-xl border border-slate-200 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2"
                 >
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
                         log.action === 'TAMBAH'
-                          ? 'bg-rose-100 text-rose-800'
+                          ? 'bg-emerald-100 text-emerald-800'
                           : log.action === 'EDIT'
-                          ? 'bg-blue-100 text-blue-800'
-                          : 'bg-rose-100 text-rose-800'
+                          ? 'bg-emerald-100 text-emerald-800'
+                          : 'bg-emerald-100 text-emerald-800'
                       }`}>
                         {log.action}
                       </span>
@@ -2155,7 +2155,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       </span>
                       <span>•</span>
                       <span>
-                        Akun yang merubah: <strong className="text-indigo-900">{log.accountName}</strong>
+                        Akun yang merubah: <strong className="text-emerald-900">{log.accountName}</strong>
                       </span>
                     </div>
                   </div>
@@ -2174,7 +2174,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
                 <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
-                  <Settings className="w-5 h-5 text-rose-600" />
+                  <Settings className="w-5 h-5 text-emerald-600" />
                   Pengaturan Sistem & Identitas Panitia
                 </h3>
                 <p className="text-xs text-slate-500 mt-1">
@@ -2182,8 +2182,8 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 </p>
               </div>
 
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-rose-50 border border-rose-200 rounded-xl text-rose-800 text-xs font-semibold">
-                <ShieldCheck className="w-4 h-4 text-rose-600" />
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-800 text-xs font-semibold">
+                <ShieldCheck className="w-4 h-4 text-emerald-600" />
                 <span>Otoritas Administrator</span>
               </div>
             </div>
@@ -2191,22 +2191,22 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
 
           {/* Feedback Notifications */}
           {settingsSuccess && (
-            <div className="p-4 bg-rose-50 border border-rose-200 rounded-2xl text-rose-900 text-xs font-semibold flex items-center gap-3 animate-in fade-in">
-              <CheckCircle2 className="w-5 h-5 text-rose-600 shrink-0" />
+            <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-900 text-xs font-semibold flex items-center gap-3 animate-in fade-in">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
               <span>{settingsSuccess}</span>
             </div>
           )}
 
           {settingsError && (
-            <div className="p-4 bg-rose-50 border border-rose-200 rounded-2xl text-rose-900 text-xs font-semibold flex items-center gap-3 animate-in fade-in">
-              <AlertTriangle className="w-5 h-5 text-rose-600 shrink-0" />
+            <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-900 text-xs font-semibold flex items-center gap-3 animate-in fade-in">
+              <AlertTriangle className="w-5 h-5 text-emerald-600 shrink-0" />
               <span>{settingsError}</span>
             </div>
           )}
 
           {resetSuccess && (
-            <div className="p-4 bg-rose-50 border border-rose-200 rounded-2xl text-rose-900 text-xs font-semibold flex items-center gap-3 animate-in fade-in">
-              <CheckCircle2 className="w-5 h-5 text-rose-600 shrink-0" />
+            <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-900 text-xs font-semibold flex items-center gap-3 animate-in fade-in">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
               <span>{resetSuccess}</span>
             </div>
           )}
@@ -2215,7 +2215,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
           <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2 bg-rose-50 text-rose-700 rounded-xl">
+                <div className="p-2 bg-emerald-50 text-emerald-700 rounded-xl">
                   <BookOpen className="w-5 h-5" />
                 </div>
                 <div>
@@ -2232,7 +2232,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <button
                   type="button"
                   onClick={() => setIsEditingSettings(true)}
-                  className="px-3.5 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold flex items-center gap-2 shadow-xs cursor-pointer transition-colors"
+                  className="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center gap-2 shadow-xs cursor-pointer transition-colors"
                 >
                   <Edit3 className="w-3.5 h-3.5" />
                   <span>Ubah / Edit Pengaturan</span>
@@ -2260,7 +2260,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     required
                     value={settingsForm.namaKegiatan}
                     onChange={(e) => setSettingsForm(prev => ({ ...prev, namaKegiatan: e.target.value }))}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     placeholder="Contoh: Peringatan Hari Besar Islam (PHBI) Isra Miraj Nabi Muhammad SAW 1448 H / 2027 M"
                   />
                 </div>
@@ -2274,7 +2274,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     required
                     value={settingsForm.wilayah}
                     onChange={(e) => setSettingsForm(prev => ({ ...prev, wilayah: e.target.value }))}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     placeholder="Contoh: Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten"
                   />
                 </div>
@@ -2289,7 +2289,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       required
                       value={settingsForm.ketuaPanitia}
                       onChange={(e) => setSettingsForm(prev => ({ ...prev, ketuaPanitia: e.target.value }))}
-                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     />
                   </div>
 
@@ -2302,7 +2302,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       required
                       value={settingsForm.wakilKetua}
                       onChange={(e) => setSettingsForm(prev => ({ ...prev, wakilKetua: e.target.value }))}
-                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     />
                   </div>
 
@@ -2315,7 +2315,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       required
                       value={settingsForm.sekretaris}
                       onChange={(e) => setSettingsForm(prev => ({ ...prev, sekretaris: e.target.value }))}
-                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     />
                   </div>
 
@@ -2328,7 +2328,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       required
                       value={settingsForm.adminSistem}
                       onChange={(e) => setSettingsForm(prev => ({ ...prev, adminSistem: e.target.value }))}
-                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     />
                   </div>
 
@@ -2341,7 +2341,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       required
                       value={settingsForm.bendahara}
                       onChange={(e) => setSettingsForm(prev => ({ ...prev, bendahara: e.target.value }))}
-                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     />
                   </div>
                 </div>
@@ -2349,7 +2349,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <div className="sm:col-span-2">
                     <label className="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                      <MessageSquare className="w-3.5 h-3.5 text-rose-600" />
+                      <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
                       Link Undangan Grup WhatsApp Warga & Panitia
                     </label>
                     <input
@@ -2357,7 +2357,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       required
                       value={settingsForm.waGroupLink}
                       onChange={(e) => setSettingsForm(prev => ({ ...prev, waGroupLink: e.target.value }))}
-                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-mono text-rose-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                      className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-mono text-emerald-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                       placeholder="https://chat.whatsapp.com/..."
                     />
                     <p className="text-[11px] text-slate-500 mt-1">
@@ -2367,7 +2367,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
 
                   <div>
                     <label className="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center gap-1.5">
-                      <Target className="w-3.5 h-3.5 text-rose-600" />
+                      <Target className="w-3.5 h-3.5 text-emerald-600" />
                       Target Iuran (Rp)
                     </label>
                     <div className="relative">
@@ -2382,7 +2382,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                           ...prev,
                           targetPerPerson: formatInputNumber(e.target.value)
                         }))}
-                        className="w-full pl-10 pr-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-bold font-mono text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                        className="w-full pl-10 pr-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-bold font-mono text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                       />
                     </div>
                     <p className="text-[11px] text-slate-500 mt-1">
@@ -2398,7 +2398,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   <textarea
                     value={settingsForm.adminNote}
                     onChange={(e) => setSettingsForm(prev => ({ ...prev, adminNote: e.target.value }))}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                     placeholder="Tulis catatan internal untuk keperluan panitia..."
                     rows={3}
                   />
@@ -2408,7 +2408,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   <button
                     type="submit"
                     disabled={settingsLoading}
-                    className="px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-2 cursor-pointer disabled:opacity-50 transition-colors"
+                    className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-2 cursor-pointer disabled:opacity-50 transition-colors"
                   >
                     <Save className="w-4 h-4" />
                     <span>{settingsLoading ? 'Menyimpan Pengaturan...' : 'Simpan Perubahan Pengaturan'}</span>
@@ -2444,11 +2444,11 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                     <span className="text-slate-400 font-semibold uppercase text-[10px] block">Ketua Panitia</span>
-                    <span className="font-bold text-rose-900 text-xs sm:text-sm">{settingsForm.ketuaPanitia}</span>
+                    <span className="font-bold text-emerald-900 text-xs sm:text-sm">{settingsForm.ketuaPanitia}</span>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                     <span className="text-slate-400 font-semibold uppercase text-[10px] block">Wakil Ketua</span>
-                    <span className="font-bold text-rose-800 text-xs sm:text-sm">{settingsForm.wakilKetua}</span>
+                    <span className="font-bold text-emerald-800 text-xs sm:text-sm">{settingsForm.wakilKetua}</span>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                     <span className="text-slate-400 font-semibold uppercase text-[10px] block">Sekretaris</span>
@@ -2456,7 +2456,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                     <span className="text-slate-400 font-semibold uppercase text-[10px] block">Administrator Sistem</span>
-                    <span className="font-bold text-indigo-900 text-xs sm:text-sm">{settingsForm.adminSistem}</span>
+                    <span className="font-bold text-emerald-900 text-xs sm:text-sm">{settingsForm.adminSistem}</span>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                     <span className="text-slate-400 font-semibold uppercase text-[10px] block">Bendahara Kas</span>
@@ -2464,20 +2464,20 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 col-span-2 sm:col-span-1">
                     <span className="text-slate-400 font-semibold uppercase text-[10px] block">Target Iuran</span>
-                    <span className="font-black text-rose-800 font-mono text-xs sm:text-sm">Rp {settingsForm.targetPerPerson}</span>
+                    <span className="font-black text-emerald-800 font-mono text-xs sm:text-sm">Rp {settingsForm.targetPerPerson}</span>
                   </div>
                 </div>
 
-                <div className="p-3 bg-rose-50/60 rounded-xl border border-rose-200/80 flex flex-wrap items-center justify-between gap-2.5">
+                <div className="p-3 bg-emerald-50/60 rounded-xl border border-emerald-200/80 flex flex-wrap items-center justify-between gap-2.5">
                   <div className="space-y-0.5 flex-1 min-w-[240px]">
-                    <span className="text-rose-700 font-semibold uppercase text-[10px] block flex items-center gap-1">
+                    <span className="text-emerald-700 font-semibold uppercase text-[10px] block flex items-center gap-1">
                       <MessageSquare className="w-3.5 h-3.5" />
                       Link Undangan Grup WhatsApp Warga & Panitia
                     </span>
-                    <span className="font-bold text-rose-950 font-mono text-xs sm:text-sm break-all">
+                    <span className="font-bold text-emerald-950 font-mono text-xs sm:text-sm break-all">
                       {settingsForm.waGroupLink}
                     </span>
-                    <span className="text-[10px] text-rose-700 block">
+                    <span className="text-[10px] text-emerald-700 block">
                       Grup resmi ini dapat langsung diakses oleh warga melalui tombol &quot;Grup WA Panitia &amp; Warga&quot; di header aplikasi.
                     </span>
                   </div>
@@ -2486,7 +2486,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       href={settingsForm.waGroupLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-3 py-1.5 bg-rose-600 hover:bg-rose-700 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-xs cursor-pointer"
+                      className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-xs cursor-pointer"
                     >
                       <ExternalLink className="w-3.5 h-3.5" />
                       <span>Buka Grup</span>
@@ -2494,9 +2494,9 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     <button
                       type="button"
                       onClick={handleCopyWa}
-                      className="px-3 py-1.5 bg-white hover:bg-slate-50 border border-rose-300 rounded-lg text-rose-800 text-xs font-bold flex items-center gap-1.5 cursor-pointer shadow-xs"
+                      className="px-3 py-1.5 bg-white hover:bg-slate-50 border border-emerald-300 rounded-lg text-emerald-800 text-xs font-bold flex items-center gap-1.5 cursor-pointer shadow-xs"
                     >
-                      {waCopied ? <Check className="w-3.5 h-3.5 text-rose-600" /> : <Copy className="w-3.5 h-3.5 text-rose-600" />}
+                      {waCopied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5 text-emerald-600" />}
                       <span>{waCopied ? 'Tersalin' : 'Salin Link'}</span>
                     </button>
                   </div>
@@ -2510,7 +2510,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3.5">
               <div>
                 <h4 className="font-bold text-sm sm:text-base text-slate-900 flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-rose-700" />
+                  <BookOpen className="w-4 h-4 text-emerald-700" />
                   <span>Ubah Kata Sambutan (Tampilan Awal Saat Masuk Link)</span>
                 </h4>
                 <p className="text-xs text-slate-500 mt-0.5">
@@ -2522,14 +2522,14 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 onClick={handleCopyWelcomeText}
                 className="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold flex items-center gap-1.5 cursor-pointer transition-colors"
               >
-                {welcomeCopied ? <Check className="w-3.5 h-3.5 text-rose-600" /> : <Copy className="w-3.5 h-3.5 text-slate-600" />}
+                {welcomeCopied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5 text-slate-600" />}
                 <span>{welcomeCopied ? 'Teks Tersalin' : 'Salin Kata Sambutan'}</span>
               </button>
             </div>
 
             {welcomeSavedMsg && (
-              <div className="p-3 bg-rose-50 border border-rose-200 rounded-xl text-rose-800 text-xs font-semibold flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-rose-600 shrink-0" />
+              <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-800 text-xs font-semibold flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>{welcomeSavedMsg}</span>
               </div>
             )}
@@ -2549,20 +2549,20 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       onClick={() => handleSelectWelcomePreset(option)}
                       className={`text-left p-3 rounded-xl border transition-colors cursor-pointer flex flex-col justify-between gap-1.5 ${
                         isSelected
-                          ? 'bg-rose-900 border-rose-700 text-white'
+                          ? 'bg-emerald-900 border-emerald-700 text-white'
                           : 'bg-slate-50 hover:bg-slate-100 border-slate-200 text-slate-800'
                       }`}
                     >
                       <div className="space-y-0.5">
                         <div className="flex items-center justify-between gap-1">
-                          <span className={`text-[10px] font-semibold ${isSelected ? 'text-amber-300' : 'text-rose-700'}`}>
+                          <span className={`text-[10px] font-semibold ${isSelected ? 'text-amber-300' : 'text-emerald-700'}`}>
                             {option.category}
                           </span>
                           {isSelected && <CheckCircle2 className="w-3.5 h-3.5 text-amber-300 shrink-0" />}
                         </div>
                         <p className="text-xs font-bold leading-snug">{option.label}</p>
                       </div>
-                      <p className={`text-[11px] line-clamp-2 ${isSelected ? 'text-rose-100' : 'text-slate-500'}`}>
+                      <p className={`text-[11px] line-clamp-2 ${isSelected ? 'text-emerald-100' : 'text-slate-500'}`}>
                         {option.headline}
                       </p>
                     </button>
@@ -2583,7 +2583,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     required
                     value={welcomeForm.welcomeSalam}
                     onChange={(e) => setWelcomeForm(prev => ({ ...prev, welcomeSalam: e.target.value }))}
-                    className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                    className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                   />
                 </div>
                 <div>
@@ -2595,7 +2595,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     required
                     value={welcomeForm.welcomeClosing}
                     onChange={(e) => setWelcomeForm(prev => ({ ...prev, welcomeClosing: e.target.value }))}
-                    className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                    className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                   />
                 </div>
               </div>
@@ -2609,7 +2609,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   required
                   value={welcomeForm.welcomeHeadline}
                   onChange={(e) => setWelcomeForm(prev => ({ ...prev, welcomeHeadline: e.target.value }))}
-                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-bold text-slate-900 focus:bg-white focus:border-rose-600 focus:outline-none"
+                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-bold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
                 />
               </div>
 
@@ -2622,7 +2622,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   required
                   value={welcomeForm.welcomeBody}
                   onChange={(e) => setWelcomeForm(prev => ({ ...prev, welcomeBody: e.target.value }))}
-                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-800 leading-relaxed focus:bg-white focus:border-rose-600 focus:outline-none"
+                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-800 leading-relaxed focus:bg-white focus:border-emerald-600 focus:outline-none"
                 />
               </div>
 
@@ -2630,7 +2630,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <button
                   type="submit"
                   disabled={welcomeSaving}
-                  className="px-5 py-2.5 bg-rose-700 hover:bg-rose-800 text-white rounded-xl text-xs font-bold shadow-sm flex items-center gap-2 cursor-pointer disabled:opacity-50 transition-colors"
+                  className="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold shadow-sm flex items-center gap-2 cursor-pointer disabled:opacity-50 transition-colors"
                 >
                   <Save className="w-4 h-4" />
                   <span>{welcomeSaving ? 'Menyimpan Kata Sambutan...' : 'Simpan Kata Sambutan Tampilan Awal'}</span>
@@ -2644,17 +2644,17 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             {/* Card: Pengaturan Unduhan PDF & Kerapian Dokumen */}
             <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
               <h4 className="font-bold text-sm text-slate-900 flex items-center gap-2">
-                <FileText className="w-4 h-4 text-rose-600" />
+                <FileText className="w-4 h-4 text-emerald-600" />
                 Standar Kerapian Dokumen PDF
               </h4>
 
               <div className="space-y-2.5 text-xs">
-                <div className="p-3 bg-rose-50/70 border border-rose-200 rounded-xl">
-                  <div className="flex items-center gap-2 text-rose-900 font-bold text-xs mb-1">
-                    <CheckCircle2 className="w-4 h-4 text-rose-600" />
+                <div className="p-3 bg-emerald-50/70 border border-emerald-200 rounded-xl">
+                  <div className="flex items-center gap-2 text-emerald-900 font-bold text-xs mb-1">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                     <span>Terbaca Tuntas dari Atas Sampai Bawah</span>
                   </div>
-                  <p className="text-[11px] text-rose-800 leading-relaxed">
+                  <p className="text-[11px] text-emerald-800 leading-relaxed">
                     Seluruh berkas laporan PDF di dashboard Admin, Bendahara, Usser, dan Warga telah dikonfigurasi dengan margin terukur (18mm) dan pembagian halaman dinamis agar tidak terpotong.
                   </p>
                 </div>
@@ -2685,7 +2685,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             {/* Card: Status Manajemen Akun & Sinkronisasi */}
             <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
               <h4 className="font-bold text-sm text-slate-900 flex items-center gap-2">
-                <Users className="w-4 h-4 text-rose-600" />
+                <Users className="w-4 h-4 text-emerald-600" />
                 Manajemen Akun Petugas & Sistem
               </h4>
 
@@ -2700,7 +2700,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   <button
                     type="button"
                     onClick={() => setActiveTab('buat_akun')}
-                    className="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold text-xs cursor-pointer shadow-xs transition-colors"
+                    className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold text-xs cursor-pointer shadow-xs transition-colors"
                   >
                     + Buat Akun Baru
                   </button>
@@ -2708,8 +2708,8 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
 
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                   <span className="text-slate-400 font-semibold uppercase text-[10px] block">Sinkronisasi Real-Time</span>
-                  <span className="font-semibold text-rose-700 text-xs flex items-center gap-1.5 mt-0.5">
-                    <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                  <span className="font-semibold text-emerald-700 text-xs flex items-center gap-1.5 mt-0.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                     Server-Sent Events (SSE) Aktif Multi-Device
                   </span>
                 </div>
@@ -2735,21 +2735,21 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
           </div>
 
           {/* Pintasan Arsip Multi-Tahun (Antar-Periode) sebelum Reset */}
-          <div className="bg-indigo-50/80 border-2 border-indigo-200 rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="bg-emerald-50/80 border-2 border-emerald-200 rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex items-start gap-3">
-              <div className="p-2.5 bg-indigo-700 text-white rounded-xl shadow-xs shrink-0">
+              <div className="p-2.5 bg-emerald-700 text-white rounded-xl shadow-xs shrink-0">
                 <Archive className="w-5 h-5" />
               </div>
               <div>
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h4 className="font-bold text-sm sm:text-base text-indigo-950">
+                  <h4 className="font-bold text-sm sm:text-base text-emerald-950">
                     Penyimpanan Multi-Tahun (Arsip Antar-Periode)
                   </h4>
-                  <span className="px-2.5 py-0.5 bg-indigo-200/80 text-indigo-900 rounded-full text-[10px] font-extrabold uppercase">
+                  <span className="px-2.5 py-0.5 bg-emerald-200/80 text-emerald-900 rounded-full text-[10px] font-extrabold uppercase">
                     {periodArchives.length} Periode Tersimpan
                   </span>
                 </div>
-                <p className="text-xs text-indigo-900/90 mt-1 leading-relaxed max-w-2xl">
+                <p className="text-xs text-emerald-900/90 mt-1 leading-relaxed max-w-2xl">
                   Ingin berganti ke tahun/periode berikutnya (mis. <strong>1449 H / 2028 M</strong>) tanpa kehilangan data tahun <strong>{activePeriodLabel}</strong>? Gunakan menu <strong>Arsip Multi-Tahun</strong> untuk menyimpan arsip lengkap periode berjalan sekaligus memulai tahun baru secara otomatis.
                 </p>
               </div>
@@ -2758,7 +2758,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <button
               type="button"
               onClick={() => setActiveTab('arsip_periode')}
-              className="px-4 py-2.5 bg-indigo-700 hover:bg-indigo-800 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0"
+              className="px-4 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0"
             >
               <Archive className="w-4 h-4 text-amber-300" />
               <span>Buka Arsip Multi-Tahun</span>
@@ -2766,17 +2766,17 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
           </div>
 
           {/* Card: Backup Data (Offline Protection) */}
-          <div className="bg-blue-50/60 border-2 border-blue-200 rounded-2xl p-5 sm:p-6 shadow-sm space-y-4">
+          <div className="bg-emerald-50/60 border-2 border-emerald-200 rounded-2xl p-5 sm:p-6 shadow-sm space-y-4">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
               <div className="flex items-center gap-2.5">
-                <div className="p-2 bg-blue-600 text-white rounded-xl shadow-xs">
+                <div className="p-2 bg-emerald-600 text-white rounded-xl shadow-xs">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm sm:text-base text-blue-950">
+                  <h4 className="font-bold text-sm sm:text-base text-emerald-950">
                     Backup Data Keamanan (Offline)
                   </h4>
-                  <p className="text-xs text-blue-800/90 mt-0.5">
+                  <p className="text-xs text-emerald-800/90 mt-0.5">
                     Unduh seluruh data database aplikasi dalam format JSON sebagai bentuk pengamanan tambahan data offline.
                   </p>
                 </div>
@@ -2784,41 +2784,41 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               <button
                 type="button"
                 onClick={handleBackupData}
-                className="px-5 py-2.5 bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0 hover:shadow-blue-300/50"
+                className="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0 hover:shadow-emerald-300/50"
               >
                 <FileDown className="w-4 h-4" />
                 <span>Unduh Backup JSON</span>
               </button>
             </div>
-            <div className="p-3 bg-white/80 border border-blue-100 rounded-xl text-[11px] text-blue-900 leading-relaxed">
+            <div className="p-3 bg-white/80 border border-emerald-100 rounded-xl text-[11px] text-emerald-900 leading-relaxed">
               <strong>Info Keamanan:</strong> File backup ini berisi seluruh data sensitif termasuk riwayat iuran, pengeluaran, dan daftar akun. Simpan file ini di tempat yang aman sebagai cadangan jika sewaktu-waktu dibutuhkan pemulihan data manual.
             </div>
           </div>
 
           {/* 10. ZONA PENGATURAN LANJUTAN: RESET DATA AWAL */}
-          <div className="bg-rose-50/60 border-2 border-rose-300 rounded-2xl p-5 sm:p-6 shadow-sm space-y-4">
+          <div className="bg-emerald-50/60 border-2 border-emerald-300 rounded-2xl p-5 sm:p-6 shadow-sm space-y-4">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
               <div className="flex items-center gap-2.5">
-                <div className="p-2 bg-rose-600 text-white rounded-xl shadow-xs">
+                <div className="p-2 bg-emerald-600 text-white rounded-xl shadow-xs">
                   <AlertTriangle className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm sm:text-base text-rose-950">
+                  <h4 className="font-bold text-sm sm:text-base text-emerald-950">
                     Zona Pengaturan Lanjutan (Reset Data Awal)
                   </h4>
-                  <p className="text-xs text-rose-800/90 mt-0.5">
+                  <p className="text-xs text-emerald-800/90 mt-0.5">
                     Pemulihan sistem ke kondisi awal siap pakai sebelum periode kegiatan dimulai.
                   </p>
                 </div>
               </div>
 
-              <span className="px-3 py-1 bg-rose-200/70 border border-rose-300 text-rose-950 font-bold text-[11px] rounded-full uppercase tracking-wider">
+              <span className="px-3 py-1 bg-emerald-200/70 border border-emerald-300 text-emerald-950 font-bold text-[11px] rounded-full uppercase tracking-wider">
                 Tindakan Berisiko Tinggi
               </span>
             </div>
 
-            <div className="p-4 bg-white/90 border border-rose-200 rounded-xl space-y-2 text-xs text-slate-700">
-              <p className="font-semibold text-rose-950 text-xs">
+            <div className="p-4 bg-white/90 border border-emerald-200 rounded-xl space-y-2 text-xs text-slate-700">
+              <p className="font-semibold text-emerald-950 text-xs">
                 Fungsi Reset Data Awal akan melakukan hal-hal berikut:
               </p>
               <ul className="space-y-1.5 list-disc list-inside text-[11px] sm:text-xs text-slate-700 leading-relaxed">
@@ -2832,13 +2832,13 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   <strong className="text-slate-900">Mereset seluruh pengeluaran kas panitia ke Rp 0</strong> (menghapus catatan belanja barang dan sewa fasilitas kas bendahara).
                 </li>
                 <li>
-                  <strong className="text-rose-700">Akun pengguna sistem petugas (Admin, Bendahara, Usser 1 & 2) tetap aman</strong> dan tidak akan terhapus.
+                  <strong className="text-emerald-700">Akun pengguna sistem petugas (Admin, Bendahara, Usser 1 & 2) tetap aman</strong> dan tidak akan terhapus.
                 </li>
               </ul>
             </div>
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-end gap-3 pt-2">
-                <p className="text-[11px] text-rose-900 sm:mr-auto">
+                <p className="text-[11px] text-emerald-900 sm:mr-auto">
                   ⚠️ Pastikan Anda telah mengunduh laporan rekapitulasi PDF terbaru sebelum menjalankan tindakan ini.
                 </p>
 
@@ -2852,7 +2852,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       setClearAllConfirmText('');
                       setResetError('');
                     }}
-                    className="px-4 py-2.5 bg-rose-900 hover:bg-rose-950 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0"
+                    className="px-4 py-2.5 bg-emerald-900 hover:bg-emerald-950 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0"
                   >
                     <Trash2 className="w-4 h-4" />
                     <span>Hapus Semua Warga (0 Warga)</span>
@@ -2865,7 +2865,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       setResetConfirmText('');
                       setResetError('');
                     }}
-                    className="px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0 hover:shadow-rose-300/50"
+                    className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all shrink-0 hover:shadow-emerald-300/50"
                   >
                     <RotateCcw className="w-4 h-4" />
                     <span>Reset Seluruh Data Awal</span>
@@ -2923,21 +2923,21 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {activeTab === 'pengunjung' && (
         <div className="space-y-4">
           {/* Top Banner Card */}
-          <div className="bg-gradient-to-r from-blue-950 via-indigo-900 to-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-blue-800">
+          <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-emerald-800">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="space-y-1.5 max-w-2xl">
                 <div className="flex items-center gap-2">
-                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-cyan-400 text-slate-950 flex items-center gap-1 shadow-xs">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-emerald-400 text-slate-950 flex items-center gap-1 shadow-xs">
                     <Activity className="w-3 h-3 animate-pulse" />
                     Live Counter Real-Time
                   </span>
-                  <span className="text-blue-300 text-xs">•</span>
-                  <span className="text-blue-200 text-xs font-semibold">Otomatis Terhubung Multi-Perangkat</span>
+                  <span className="text-emerald-300 text-xs">•</span>
+                  <span className="text-emerald-200 text-xs font-semibold">Otomatis Terhubung Multi-Perangkat</span>
                 </div>
                 <h2 className="text-lg sm:text-2xl font-black text-white tracking-tight">
                   Statistik & Pemantau Pengunjung Link Aplikasi
                 </h2>
-                <p className="text-xs sm:text-sm text-blue-100 leading-relaxed">
+                <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed">
                   Lacak jumlah warga, jamaah, donatur, dan panitia yang mengakses link web aplikasi ini. Data tercatat otomatis setiap kali link dibuka secara real-time.
                 </p>
               </div>
@@ -2946,7 +2946,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <button
                   type="button"
                   onClick={onRefresh}
-                  className="px-3.5 py-2 bg-blue-700/80 hover:bg-blue-600 text-white font-bold text-xs rounded-xl shadow-xs border border-blue-500/40 flex items-center gap-1.5 cursor-pointer transition-colors"
+                  className="px-3.5 py-2 bg-emerald-700/80 hover:bg-emerald-600 text-white font-bold text-xs rounded-xl shadow-xs border border-emerald-500/40 flex items-center gap-1.5 cursor-pointer transition-colors"
                   title="Segarkan data statistik"
                 >
                   <RefreshCw className="w-3.5 h-3.5" />
@@ -2956,7 +2956,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <button
                   type="button"
                   onClick={handleCopyVisitorReport}
-                  className="px-3.5 py-2 bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-colors"
+                  className="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-colors"
                   title="Salin laporan statistik untuk WhatsApp Panitia"
                 >
                   {copiedVisitorReport ? <Check className="w-3.5 h-3.5 text-white" /> : <Copy className="w-3.5 h-3.5" />}
@@ -2969,7 +2969,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     setResetVisitorConfirmText('');
                     setShowResetVisitorModal(true);
                   }}
-                  className="px-3.5 py-2 bg-rose-600/80 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow-xs border border-rose-400/40 flex items-center gap-1.5 cursor-pointer transition-colors"
+                  className="px-3.5 py-2 bg-emerald-600/80 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-xs border border-emerald-400/40 flex items-center gap-1.5 cursor-pointer transition-colors"
                   title="Reset hitungan statistik pengunjung"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
@@ -2982,9 +2982,9 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
           {/* 4 Main KPI Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {/* 1. Total Kunjungan */}
-            <div className="bg-white rounded-2xl p-5 border border-blue-200 shadow-xs flex items-start justify-between">
+            <div className="bg-white rounded-2xl p-5 border border-emerald-200 shadow-xs flex items-start justify-between">
               <div>
-                <span className="text-[11px] font-bold text-blue-700 uppercase tracking-wider block">
+                <span className="text-[11px] font-bold text-emerald-700 uppercase tracking-wider block">
                   Total Akses Link
                 </span>
                 <p className="text-3xl font-black font-mono text-slate-900 mt-1">
@@ -2994,61 +2994,61 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   Total seluruh kali link ini dibuka
                 </p>
               </div>
-              <div className="p-3 rounded-xl bg-blue-50 text-blue-600">
+              <div className="p-3 rounded-xl bg-emerald-50 text-emerald-600">
                 <Globe className="w-6 h-6" />
               </div>
             </div>
 
             {/* 2. Hari Ini */}
-            <div className="bg-white rounded-2xl p-5 border border-rose-200 shadow-xs flex items-start justify-between">
+            <div className="bg-white rounded-2xl p-5 border border-emerald-200 shadow-xs flex items-start justify-between">
               <div>
-                <span className="text-[11px] font-bold text-rose-700 uppercase tracking-wider block">
+                <span className="text-[11px] font-bold text-emerald-700 uppercase tracking-wider block">
                   Kunjungan Hari Ini
                 </span>
-                <p className="text-3xl font-black font-mono text-rose-700 mt-1">
+                <p className="text-3xl font-black font-mono text-emerald-700 mt-1">
                   {(visitorStats?.todayVisits || 0).toLocaleString('id-ID')}
                 </p>
                 <p className="text-[11px] text-slate-500 mt-1">
                   Akses link sepanjang hari ini (WIB)
                 </p>
               </div>
-              <div className="p-3 rounded-xl bg-rose-50 text-rose-600">
+              <div className="p-3 rounded-xl bg-emerald-50 text-emerald-600">
                 <Calendar className="w-6 h-6" />
               </div>
             </div>
 
             {/* 3. Minggu Ini */}
-            <div className="bg-white rounded-2xl p-5 border border-indigo-200 shadow-xs flex items-start justify-between">
+            <div className="bg-white rounded-2xl p-5 border border-emerald-200 shadow-xs flex items-start justify-between">
               <div>
-                <span className="text-[11px] font-bold text-indigo-700 uppercase tracking-wider block">
+                <span className="text-[11px] font-bold text-emerald-700 uppercase tracking-wider block">
                   7 Hari Terakhir
                 </span>
-                <p className="text-3xl font-black font-mono text-indigo-700 mt-1">
+                <p className="text-3xl font-black font-mono text-emerald-700 mt-1">
                   {(visitorStats?.weekVisits || 0).toLocaleString('id-ID')}
                 </p>
                 <p className="text-[11px] text-slate-500 mt-1">
                   Akumulasi kunjungan 1 pekan terakhir
                 </p>
               </div>
-              <div className="p-3 rounded-xl bg-indigo-50 text-indigo-600">
+              <div className="p-3 rounded-xl bg-emerald-50 text-emerald-600">
                 <Activity className="w-6 h-6" />
               </div>
             </div>
 
             {/* 4. Perangkat Unik */}
-            <div className="bg-white rounded-2xl p-5 border border-purple-200 shadow-xs flex items-start justify-between">
+            <div className="bg-white rounded-2xl p-5 border border-emerald-200 shadow-xs flex items-start justify-between">
               <div>
-                <span className="text-[11px] font-bold text-purple-700 uppercase tracking-wider block">
+                <span className="text-[11px] font-bold text-emerald-700 uppercase tracking-wider block">
                   Pengunjung Unik
                 </span>
-                <p className="text-3xl font-black font-mono text-purple-700 mt-1">
+                <p className="text-3xl font-black font-mono text-emerald-700 mt-1">
                   {(visitorStats?.uniqueVisitors || 0).toLocaleString('id-ID')}
                 </p>
                 <p className="text-[11px] text-slate-500 mt-1">
                   Jumlah perangkat / browser berbeda
                 </p>
               </div>
-              <div className="p-3 rounded-xl bg-purple-50 text-purple-600">
+              <div className="p-3 rounded-xl bg-emerald-50 text-emerald-600">
                 <Users className="w-6 h-6" />
               </div>
             </div>
@@ -3060,7 +3060,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-4">
               <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                 <div className="flex items-center gap-2">
-                  <BarChart3 className="w-4 h-4 text-blue-600" />
+                  <BarChart3 className="w-4 h-4 text-emerald-600" />
                   <h3 className="font-bold text-slate-800 text-sm">
                     Distribusi Perangkat Pengakses
                   </h3>
@@ -3075,7 +3075,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <div>
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="flex items-center gap-1.5 font-semibold text-slate-700">
-                      <Smartphone className="w-3.5 h-3.5 text-blue-600" />
+                      <Smartphone className="w-3.5 h-3.5 text-emerald-600" />
                       Smartphone / HP Mobile
                     </span>
                     <span className="font-bold text-slate-800">
@@ -3084,7 +3084,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </div>
                   <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
                     <div 
-                      className="bg-blue-600 h-2.5 rounded-full transition-all"
+                      className="bg-emerald-600 h-2.5 rounded-full transition-all"
                       style={{ width: `${mobilePct}%` }}
                     />
                   </div>
@@ -3094,7 +3094,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <div>
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="flex items-center gap-1.5 font-semibold text-slate-700">
-                      <Monitor className="w-3.5 h-3.5 text-indigo-600" />
+                      <Monitor className="w-3.5 h-3.5 text-emerald-600" />
                       Komputer / Laptop (Desktop)
                     </span>
                     <span className="font-bold text-slate-800">
@@ -3103,7 +3103,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </div>
                   <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
                     <div 
-                      className="bg-indigo-600 h-2.5 rounded-full transition-all"
+                      className="bg-emerald-600 h-2.5 rounded-full transition-all"
                       style={{ width: `${desktopPct}%` }}
                     />
                   </div>
@@ -3113,7 +3113,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <div>
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="flex items-center gap-1.5 font-semibold text-slate-700">
-                      <Tablet className="w-3.5 h-3.5 text-rose-600" />
+                      <Tablet className="w-3.5 h-3.5 text-emerald-600" />
                       Tablet / iPad
                     </span>
                     <span className="font-bold text-slate-800">
@@ -3122,7 +3122,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </div>
                   <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
                     <div 
-                      className="bg-rose-600 h-2.5 rounded-full transition-all"
+                      className="bg-emerald-600 h-2.5 rounded-full transition-all"
                       style={{ width: `${tabletPct}%` }}
                     />
                   </div>
@@ -3134,13 +3134,13 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-4">
               <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                 <div className="flex items-center gap-2">
-                  <Globe className="w-4 h-4 text-rose-600" />
+                  <Globe className="w-4 h-4 text-emerald-600" />
                   <h3 className="font-bold text-slate-800 text-sm">
                     Informasi Tautan & Akses Terakhir
                   </h3>
                 </div>
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 font-bold text-[10px] border border-rose-200">
-                  <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping" />
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-bold text-[10px] border border-emerald-200">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
                   Aktif
                 </span>
               </div>
@@ -3153,7 +3153,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between p-3 bg-blue-50/60 rounded-xl border border-blue-100">
+                <div className="flex items-center justify-between p-3 bg-emerald-50/60 rounded-xl border border-emerald-100">
                   <span className="font-medium text-slate-600">Akses Terakhir Tercatat:</span>
                   <span className="font-bold text-slate-900 font-mono">
                     {visitorStats?.lastVisitedAt || 'Belum ada kunjungan'}
@@ -3172,7 +3172,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
               <div>
                 <h3 className="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
-                  <History className="w-4 h-4 text-blue-600" />
+                  <History className="w-4 h-4 text-emerald-600" />
                   <span>Riwayat 50 Kunjungan Terkini</span>
                 </h3>
                 <p className="text-xs text-slate-500 mt-0.5">
@@ -3188,7 +3188,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={() => setVisitorFilterDevice('all')}
                     className={`px-3 py-1.5 rounded-lg transition-colors cursor-pointer ${
                       visitorFilterDevice === 'all'
-                        ? 'bg-blue-800 text-white font-black shadow-md border-2 border-blue-950'
+                        ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950'
                         : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
                     }`}
                   >
@@ -3199,7 +3199,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={() => setVisitorFilterDevice('mobile')}
                     className={`px-3 py-1.5 rounded-lg transition-colors cursor-pointer ${
                       visitorFilterDevice === 'mobile'
-                        ? 'bg-blue-800 text-white font-black shadow-md border-2 border-blue-950'
+                        ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950'
                         : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
                     }`}
                   >
@@ -3210,7 +3210,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={() => setVisitorFilterDevice('desktop')}
                     className={`px-3 py-1.5 rounded-lg transition-colors cursor-pointer ${
                       visitorFilterDevice === 'desktop'
-                        ? 'bg-blue-800 text-white font-black shadow-md border-2 border-blue-950'
+                        ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950'
                         : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
                     }`}
                   >
@@ -3223,7 +3223,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   placeholder="Cari waktu / info..."
                   value={visitorSearch}
                   onChange={(e) => setVisitorSearch(e.target.value)}
-                  className="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium focus:bg-white focus:border-blue-600"
+                  className="px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium focus:bg-white focus:border-emerald-600"
                 />
               </div>
             </div>
@@ -3262,10 +3262,10 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                         <td className="py-2.5 px-3 whitespace-nowrap">
                           <span className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold ${
                             log.deviceType === 'desktop'
-                              ? 'bg-indigo-50 text-indigo-700 border border-indigo-200'
+                              ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
                               : log.deviceType === 'tablet'
-                              ? 'bg-rose-50 text-rose-700 border border-rose-200'
-                              : 'bg-blue-50 text-blue-700 border border-blue-200'
+                              ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                              : 'bg-emerald-50 text-emerald-700 border border-emerald-200'
                           }`}>
                             {log.deviceType === 'desktop' ? (
                               <Monitor className="w-3 h-3" />
@@ -3287,7 +3287,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                         <td className="py-2.5 px-3 whitespace-nowrap">
                           <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase ${
                             log.roleViewed === 'admin'
-                              ? 'bg-purple-100 text-purple-800'
+                              ? 'bg-emerald-100 text-emerald-800'
                               : log.roleViewed === 'bendahara'
                               ? 'bg-amber-100 text-amber-800'
                               : log.roleViewed === 'warga'
@@ -3314,7 +3314,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {activeTab === 'catatan' && (
         <div className="space-y-4">
           {/* Top Banner */}
-          <div className="bg-gradient-to-r from-amber-950 via-amber-900 to-rose-950 text-white rounded-2xl p-4 sm:p-6 shadow-md border border-amber-700/60 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-amber-950 via-amber-900 to-emerald-950 text-white rounded-2xl p-4 sm:p-6 shadow-md border border-amber-700/60 relative overflow-hidden">
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
               <div className="space-y-1.5">
                 <div className="flex flex-wrap items-center gap-2">
@@ -3323,7 +3323,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     Buku Catatan & Agenda Resmi
                   </span>
                   <span className="text-[11px] text-amber-200 bg-amber-950/70 px-2 py-0.5 rounded-full border border-amber-600/40 flex items-center gap-1">
-                    <CheckCircle2 className="w-3 h-3 text-rose-400" />
+                    <CheckCircle2 className="w-3 h-3 text-emerald-400" />
                     Tersinkronisasi Cloud Database
                   </span>
                 </div>
@@ -3354,7 +3354,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   type="button"
                   id="btn-admin-copy-catatan-wa"
                   onClick={handleCopyNoteToWa}
-                  className="px-4 py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-1.5 cursor-pointer transition-all"
+                  className="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow-md flex items-center gap-1.5 cursor-pointer transition-all"
                   title="Salin isi catatan dengan format rapi ke WhatsApp"
                 >
                   {copiedNote ? <Check className="w-4 h-4 text-white" /> : <Copy className="w-4 h-4 text-white" />}
@@ -3364,8 +3364,8 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
             </div>
 
             {noteSavedMsg && (
-              <div className="mt-3 p-2.5 bg-rose-500/20 border border-rose-400/50 rounded-xl text-rose-200 text-xs font-bold flex items-center gap-2 animate-in fade-in">
-                <CheckCircle2 className="w-4 h-4 text-rose-300 shrink-0" />
+              <div className="mt-3 p-2.5 bg-emerald-500/20 border border-emerald-400/50 rounded-xl text-emerald-200 text-xs font-bold flex items-center gap-2 animate-in fade-in">
+                <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
                 <span>{noteSavedMsg}</span>
               </div>
             )}
@@ -3450,7 +3450,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                       setNoteContent('');
                     }
                   }}
-                  className="px-3 py-2 text-rose-600 hover:bg-rose-50 rounded-xl text-xs font-bold transition-colors cursor-pointer"
+                  className="px-3 py-2 text-emerald-600 hover:bg-emerald-50 rounded-xl text-xs font-bold transition-colors cursor-pointer"
                 >
                   Bersihkan Teks
                 </button>
@@ -3461,7 +3461,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     onClick={handleCopyNoteToWa}
                     className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5"
                   >
-                    <MessageSquare className="w-3.5 h-3.5 text-rose-600" />
+                    <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
                     <span>Salin Format WA</span>
                   </button>
 
@@ -3469,7 +3469,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     type="button"
                     onClick={handleSaveNote}
                     disabled={noteSaving}
-                    className="px-5 py-2.5 bg-rose-700 hover:bg-rose-800 text-white rounded-xl text-xs font-black shadow-sm flex items-center gap-1.5 cursor-pointer disabled:opacity-50 transition-colors"
+                    className="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-black shadow-sm flex items-center gap-1.5 cursor-pointer disabled:opacity-50 transition-colors"
                   >
                     <Save className="w-4 h-4" />
                     <span>{noteSaving ? 'Menyimpan...' : 'Simpan Catatan'}</span>
@@ -3486,7 +3486,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     <BookOpen className="w-4 h-4 text-amber-600" />
                     Pratinjau Catatan Panitia
                   </span>
-                  <span className="text-[10px] text-rose-700 bg-rose-50 px-2 py-0.5 rounded-full font-bold border border-rose-200">
+                  <span className="text-[10px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full font-bold border border-emerald-200">
                     Otoritas: Admin ({currentUser.name})
                   </span>
                 </div>
@@ -3515,7 +3515,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
 
               <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[11px] text-slate-600 space-y-1">
                 <div className="font-bold text-slate-800 flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5 text-rose-600" />
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                   <span>Penyimpanan Aman & Tersinkronisasi</span>
                 </div>
                 <p className="text-slate-500">
@@ -3530,17 +3530,17 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {/* MODAL KONFIRMASI RESET STATISTIK PENGUNJUNG */}
       {showResetVisitorModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-200 animate-in fade-in zoom-in-95 space-y-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-200 animate-in fade-in zoom-in-95 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2 bg-rose-100 text-rose-700 rounded-xl">
+                <div className="p-2 bg-emerald-100 text-emerald-700 rounded-xl">
                   <AlertTriangle className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-sm sm:text-base">
                     Reset Statistik Pengunjung
                   </h3>
-                  <span className="text-[11px] text-rose-600 font-semibold">
+                  <span className="text-[11px] text-emerald-600 font-semibold">
                     Tindakan ini akan mengosongkan riwayat kunjungan ke 0
                   </span>
                 </div>
@@ -3558,8 +3558,8 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               <p>
                 Anda akan mereset hitungan seluruh statistik pengunjung link aplikasi (Total Akses, Kunjungan Hari Ini, Mingguan, dan Riwayat 50 Kunjungan Terkini) kembali ke <strong>angka 0</strong>.
               </p>
-              <div className="p-3 bg-rose-50 border border-rose-200 rounded-xl text-rose-900 text-[11px]">
-                Ketik kata <strong className="font-mono font-bold text-rose-700">RESET</strong> di bawah ini untuk mengonfirmasi tindakan:
+              <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900 text-[11px]">
+                Ketik kata <strong className="font-mono font-bold text-emerald-700">RESET</strong> di bawah ini untuk mengonfirmasi tindakan:
               </div>
             </div>
 
@@ -3568,7 +3568,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               placeholder='Ketik "RESET"'
               value={resetVisitorConfirmText}
               onChange={(e) => setResetVisitorConfirmText(e.target.value)}
-              className="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm font-mono font-bold tracking-wider focus:border-rose-500 focus:outline-hidden text-center"
+              className="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm font-mono font-bold tracking-wider focus:border-emerald-500 focus:outline-hidden text-center"
             />
 
             <div className="flex items-center justify-end gap-2 pt-2 border-t border-slate-100">
@@ -3583,7 +3583,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 type="button"
                 disabled={resetVisitorConfirmText.trim().toUpperCase() !== 'RESET' || resetVisitorLoading}
                 onClick={handleResetVisitors}
-                className="px-5 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-40 cursor-pointer flex items-center gap-1.5"
+                className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-40 cursor-pointer flex items-center gap-1.5"
               >
                 {resetVisitorLoading ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <RotateCcw className="w-3.5 h-3.5" />}
                 <span>{resetVisitorLoading ? 'Mereset...' : 'Ya, Reset Hitungan'}</span>
@@ -3596,17 +3596,17 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {/* MODAL KONFIRMASI RESET DATA AWAL */}
       {showResetModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-200 animate-in fade-in zoom-in-95 space-y-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-200 animate-in fade-in zoom-in-95 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2 bg-rose-100 text-rose-700 rounded-xl">
+                <div className="p-2 bg-emerald-100 text-emerald-700 rounded-xl">
                   <AlertTriangle className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-sm sm:text-base">
                     Konfirmasi Reset Data Awal
                   </h3>
-                  <span className="text-[11px] text-rose-600 font-semibold">
+                  <span className="text-[11px] text-emerald-600 font-semibold">
                     Tindakan ini tidak dapat dibatalkan
                   </span>
                 </div>
@@ -3624,8 +3624,8 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               <p className="leading-relaxed">
                 Anda akan mengosongkan seluruh kolom iuran dari <strong className="text-slate-900">{wargaUtama.length} warga</strong> dan mereset pengeluaran kas bendahara ke <strong className="text-slate-900">Rp 0</strong>.
               </p>
-              <div className="p-3 bg-rose-50 border border-rose-200 rounded-xl text-rose-900 text-[11px] leading-relaxed">
-                Ketik kata <strong className="text-rose-950 font-black">RESET</strong> dengan huruf kapital pada kolom di bawah ini untuk melanjutkan:
+              <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900 text-[11px] leading-relaxed">
+                Ketik kata <strong className="text-emerald-950 font-black">RESET</strong> dengan huruf kapital pada kolom di bawah ini untuk melanjutkan:
               </div>
             </div>
 
@@ -3635,12 +3635,12 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 value={resetConfirmText}
                 onChange={(e) => setResetConfirmText(e.target.value)}
                 placeholder="Ketik RESET"
-                className="w-full px-3.5 py-2.5 bg-slate-50 border-2 border-slate-300 focus:border-rose-600 rounded-xl text-center font-mono font-bold text-sm tracking-widest text-slate-900 focus:bg-white focus:outline-none"
+                className="w-full px-3.5 py-2.5 bg-slate-50 border-2 border-slate-300 focus:border-emerald-600 rounded-xl text-center font-mono font-bold text-sm tracking-widest text-slate-900 focus:bg-white focus:outline-none"
               />
             </div>
 
             {resetError && (
-              <p className="text-xs font-semibold text-rose-600 text-center">
+              <p className="text-xs font-semibold text-emerald-600 text-center">
                 {resetError}
               </p>
             )}
@@ -3657,7 +3657,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 type="button"
                 disabled={resetConfirmText.trim().toUpperCase() !== 'RESET' || resetLoading}
                 onClick={handleExecuteReset}
-                className="px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2 cursor-pointer transition-colors"
+                className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2 cursor-pointer transition-colors"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>{resetLoading ? 'Mereset Data...' : 'Ya, Reset Seluruh Data Sekarang'}</span>
@@ -3670,17 +3670,17 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {/* MODAL KONFIRMASI HAPUS SEMUA WARGA PERMANEN */}
       {showClearAllModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-300 animate-in fade-in zoom-in-95 space-y-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-300 animate-in fade-in zoom-in-95 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2 bg-rose-900 text-white rounded-xl">
+                <div className="p-2 bg-emerald-900 text-white rounded-xl">
                   <Trash2 className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-sm sm:text-base">
                     Hapus Seluruh Data Warga Permanen
                   </h3>
-                  <span className="text-[11px] text-rose-700 font-semibold">
+                  <span className="text-[11px] text-emerald-700 font-semibold">
                     Daftar warga akan dikosongkan (0 Warga)
                   </span>
                 </div>
@@ -3698,8 +3698,8 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
               <p className="leading-relaxed">
                 Tindakan ini akan menghapus <strong className="text-slate-900">seluruh daftar nama warga</strong> secara permanen sehingga jumlah warga menjadi 0.
               </p>
-              <div className="p-3 bg-rose-50 border border-rose-200 rounded-xl text-rose-900 text-[11px] leading-relaxed">
-                Ketik kata <strong className="text-rose-950 font-black">HAPUS SEMUA</strong> dengan huruf kapital pada kolom di bawah ini untuk mengonfirmasi:
+              <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900 text-[11px] leading-relaxed">
+                Ketik kata <strong className="text-emerald-950 font-black">HAPUS SEMUA</strong> dengan huruf kapital pada kolom di bawah ini untuk mengonfirmasi:
               </div>
             </div>
 
@@ -3709,12 +3709,12 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 value={clearAllConfirmText}
                 onChange={(e) => setClearAllConfirmText(e.target.value)}
                 placeholder="Ketik HAPUS SEMUA"
-                className="w-full px-3.5 py-2.5 bg-slate-50 border-2 border-slate-300 focus:border-rose-900 rounded-xl text-center font-mono font-bold text-sm tracking-widest text-slate-900 focus:bg-white focus:outline-none uppercase"
+                className="w-full px-3.5 py-2.5 bg-slate-50 border-2 border-slate-300 focus:border-emerald-900 rounded-xl text-center font-mono font-bold text-sm tracking-widest text-slate-900 focus:bg-white focus:outline-none uppercase"
               />
             </div>
 
             {resetError && (
-              <p className="text-xs font-semibold text-rose-600 text-center">
+              <p className="text-xs font-semibold text-emerald-600 text-center">
                 {resetError}
               </p>
             )}
@@ -3731,7 +3731,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 type="button"
                 disabled={clearAllConfirmText.trim().toUpperCase() !== 'HAPUS SEMUA' || clearAllLoading}
                 onClick={handleExecuteClearAllCitizens}
-                className="px-5 py-2.5 bg-rose-900 hover:bg-rose-950 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2 cursor-pointer transition-colors"
+                className="px-5 py-2.5 bg-emerald-900 hover:bg-emerald-950 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2 cursor-pointer transition-colors"
               >
                 <Trash2 className="w-3.5 h-3.5" />
                 <span>{clearAllLoading ? 'Menghapus...' : 'Ya, Hapus Semua Warga Sekarang'}</span>
@@ -3746,10 +3746,10 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
       {/* UNIVERSAL ADMIN EDIT MODAL */}
       {editUniversalModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 border border-rose-100 animate-in fade-in zoom-in-95">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 border border-emerald-100 animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <h3 className="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
-                <Edit3 className="w-4 h-4 text-blue-600" />
+                <Edit3 className="w-4 h-4 text-emerald-600" />
                 {editUniversalModal.title}
               </h3>
               <button
@@ -3774,7 +3774,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     ...editUniversalModal,
                     field1Value: e.target.value
                   })}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold focus:bg-white focus:border-emerald-600"
                 />
               </div>
 
@@ -3795,7 +3795,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                         ...editUniversalModal,
                         field2Value: formatInputNumber(e.target.value)
                       })}
-                      className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold font-mono focus:bg-white focus:border-rose-600"
+                      className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold font-mono focus:bg-white focus:border-emerald-600"
                     />
                   </div>
                 </div>
@@ -3816,7 +3816,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   <button
                     type="submit"
                     disabled={universalLoading}
-                    className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50"
+                    className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50"
                   >
                     {universalLoading ? 'Menyimpan...' : 'Simpan Perubahan Data'}
                   </button>

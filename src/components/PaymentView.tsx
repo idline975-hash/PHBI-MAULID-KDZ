@@ -351,7 +351,7 @@ export default function PaymentView({
   return (
     <div className="space-y-4 max-w-4xl mx-auto">
       {/* Top Banner Information */}
-      <div className="bg-gradient-to-r from-rose-950 via-rose-900 to-teal-950 text-white rounded-2xl p-4 sm:p-5 shadow-lg border border-rose-800/80 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-teal-950 text-white rounded-2xl p-4 sm:p-5 shadow-lg border border-emerald-800/80 relative overflow-hidden">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950">
@@ -362,7 +362,7 @@ export default function PaymentView({
               <Wallet className="w-6 h-6 text-amber-300 flex-shrink-0" />
               Transfer Bank, E-Wallet & QRIS PHBI
             </h2>
-            <p className="text-xs sm:text-sm text-rose-200/90 font-medium">
+            <p className="text-xs sm:text-sm text-emerald-200/90 font-medium">
               Iuran Pekanan & Donasi Peringatan Isra Mi'raj 1448 H / 2027 M Kp. Kedung Sapi
             </p>
           </div>
@@ -388,7 +388,7 @@ export default function PaymentView({
           onClick={() => setActiveTab('qris')}
           className={`flex-1 min-w-[120px] py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'qris'
-              ? 'bg-rose-700 text-white shadow-xs'
+              ? 'bg-emerald-700 text-white shadow-xs'
               : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
           }`}
         >
@@ -401,7 +401,7 @@ export default function PaymentView({
           onClick={() => setActiveTab('bank')}
           className={`flex-1 min-w-[120px] py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'bank'
-              ? 'bg-rose-700 text-white shadow-xs'
+              ? 'bg-emerald-700 text-white shadow-xs'
               : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
           }`}
         >
@@ -414,7 +414,7 @@ export default function PaymentView({
           onClick={() => setActiveTab('ewallet')}
           className={`flex-1 min-w-[120px] py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer ${
             activeTab === 'ewallet'
-              ? 'bg-rose-700 text-white shadow-xs'
+              ? 'bg-emerald-700 text-white shadow-xs'
               : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
           }`}
         >
@@ -461,7 +461,7 @@ export default function PaymentView({
             {/* QR Card Container */}
             <div 
               ref={qrisContainerRef}
-              className="bg-gradient-to-b from-slate-50 to-white p-5 rounded-2xl border-2 border-rose-600 shadow-md text-center flex-shrink-0 w-full md:w-80 flex flex-col items-center relative"
+              className="bg-gradient-to-b from-slate-50 to-white p-5 rounded-2xl border-2 border-emerald-600 shadow-md text-center flex-shrink-0 w-full md:w-80 flex flex-col items-center relative"
             >
               {/* Badge QRIS */}
               <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-red-600 text-white font-black text-[11px] rounded-lg mb-2 shadow-xs tracking-wider">
@@ -507,7 +507,7 @@ export default function PaymentView({
               <button
                 type="button"
                 onClick={handleDownloadQRIS}
-                className="mt-3 w-full py-2 bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
+                className="mt-3 w-full py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
               >
                 <Download className="w-3.5 h-3.5" />
                 <span>Unduh Gambar QRIS (PNG)</span>
@@ -529,7 +529,7 @@ export default function PaymentView({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                   <div className="font-bold text-slate-900 flex items-center gap-1.5 text-xs">
-                    <span className="w-5 h-5 rounded-full bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center">1</span>
+                    <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center">1</span>
                     <span>Buka Aplikasi Anda</span>
                   </div>
                   <p className="text-slate-500 text-[11px]">
@@ -539,7 +539,7 @@ export default function PaymentView({
 
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                   <div className="font-bold text-slate-900 flex items-center gap-1.5 text-xs">
-                    <span className="w-5 h-5 rounded-full bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center">2</span>
+                    <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center">2</span>
                     <span>Pilih Menu 'Scan / QRIS'</span>
                   </div>
                   <p className="text-slate-500 text-[11px]">
@@ -549,7 +549,7 @@ export default function PaymentView({
 
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                   <div className="font-bold text-slate-900 flex items-center gap-1.5 text-xs">
-                    <span className="w-5 h-5 rounded-full bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center">3</span>
+                    <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center">3</span>
                     <span>Masukkan Nominal Iuran</span>
                   </div>
                   <p className="text-slate-500 text-[11px]">
@@ -559,7 +559,7 @@ export default function PaymentView({
 
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                   <div className="font-bold text-slate-900 flex items-center gap-1.5 text-xs">
-                    <span className="w-5 h-5 rounded-full bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center">4</span>
+                    <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center">4</span>
                     <span>Kirim Bukti Pembayaran</span>
                   </div>
                   <p className="text-slate-500 text-[11px]">
@@ -596,7 +596,7 @@ export default function PaymentView({
         <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200 shadow-xs space-y-4">
           <div>
             <h3 className="text-base sm:text-lg font-black text-slate-900 flex items-center gap-2">
-              <Building2 className="w-5 h-5 text-rose-700" />
+              <Building2 className="w-5 h-5 text-emerald-700" />
               Daftar Rekening Bank Resmi Panitia PHBI
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
@@ -610,15 +610,15 @@ export default function PaymentView({
               return (
                 <div
                   key={b.id}
-                  className="bg-slate-50 rounded-2xl p-4 border border-slate-200 hover:border-rose-500 hover:shadow-sm transition-all flex flex-col justify-between"
+                  className="bg-slate-50 rounded-2xl p-4 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-200 mb-2">
                       <span className="font-black text-sm text-slate-900 flex items-center gap-1.5">
-                        <Building2 className="w-4 h-4 text-rose-700" />
+                        <Building2 className="w-4 h-4 text-emerald-700" />
                         <span>{b.bankName}</span>
                       </span>
-                      <span className="text-[10px] font-bold text-rose-800 bg-rose-100 px-2 py-0.5 rounded-full">
+                      <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">
                         Aktif
                       </span>
                     </div>
@@ -634,11 +634,11 @@ export default function PaymentView({
                         <button
                           type="button"
                           onClick={() => handleCopy(b.accountNumber.replace(/[^0-9]/g, ''), b.id)}
-                          className="p-1.5 text-rose-700 hover:bg-rose-50 rounded-lg transition-colors cursor-pointer"
+                          className="p-1.5 text-emerald-700 hover:bg-emerald-50 rounded-lg transition-colors cursor-pointer"
                           title="Salin Nomor Rekening"
                         >
                           {isCopied ? (
-                            <span className="text-[10px] font-bold text-rose-600 flex items-center gap-1">
+                            <span className="text-[10px] font-bold text-emerald-600 flex items-center gap-1">
                               <Check className="w-3.5 h-3.5" /> Salin!
                             </span>
                           ) : (
@@ -671,7 +671,7 @@ export default function PaymentView({
                       setTujuanNama(`${b.bankName} - ${b.accountHolder}`);
                       setActiveTab('konfirmasi');
                     }}
-                    className="mt-4 w-full py-2 bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
+                    className="mt-4 w-full py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
                   >
                     <span>Kirim Bukti Transfer Bank Ini</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -796,14 +796,14 @@ export default function PaymentView({
             <div
               className={`p-4 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2.5 ${
                 submitMessage.type === 'success'
-                  ? 'bg-rose-50 text-rose-900 border border-rose-300'
-                  : 'bg-rose-50 text-rose-900 border border-rose-300'
+                  ? 'bg-emerald-50 text-emerald-900 border border-emerald-300'
+                  : 'bg-emerald-50 text-emerald-900 border border-emerald-300'
               }`}
             >
               {submitMessage.type === 'success' ? (
-                <CheckCircle2 className="w-5 h-5 text-rose-600 flex-shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
               ) : (
-                <AlertCircle className="w-5 h-5 text-rose-600 flex-shrink-0" />
+                <AlertCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
               )}
               <span>{submitMessage.text}</span>
             </div>
@@ -817,11 +817,11 @@ export default function PaymentView({
                 onClick={() => setTipePembayaran('iuran_pekanan')}
                 className={`p-3 rounded-xl border-2 text-left font-bold text-xs flex flex-col justify-between transition-all cursor-pointer ${
                   tipePembayaran === 'iuran_pekanan'
-                    ? 'border-rose-600 bg-rose-50 text-rose-950 ring-2 ring-rose-200'
+                    ? 'border-emerald-600 bg-emerald-50 text-emerald-950 ring-2 ring-emerald-200'
                     : 'border-slate-200 hover:border-slate-300 text-slate-700'
                 }`}
               >
-                <span className="text-[10px] text-rose-700 uppercase font-black">Kategori 1</span>
+                <span className="text-[10px] text-emerald-700 uppercase font-black">Kategori 1</span>
                 <span className="text-sm font-black mt-0.5">Iuran Wajib Pekanan (12 Pekan)</span>
                 <span className="text-[11px] text-slate-500 mt-1 font-normal">Rp 20.000 / pekan per warga</span>
               </button>
@@ -846,7 +846,7 @@ export default function PaymentView({
               {tipePembayaran === 'iuran_pekanan' ? (
                 <div className="sm:col-span-2">
                   <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Pilih Nama Warga Terdaftar <span className="text-rose-500">*</span>
+                    Pilih Nama Warga Terdaftar <span className="text-emerald-500">*</span>
                   </label>
                   <select
                     value={selectedCitizenId}
@@ -871,7 +871,7 @@ export default function PaymentView({
                         }
                       }
                     }}
-                    className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-rose-600 focus:border-rose-600"
+                    className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-emerald-600 focus:border-emerald-600"
                     required
                   >
                     <option value="">-- Pilih Nama Warga Kp. Kedung Sapi --</option>
@@ -893,7 +893,7 @@ export default function PaymentView({
               ) : (
                 <div className="sm:col-span-2">
                   <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Nama Donatur / Hamba Allah <span className="text-rose-500">*</span>
+                    Nama Donatur / Hamba Allah <span className="text-emerald-500">*</span>
                   </label>
                   <input
                     type="text"
@@ -903,7 +903,7 @@ export default function PaymentView({
                       setPengirimNama(e.target.value);
                     }}
                     placeholder="Contoh: Bpk. H. Ahmad / Hamba Allah"
-                    className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-rose-600 focus:border-rose-600"
+                    className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-emerald-600 focus:border-emerald-600"
                     required
                   />
                 </div>
@@ -918,11 +918,11 @@ export default function PaymentView({
                     <span className="text-xs font-bold text-slate-800">
                       Pilih Pekan Iuran yang Dibayarkan ({selectedWeeks.length} Pekan Terpilih):
                     </span>
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-rose-100 text-rose-900 border border-rose-300 text-[10px] font-black">
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 border border-emerald-300 text-[10px] font-black">
                       Otomatis Minggu Ini: P{activeWeek}
                     </span>
                   </div>
-                  <span className="text-xs font-black text-rose-800">
+                  <span className="text-xs font-black text-emerald-800">
                     Total: Rp {(selectedWeeks.length * 20000).toLocaleString('id-ID')}
                   </span>
                 </div>
@@ -937,10 +937,10 @@ export default function PaymentView({
                         onClick={() => handleToggleWeek(w)}
                         className={`py-2 text-center rounded-lg text-xs font-black border transition-all cursor-pointer relative ${
                           isSelected
-                            ? 'bg-rose-700 text-white border-rose-800 shadow-xs'
+                            ? 'bg-emerald-700 text-white border-emerald-800 shadow-xs'
                             : isCurrentActive
-                            ? 'bg-amber-50 text-amber-900 border-amber-400 hover:border-rose-500'
-                            : 'bg-white text-slate-700 border-slate-200 hover:border-rose-400'
+                            ? 'bg-amber-50 text-amber-900 border-amber-400 hover:border-emerald-500'
+                            : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-400'
                         }`}
                       >
                         <div>P{w}</div>
@@ -960,14 +960,14 @@ export default function PaymentView({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Nominal Transfer (Rp) <span className="text-rose-500">*</span>
+                  Nominal Transfer (Rp) <span className="text-emerald-500">*</span>
                 </label>
                 <input
                   type="number"
                   value={nominal}
                   onChange={(e) => setNominal(e.target.value)}
                   placeholder="20000"
-                  className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-bold focus:bg-white focus:outline-rose-600 focus:border-rose-600"
+                  className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-bold focus:bg-white focus:outline-emerald-600 focus:border-emerald-600"
                   required
                 />
               </div>
@@ -985,7 +985,7 @@ export default function PaymentView({
                     else if (m === 'bank_transfer' && banks.length > 0) setTujuanNama(banks[0].bankName + ' - ' + banks[0].accountHolder);
                     else if (m === 'ewallet' && eWallets.length > 0) setTujuanNama(eWallets[0].walletName + ' - ' + eWallets[0].accountHolder);
                   }}
-                  className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-rose-600 focus:border-rose-600"
+                  className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-emerald-600 focus:border-emerald-600"
                 >
                   <option value="qris">📲 QRIS Nasional (Scan QR)</option>
                   <option value="bank_transfer">💳 Transfer Bank (BCA / BRI / BSI)</option>
@@ -1005,7 +1005,7 @@ export default function PaymentView({
                   value={pengirimNama}
                   onChange={(e) => setPengirimNama(e.target.value)}
                   placeholder="Nama pemilik rekening yang mentransfer"
-                  className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-rose-600 focus:border-rose-600"
+                  className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-emerald-600 focus:border-emerald-600"
                 />
               </div>
 
@@ -1018,7 +1018,7 @@ export default function PaymentView({
                   value={pengirimBankAtauWallet}
                   onChange={(e) => setPengirimBankAtauWallet(e.target.value)}
                   placeholder="Contoh: BCA / BRImo / DANA / Mandiri"
-                  className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-rose-600 focus:border-rose-600"
+                  className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-emerald-600 focus:border-emerald-600"
                 />
               </div>
             </div>
@@ -1055,7 +1055,7 @@ export default function PaymentView({
                     <button
                       type="button"
                       onClick={() => setBuktiImage(null)}
-                      className="text-xs text-rose-600 font-bold hover:underline cursor-pointer"
+                      className="text-xs text-emerald-600 font-bold hover:underline cursor-pointer"
                     >
                       Hapus Foto
                     </button>
@@ -1067,15 +1067,15 @@ export default function PaymentView({
             {/* 7. Nomor WhatsApp Aktif (Wajib Diisi) */}
             <div>
               <label className="block text-xs font-bold text-slate-700 mb-1">
-                Nomor WhatsApp yang Aktif <span className="text-rose-500 font-extrabold">* (Wajib Diisi)</span>
+                Nomor WhatsApp yang Aktif <span className="text-emerald-500 font-extrabold">* (Wajib Diisi)</span>
               </label>
               <input
                 type="tel"
                 value={nomorWa}
                 onChange={(e) => setNomorWa(e.target.value)}
                 placeholder="Contoh: 081234567890 / 0857xxxxxxxx"
-                className={`w-full px-3 py-2.5 bg-slate-50 border rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-rose-600 focus:border-rose-600 ${
-                  !nomorWa.trim() && submitMessage?.type === 'error' ? 'border-rose-400 bg-rose-50/40 ring-1 ring-rose-300' : 'border-slate-300'
+                className={`w-full px-3 py-2.5 bg-slate-50 border rounded-xl text-xs sm:text-sm text-slate-900 font-semibold focus:bg-white focus:outline-emerald-600 focus:border-emerald-600 ${
+                  !nomorWa.trim() && submitMessage?.type === 'error' ? 'border-emerald-400 bg-emerald-50/40 ring-1 ring-emerald-300' : 'border-slate-300'
                 }`}
                 required
               />
@@ -1094,7 +1094,7 @@ export default function PaymentView({
                 value={catatan}
                 onChange={(e) => setCatatan(e.target.value)}
                 placeholder="Contoh: Iuran pekan 1 & 2 untuk Sahroji"
-                className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-rose-600 focus:border-rose-600"
+                className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-emerald-600 focus:border-emerald-600"
               />
             </div>
 
@@ -1103,10 +1103,10 @@ export default function PaymentView({
               <button
                 type="submit"
                 disabled={isSubmitting || !nomorWa.trim()}
-                className={`w-full py-3.5 bg-gradient-to-r from-rose-600 to-teal-700 text-white font-black text-sm rounded-xl shadow-md transition-all flex items-center justify-center gap-2 ${
+                className={`w-full py-3.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white font-black text-sm rounded-xl shadow-md transition-all flex items-center justify-center gap-2 ${
                   isSubmitting || !nomorWa.trim()
                     ? 'opacity-50 cursor-not-allowed'
-                    : 'hover:from-rose-700 hover:to-teal-800 cursor-pointer'
+                    : 'hover:from-emerald-700 hover:to-teal-800 cursor-pointer'
                 }`}
               >
                 {isSubmitting ? (
@@ -1122,7 +1122,7 @@ export default function PaymentView({
                 )}
               </button>
               {!nomorWa.trim() && (
-                <p className="text-[11px] text-rose-500 text-center font-semibold mt-1.5">
+                <p className="text-[11px] text-emerald-500 text-center font-semibold mt-1.5">
                   * Isi nomor WhatsApp yang aktif di atas agar tombol kirim dapat ditekan.
                 </p>
               )}
@@ -1198,7 +1198,7 @@ export default function PaymentView({
 
                       <div className="text-xs text-slate-600 flex flex-wrap items-center gap-2">
                         {isBendaharaOrAdmin ? (
-                          <span className="font-bold text-rose-800 text-sm">
+                          <span className="font-bold text-emerald-800 text-sm">
                             Rp {item.nominal.toLocaleString('id-ID')}
                           </span>
                         ) : (
@@ -1221,7 +1221,7 @@ export default function PaymentView({
                       )}
 
                       {item.status === 'rejected' && item.rejectReason && (
-                        <p className="text-[11px] text-rose-700 font-medium">
+                        <p className="text-[11px] text-emerald-700 font-medium">
                           Alasan penolakan: {item.rejectReason}
                         </p>
                       )}
@@ -1251,15 +1251,15 @@ export default function PaymentView({
                       )}
 
                       {item.status === 'verified' && (
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-900 border border-rose-300">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-rose-600" />
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
                           Disetujui
                         </span>
                       )}
 
                       {item.status === 'rejected' && (
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-900 border border-rose-300">
-                          <XCircle className="w-3.5 h-3.5 text-rose-600" />
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">
+                          <XCircle className="w-3.5 h-3.5 text-emerald-600" />
                           Ditolak
                         </span>
                       )}
@@ -1268,10 +1268,10 @@ export default function PaymentView({
                         <button
                           type="button"
                           onClick={() => setDeletingConfirmation(item)}
-                          className="p-1.5 text-rose-500 hover:text-rose-700 bg-white hover:bg-rose-50 rounded-lg border border-slate-200 hover:border-rose-300 cursor-pointer transition-colors"
+                          className="p-1.5 text-emerald-500 hover:text-emerald-700 bg-white hover:bg-emerald-50 rounded-lg border border-slate-200 hover:border-emerald-300 cursor-pointer transition-colors"
                           title="Hapus Catatan Transfer Ini"
                         >
-                          <Trash2 className="w-4 h-4 text-rose-600" />
+                          <Trash2 className="w-4 h-4 text-emerald-600" />
                         </button>
                       )}
                     </div>
@@ -1290,13 +1290,13 @@ export default function PaymentView({
           onClick={() => setDeletingConfirmation(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-rose-200"
+            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-emerald-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2.5 bg-rose-100 text-rose-700 rounded-xl">
-                  <Trash2 className="w-5 h-5 text-rose-600" />
+                <div className="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl">
+                  <Trash2 className="w-5 h-5 text-emerald-600" />
                 </div>
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
@@ -1323,7 +1323,7 @@ export default function PaymentView({
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Nominal:</span>
-                <span className="font-black text-rose-800">Rp {deletingConfirmation.nominal.toLocaleString('id-ID')}</span>
+                <span className="font-black text-emerald-800">Rp {deletingConfirmation.nominal.toLocaleString('id-ID')}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Kategori:</span>
@@ -1345,7 +1345,7 @@ export default function PaymentView({
                 type="button"
                 onClick={() => executeDeleteConfirmation(deletingConfirmation.id)}
                 disabled={isDeleting}
-                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
               >
                 <Trash2 className="w-4 h-4" />
                 <span>{isDeleting ? 'Menghapus...' : 'Ya, Hapus Data'}</span>

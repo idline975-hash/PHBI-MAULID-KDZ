@@ -502,7 +502,7 @@ export default function ProposalKegiatan({
         type="button"
         onClick={handleSaveProposal}
         disabled={saving}
-        className="px-3 py-1 bg-rose-400 hover:bg-rose-300 text-slate-950 font-black text-xs rounded-lg flex items-center gap-1 cursor-pointer transition-all shrink-0 shadow-xs print:hidden"
+        className="px-3 py-1 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs rounded-lg flex items-center gap-1 cursor-pointer transition-all shrink-0 shadow-xs print:hidden"
       >
         {saving ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Save className="w-3.5 h-3.5" />}
         <span>Simpan</span>
@@ -513,10 +513,10 @@ export default function ProposalKegiatan({
   return (
     <div className="space-y-5">
       {/* 1. TOP ACTION & HEADER BANNER */}
-      <div className="bg-gradient-to-r from-rose-950 via-rose-900 to-teal-950 text-white rounded-2xl p-5 sm:p-6 shadow-lg border border-rose-700/60 print:hidden">
+      <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-teal-950 text-white rounded-2xl p-5 sm:p-6 shadow-lg border border-emerald-700/60 print:hidden">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div className="space-y-1.5">
-            <div className="flex flex-wrap items-center gap-2 text-xs text-rose-300 font-semibold">
+            <div className="flex flex-wrap items-center gap-2 text-xs text-emerald-300 font-semibold">
               <FileText className="w-4 h-4 text-amber-400" />
               <span>DOKUMEN RESMI PROPOSAL PHBI ISRA MI'RAJ 1448 H / 2027 M</span>
               <span>·</span>
@@ -531,7 +531,7 @@ export default function ProposalKegiatan({
                 ? 'Pembuatan, Edit & Cetak Proposal Kegiatan Lengkap'
                 : 'Dokumen & Cetak Proposal Kegiatan Lengkap'}
             </h2>
-            <p className="text-xs sm:text-sm text-rose-100/90 max-w-3xl leading-relaxed">
+            <p className="text-xs sm:text-sm text-emerald-100/90 max-w-3xl leading-relaxed">
               {isAdminCanEdit ? (
                 <>
                   Dokumen proposal resmi Panitia Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. Seluruh isi <strong>Kop Surat, Bagian A sampai I, Struktur Kepanitiaan,</strong> beserta <strong>8 Penandatangan Lembar Pengesahan</strong> dapat diedit sepenuhnya oleh Admin dan diunduh dalam format PDF A4 rapi tanpa terpotong.
@@ -560,9 +560,9 @@ export default function ProposalKegiatan({
               type="button"
               id="btn-proposal-copy-wa"
               onClick={handleCopyProposalText}
-              className="px-3.5 py-2.5 bg-rose-800 hover:bg-rose-700 text-white font-black text-xs sm:text-sm rounded-xl border-2 border-rose-600 flex items-center gap-1.5 cursor-pointer transition-all"
+              className="px-3.5 py-2.5 bg-emerald-800 hover:bg-emerald-700 text-white font-black text-xs sm:text-sm rounded-xl border-2 border-emerald-600 flex items-center gap-1.5 cursor-pointer transition-all"
             >
-              {copiedWa ? <Check className="w-4 h-4 text-amber-300" /> : <Copy className="w-4 h-4 text-rose-300" />}
+              {copiedWa ? <Check className="w-4 h-4 text-amber-300" /> : <Copy className="w-4 h-4 text-emerald-300" />}
               <span>{copiedWa ? 'Tersalin!' : 'Salin Teks WA'}</span>
             </button>
 
@@ -576,9 +576,9 @@ export default function ProposalKegiatan({
                     setSaveError('');
                     setIsEditing(true);
                   }}
-                  className="px-4 py-2.5 bg-white hover:bg-rose-50 text-rose-950 font-black text-xs sm:text-sm rounded-xl shadow border-2 border-rose-200 flex items-center gap-1.5 cursor-pointer transition-all"
+                  className="px-4 py-2.5 bg-white hover:bg-emerald-50 text-emerald-950 font-black text-xs sm:text-sm rounded-xl shadow border-2 border-emerald-200 flex items-center gap-1.5 cursor-pointer transition-all"
                 >
-                  <Edit3 className="w-4 h-4 text-rose-700" />
+                  <Edit3 className="w-4 h-4 text-emerald-700" />
                   <span>Edit / Buat Proposal</span>
                 </button>
               ) : (
@@ -588,7 +588,7 @@ export default function ProposalKegiatan({
                     id="btn-proposal-save"
                     onClick={handleSaveProposal}
                     disabled={saving}
-                    className="px-4 py-2.5 bg-rose-500 hover:bg-rose-400 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow border-2 border-rose-700 flex items-center gap-1.5 cursor-pointer transition-all"
+                    className="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow border-2 border-emerald-700 flex items-center gap-1.5 cursor-pointer transition-all"
                   >
                     {saving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
                     <span>Simpan Proposal</span>
@@ -607,7 +607,7 @@ export default function ProposalKegiatan({
                   <button
                     type="button"
                     onClick={() => setIsEditing(false)}
-                    className="px-3 py-2.5 bg-rose-500/20 hover:bg-rose-500/30 text-rose-200 border border-rose-400/40 font-bold text-xs rounded-xl flex items-center gap-1 cursor-pointer transition-all"
+                    className="px-3 py-2.5 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-200 border border-emerald-400/40 font-bold text-xs rounded-xl flex items-center gap-1 cursor-pointer transition-all"
                   >
                     <Eye className="w-3.5 h-3.5" />
                     <span>Lihat Pratinjau</span>
@@ -620,14 +620,14 @@ export default function ProposalKegiatan({
 
         {/* Status Feedback */}
         {saveSuccess && (
-          <div className="mt-4 p-3 rounded-xl bg-rose-800/80 border border-rose-400/50 text-rose-100 text-xs font-semibold flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-rose-300 shrink-0" />
+          <div className="mt-4 p-3 rounded-xl bg-emerald-800/80 border border-emerald-400/50 text-emerald-100 text-xs font-semibold flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
             <span>{saveSuccess}</span>
           </div>
         )}
         {saveError && (
-          <div className="mt-4 p-3 rounded-xl bg-rose-900/80 border border-rose-400/50 text-rose-100 text-xs font-semibold flex items-center gap-2">
-            <AlertCircle className="w-4 h-4 text-rose-300 shrink-0" />
+          <div className="mt-4 p-3 rounded-xl bg-emerald-900/80 border border-emerald-400/50 text-emerald-100 text-xs font-semibold flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 text-emerald-300 shrink-0" />
             <span>{saveError}</span>
           </div>
         )}
@@ -655,7 +655,7 @@ export default function ProposalKegiatan({
               onClick={() => setActiveSection(tab.code)}
               className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer ${
                 activeSection === tab.code
-                  ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                  ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                   : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-black'
               }`}
             >
@@ -678,7 +678,7 @@ export default function ProposalKegiatan({
             }}
             className={`px-3.5 py-1.5 rounded-lg text-xs font-black flex items-center gap-1.5 cursor-pointer transition-all ${
               isEditing
-                ? 'bg-rose-600 hover:bg-rose-700 text-white shadow-sm'
+                ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm'
                 : 'bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-xs'
             }`}
           >
@@ -692,7 +692,7 @@ export default function ProposalKegiatan({
       <div id="proposal-printable-sheet" className="bg-white rounded-2xl shadow-md border border-slate-200 p-5 sm:p-8 lg:p-10 space-y-8 max-w-5xl mx-auto print:shadow-none print:border-none print:p-0">
         {/* ==================== HALAMAN SAMPUL DEPAN (COVER PROPOSAL) ==================== */}
         {showSection('cover') && (
-          <div className="relative mb-6 rounded-3xl border-4 border-rose-900 ring-4 ring-amber-400/80 bg-gradient-to-b from-rose-950/5 via-white to-rose-900/5 p-6 sm:p-10 shadow-xl overflow-hidden print:border-4 print:p-8">
+          <div className="relative mb-6 rounded-3xl border-4 border-emerald-900 ring-4 ring-amber-400/80 bg-gradient-to-b from-emerald-950/5 via-white to-emerald-900/5 p-6 sm:p-10 shadow-xl overflow-hidden print:border-4 print:p-8">
             {/* Decorative Corner Brackets */}
             <div className="absolute top-3 left-3 w-7 h-7 border-t-2 border-l-2 border-amber-500 rounded-tl-sm pointer-events-none" />
             <div className="absolute top-3 right-3 w-7 h-7 border-t-2 border-r-2 border-amber-500 rounded-tr-sm pointer-events-none" />
@@ -700,8 +700,8 @@ export default function ProposalKegiatan({
             <div className="absolute bottom-3 right-3 w-7 h-7 border-b-2 border-r-2 border-amber-500 rounded-br-sm pointer-events-none" />
 
             {/* Header Badge & Edit Button */}
-            <div className="flex items-center justify-between pb-4 border-b border-rose-800/20 mb-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-rose-900 text-amber-300 rounded-full text-xs font-black tracking-wide uppercase shadow-xs">
+            <div className="flex items-center justify-between pb-4 border-b border-emerald-800/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-emerald-900 text-amber-300 rounded-full text-xs font-black tracking-wide uppercase shadow-xs">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                 <span>Halaman Sampul Depan (Cover Resmi Proposal)</span>
               </div>
@@ -709,7 +709,7 @@ export default function ProposalKegiatan({
                 <button
                   type="button"
                   onClick={() => setIsEditing(true)}
-                  className="px-2.5 py-1 bg-white hover:bg-rose-50 text-rose-900 border border-rose-300 rounded-lg text-xs font-bold flex items-center gap-1.5 cursor-pointer shadow-xs print:hidden"
+                  className="px-2.5 py-1 bg-white hover:bg-emerald-50 text-emerald-900 border border-emerald-300 rounded-lg text-xs font-bold flex items-center gap-1.5 cursor-pointer shadow-xs print:hidden"
                 >
                   <Edit3 className="w-3.5 h-3.5 text-amber-600" />
                   <span>Edit Sampul</span>
@@ -781,7 +781,7 @@ export default function ProposalKegiatan({
             <div className="text-center space-y-6 max-w-2xl mx-auto py-2">
               {/* Top Header Badge */}
               <div className="inline-block">
-                <div className="px-6 py-2 bg-gradient-to-r from-rose-900 via-rose-800 to-teal-900 text-white font-black text-sm sm:text-base tracking-widest uppercase rounded-xl shadow-md border-b-2 border-amber-400">
+                <div className="px-6 py-2 bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white font-black text-sm sm:text-base tracking-widest uppercase rounded-xl shadow-md border-b-2 border-amber-400">
                   {formData.coverJudul || 'PROPOSAL KEGIATAN'}
                 </div>
               </div>
@@ -804,14 +804,14 @@ export default function ProposalKegiatan({
               {/* Islamic Centerpiece Emblem */}
               <div className="py-2 flex justify-center items-center">
                 <div className="relative w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/40 via-rose-400/30 to-amber-200/40 animate-pulse blur-xs" />
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/40 via-emerald-400/30 to-amber-200/40 animate-pulse blur-xs" />
                   <div className="absolute inset-1 rounded-full border-2 border-amber-500 flex items-center justify-center">
-                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-rose-900 bg-rose-50/80 flex items-center justify-center shadow-inner">
+                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-emerald-900 bg-emerald-50/80 flex items-center justify-center shadow-inner">
                       <div className="text-center">
                         <div className="relative inline-block">
-                          <div className="w-12 h-12 bg-rose-900 rotate-45 rounded-sm flex items-center justify-center shadow-md">
+                          <div className="w-12 h-12 bg-emerald-900 rotate-45 rounded-sm flex items-center justify-center shadow-md">
                             <div className="w-12 h-12 bg-amber-500 rotate-45 rounded-sm absolute opacity-80" />
-                            <div className="w-9 h-9 bg-rose-950 rounded-full relative z-10 flex items-center justify-center border border-amber-300">
+                            <div className="w-9 h-9 bg-emerald-950 rounded-full relative z-10 flex items-center justify-center border border-amber-300">
                               <Sparkles className="w-5 h-5 text-amber-300" />
                             </div>
                           </div>
@@ -823,11 +823,11 @@ export default function ProposalKegiatan({
               </div>
 
               {/* Theme Card */}
-              <div className="p-4 sm:p-5 rounded-2xl bg-rose-50/90 border-2 border-rose-200 text-rose-950 shadow-xs relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-rose-800 text-amber-200 rounded-full text-[10px] font-black uppercase tracking-wider">
+              <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/90 border-2 border-emerald-200 text-emerald-950 shadow-xs relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-emerald-800 text-amber-200 rounded-full text-[10px] font-black uppercase tracking-wider">
                   Tema Kegiatan
                 </div>
-                <p className="italic text-xs sm:text-sm font-semibold text-rose-950 leading-relaxed max-w-xl mx-auto pt-1">
+                <p className="italic text-xs sm:text-sm font-semibold text-emerald-950 leading-relaxed max-w-xl mx-auto pt-1">
                   "{formData.temaKegiatan || 'Meneladani Akhlak Mulia Rasulullah SAW serta Memperkokoh Ukhuwah Islamiyah dan Semangat Gotong Royong Warga'}"
                 </p>
               </div>
@@ -835,21 +835,21 @@ export default function ProposalKegiatan({
               {/* Summary Time & Venue */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs bg-slate-50 border border-slate-200 p-3 rounded-xl text-slate-700">
                 <div className="flex items-center justify-center gap-1.5 font-bold text-slate-800">
-                  <Calendar className="w-3.5 h-3.5 text-rose-700 shrink-0" />
+                  <Calendar className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
                   <span>{formData.hariTanggal || 'Minggu, 17 Januari 2027 (1448 H)'}</span>
                 </div>
                 <div className="flex items-center justify-center gap-1.5 text-slate-600">
-                  <MapPin className="w-3.5 h-3.5 text-rose-700 shrink-0" />
+                  <MapPin className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
                   <span className="truncate">{formData.tempatPelaksanaan || 'Majelis Kp. Kedung Sapi'}</span>
                 </div>
               </div>
 
               {/* Organizer Block */}
-              <div className="pt-4 border-t-2 border-dashed border-rose-800/30 space-y-1">
+              <div className="pt-4 border-t-2 border-dashed border-emerald-800/30 space-y-1">
                 <div className="text-[11px] font-black text-amber-700 uppercase tracking-widest">
                   Diajukan Oleh:
                 </div>
-                <div className="font-black text-sm sm:text-base text-rose-950 uppercase">
+                <div className="font-black text-sm sm:text-base text-emerald-950 uppercase">
                   {formData.coverInstansi || 'PANITIA PERINGATAN HARI BESAR ISLAM (PHBI)'}
                 </div>
                 <div className="font-bold text-xs sm:text-sm text-slate-800 uppercase">
@@ -858,7 +858,7 @@ export default function ProposalKegiatan({
                 <div className="text-[11px] text-slate-600 uppercase font-medium">
                   {formData.coverWilayah || 'KECAMATAN PAMARAYAN – KABUPATEN SERANG – PROVINSI BANTEN'}
                 </div>
-                <div className="font-black text-xs text-rose-800 pt-1">
+                <div className="font-black text-xs text-emerald-800 pt-1">
                   TAHUN {formData.coverTahun || '1448 H / 2027 M'}
                 </div>
               </div>
@@ -868,7 +868,7 @@ export default function ProposalKegiatan({
                 <button
                   type="button"
                   onClick={() => generatePdfProposalKegiatan(formData, committeeSettings)}
-                  className="px-4 py-2 bg-rose-800 hover:bg-rose-700 text-white font-black text-xs rounded-xl shadow-md flex items-center gap-1.5 cursor-pointer transition-all"
+                  className="px-4 py-2 bg-emerald-800 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow-md flex items-center gap-1.5 cursor-pointer transition-all"
                 >
                   <FileDown className="w-4 h-4 text-amber-300" />
                   <span>Download PDF Proposal Lengkap (Termasuk Sampul)</span>
@@ -879,7 +879,7 @@ export default function ProposalKegiatan({
                     onClick={() => setActiveSection('all')}
                     className="px-3.5 py-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-bold text-xs rounded-xl flex items-center gap-1 cursor-pointer transition-all"
                   >
-                    <BookOpen className="w-3.5 h-3.5 text-rose-700" />
+                    <BookOpen className="w-3.5 h-3.5 text-emerald-700" />
                     <span>Buka Seluruh Halaman Isi (A–I)</span>
                   </button>
                 )}
@@ -892,9 +892,9 @@ export default function ProposalKegiatan({
         {activeSection === 'all' && (
           <div className="relative py-2 flex items-center justify-center print:hidden">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t-2 border-dashed border-rose-800/30" />
+              <div className="w-full border-t-2 border-dashed border-emerald-800/30" />
             </div>
-            <span className="relative px-4 py-1 bg-white text-[11px] font-bold text-rose-900 uppercase tracking-widest border border-rose-300 rounded-full shadow-xs">
+            <span className="relative px-4 py-1 bg-white text-[11px] font-bold text-emerald-900 uppercase tracking-widest border border-emerald-300 rounded-full shadow-xs">
               Halaman Isi Dokumen Proposal (Kop Surat & Bagian A s/d I)
             </span>
           </div>
@@ -903,13 +903,13 @@ export default function ProposalKegiatan({
         {/* OFFICIAL KOP SURAT PHBI & IDENTITAS SURAT (Disembunyikan jika memilih tab Sampul Depan saja) */}
         {activeSection !== 'cover' && (
           <>
-            <div className="border-b-4 border-double border-rose-800 pb-5 text-center space-y-1.5 relative">
+            <div className="border-b-4 border-double border-emerald-800 pb-5 text-center space-y-1.5 relative">
           {isAdminCanEdit && !isEditing && (
             <div className="flex justify-end mb-1 print:hidden">
               <button
                 type="button"
                 onClick={() => setIsEditing(true)}
-                className="px-2.5 py-1 bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-200 rounded-lg text-[11px] font-bold flex items-center gap-1 cursor-pointer"
+                className="px-2.5 py-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 rounded-lg text-[11px] font-bold flex items-center gap-1 cursor-pointer"
               >
                 <Edit3 className="w-3 h-3" />
                 <span>Edit Kop & Identitas Surat</span>
@@ -967,7 +967,7 @@ export default function ProposalKegiatan({
             </div>
           ) : null}
 
-          <p className="text-xs sm:text-sm font-black uppercase tracking-widest text-rose-800">
+          <p className="text-xs sm:text-sm font-black uppercase tracking-widest text-emerald-800">
             {formData.kopBaris1 || 'PANITIA PERINGATAN HARI BESAR ISLAM (PHBI)'}
           </p>
           <h1 className="text-lg sm:text-2xl font-black uppercase text-slate-900 tracking-tight">
@@ -984,9 +984,9 @@ export default function ProposalKegiatan({
         {/* METADATA SURAT & JUDUL PROPOSAL */}
         <div className="space-y-4">
           {isEditing ? (
-            <div className="p-4 rounded-xl bg-rose-50/70 border border-rose-200 space-y-3">
-              <h4 className="text-xs font-black uppercase text-rose-900 flex items-center gap-1.5">
-                <Edit3 className="w-4 h-4 text-rose-700" />
+            <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200 space-y-3">
+              <h4 className="text-xs font-black uppercase text-emerald-900 flex items-center gap-1.5">
+                <Edit3 className="w-4 h-4 text-emerald-700" />
                 Edit Identitas Surat & Tema Proposal
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -996,7 +996,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.nomorProposal}
                     onChange={e => setFormData({ ...formData, nomorProposal: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div>
@@ -1005,7 +1005,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.tanggalSurat}
                     onChange={e => setFormData({ ...formData, tanggalSurat: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div>
@@ -1014,7 +1014,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.lampiran}
                     onChange={e => setFormData({ ...formData, lampiran: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div>
@@ -1023,7 +1023,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.kepadaYth}
                     onChange={e => setFormData({ ...formData, kepadaYth: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -1032,7 +1032,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.perihal}
                     onChange={e => setFormData({ ...formData, perihal: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -1041,7 +1041,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.judulProposal}
                     onChange={e => setFormData({ ...formData, judulProposal: e.target.value })}
-                    className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -1050,7 +1050,7 @@ export default function ProposalKegiatan({
                     rows={2}
                     value={formData.temaKegiatan}
                     onChange={e => setFormData({ ...formData, temaKegiatan: e.target.value })}
-                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
               </div>
@@ -1071,7 +1071,7 @@ export default function ProposalKegiatan({
               </div>
 
               <div className="text-center py-2 space-y-1.5">
-                <h3 className="text-base sm:text-lg font-black text-rose-950 uppercase">
+                <h3 className="text-base sm:text-lg font-black text-emerald-950 uppercase">
                   {formData.judulProposal}
                 </h3>
                 <p className="text-xs sm:text-sm italic text-slate-600 max-w-3xl mx-auto">
@@ -1087,7 +1087,7 @@ export default function ProposalKegiatan({
         {/* ==================== A. KATA PENGANTAR ==================== */}
         {showSection('A') && (
           <section className="space-y-3">
-            <div className="flex items-center justify-between gap-2.5 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex items-center justify-between gap-2.5 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   A
@@ -1104,7 +1104,7 @@ export default function ProposalKegiatan({
                 rows={9}
                 value={formData.kataPengantar}
                 onChange={e => setFormData({ ...formData, kataPengantar: e.target.value })}
-                className="w-full p-3.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-600 leading-relaxed"
+                className="w-full p-3.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 leading-relaxed"
                 placeholder="Tulis kata pengantar proposal..."
               />
             ) : (
@@ -1118,7 +1118,7 @@ export default function ProposalKegiatan({
         {/* ==================== B. MAKSUD DAN TUJUAN ==================== */}
         {showSection('B') && (
           <section className="space-y-3">
-            <div className="flex items-center justify-between gap-2.5 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex items-center justify-between gap-2.5 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   B
@@ -1138,7 +1138,7 @@ export default function ProposalKegiatan({
                     rows={3}
                     value={formData.maksudKegiatan}
                     onChange={e => setFormData({ ...formData, maksudKegiatan: e.target.value })}
-                    className="w-full p-3 text-xs sm:text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full p-3 text-xs sm:text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div className="space-y-2">
@@ -1147,7 +1147,7 @@ export default function ProposalKegiatan({
                     <button
                       type="button"
                       onClick={handleAddTujuan}
-                      className="px-3 py-1 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
+                      className="px-3 py-1 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
                     >
                       <Plus className="w-3.5 h-3.5" />
                       <span>Tambah Tujuan</span>
@@ -1160,12 +1160,12 @@ export default function ProposalKegiatan({
                         type="text"
                         value={item}
                         onChange={e => handleUpdateTujuan(idx, e.target.value)}
-                        className="flex-1 px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                        className="flex-1 px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                       />
                       <button
                         type="button"
                         onClick={() => handleRemoveTujuan(idx)}
-                        className="p-2 text-rose-600 hover:bg-rose-50 rounded-lg cursor-pointer"
+                        className="p-2 text-emerald-600 hover:bg-emerald-50 rounded-lg cursor-pointer"
                         title="Hapus poin tujuan"
                       >
                         <Trash2 className="w-4 h-4" />
@@ -1177,11 +1177,11 @@ export default function ProposalKegiatan({
             ) : (
               <div className="px-2 sm:px-3 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <div>
-                  <h4 className="font-bold text-rose-900 mb-1">1. Maksud Kegiatan</h4>
+                  <h4 className="font-bold text-emerald-900 mb-1">1. Maksud Kegiatan</h4>
                   <p className="text-justify">{formData.maksudKegiatan}</p>
                 </div>
                 <div>
-                  <h4 className="font-bold text-rose-900 mb-1.5">2. Tujuan Kegiatan</h4>
+                  <h4 className="font-bold text-emerald-900 mb-1.5">2. Tujuan Kegiatan</h4>
                   <ol className="list-decimal list-inside space-y-1.5">
                     {(formData.tujuanKegiatan || []).map((tujuan, idx) => (
                       <li key={idx} className="leading-relaxed">
@@ -1198,7 +1198,7 @@ export default function ProposalKegiatan({
         {/* ==================== C. BENTUK KEGIATAN ==================== */}
         {showSection('C') && (
           <section className="space-y-3">
-            <div className="flex items-center justify-between gap-2.5 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex items-center justify-between gap-2.5 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   C
@@ -1218,7 +1218,7 @@ export default function ProposalKegiatan({
                     rows={2}
                     value={formData.bentukKegiatanDeskripsi}
                     onChange={e => setFormData({ ...formData, bentukKegiatanDeskripsi: e.target.value })}
-                    className="w-full p-3 text-xs sm:text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full p-3 text-xs sm:text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div className="space-y-2">
@@ -1227,7 +1227,7 @@ export default function ProposalKegiatan({
                     <button
                       type="button"
                       onClick={handleAddBentuk}
-                      className="px-3 py-1 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
+                      className="px-3 py-1 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
                     >
                       <Plus className="w-3.5 h-3.5" />
                       <span>Tambah Kegiatan</span>
@@ -1240,12 +1240,12 @@ export default function ProposalKegiatan({
                         type="text"
                         value={item}
                         onChange={e => handleUpdateBentuk(idx, e.target.value)}
-                        className="flex-1 px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                        className="flex-1 px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                       />
                       <button
                         type="button"
                         onClick={() => handleRemoveBentuk(idx)}
-                        className="p-2 text-rose-600 hover:bg-rose-50 rounded-lg cursor-pointer"
+                        className="p-2 text-emerald-600 hover:bg-emerald-50 rounded-lg cursor-pointer"
                         title="Hapus item"
                       >
                         <Trash2 className="w-4 h-4" />
@@ -1270,7 +1270,7 @@ export default function ProposalKegiatan({
         {/* ==================== D. WAKTU DAN TEMPAT PELAKSANAAN ==================== */}
         {showSection('D') && (
           <section className="space-y-3">
-            <div className="flex items-center justify-between gap-2.5 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex items-center justify-between gap-2.5 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   D
@@ -1290,7 +1290,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.hariTanggal}
                     onChange={e => setFormData({ ...formData, hariTanggal: e.target.value })}
-                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div>
@@ -1299,7 +1299,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.waktuPelaksanaan}
                     onChange={e => setFormData({ ...formData, waktuPelaksanaan: e.target.value })}
-                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -1308,7 +1308,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.tempatPelaksanaan}
                     onChange={e => setFormData({ ...formData, tempatPelaksanaan: e.target.value })}
-                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div>
@@ -1317,7 +1317,7 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.penceramah}
                     onChange={e => setFormData({ ...formData, penceramah: e.target.value })}
-                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
                 <div>
@@ -1326,45 +1326,45 @@ export default function ProposalKegiatan({
                     type="text"
                     value={formData.qori}
                     onChange={e => setFormData({ ...formData, qori: e.target.value })}
-                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                    className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                 </div>
               </div>
             ) : (
-              <div className="p-4 sm:p-5 rounded-xl bg-rose-50/60 border border-rose-200 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
+              <div className="p-4 sm:p-5 rounded-xl bg-emerald-50/60 border border-emerald-200 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
                 <div className="flex items-start gap-2.5">
-                  <Calendar className="w-4 h-4 text-rose-700 shrink-0 mt-0.5" />
+                  <Calendar className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-slate-500 block text-xs">Hari / Tanggal Pelaksanaan:</span>
                     <strong className="text-slate-900">{formData.hariTanggal}</strong>
                   </div>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <Clock className="w-4 h-4 text-rose-700 shrink-0 mt-0.5" />
+                  <Clock className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-slate-500 block text-xs">Waktu Pelaksanaan:</span>
                     <strong className="text-slate-900">{formData.waktuPelaksanaan}</strong>
                   </div>
                 </div>
                 <div className="flex items-start gap-2.5 sm:col-span-2">
-                  <MapPin className="w-4 h-4 text-rose-700 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-slate-500 block text-xs">Tempat / Lokasi:</span>
                     <strong className="text-slate-900">{formData.tempatPelaksanaan}</strong>
                   </div>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <BookOpen className="w-4 h-4 text-rose-700 shrink-0 mt-0.5" />
+                  <BookOpen className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-slate-500 block text-xs">Penceramah / Mubaligh:</span>
-                    <strong className="text-rose-900">{formData.penceramah}</strong>
+                    <strong className="text-emerald-900">{formData.penceramah}</strong>
                   </div>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <Sparkles className="w-4 h-4 text-rose-700 shrink-0 mt-0.5" />
+                  <Sparkles className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-slate-500 block text-xs">Qori Tilawah Al-Qur'an:</span>
-                    <strong className="text-rose-900">{formData.qori}</strong>
+                    <strong className="text-emerald-900">{formData.qori}</strong>
                   </div>
                 </div>
               </div>
@@ -1375,7 +1375,7 @@ export default function ProposalKegiatan({
         {/* ==================== E. SUSUNAN ACARA DAN RUNDOWN ACARA ==================== */}
         {showSection('E') && (
           <section className="space-y-3">
-            <div className="flex flex-wrap items-center justify-between gap-2 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex flex-wrap items-center justify-between gap-2 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   E
@@ -1402,7 +1402,7 @@ export default function ProposalKegiatan({
             <div className="overflow-x-auto rounded-xl border border-slate-200">
               <table className="w-full text-left border-collapse text-xs sm:text-sm">
                 <thead>
-                  <tr className="bg-rose-800 text-white font-bold">
+                  <tr className="bg-emerald-800 text-white font-bold">
                     <th className="py-2.5 px-3 text-center w-10">No</th>
                     <th className="py-2.5 px-3 w-36">Waktu (WIB)</th>
                     <th className="py-2.5 px-3">Susunan / Mata Acara</th>
@@ -1453,7 +1453,7 @@ export default function ProposalKegiatan({
                             <button
                               type="button"
                               onClick={() => handleRemoveRundown(idx)}
-                              className="p-1.5 text-rose-600 hover:bg-rose-50 rounded cursor-pointer"
+                              className="p-1.5 text-emerald-600 hover:bg-emerald-50 rounded cursor-pointer"
                             >
                               <Trash2 className="w-4 h-4" />
                             </button>
@@ -1461,13 +1461,13 @@ export default function ProposalKegiatan({
                         </>
                       ) : (
                         <>
-                          <td className="py-2.5 px-3 font-mono font-bold text-rose-900 whitespace-nowrap">
+                          <td className="py-2.5 px-3 font-mono font-bold text-emerald-900 whitespace-nowrap">
                             {item.waktu}
                           </td>
                           <td className="py-2.5 px-3 text-slate-800 whitespace-pre-line font-medium">
                             {item.kegiatan}
                           </td>
-                          <td className="py-2.5 px-3 font-semibold text-rose-800">
+                          <td className="py-2.5 px-3 font-semibold text-emerald-800">
                             {item.pengisi}
                           </td>
                           <td className="py-2.5 px-3 text-slate-500 text-xs">
@@ -1486,7 +1486,7 @@ export default function ProposalKegiatan({
         {/* ==================== F. ANGGARAN DANA (RAB) ==================== */}
         {showSection('F') && (
           <section className="space-y-3">
-            <div className="flex flex-wrap items-center justify-between gap-2 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex flex-wrap items-center justify-between gap-2 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   F
@@ -1502,7 +1502,7 @@ export default function ProposalKegiatan({
                       <button
                         type="button"
                         onClick={handleSyncAnggaranFromPengeluaran}
-                        className="px-3 py-1 bg-rose-700 hover:bg-rose-600 text-white font-bold text-xs rounded-lg flex items-center gap-1 cursor-pointer border border-rose-500"
+                        className="px-3 py-1 bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs rounded-lg flex items-center gap-1 cursor-pointer border border-emerald-500"
                         title="Salin daftar pengeluaran aktual Bendahara ke tabel anggaran proposal"
                       >
                         <RefreshCw className="w-3.5 h-3.5" />
@@ -1526,7 +1526,7 @@ export default function ProposalKegiatan({
             <div className="overflow-x-auto rounded-xl border border-slate-200">
               <table className="w-full text-left border-collapse text-xs sm:text-sm">
                 <thead>
-                  <tr className="bg-rose-800 text-white font-bold">
+                  <tr className="bg-emerald-800 text-white font-bold">
                     <th className="py-2.5 px-3 text-center w-10">No</th>
                     <th className="py-2.5 px-3 w-44">Bidang / Seksi</th>
                     <th className="py-2.5 px-3">Uraian Kebutuhan Anggaran</th>
@@ -1577,7 +1577,7 @@ export default function ProposalKegiatan({
                             <button
                               type="button"
                               onClick={() => handleRemoveAnggaran(idx)}
-                              className="p-1.5 text-rose-600 hover:bg-rose-50 rounded cursor-pointer"
+                              className="p-1.5 text-emerald-600 hover:bg-emerald-50 rounded cursor-pointer"
                             >
                               <Trash2 className="w-4 h-4" />
                             </button>
@@ -1615,7 +1615,7 @@ export default function ProposalKegiatan({
         {/* ==================== G. SUMBER DANA ==================== */}
         {showSection('G') && (
           <section className="space-y-3">
-            <div className="flex flex-wrap items-center justify-between gap-2 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex flex-wrap items-center justify-between gap-2 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   G
@@ -1644,7 +1644,7 @@ export default function ProposalKegiatan({
                 rows={2}
                 value={formData.sumberDanaDeskripsi}
                 onChange={e => setFormData({ ...formData, sumberDanaDeskripsi: e.target.value })}
-                className="w-full p-3 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-600"
+                className="w-full p-3 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600"
               />
             ) : (
               <p className="px-2 text-xs sm:text-sm text-slate-700 leading-relaxed text-justify">
@@ -1655,7 +1655,7 @@ export default function ProposalKegiatan({
             <div className="overflow-x-auto rounded-xl border border-slate-200">
               <table className="w-full text-left border-collapse text-xs sm:text-sm">
                 <thead>
-                  <tr className="bg-rose-800 text-white font-bold">
+                  <tr className="bg-emerald-800 text-white font-bold">
                     <th className="py-2.5 px-3 text-center w-10">No</th>
                     <th className="py-2.5 px-3 w-64">Sumber Pendanaan</th>
                     <th className="py-2.5 px-3">Keterangan / Rincian</th>
@@ -1697,7 +1697,7 @@ export default function ProposalKegiatan({
                             <button
                               type="button"
                               onClick={() => handleRemoveSumberDana(idx)}
-                              className="p-1.5 text-rose-600 hover:bg-rose-50 rounded cursor-pointer"
+                              className="p-1.5 text-emerald-600 hover:bg-emerald-50 rounded cursor-pointer"
                             >
                               <Trash2 className="w-4 h-4" />
                             </button>
@@ -1707,7 +1707,7 @@ export default function ProposalKegiatan({
                         <>
                           <td className="py-2.5 px-3 font-bold text-slate-800">{item.sumber}</td>
                           <td className="py-2.5 px-3 text-slate-700">{item.uraian}</td>
-                          <td className="py-2.5 px-3 text-right font-mono font-bold text-rose-900">
+                          <td className="py-2.5 px-3 text-right font-mono font-bold text-emerald-900">
                             Rp {formatRupiah(Number(item.estimasi) || 0)}
                           </td>
                         </>
@@ -1716,11 +1716,11 @@ export default function ProposalKegiatan({
                   ))}
                 </tbody>
                 <tfoot>
-                  <tr className="bg-rose-50 border-t-2 border-rose-200 font-black text-rose-950">
+                  <tr className="bg-emerald-50 border-t-2 border-emerald-200 font-black text-emerald-950">
                     <td colSpan={3} className="py-3 px-4 text-right uppercase tracking-wide text-xs sm:text-sm">
                       Total Estimasi Sumber Dana:
                     </td>
-                    <td className="py-3 px-3 text-right font-mono text-sm sm:text-base text-rose-900">
+                    <td className="py-3 px-3 text-right font-mono text-sm sm:text-base text-emerald-900">
                       Rp {formatRupiah(totalSumberDanaProposal)}
                     </td>
                     {isEditing && <td />}
@@ -1734,7 +1734,7 @@ export default function ProposalKegiatan({
               <span>
                 Catatan Realisasi Kas Panitia Saat Ini (Live): <strong>Rp {formatRupiah(totalRealisasiMasuk)}</strong> (Iuran Warga: Rp {formatRupiah(totalRealisasiWarga)} · Donasi Sukarela: Rp {formatRupiah(totalRealisasiSukarela)})
               </span>
-              <span className="font-mono font-bold text-rose-800">
+              <span className="font-mono font-bold text-emerald-800">
                 Target Per Warga: Rp {formatRupiah(targetPerPerson)} ({wargaUtamaCount} Warga Utama)
               </span>
             </div>
@@ -1744,7 +1744,7 @@ export default function ProposalKegiatan({
         {/* ==================== H. SUSUNAN PANITIA ==================== */}
         {showSection('H') && (
           <section className="space-y-4">
-            <div className="flex flex-wrap items-center justify-between gap-2 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+            <div className="flex flex-wrap items-center justify-between gap-2 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
               <div className="flex items-center gap-2.5">
                 <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                   H
@@ -1770,13 +1770,13 @@ export default function ProposalKegiatan({
 
             {/* Tabel I: Pelindung, Penasehat, Penanggung Jawab & Pengurus Inti */}
             <div className="space-y-2">
-              <h4 className="text-xs sm:text-sm font-black uppercase text-rose-900 px-1">
+              <h4 className="text-xs sm:text-sm font-black uppercase text-emerald-900 px-1">
                 I. Pelindung, Penasehat, Penanggung Jawab & Pengurus Inti PHBI
               </h4>
               {isEditing ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4 rounded-xl bg-rose-50/70 border border-rose-200">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4 rounded-xl bg-emerald-50/70 border border-emerald-200">
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">1. Pelindung</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">1. Pelindung</label>
                     <input
                       type="text"
                       value={formData.pelindung ?? (committeeSettings?.pelindung?.join(', ') || '')}
@@ -1785,11 +1785,11 @@ export default function ProposalKegiatan({
                         pelindung: e.target.value,
                         signers: { ...formData.signers, kepalaDesa: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">2. Penasehat</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">2. Penasehat</label>
                     <input
                       type="text"
                       value={formData.penasehat ?? (committeeSettings?.penasehat?.join(' & ') || '')}
@@ -1798,20 +1798,20 @@ export default function ProposalKegiatan({
                         penasehat: e.target.value,
                         signers: { ...formData.signers, tokohPenanggungJawab: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">3. Penanggung Jawab (RT / RW & Lingkungan)</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">3. Penanggung Jawab (RT / RW & Lingkungan)</label>
                     <input
                       type="text"
                       value={formData.penanggungJawab ?? (committeeSettings?.penanggungJawab?.join(' & ') || '')}
                       onChange={e => setFormData({ ...formData, penanggungJawab: e.target.value })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">4. Ketua RT 011 / RW 04</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">4. Ketua RT 011 / RW 04</label>
                     <input
                       type="text"
                       value={formData.signers.ketuaRt}
@@ -1819,11 +1819,11 @@ export default function ProposalKegiatan({
                         ...formData,
                         signers: { ...formData.signers, ketuaRt: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">5. Ketua Pemuda Kp. Kedung Sapi</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">5. Ketua Pemuda Kp. Kedung Sapi</label>
                     <input
                       type="text"
                       value={formData.signers.ketuaPemuda}
@@ -1831,11 +1831,11 @@ export default function ProposalKegiatan({
                         ...formData,
                         signers: { ...formData.signers, ketuaPemuda: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">6. Ketua Panitia Pelaksana</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">6. Ketua Panitia Pelaksana</label>
                     <input
                       type="text"
                       value={formData.signers.ketuaPanitia}
@@ -1843,11 +1843,11 @@ export default function ProposalKegiatan({
                         ...formData,
                         signers: { ...formData.signers, ketuaPanitia: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">7. Wakil Ketua Panitia</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">7. Wakil Ketua Panitia</label>
                     <input
                       type="text"
                       value={formData.signers.wakilKetua}
@@ -1855,11 +1855,11 @@ export default function ProposalKegiatan({
                         ...formData,
                         signers: { ...formData.signers, wakilKetua: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">8. Sekretaris PHBI</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">8. Sekretaris PHBI</label>
                     <input
                       type="text"
                       value={formData.signers.sekretaris}
@@ -1867,11 +1867,11 @@ export default function ProposalKegiatan({
                         ...formData,
                         signers: { ...formData.signers, sekretaris: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">9. Bendahara PHBI</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">9. Bendahara PHBI</label>
                     <input
                       type="text"
                       value={formData.signers.bendahara}
@@ -1879,16 +1879,16 @@ export default function ProposalKegiatan({
                         ...formData,
                         signers: { ...formData.signers, bendahara: e.target.value }
                       })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-rose-900 mb-1">10. Administrator Sistem</label>
+                    <label className="block text-[11px] font-bold text-emerald-900 mb-1">10. Administrator Sistem</label>
                     <input
                       type="text"
                       value={formData.adminSistem ?? (committeeSettings?.adminSistem || '')}
                       onChange={e => setFormData({ ...formData, adminSistem: e.target.value })}
-                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                      className="w-full px-3 py-2 text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                   </div>
                 </div>
@@ -1920,8 +1920,8 @@ export default function ProposalKegiatan({
                     { label: 'Bendahara PHBI', value: formData.signers.bendahara },
                     { label: 'Administrator Sistem', value: formData.adminSistem || committeeSettings?.adminSistem || '' }
                   ].map((pos, idx) => (
-                    <div key={idx} className="p-3 rounded-xl bg-rose-50/70 border border-rose-200">
-                      <span className="text-[11px] font-semibold text-rose-800 block">{pos.label}</span>
+                    <div key={idx} className="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200">
+                      <span className="text-[11px] font-semibold text-emerald-800 block">{pos.label}</span>
                       <strong className="text-xs sm:text-sm font-black text-slate-900 mt-0.5 block">{pos.value || '—'}</strong>
                     </div>
                   ))}
@@ -1932,14 +1932,14 @@ export default function ProposalKegiatan({
             {/* Tabel II: Seksi-Seksi Bidang Pelaksana */}
             <div className="space-y-2">
               <div className="flex items-center justify-between px-1">
-                <h4 className="text-xs sm:text-sm font-black uppercase text-rose-900">
+                <h4 className="text-xs sm:text-sm font-black uppercase text-emerald-900">
                   II. Seksi-Seksi Bidang Pelaksana
                 </h4>
                 {isEditing && (
                   <button
                     type="button"
                     onClick={handleAddCommitteeSection}
-                    className="px-2.5 py-1 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
+                    className="px-2.5 py-1 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
                   >
                     <Plus className="w-3.5 h-3.5" />
                     <span>Tambah Seksi</span>
@@ -1949,7 +1949,7 @@ export default function ProposalKegiatan({
               <div className="overflow-x-auto rounded-xl border border-slate-200">
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
-                    <tr className="bg-rose-800 text-white font-bold">
+                    <tr className="bg-emerald-800 text-white font-bold">
                       <th className="py-2 px-3 text-center w-10">No</th>
                       <th className="py-2 px-3 w-48">Seksi Bidang</th>
                       <th className="py-2 px-3 w-44">Koordinator</th>
@@ -1976,7 +1976,7 @@ export default function ProposalKegiatan({
                                 type="text"
                                 value={sec.coordinator}
                                 onChange={e => handleUpdateCommitteeSection(idx, 'coordinator', e.target.value)}
-                                className="w-full px-2.5 py-1.5 text-xs font-bold text-rose-900 bg-white border border-slate-300 rounded"
+                                className="w-full px-2.5 py-1.5 text-xs font-bold text-emerald-900 bg-white border border-slate-300 rounded"
                               />
                             </td>
                             <td className="p-2">
@@ -1992,7 +1992,7 @@ export default function ProposalKegiatan({
                               <button
                                 type="button"
                                 onClick={() => handleRemoveCommitteeSection(idx)}
-                                className="p-1.5 text-rose-600 hover:bg-rose-50 rounded cursor-pointer"
+                                className="p-1.5 text-emerald-600 hover:bg-emerald-50 rounded cursor-pointer"
                                 title="Hapus Seksi"
                               >
                                 <Trash2 className="w-4 h-4" />
@@ -2002,7 +2002,7 @@ export default function ProposalKegiatan({
                         ) : (
                           <>
                             <td className="py-2 px-3 font-bold text-slate-900">{sec.name}</td>
-                            <td className="py-2 px-3 font-bold text-rose-800">{sec.coordinator}</td>
+                            <td className="py-2 px-3 font-bold text-emerald-800">{sec.coordinator}</td>
                             <td className="py-2 px-3 text-slate-700">
                               {Array.isArray(sec.members) ? sec.members.join(', ') : sec.members}
                             </td>
@@ -2021,7 +2021,7 @@ export default function ProposalKegiatan({
         {showSection('I') && (
           <section className="space-y-6">
             <div className="space-y-3">
-              <div className="flex items-center justify-between gap-2.5 bg-rose-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
+              <div className="flex items-center justify-between gap-2.5 bg-emerald-900 text-white px-4 py-2.5 rounded-xl shadow-xs">
                 <div className="flex items-center gap-2.5">
                   <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 font-black text-xs flex items-center justify-center shrink-0">
                     I
@@ -2038,7 +2038,7 @@ export default function ProposalKegiatan({
                   rows={6}
                   value={formData.penutup}
                   onChange={e => setFormData({ ...formData, penutup: e.target.value })}
-                  className="w-full p-3.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-600 leading-relaxed"
+                  className="w-full p-3.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 leading-relaxed"
                 />
               ) : (
                 <div className="px-2 sm:px-3 text-xs sm:text-sm text-slate-700 leading-relaxed whitespace-pre-line text-justify">
@@ -2048,10 +2048,10 @@ export default function ProposalKegiatan({
             </div>
 
             {/* LEMBAR PENGESAHAN & 8 TANDA TANGAN LENGKAP */}
-            <div className="p-5 sm:p-7 rounded-2xl bg-gradient-to-b from-rose-50/70 to-white border-2 border-rose-700/40 space-y-6 break-inside-avoid">
-              <div className="text-center border-b border-rose-200 pb-3.5 space-y-1">
-                <div className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-rose-800">
-                  <PenTool className="w-3.5 h-3.5 text-rose-700" />
+            <div className="p-5 sm:p-7 rounded-2xl bg-gradient-to-b from-emerald-50/70 to-white border-2 border-emerald-700/40 space-y-6 break-inside-avoid">
+              <div className="text-center border-b border-emerald-200 pb-3.5 space-y-1">
+                <div className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-emerald-800">
+                  <PenTool className="w-3.5 h-3.5 text-emerald-700" />
                   <span>LEMBAR PENGESAHAN PROPOSAL KEGIATAN</span>
                 </div>
                 <h4 className="text-sm sm:text-base font-black text-slate-900 uppercase">
@@ -2064,7 +2064,7 @@ export default function ProposalKegiatan({
 
               {/* BARIS 1: PENGURUS INTI PANITIA (4 TTD) */}
               <div className="space-y-3">
-                <p className="text-center text-xs font-black uppercase tracking-wider text-rose-800">
+                <p className="text-center text-xs font-black uppercase tracking-wider text-emerald-800">
                   Hormat Kami, Panitia Pelaksana PHBI Isra Mi'raj 1448 H / 2027 M
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-1">
@@ -2120,8 +2120,8 @@ export default function ProposalKegiatan({
               </div>
 
               {/* BARIS 2: MENGETAHUI & MENYETUJUI (Ketua RT, Ketua Pemuda, Tokoh Penanggung Jawab, Kepala Desa) */}
-              <div className="space-y-3 pt-2 border-t border-rose-200/80">
-                <p className="text-center text-xs font-black uppercase tracking-wider text-rose-800">
+              <div className="space-y-3 pt-2 border-t border-emerald-200/80">
+                <p className="text-center text-xs font-black uppercase tracking-wider text-emerald-800">
                   Mengetahui & Menyetujui, Pemerintah Desa & Penanggung Jawab Lingkungan
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-1">
@@ -2135,7 +2135,7 @@ export default function ProposalKegiatan({
                     return (
                       <div
                         key={sig.key}
-                        className="p-4 rounded-xl bg-white border border-rose-200 text-center flex flex-col justify-between min-h-[140px] shadow-2xs"
+                        className="p-4 rounded-xl bg-white border border-emerald-200 text-center flex flex-col justify-between min-h-[140px] shadow-2xs"
                       >
                         {isEditing ? (
                           <input
@@ -2145,11 +2145,11 @@ export default function ProposalKegiatan({
                               ...formData,
                               signerRoles: { ...(formData.signerRoles || {}), [sig.key]: e.target.value }
                             })}
-                            className="w-full px-2 py-1 text-xs font-bold text-center text-rose-950 uppercase bg-rose-50 border border-rose-300 rounded"
+                            className="w-full px-2 py-1 text-xs font-bold text-center text-emerald-950 uppercase bg-emerald-50 border border-emerald-300 rounded"
                             placeholder="Jabatan"
                           />
                         ) : (
-                          <span className="text-xs font-bold text-rose-900 uppercase">{roleVal}</span>
+                          <span className="text-xs font-bold text-emerald-900 uppercase">{roleVal}</span>
                         )}
                         <div className="pt-8">
                           <div className="border-b border-slate-400 w-4/5 mx-auto mb-1.5" />
@@ -2181,7 +2181,7 @@ export default function ProposalKegiatan({
 
         {/* STICKY BOTTOM SAVE BAR WHEN EDITING */}
         {isEditing && (
-          <div className="sticky bottom-3 z-30 p-3.5 sm:p-4 rounded-2xl bg-rose-950/95 backdrop-blur-md text-white shadow-2xl border border-rose-500/50 flex flex-wrap items-center justify-between gap-3 print:hidden">
+          <div className="sticky bottom-3 z-30 p-3.5 sm:p-4 rounded-2xl bg-emerald-950/95 backdrop-blur-md text-white shadow-2xl border border-emerald-500/50 flex flex-wrap items-center justify-between gap-3 print:hidden">
             <div className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold">
               <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping shrink-0" />
               <span>Mode Edit Proposal Aktif — Semua bagian (Kop, A–I, Panitia & 8 TTD) dapat diedit langsung</span>
@@ -2191,7 +2191,7 @@ export default function ProposalKegiatan({
                 type="button"
                 onClick={handleSaveProposal}
                 disabled={saving}
-                className="px-4 py-2 bg-rose-400 hover:bg-rose-300 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow flex items-center gap-1.5 cursor-pointer transition-all"
+                className="px-4 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow flex items-center gap-1.5 cursor-pointer transition-all"
               >
                 {saving ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
                 <span>Simpan Semua Perubahan Proposal</span>

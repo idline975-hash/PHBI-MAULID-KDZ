@@ -36,15 +36,15 @@ export default function PaymentModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Sticky top close bar */}
-        <div className="bg-rose-950 text-rose-200 px-3.5 py-2.5 sm:px-5 sm:py-3 flex items-center justify-between border-b border-rose-800 flex-shrink-0">
+        <div className="bg-emerald-950 text-emerald-200 px-3.5 py-2.5 sm:px-5 sm:py-3 flex items-center justify-between border-b border-emerald-800 flex-shrink-0">
           <div className="flex items-center gap-2 text-xs font-bold truncate pr-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-rose-400 animate-pulse flex-shrink-0"></span>
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse flex-shrink-0"></span>
             <span className="truncate">Pembayaran Transfer Bank, E-Wallet & QRIS PHBI 1448 H / 2027 M</span>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 text-rose-300 hover:text-white hover:bg-rose-800 rounded-lg transition-colors cursor-pointer min-w-[36px] min-h-[36px] flex items-center justify-center flex-shrink-0"
+            className="p-1.5 text-emerald-300 hover:text-white hover:bg-emerald-800 rounded-lg transition-colors cursor-pointer min-w-[36px] min-h-[36px] flex items-center justify-center flex-shrink-0"
             title="Tutup Modal"
           >
             <X className="w-5 h-5" />

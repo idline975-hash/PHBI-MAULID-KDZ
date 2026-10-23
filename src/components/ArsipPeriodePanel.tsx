@@ -271,18 +271,18 @@ export default function ArsipPeriodePanel({
   return (
     <div className="space-y-5">
       {/* 1. HEADER BANNER PENYIMPANAN MULTI-TAHUN */}
-      <div className="bg-gradient-to-r from-rose-950 via-teal-900 to-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-lg border border-rose-700/50 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-emerald-950 via-teal-900 to-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-lg border border-emerald-700/50 relative overflow-hidden">
         <div className="absolute -top-12 -right-12 w-48 h-48 bg-amber-400/10 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div className="space-y-1.5">
-            <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-rose-800/80 border border-rose-500/40 text-rose-200 text-xs font-bold">
+            <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/80 border border-emerald-500/40 text-emerald-200 text-xs font-bold">
               <FolderArchive className="w-3.5 h-3.5 text-amber-300" />
               <span>Penyimpanan Multi-Tahun & Arsip Antar-Periode PHBI</span>
             </div>
             <h2 className="text-lg sm:text-2xl font-black tracking-tight text-white">
               Manajemen Arsip Tahunan & Riwayat Antar-Periode
             </h2>
-            <p className="text-xs sm:text-sm text-rose-100/90 max-w-3xl leading-relaxed">
+            <p className="text-xs sm:text-sm text-emerald-100/90 max-w-3xl leading-relaxed">
               Seluruh data keuangan, rekapitulasi iuran 12 minggu, donasi sukarela, pengeluaran kas, struktur panitia, dan proposal disimpan per periode tahunan sehingga tidak hilang saat berganti tahun kegiatan.
             </p>
           </div>
@@ -294,7 +294,7 @@ export default function ArsipPeriodePanel({
                 type="button"
                 id="btn-save-current-archive"
                 onClick={handleOpenSaveModal}
-                className="px-4 py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-md border border-rose-400/40 flex items-center gap-2 cursor-pointer transition-all"
+                className="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-md border border-emerald-400/40 flex items-center gap-2 cursor-pointer transition-all"
               >
                 <Archive className="w-4 h-4 text-amber-300" />
                 <span>Simpan Arsip Periode Ini</span>
@@ -314,34 +314,34 @@ export default function ArsipPeriodePanel({
         </div>
 
         {/* Active Period Status Strip */}
-        <div className="mt-5 pt-4 border-t border-rose-800/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
-          <div className="p-3 rounded-xl bg-rose-950/80 border border-rose-700/60">
-            <span className="text-rose-300/90 text-[10px] font-bold uppercase block">Periode Aktif Berjalan</span>
+        <div className="mt-5 pt-4 border-t border-emerald-800/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
+          <div className="p-3 rounded-xl bg-emerald-950/80 border border-emerald-700/60">
+            <span className="text-emerald-300/90 text-[10px] font-bold uppercase block">Periode Aktif Berjalan</span>
             <span className="text-sm sm:text-base font-black text-amber-300 flex items-center gap-1.5 mt-0.5">
               <Calendar className="w-4 h-4 text-amber-400 shrink-0" />
               {activePeriodLabel}
             </span>
           </div>
-          <div className="p-3 rounded-xl bg-rose-950/80 border border-rose-700/60">
-            <span className="text-rose-300/90 text-[10px] font-bold uppercase block">Total Kas Masuk Aktif</span>
-            <span className="text-sm sm:text-base font-black font-mono text-rose-300 mt-0.5 block">
+          <div className="p-3 rounded-xl bg-emerald-950/80 border border-emerald-700/60">
+            <span className="text-emerald-300/90 text-[10px] font-bold uppercase block">Total Kas Masuk Aktif</span>
+            <span className="text-sm sm:text-base font-black font-mono text-emerald-300 mt-0.5 block">
               Rp {formatRupiah(activeSummary.totalMasuk)}
             </span>
           </div>
-          <div className="p-3 rounded-xl bg-rose-950/80 border border-rose-700/60">
-            <span className="text-rose-300/90 text-[10px] font-bold uppercase block">Total Pengeluaran Aktif</span>
-            <span className="text-sm sm:text-base font-black font-mono text-rose-300 mt-0.5 block">
+          <div className="p-3 rounded-xl bg-emerald-950/80 border border-emerald-700/60">
+            <span className="text-emerald-300/90 text-[10px] font-bold uppercase block">Total Pengeluaran Aktif</span>
+            <span className="text-sm sm:text-base font-black font-mono text-emerald-300 mt-0.5 block">
               Rp {formatRupiah(activeSummary.totalKeluar)}
             </span>
           </div>
-          <div className="p-3 rounded-xl bg-rose-950/80 border border-rose-700/60">
-            <span className="text-rose-300/90 text-[10px] font-bold uppercase block">Sisa Saldo Periode Aktif</span>
+          <div className="p-3 rounded-xl bg-emerald-950/80 border border-emerald-700/60">
+            <span className="text-emerald-300/90 text-[10px] font-bold uppercase block">Sisa Saldo Periode Aktif</span>
             <span className="text-sm sm:text-base font-black font-mono text-white mt-0.5 block">
               Rp {formatRupiah(activeSummary.sisaSaldo)}
             </span>
           </div>
-          <div className="p-3 rounded-xl bg-rose-950/80 border border-rose-700/60">
-            <span className="text-rose-300/90 text-[10px] font-bold uppercase block">Total Arsip Tersimpan</span>
+          <div className="p-3 rounded-xl bg-emerald-950/80 border border-emerald-700/60">
+            <span className="text-emerald-300/90 text-[10px] font-bold uppercase block">Total Arsip Tersimpan</span>
             <span className="text-sm sm:text-base font-black text-amber-200 mt-0.5 block">
               {periodArchives.length} Periode Tahunan
             </span>
@@ -351,15 +351,15 @@ export default function ArsipPeriodePanel({
 
       {/* Feedback Banner */}
       {successMsg && (
-        <div className="p-3.5 rounded-xl bg-rose-50 border border-rose-300 text-rose-900 text-xs sm:text-sm font-bold flex items-center justify-between gap-2 shadow-xs">
+        <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-xs sm:text-sm font-bold flex items-center justify-between gap-2 shadow-xs">
           <div className="flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-rose-600 shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
             <span>{successMsg}</span>
           </div>
           <button
             type="button"
             onClick={() => setSuccessMsg('')}
-            className="text-rose-700 hover:text-rose-950 p-1 cursor-pointer"
+            className="text-emerald-700 hover:text-emerald-950 p-1 cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>
@@ -367,15 +367,15 @@ export default function ArsipPeriodePanel({
       )}
 
       {errorMsg && (
-        <div className="p-3.5 rounded-xl bg-rose-50 border border-rose-300 text-rose-900 text-xs sm:text-sm font-bold flex items-center justify-between gap-2 shadow-xs">
+        <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-xs sm:text-sm font-bold flex items-center justify-between gap-2 shadow-xs">
           <div className="flex items-center gap-2">
-            <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
+            <AlertCircle className="w-4 h-4 text-emerald-600 shrink-0" />
             <span>{errorMsg}</span>
           </div>
           <button
             type="button"
             onClick={() => setErrorMsg('')}
-            className="text-rose-700 hover:text-rose-950 p-1 cursor-pointer"
+            className="text-emerald-700 hover:text-emerald-950 p-1 cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>
@@ -387,7 +387,7 @@ export default function ArsipPeriodePanel({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
           <div>
             <h3 className="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
-              <History className="w-5 h-5 text-rose-700" />
+              <History className="w-5 h-5 text-emerald-700" />
               <span>Daftar Arsip Periode Tahunan ({periodArchives.length} Arsip)</span>
             </h3>
             <p className="text-xs text-slate-500">
@@ -398,7 +398,7 @@ export default function ArsipPeriodePanel({
 
         {periodArchives.length === 0 ? (
           <div className="py-12 px-4 text-center bg-slate-50/70 rounded-2xl border border-dashed border-slate-300 space-y-3">
-            <div className="w-12 h-12 rounded-2xl bg-rose-100 text-rose-800 flex items-center justify-center mx-auto">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mx-auto">
               <FolderArchive className="w-6 h-6" />
             </div>
             <div className="max-w-md mx-auto space-y-1">
@@ -417,7 +417,7 @@ export default function ArsipPeriodePanel({
                 <button
                   type="button"
                   onClick={handleOpenSaveModal}
-                  className="px-4 py-2 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold rounded-xl shadow-xs inline-flex items-center gap-1.5 cursor-pointer"
+                  className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-xl shadow-xs inline-flex items-center gap-1.5 cursor-pointer"
                 >
                   <Archive className="w-3.5 h-3.5 text-amber-300" />
                   <span>Simpan Snapshot Periode {activePeriodLabel} Sekarang</span>
@@ -441,8 +441,8 @@ export default function ArsipPeriodePanel({
                   key={archive.id}
                   className={`rounded-2xl border-2 p-5 transition-all flex flex-col justify-between gap-4 ${
                     isCurrentActive
-                      ? 'border-rose-500 bg-rose-50/30 shadow-sm'
-                      : 'border-slate-200 bg-white hover:border-rose-300 shadow-xs'
+                      ? 'border-emerald-500 bg-emerald-50/30 shadow-sm'
+                      : 'border-slate-200 bg-white hover:border-emerald-300 shadow-xs'
                   }`}
                 >
                   <div className="space-y-3">
@@ -450,11 +450,11 @@ export default function ArsipPeriodePanel({
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <div className="flex flex-wrap items-center gap-2">
-                          <span className="px-2.5 py-1 rounded-lg bg-rose-900 text-amber-300 font-black text-xs sm:text-sm">
+                          <span className="px-2.5 py-1 rounded-lg bg-emerald-900 text-amber-300 font-black text-xs sm:text-sm">
                             {archive.periodLabel}
                           </span>
                           {isCurrentActive && (
-                            <span className="px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 border border-rose-300 text-[10px] font-extrabold uppercase">
+                            <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 text-[10px] font-extrabold uppercase">
                               Periode Aktif
                             </span>
                           )}
@@ -486,19 +486,19 @@ export default function ArsipPeriodePanel({
 
                     {/* Financial Summary Grid */}
                     <div className="grid grid-cols-3 gap-2 text-center">
-                      <div className="p-2.5 rounded-xl bg-rose-50 border border-rose-200">
-                        <span className="text-[10px] font-bold text-rose-800 uppercase block">
+                      <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200">
+                        <span className="text-[10px] font-bold text-emerald-800 uppercase block">
                           Total Masuk
                         </span>
-                        <span className="text-xs sm:text-sm font-black font-mono text-rose-950 mt-0.5 block">
+                        <span className="text-xs sm:text-sm font-black font-mono text-emerald-950 mt-0.5 block">
                           Rp {formatRupiah(sum.totalMasuk)}
                         </span>
                       </div>
-                      <div className="p-2.5 rounded-xl bg-rose-50 border border-rose-200">
-                        <span className="text-[10px] font-bold text-rose-800 uppercase block">
+                      <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200">
+                        <span className="text-[10px] font-bold text-emerald-800 uppercase block">
                           Total Keluar
                         </span>
-                        <span className="text-xs sm:text-sm font-black font-mono text-rose-950 mt-0.5 block">
+                        <span className="text-xs sm:text-sm font-black font-mono text-emerald-950 mt-0.5 block">
                           Rp {formatRupiah(sum.totalKeluar)}
                         </span>
                       </div>
@@ -532,7 +532,7 @@ export default function ArsipPeriodePanel({
                           setSelectedArchive(archive);
                           setDetailTab('ringkasan');
                         }}
-                        className="px-3 py-2 bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs rounded-xl flex items-center gap-1.5 cursor-pointer transition-colors shadow-xs"
+                        className="px-3 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl flex items-center gap-1.5 cursor-pointer transition-colors shadow-xs"
                       >
                         <Eye className="w-3.5 h-3.5" />
                         <span>Lihat Detail &amp; Laporan</span>
@@ -565,7 +565,7 @@ export default function ArsipPeriodePanel({
                         <button
                           type="button"
                           onClick={() => setConfirmRestoreArchive(archive)}
-                          className="px-2.5 py-2 bg-blue-50 hover:bg-blue-100 text-blue-800 border border-blue-200 font-bold text-xs rounded-xl flex items-center gap-1 cursor-pointer transition-colors"
+                          className="px-2.5 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs rounded-xl flex items-center gap-1 cursor-pointer transition-colors"
                           title="Aktifkan dan muat periode ini sebagai periode utama aplikasi"
                         >
                           <RotateCcw className="w-3.5 h-3.5" />
@@ -575,7 +575,7 @@ export default function ArsipPeriodePanel({
                         <button
                           type="button"
                           onClick={() => setConfirmDeleteArchive(archive)}
-                          className="p-2 text-rose-600 hover:bg-rose-50 border border-transparent hover:border-rose-200 rounded-xl cursor-pointer transition-colors"
+                          className="p-2 text-emerald-600 hover:bg-emerald-50 border border-transparent hover:border-emerald-200 rounded-xl cursor-pointer transition-colors"
                           title="Hapus Arsip Periode"
                         >
                           <Trash2 className="w-4 h-4" />
@@ -592,15 +592,15 @@ export default function ArsipPeriodePanel({
 
       {/* 3. PANEL DETAIL ARSIP PERIODE TERPILIH */}
       {selectedArchive && (
-        <div className="bg-white rounded-2xl shadow-lg border-2 border-rose-600 overflow-hidden animate-in fade-in">
+        <div className="bg-white rounded-2xl shadow-lg border-2 border-emerald-600 overflow-hidden animate-in fade-in">
           {/* Header Detail */}
-          <div className="bg-gradient-to-r from-rose-900 via-teal-900 to-slate-900 text-white p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <div className="flex items-center gap-2">
                 <span className="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-xs">
                   ARSIP PERIODE {selectedArchive.periodLabel}
                 </span>
-                <span className="text-xs text-rose-200 font-mono">
+                <span className="text-xs text-emerald-200 font-mono">
                   Diarsipkan: {selectedArchive.archivedAt}
                 </span>
               </div>
@@ -656,7 +656,7 @@ export default function ArsipPeriodePanel({
                       selectedArchive.summary.totalKeluar
                     )
                   }
-                  className="px-3 py-2 bg-rose-800 hover:bg-rose-700 text-white border border-rose-500/40 font-bold text-xs rounded-xl flex items-center gap-1.5 cursor-pointer"
+                  className="px-3 py-2 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-500/40 font-bold text-xs rounded-xl flex items-center gap-1.5 cursor-pointer"
                 >
                   <FileDown className="w-3.5 h-3.5 text-amber-300" />
                   <span>PDF Rekap 12 Minggu</span>
@@ -688,7 +688,7 @@ export default function ArsipPeriodePanel({
                 onClick={() => setDetailTab(tab.id)}
                 className={`px-3.5 py-2 rounded-xl text-xs transition-all cursor-pointer ${
                   detailTab === tab.id
-                    ? 'bg-rose-800 text-white font-black shadow-md border-2 border-rose-950 ring-2 ring-rose-300'
+                    ? 'bg-emerald-800 text-white font-black shadow-md border-2 border-emerald-950 ring-2 ring-emerald-300'
                     : 'bg-white hover:bg-slate-200 text-slate-800 border-2 border-slate-300 font-bold'
                 }`}
               >
@@ -702,26 +702,26 @@ export default function ArsipPeriodePanel({
             {detailTab === 'ringkasan' && (
               <div className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="p-4 rounded-xl bg-rose-50 border border-rose-200">
-                    <span className="text-xs font-bold text-rose-800 uppercase block">
+                  <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+                    <span className="text-xs font-bold text-emerald-800 uppercase block">
                       Total Uang Masuk ({selectedArchive.periodLabel})
                     </span>
-                    <span className="text-xl font-black font-mono text-rose-950 mt-1 block">
+                    <span className="text-xl font-black font-mono text-emerald-950 mt-1 block">
                       Rp {formatRupiah(selectedArchive.summary.totalMasuk)}
                     </span>
-                    <span className="text-[11px] text-rose-700 block mt-1">
+                    <span className="text-[11px] text-emerald-700 block mt-1">
                       Iuran Warga: Rp {formatRupiah(selectedArchive.summary.totalWargaPaid)} • Sukarela: Rp {formatRupiah(selectedArchive.summary.totalSukarela)}
                     </span>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-rose-50 border border-rose-200">
-                    <span className="text-xs font-bold text-rose-800 uppercase block">
+                  <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+                    <span className="text-xs font-bold text-emerald-800 uppercase block">
                       Total Pengeluaran ({selectedArchive.periodLabel})
                     </span>
-                    <span className="text-xl font-black font-mono text-rose-950 mt-1 block">
+                    <span className="text-xl font-black font-mono text-emerald-950 mt-1 block">
                       Rp {formatRupiah(selectedArchive.summary.totalKeluar)}
                     </span>
-                    <span className="text-[11px] text-rose-700 block mt-1">
+                    <span className="text-[11px] text-emerald-700 block mt-1">
                       {selectedArchive.summary.pengeluaranCount} Transaksi Belanja Tercatat
                     </span>
                   </div>
@@ -768,7 +768,7 @@ export default function ArsipPeriodePanel({
                           selectedArchive.summary.totalSukarela
                         )
                       }
-                      className="px-3 py-1.5 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
+                      className="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
                     >
                       <FileDown className="w-3.5 h-3.5" />
                       <span>PDF Uang Masuk</span>
@@ -798,12 +798,12 @@ export default function ArsipPeriodePanel({
                     const weekSum = archCitizens.reduce((s, c) => s + (Number(c.weeks?.[w]) || 0), 0);
                     const paidCount = archCitizens.filter(c => !c.isNgontrak && (Number(c.weeks?.[w]) || 0) > 0).length;
                     return (
-                      <div key={w} className="p-3 bg-rose-50/70 rounded-xl border border-rose-200">
-                        <div className="flex items-center justify-between text-xs font-bold text-rose-900">
+                      <div key={w} className="p-3 bg-emerald-50/70 rounded-xl border border-emerald-200">
+                        <div className="flex items-center justify-between text-xs font-bold text-emerald-900">
                           <span>Minggu {w}</span>
-                          <span className="text-[10px] text-rose-700">{paidCount} Warga</span>
+                          <span className="text-[10px] text-emerald-700">{paidCount} Warga</span>
                         </div>
-                        <p className="text-sm font-black font-mono text-rose-950 mt-1">
+                        <p className="text-sm font-black font-mono text-emerald-950 mt-1">
                           Rp {formatRupiah(weekSum)}
                         </p>
                       </div>
@@ -840,7 +840,7 @@ export default function ArsipPeriodePanel({
                             <td className="p-2.5 text-slate-600">{getShortDate(s.timestamp)}</td>
                             <td className="p-2.5 font-bold text-slate-900">{s.donorName}</td>
                             <td className="p-2.5 text-slate-600">{s.keterangan || 'Infaq / Shodaqoh'}</td>
-                            <td className="p-2.5 text-right font-mono font-bold text-rose-700">
+                            <td className="p-2.5 text-right font-mono font-bold text-emerald-700">
                               Rp {formatRupiah(s.amount)}
                             </td>
                           </tr>
@@ -863,7 +863,7 @@ export default function ArsipPeriodePanel({
                         selectedArchive.summary.totalKeluar
                       )
                     }
-                    className="px-3 py-1.5 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
+                    className="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer"
                   >
                     <FileDown className="w-3.5 h-3.5" />
                     <span>PDF Uang Keluar</span>
@@ -871,7 +871,7 @@ export default function ArsipPeriodePanel({
                 </div>
                 <div className="overflow-x-auto max-h-80 border border-slate-200 rounded-xl">
                   <table className="w-full text-left border-collapse text-xs">
-                    <thead className="bg-rose-50 text-rose-950 font-bold sticky top-0">
+                    <thead className="bg-emerald-50 text-emerald-950 font-bold sticky top-0">
                       <tr>
                         <th className="p-2.5 text-center w-12">No</th>
                         <th className="p-2.5">Tanggal</th>
@@ -894,7 +894,7 @@ export default function ArsipPeriodePanel({
                             <td className="p-2.5 text-slate-600">{getShortDate(p.timestamp)}</td>
                             <td className="p-2.5 font-bold text-slate-900">{p.description}</td>
                             <td className="p-2.5 text-slate-700">{p.recipient || '-'}</td>
-                            <td className="p-2.5 text-right font-mono font-bold text-rose-700">
+                            <td className="p-2.5 text-right font-mono font-bold text-emerald-700">
                               Rp {formatRupiah(p.amount)}
                             </td>
                           </tr>
@@ -912,10 +912,10 @@ export default function ArsipPeriodePanel({
       {/* MODAL 1: SIMPAN SNAPSHOT ARSIP PERIODE BERJALAN */}
       {showSaveModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-200 space-y-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-200 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2 bg-rose-100 text-rose-800 rounded-xl">
+                <div className="p-2 bg-emerald-100 text-emerald-800 rounded-xl">
                   <Archive className="w-5 h-5" />
                 </div>
                 <div>
@@ -947,7 +947,7 @@ export default function ArsipPeriodePanel({
                   value={savePeriodLabel}
                   onChange={e => setSavePeriodLabel(e.target.value)}
                   placeholder="Contoh: 1448 H / 2027 M"
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold text-slate-900 focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-bold text-slate-900 focus:bg-white focus:border-emerald-600"
                 />
               </div>
 
@@ -960,7 +960,7 @@ export default function ArsipPeriodePanel({
                   value={saveCatatan}
                   onChange={e => setSaveCatatan(e.target.value)}
                   placeholder="Keterangan singkat arsip periode ini..."
-                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-800 focus:bg-white focus:border-rose-600"
+                  className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-800 focus:bg-white focus:border-emerald-600"
                 />
               </div>
 
@@ -969,7 +969,7 @@ export default function ArsipPeriodePanel({
                   type="checkbox"
                   checked={overwriteExisting}
                   onChange={e => setOverwriteExisting(e.target.checked)}
-                  className="rounded border-slate-300 text-rose-600 focus:ring-rose-500"
+                  className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                 />
                 <span>Perbarui arsip jika periode dengan nama yang sama sudah ada</span>
               </label>
@@ -985,7 +985,7 @@ export default function ArsipPeriodePanel({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="px-5 py-2.5 bg-rose-700 hover:bg-rose-800 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+                  className="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
                 >
                   {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
                   <span>Simpan ke Arsip Multi-Tahun</span>
@@ -1024,8 +1024,8 @@ export default function ArsipPeriodePanel({
             </div>
 
             <form onSubmit={handleStartNewPeriod} className="space-y-4">
-              <div className="p-3.5 rounded-xl bg-rose-50 border border-rose-200 space-y-2">
-                <span className="text-[11px] font-black uppercase text-rose-900 block">
+              <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 space-y-2">
+                <span className="text-[11px] font-black uppercase text-emerald-900 block">
                   Langkah 1: Arsipkan Periode Saat Ini
                 </span>
                 <div>
@@ -1095,7 +1095,7 @@ export default function ArsipPeriodePanel({
                     required
                     value={newTargetInput}
                     onChange={e => setNewTargetInput(formatInputNumber(e.target.value))}
-                    className="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-mono font-bold text-rose-900"
+                    className="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-mono font-bold text-emerald-900"
                   />
                 </div>
 
@@ -1104,7 +1104,7 @@ export default function ArsipPeriodePanel({
                     type="checkbox"
                     checked={resetForNewPeriod}
                     onChange={e => setResetForNewPeriod(e.target.checked)}
-                    className="mt-0.5 rounded border-slate-300 text-rose-600 focus:ring-rose-500"
+                    className="mt-0.5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                   />
                   <span>
                     <strong>Kosongkan tabel iuran 12 minggu &amp; pengeluaran kas</strong> untuk memulai pencatatan dari Rp 0 pada periode tahun baru (data periode lama tetap tersimpan utuh di Arsip).
@@ -1137,9 +1137,9 @@ export default function ArsipPeriodePanel({
       {/* MODAL 3: KONFIRMASI AKTIFKAN / PULIHKAN ARSIP PERIODE */}
       {confirmRestoreArchive && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-blue-200 space-y-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-200 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="p-2.5 bg-blue-100 text-blue-700 rounded-xl">
+              <div className="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl">
                 <RotateCcw className="w-5 h-5" />
               </div>
               <div>
@@ -1168,7 +1168,7 @@ export default function ArsipPeriodePanel({
                 type="button"
                 disabled={loading}
                 onClick={() => handleRestoreArchive(confirmRestoreArchive)}
-                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+                className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
               >
                 {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <RotateCcw className="w-4 h-4" />}
                 <span>Ya, Aktifkan Periode {confirmRestoreArchive.periodLabel}</span>
@@ -1181,16 +1181,16 @@ export default function ArsipPeriodePanel({
       {/* MODAL 4: KONFIRMASI HAPUS ARSIP */}
       {confirmDeleteArchive && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-200 space-y-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-200 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="p-2.5 bg-rose-100 text-rose-700 rounded-xl">
+              <div className="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl">
                 <Trash2 className="w-5 h-5" />
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 text-sm sm:text-base">
                   Hapus Arsip Periode {confirmDeleteArchive.periodLabel}?
                 </h3>
-                <span className="text-[11px] text-rose-600 font-semibold">
+                <span className="text-[11px] text-emerald-600 font-semibold">
                   Diarsipkan pada: {confirmDeleteArchive.archivedAt}
                 </span>
               </div>
@@ -1212,7 +1212,7 @@ export default function ArsipPeriodePanel({
                 type="button"
                 disabled={loading}
                 onClick={() => handleDeleteArchive(confirmDeleteArchive)}
-                className="px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+                className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
               >
                 {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
                 <span>Ya, Hapus Arsip</span>

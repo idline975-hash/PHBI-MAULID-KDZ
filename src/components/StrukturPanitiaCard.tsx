@@ -229,7 +229,7 @@ export default function StrukturPanitiaCard({
   return (
     <div className="space-y-6">
       {/* Top Banner Card */}
-      <div className="bg-gradient-to-r from-rose-900 via-rose-800 to-teal-900 text-white rounded-2xl p-4 sm:p-6 shadow-md border border-rose-700/60 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white rounded-2xl p-4 sm:p-6 shadow-md border border-emerald-700/60 relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div className="space-y-1.5">
             <div className="flex flex-wrap items-center gap-2">
@@ -237,8 +237,8 @@ export default function StrukturPanitiaCard({
                 <Award className="w-3 h-3" />
                 SK Kepanitiaan Resmi
               </span>
-              <span className="text-[11px] text-rose-200 bg-rose-950/70 px-2 py-0.5 rounded-full border border-rose-600/40 flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3 text-rose-400" />
+              <span className="text-[11px] text-emerald-200 bg-emerald-950/70 px-2 py-0.5 rounded-full border border-emerald-600/40 flex items-center gap-1">
+                <CheckCircle2 className="w-3 h-3 text-emerald-400" />
                 Tersinkronisasi Cloud Firestore
               </span>
             </div>
@@ -246,7 +246,7 @@ export default function StrukturPanitiaCard({
               <Users className="w-5 h-5 sm:w-6 sm:h-6 text-amber-300" />
               SUSUNAN PANITIA ISRA MI'RAJ 1448 H / 2027 M
             </h2>
-            <p className="text-xs sm:text-sm text-rose-100/90 font-medium">
+            <p className="text-xs sm:text-sm text-emerald-100/90 font-medium">
               Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten
             </p>
           </div>
@@ -257,7 +257,7 @@ export default function StrukturPanitiaCard({
                 type="button"
                 id="btn-edit-struktur-panitia"
                 onClick={handleStartEdit}
-                className="px-3.5 py-2.5 bg-white hover:bg-rose-50 text-slate-950 font-black text-xs rounded-xl shadow-md transition-all border-2 border-rose-400 flex items-center justify-center gap-1.5 cursor-pointer min-h-[40px]"
+                className="px-3.5 py-2.5 bg-white hover:bg-emerald-50 text-slate-950 font-black text-xs rounded-xl shadow-md transition-all border-2 border-emerald-400 flex items-center justify-center gap-1.5 cursor-pointer min-h-[40px]"
                 title="Edit, Tambah, atau Hapus Anggota Seksi"
               >
                 <Edit3 className="w-4 h-4 text-slate-950" />
@@ -281,12 +281,12 @@ export default function StrukturPanitiaCard({
             >
               {copied ? (
                 <>
-                  <Check className="w-4 h-4 text-rose-300" />
-                  <span className="text-rose-200 font-bold">Tersalin!</span>
+                  <Check className="w-4 h-4 text-emerald-300" />
+                  <span className="text-emerald-200 font-bold">Tersalin!</span>
                 </>
               ) : (
                 <>
-                  <Copy className="w-4 h-4 text-rose-300" />
+                  <Copy className="w-4 h-4 text-emerald-300" />
                   <span>Salin Teks WA</span>
                 </>
               )}
@@ -297,22 +297,22 @@ export default function StrukturPanitiaCard({
 
       {/* Notification Alerts */}
       {saveSuccess && (
-        <div className="p-4 bg-rose-50 border border-rose-300 rounded-xl text-rose-900 text-xs sm:text-sm font-semibold flex items-center gap-2.5 animate-in fade-in">
-          <CheckCircle2 className="w-5 h-5 text-rose-600 flex-shrink-0" />
+        <div className="p-4 bg-emerald-50 border border-emerald-300 rounded-xl text-emerald-900 text-xs sm:text-sm font-semibold flex items-center gap-2.5 animate-in fade-in">
+          <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
           <span>{saveSuccess}</span>
         </div>
       )}
 
       {saveError && (
-        <div className="p-4 bg-rose-50 border border-rose-300 rounded-xl text-rose-900 text-xs sm:text-sm font-semibold flex items-center gap-2.5 animate-in fade-in">
-          <AlertCircle className="w-5 h-5 text-rose-600 flex-shrink-0" />
+        <div className="p-4 bg-emerald-50 border border-emerald-300 rounded-xl text-emerald-900 text-xs sm:text-sm font-semibold flex items-center gap-2.5 animate-in fade-in">
+          <AlertCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
           <span>{saveError}</span>
         </div>
       )}
 
       {/* ===================== MODE EDIT AKTIF ===================== */}
       {isEditing ? (
-        <div className="bg-white rounded-2xl p-5 sm:p-6 border-2 border-rose-500 shadow-xl space-y-6">
+        <div className="bg-white rounded-2xl p-5 sm:p-6 border-2 border-emerald-500 shadow-xl space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-200">
             <div>
               <div className="flex items-center gap-2">
@@ -352,7 +352,7 @@ export default function StrukturPanitiaCard({
                 type="button"
                 onClick={handleSave}
                 disabled={saving}
-                className="px-5 py-2 bg-rose-600 hover:bg-rose-700 text-white font-black text-xs sm:text-sm rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all disabled:opacity-50"
+                className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs sm:text-sm rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all disabled:opacity-50"
               >
                 {saving ? (
                   <>
@@ -380,7 +380,7 @@ export default function StrukturPanitiaCard({
                 value={editPelindung}
                 onChange={(e) => setEditPelindung(e.target.value)}
                 placeholder="Nama Pelindung (opsional)"
-                className="w-full px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs sm:text-sm font-semibold text-slate-900 focus:outline-rose-600"
+                className="w-full px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs sm:text-sm font-semibold text-slate-900 focus:outline-emerald-600"
               />
             </div>
 
@@ -393,7 +393,7 @@ export default function StrukturPanitiaCard({
                 value={editPenasehat}
                 onChange={(e) => setEditPenasehat(e.target.value)}
                 placeholder="Nama Penasehat (opsional)"
-                className="w-full px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs sm:text-sm font-semibold text-slate-900 focus:outline-rose-600"
+                className="w-full px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs sm:text-sm font-semibold text-slate-900 focus:outline-emerald-600"
               />
             </div>
 
@@ -406,7 +406,7 @@ export default function StrukturPanitiaCard({
                 value={editPenanggungJawab}
                 onChange={(e) => setEditPenanggungJawab(e.target.value)}
                 placeholder="Nama Penanggung Jawab (opsional)"
-                className="w-full px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs sm:text-sm font-semibold text-slate-900 focus:outline-rose-600"
+                className="w-full px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs sm:text-sm font-semibold text-slate-900 focus:outline-emerald-600"
               />
             </div>
           </div>
@@ -415,16 +415,16 @@ export default function StrukturPanitiaCard({
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h4 className="font-extrabold text-sm sm:text-base text-slate-900 flex items-center gap-2">
-                <Users className="w-4 h-4 text-rose-700" />
+                <Users className="w-4 h-4 text-emerald-700" />
                 <span>Daftar Seksi & Anggota ({editSections.length} Seksi)</span>
               </h4>
 
               <button
                 type="button"
                 onClick={handleAddSection}
-                className="px-3 py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-300 rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors"
+                className="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors"
               >
-                <Plus className="w-3.5 h-3.5 text-rose-700" />
+                <Plus className="w-3.5 h-3.5 text-emerald-700" />
                 <span>+ Tambah Seksi Baru</span>
               </button>
             </div>
@@ -442,7 +442,7 @@ export default function StrukturPanitiaCard({
                       {/* Section Title & Delete Section */}
                       <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-200">
                         <div className="flex items-center gap-1.5 flex-1">
-                          <span className="w-5 h-5 rounded-md bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
+                          <span className="w-5 h-5 rounded-md bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
                             {secIdx + 1}
                           </span>
                           <input
@@ -450,7 +450,7 @@ export default function StrukturPanitiaCard({
                             value={section.name}
                             onChange={(e) => handleEditSectionName(secIdx, e.target.value)}
                             placeholder="Nama Seksi..."
-                            className="w-full text-xs sm:text-sm font-bold text-slate-900 bg-slate-50 hover:bg-white focus:bg-white border border-transparent hover:border-slate-300 focus:border-rose-600 rounded px-2 py-1 transition-all"
+                            className="w-full text-xs sm:text-sm font-bold text-slate-900 bg-slate-50 hover:bg-white focus:bg-white border border-transparent hover:border-slate-300 focus:border-emerald-600 rounded px-2 py-1 transition-all"
                           />
                         </div>
 
@@ -458,7 +458,7 @@ export default function StrukturPanitiaCard({
                           type="button"
                           onClick={() => handleDeleteSection(secIdx)}
                           title="Hapus seksi ini"
-                          className="p-1 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded cursor-pointer transition-colors"
+                          className="p-1 text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 rounded cursor-pointer transition-colors"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
@@ -466,7 +466,7 @@ export default function StrukturPanitiaCard({
 
                       {/* Coordinator Input */}
                       <div className="space-y-1">
-                        <label className="block text-[10px] font-bold uppercase tracking-wider text-rose-800">
+                        <label className="block text-[10px] font-bold uppercase tracking-wider text-emerald-800">
                           Koordinator Seksi
                         </label>
                         <input
@@ -474,7 +474,7 @@ export default function StrukturPanitiaCard({
                           value={section.coordinator}
                           onChange={(e) => handleEditCoordinator(secIdx, e.target.value)}
                           placeholder="Nama koordinator..."
-                          className="w-full px-2.5 py-1.5 bg-rose-50/70 border border-rose-200 rounded-lg text-xs font-bold text-rose-950 focus:bg-white focus:outline-rose-600"
+                          className="w-full px-2.5 py-1.5 bg-emerald-50/70 border border-emerald-200 rounded-lg text-xs font-bold text-emerald-950 focus:bg-white focus:outline-emerald-600"
                         />
                       </div>
 
@@ -499,13 +499,13 @@ export default function StrukturPanitiaCard({
                                   value={member}
                                   onChange={(e) => handleEditMember(secIdx, memberIdx, e.target.value)}
                                   placeholder="Nama anggota..."
-                                  className="w-full text-xs font-medium text-slate-800 bg-transparent focus:bg-white focus:outline-rose-500 rounded px-1.5 py-0.5"
+                                  className="w-full text-xs font-medium text-slate-800 bg-transparent focus:bg-white focus:outline-emerald-500 rounded px-1.5 py-0.5"
                                 />
                                 <button
                                   type="button"
                                   onClick={() => handleDeleteMember(secIdx, memberIdx)}
                                   title="Hapus anggota ini"
-                                  className="p-1 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded cursor-pointer transition-colors"
+                                  className="p-1 text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 rounded cursor-pointer transition-colors"
                                 >
                                   <X className="w-3.5 h-3.5" />
                                 </button>
@@ -529,12 +529,12 @@ export default function StrukturPanitiaCard({
                                 handleAddMember(secIdx);
                               }
                             }}
-                            className="w-full px-2.5 py-1.5 bg-slate-50 border border-slate-300 rounded-lg text-xs text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-rose-600"
+                            className="w-full px-2.5 py-1.5 bg-slate-50 border border-slate-300 rounded-lg text-xs text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-emerald-600"
                           />
                           <button
                             type="button"
                             onClick={() => handleAddMember(secIdx)}
-                            className="px-2.5 py-1.5 bg-rose-600 hover:bg-rose-700 text-white rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors flex-shrink-0"
+                            className="px-2.5 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors flex-shrink-0"
                             title="Tambah anggota baru"
                           >
                             <Plus className="w-3.5 h-3.5" />
@@ -568,7 +568,7 @@ export default function StrukturPanitiaCard({
                 type="button"
                 onClick={handleSave}
                 disabled={saving}
-                className="px-5 py-2 bg-rose-600 hover:bg-rose-700 text-white font-black text-xs sm:text-sm rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all disabled:opacity-50"
+                className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs sm:text-sm rounded-xl shadow-md flex items-center gap-2 cursor-pointer transition-all disabled:opacity-50"
               >
                 {saving ? (
                   <>
@@ -596,7 +596,7 @@ export default function StrukturPanitiaCard({
                 onClick={() => setViewMode('bagan')}
                 className={`flex-1 sm:flex-initial px-3.5 py-2 rounded-lg font-black text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer border-2 min-h-[38px] ${
                   viewMode === 'bagan'
-                    ? 'bg-rose-700 text-white border-rose-950 shadow-xs'
+                    ? 'bg-emerald-700 text-white border-emerald-950 shadow-xs'
                     : 'bg-white text-slate-700 hover:text-slate-900 hover:bg-slate-200 border-slate-300'
                 }`}
               >
@@ -610,7 +610,7 @@ export default function StrukturPanitiaCard({
                 onClick={() => setViewMode('kartu')}
                 className={`flex-1 sm:flex-initial px-3.5 py-2 rounded-lg font-black text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer border-2 min-h-[38px] ${
                   viewMode === 'kartu'
-                    ? 'bg-rose-700 text-white border-rose-950 shadow-xs'
+                    ? 'bg-emerald-700 text-white border-emerald-950 shadow-xs'
                     : 'bg-white text-slate-700 hover:text-slate-900 hover:bg-slate-200 border-slate-300'
                 }`}
               >
@@ -621,7 +621,7 @@ export default function StrukturPanitiaCard({
 
             <div className="text-xs text-slate-500 font-medium px-1 sm:px-0">
               {viewMode === 'bagan' ? (
-                <span className="flex items-center gap-1.5 text-rose-800 font-semibold">
+                <span className="flex items-center gap-1.5 text-emerald-800 font-semibold">
                   <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                   Diagram Pohon Hierarki Komando & Koordinasi
                 </span>
@@ -653,20 +653,20 @@ export default function StrukturPanitiaCard({
                   <p className="text-[11px] text-slate-500 mt-1">Kepala Desa Kp Baru & Pelindung Kegiatan PHBI</p>
                 </div>
 
-                <div className="bg-white rounded-xl p-4 sm:p-5 border border-rose-200/90 shadow-xs relative overflow-hidden">
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-rose-500 to-teal-500"></div>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-rose-700 block mb-1">
+                <div className="bg-white rounded-xl p-4 sm:p-5 border border-emerald-200/90 shadow-xs relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-500"></div>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-emerald-700 block mb-1">
                     Penasehat
                   </span>
                   <div className="flex items-center gap-2 text-slate-900 font-black text-base sm:text-lg">
-                    <Heart className="w-5 h-5 text-rose-600 flex-shrink-0" />
+                    <Heart className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                     <span>{penasehatList.length > 0 ? penasehatList.join(' & ') : '—'}</span>
                   </div>
                   <p className="text-[11px] text-slate-500 mt-1">Tokoh Masyarakat Kp. Kedung Sapi & Penasehat PHBI</p>
                 </div>
 
                 <div className="bg-white rounded-xl p-4 sm:p-5 border border-teal-200/90 shadow-xs relative overflow-hidden">
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-400 to-rose-600"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-400 to-emerald-600"></div>
                   <span className="text-[10px] font-black uppercase tracking-wider text-teal-700 block mb-1">
                     Penanggung Jawab
                   </span>
@@ -682,18 +682,18 @@ export default function StrukturPanitiaCard({
               <div className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-xs space-y-3">
                 <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
                   <h3 className="font-extrabold text-sm sm:text-base text-slate-900 flex items-center gap-2">
-                    <Award className="w-4 h-4 text-rose-700" />
+                    <Award className="w-4 h-4 text-emerald-700" />
                     <span>Pengurus Inti Pelaksana</span>
                   </h3>
-                  <span className="text-[10px] font-bold text-rose-800 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200">
+                  <span className="text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
                     Pimpinan Harian
                   </span>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                  <div className="p-3 bg-rose-50/70 rounded-xl border border-rose-100">
-                    <span className="text-[10px] font-bold uppercase text-rose-700 block">Ketua Pelaksana</span>
-                    <span className="text-sm sm:text-base font-black text-rose-950 mt-0.5 block">{ketuaName || '—'}</span>
+                  <div className="p-3 bg-emerald-50/70 rounded-xl border border-emerald-100">
+                    <span className="text-[10px] font-bold uppercase text-emerald-700 block">Ketua Pelaksana</span>
+                    <span className="text-sm sm:text-base font-black text-emerald-950 mt-0.5 block">{ketuaName || '—'}</span>
                   </div>
 
                   <div className="p-3 bg-teal-50/70 rounded-xl border border-teal-100">
@@ -717,7 +717,7 @@ export default function StrukturPanitiaCard({
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <h3 className="font-extrabold text-sm sm:text-base text-slate-900 flex items-center gap-2">
-                    <Users className="w-4 h-4 text-rose-700" />
+                    <Users className="w-4 h-4 text-emerald-700" />
                     <span>Seksi – Seksi Bidang Pelaksana ({sections.length} Seksi)</span>
                   </h3>
                   <div className="flex items-center gap-2">
@@ -725,7 +725,7 @@ export default function StrukturPanitiaCard({
                       <button
                         type="button"
                         onClick={handleStartEdit}
-                        className="px-2.5 py-1 text-rose-700 hover:text-rose-900 hover:bg-rose-50 rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors"
+                        className="px-2.5 py-1 text-emerald-700 hover:text-emerald-900 hover:bg-emerald-50 rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors"
                       >
                         <Edit3 className="w-3.5 h-3.5" />
                         <span>Edit Anggota</span>
@@ -746,12 +746,12 @@ export default function StrukturPanitiaCard({
                       return (
                         <div 
                           key={idx}
-                          className="bg-white rounded-xl p-4 border border-slate-200 hover:border-rose-500 hover:shadow-sm transition-all flex flex-col justify-between"
+                          className="bg-white rounded-xl p-4 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all flex flex-col justify-between"
                         >
                           <div>
                             <div className="flex items-center justify-between gap-2 mb-2 pb-2 border-b border-slate-100">
                               <span className="font-bold text-xs sm:text-sm text-slate-900 flex items-center gap-1.5">
-                                <span className="w-5 h-5 rounded-md bg-rose-100 text-rose-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
+                                <span className="w-5 h-5 rounded-md bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center flex-shrink-0">
                                   {idx + 1}
                                 </span>
                                 <span>{section.name}</span>
@@ -761,11 +761,11 @@ export default function StrukturPanitiaCard({
                               </span>
                             </div>
 
-                            <div className="bg-rose-50 rounded-lg p-2.5 border border-rose-100 mb-2.5">
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-rose-700 block">
+                            <div className="bg-emerald-50 rounded-lg p-2.5 border border-emerald-100 mb-2.5">
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 block">
                                 Koordinator
                               </span>
-                              <span className="font-extrabold text-xs sm:text-sm text-rose-950">
+                              <span className="font-extrabold text-xs sm:text-sm text-emerald-950">
                                 {section.coordinator}
                               </span>
                             </div>

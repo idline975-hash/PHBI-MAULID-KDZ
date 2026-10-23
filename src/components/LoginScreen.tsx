@@ -34,33 +34,28 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
   // Login State (Untuk Usser, Bendahara, dan Admin)
   const [selectedRole, setSelectedRole] = useState<UserRole>('usser1');
   const [username, setUsername] = useState('rt08');
-  const [password, setPassword] = useState('123456');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  // Handle role switch cleanly with default autofill
+  // Handle role switch cleanly
   const handleSelectRole = (role: UserRole) => {
     setSelectedRole(role);
     setErrorMessage('');
+    setPassword('');
     if (role === 'admin') {
       setUsername('riyan');
-      setPassword('123456');
     } else if (role === 'bendahara') {
       setUsername('bendahara');
-      setPassword('123456');
     } else if (role === 'usser1') {
       setUsername('rt08');
-      setPassword('123456');
     } else if (role === 'usser2') {
       setUsername('rt09');
-      setPassword('123456');
     } else if (role === 'usser3') {
       setUsername('rt10');
-      setPassword('123456');
     } else {
-      setUsername('warga');
-      setPassword('123');
+      setUsername('');
     }
   };
 
@@ -139,29 +134,29 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
               type="button"
               id="btn-back-to-warga"
               onClick={onBackToWarga}
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white hover:bg-rose-50 text-rose-800 border border-rose-200 shadow-xs text-xs sm:text-sm font-bold transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-emerald-900 border border-emerald-200 shadow-xs text-xs sm:text-sm font-bold transition-all cursor-pointer"
             >
-              <ArrowLeft className="w-4 h-4 text-rose-700" />
-              <Users className="w-4 h-4 text-teal-600" />
+              <ArrowLeft className="w-4 h-4 text-emerald-700" />
+              <Users className="w-4 h-4 text-emerald-600" />
               <span>Kembali ke Dasbor Warga</span>
             </button>
           </div>
         )}
 
         {/* Main Card */}
-        <div className="bg-white rounded-2xl shadow-xl border border-rose-100 overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-xl border border-emerald-100 overflow-hidden">
           {/* Header Banner */}
-          <div className="bg-gradient-to-br from-rose-800 via-rose-700 to-teal-800 p-6 sm:p-8 text-center text-white relative">
+          <div className="bg-gradient-to-br from-emerald-950 via-emerald-900 to-slate-950 p-6 sm:p-8 text-center text-white relative">
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-400/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-rose-500/20 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-emerald-500/20 rounded-full blur-2xl pointer-events-none" />
 
-            <h2 className="text-xl sm:text-2xl font-black tracking-tight text-amber-200">
+            <h2 className="text-xl sm:text-2xl font-black tracking-tight text-amber-300">
               LOGIN PENGURUS & PETUGAS
             </h2>
-            <p className="text-xs sm:text-sm text-rose-100 mt-1 font-medium">
+            <p className="text-xs sm:text-sm text-emerald-100 mt-1 font-medium">
               Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten
             </p>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-900/60 text-rose-200 text-xs font-semibold mt-3 border border-rose-600/40">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/80 text-emerald-200 text-xs font-semibold mt-3 border border-emerald-600/50">
               <Sparkles className="w-3.5 h-3.5 text-amber-300" />
               <span>Akses Khusus Usser, Bendahara & Administrator</span>
             </div>
@@ -180,15 +175,15 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                 onClick={() => handleSelectRole('usser1')}
                 className={`flex flex-col items-center justify-center p-2.5 sm:p-3 rounded-xl border-2 text-center transition-all cursor-pointer ${
                   selectedRole === 'usser1' || selectedRole === 'usser2' || selectedRole === 'usser3'
-                    ? 'bg-rose-800 text-white border-rose-950 font-black shadow-md ring-2 ring-rose-300'
+                    ? 'bg-emerald-800 text-white border-emerald-950 font-black shadow-md ring-2 ring-emerald-300'
                     : 'bg-slate-100 text-slate-800 border-slate-300 hover:bg-slate-200 font-bold'
                 }`}
               >
-                <div className={`p-2 rounded-lg mb-1.5 ${selectedRole === 'usser1' || selectedRole === 'usser2' || selectedRole === 'usser3' ? 'bg-rose-900 text-white' : 'bg-rose-200 text-rose-900'}`}>
+                <div className={`p-2 rounded-lg mb-1.5 ${selectedRole === 'usser1' || selectedRole === 'usser2' || selectedRole === 'usser3' ? 'bg-emerald-900 text-white' : 'bg-emerald-200 text-emerald-900'}`}>
                   <User className="w-5 h-5" />
                 </div>
                 <span className="font-black text-xs sm:text-sm">Usser</span>
-                <span className={`text-[10px] hidden sm:block ${selectedRole === 'usser1' || selectedRole === 'usser2' || selectedRole === 'usser3' ? 'text-rose-100' : 'text-slate-600'}`}>
+                <span className={`text-[10px] hidden sm:block ${selectedRole === 'usser1' || selectedRole === 'usser2' || selectedRole === 'usser3' ? 'text-emerald-100' : 'text-slate-600'}`}>
                   Donasi Warga
                 </span>
               </button>
@@ -200,15 +195,15 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                 onClick={() => handleSelectRole('bendahara')}
                 className={`flex flex-col items-center justify-center p-2.5 sm:p-3 rounded-xl border-2 text-center transition-all cursor-pointer ${
                   selectedRole === 'bendahara'
-                    ? 'bg-rose-800 text-white border-rose-950 font-black shadow-md ring-2 ring-rose-300'
+                    ? 'bg-emerald-800 text-white border-emerald-950 font-black shadow-md ring-2 ring-emerald-300'
                     : 'bg-slate-100 text-slate-800 border-slate-300 hover:bg-slate-200 font-bold'
                 }`}
               >
-                <div className={`p-2 rounded-lg mb-1.5 ${selectedRole === 'bendahara' ? 'bg-rose-900 text-white' : 'bg-rose-200 text-rose-900'}`}>
+                <div className={`p-2 rounded-lg mb-1.5 ${selectedRole === 'bendahara' ? 'bg-emerald-900 text-white' : 'bg-emerald-200 text-emerald-900'}`}>
                   <Wallet className="w-5 h-5" />
                 </div>
                 <span className="font-black text-xs sm:text-sm">Bendahara</span>
-                <span className={`text-[10px] hidden sm:block ${selectedRole === 'bendahara' ? 'text-rose-100' : 'text-slate-600'}`}>
+                <span className={`text-[10px] hidden sm:block ${selectedRole === 'bendahara' ? 'text-emerald-100' : 'text-slate-600'}`}>
                   Kas & Beban
                 </span>
               </button>
@@ -220,15 +215,15 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                 onClick={() => handleSelectRole('admin')}
                 className={`flex flex-col items-center justify-center p-2.5 sm:p-3 rounded-xl border-2 text-center transition-all cursor-pointer ${
                   selectedRole === 'admin'
-                    ? 'bg-rose-800 text-white border-rose-950 font-black shadow-md ring-2 ring-rose-300'
+                    ? 'bg-emerald-800 text-white border-emerald-950 font-black shadow-md ring-2 ring-emerald-300'
                     : 'bg-slate-100 text-slate-800 border-slate-300 hover:bg-slate-200 font-bold'
                 }`}
               >
-                <div className={`p-2 rounded-lg mb-1.5 ${selectedRole === 'admin' ? 'bg-rose-900 text-white' : 'bg-amber-200 text-amber-900'}`}>
+                <div className={`p-2 rounded-lg mb-1.5 ${selectedRole === 'admin' ? 'bg-emerald-900 text-white' : 'bg-emerald-200 text-emerald-900'}`}>
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <span className="font-black text-xs sm:text-sm">Admin</span>
-                <span className={`text-[10px] hidden sm:block ${selectedRole === 'admin' ? 'text-rose-100' : 'text-slate-600'}`}>
+                <span className={`text-[10px] hidden sm:block ${selectedRole === 'admin' ? 'text-emerald-100' : 'text-slate-600'}`}>
                   Administrator
                 </span>
               </button>
@@ -240,10 +235,10 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                 <span className="text-xs text-slate-800 font-extrabold">Pilihan Petugas RT:</span>
                 <button
                   type="button"
-                  onClick={() => { setSelectedRole('usser1'); setUsername('rt08'); setPassword('123456'); }}
+                  onClick={() => { setSelectedRole('usser1'); setUsername('rt08'); setPassword(''); }}
                   className={`px-3 py-1.5 rounded-lg text-xs font-black cursor-pointer transition-all ${
                     username === 'rt08' || username === 'usser1'
-                      ? 'bg-rose-800 text-white border-2 border-rose-950 shadow-md'
+                      ? 'bg-emerald-800 text-white border-2 border-emerald-950 shadow-md'
                       : 'bg-slate-100 text-slate-800 border-2 border-slate-300 hover:bg-slate-200'
                   }`}
                 >
@@ -251,10 +246,10 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                 </button>
                 <button
                   type="button"
-                  onClick={() => { setSelectedRole('usser2'); setUsername('rt09'); setPassword('123456'); }}
+                  onClick={() => { setSelectedRole('usser2'); setUsername('rt09'); setPassword(''); }}
                   className={`px-3 py-1.5 rounded-lg text-xs font-black cursor-pointer transition-all ${
                     username === 'rt09' || username === 'usser2'
-                      ? 'bg-rose-800 text-white border-2 border-rose-950 shadow-md'
+                      ? 'bg-emerald-800 text-white border-2 border-emerald-950 shadow-md'
                       : 'bg-slate-100 text-slate-800 border-2 border-slate-300 hover:bg-slate-200'
                   }`}
                 >
@@ -262,10 +257,10 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                 </button>
                 <button
                   type="button"
-                  onClick={() => { setSelectedRole('usser3'); setUsername('rt10'); setPassword('123456'); }}
+                  onClick={() => { setSelectedRole('usser3'); setUsername('rt10'); setPassword(''); }}
                   className={`px-3 py-1.5 rounded-lg text-xs font-black cursor-pointer transition-all ${
                     username === 'rt10' || username === 'usser3'
-                      ? 'bg-rose-800 text-white border-2 border-rose-950 shadow-md'
+                      ? 'bg-emerald-800 text-white border-2 border-emerald-950 shadow-md'
                       : 'bg-slate-100 text-slate-800 border-2 border-slate-300 hover:bg-slate-200'
                   }`}
                 >
@@ -278,8 +273,8 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
           {/* Form Input Login */}
           <form onSubmit={handleSubmit} className="p-5 sm:p-8 space-y-4 sm:space-y-5">
             {errorMessage && (
-              <div className="flex items-center gap-2 p-3 bg-rose-50 border border-rose-200 text-rose-700 rounded-xl text-xs sm:text-sm font-medium animate-shake">
-                <AlertCircle className="w-4 h-4 flex-shrink-0 text-rose-600" />
+              <div className="flex items-center gap-2 p-3 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-xl text-xs sm:text-sm font-medium animate-shake">
+                <AlertCircle className="w-4 h-4 flex-shrink-0 text-emerald-600" />
                 <span>{errorMessage}</span>
               </div>
             )}
@@ -301,7 +296,7 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Masukkan username akun"
-                  className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 bg-slate-50 border border-slate-300 focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20 rounded-xl text-sm font-medium transition-all"
+                  className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 bg-slate-50 border border-slate-300 focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 rounded-xl text-sm font-medium transition-all"
                 />
               </div>
             </div>
@@ -325,13 +320,13 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Masukkan kata sandi rahasia"
-                  className="w-full pl-10 pr-12 py-2.5 sm:py-3 bg-slate-50 border border-slate-300 focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20 rounded-xl text-sm font-medium transition-all font-mono"
+                  className="w-full pl-10 pr-12 py-2.5 sm:py-3 bg-slate-50 border border-slate-300 focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 rounded-xl text-sm font-medium transition-all font-mono"
                 />
                 <button
                   type="button"
                   id="btn-toggle-password-visibility"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-rose-700 transition-colors cursor-pointer"
+                  className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-emerald-700 transition-colors cursor-pointer"
                   title={showPassword ? 'Tutup Password' : 'Lihat Password'}
                 >
                   {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -344,7 +339,7 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
               type="submit"
               id="btn-submit-login"
               disabled={loading}
-              className="w-full py-3 sm:py-3.5 px-4 bg-gradient-to-r from-rose-600 to-teal-600 hover:from-rose-700 hover:to-teal-700 active:scale-[0.99] text-white font-bold rounded-xl shadow-lg shadow-rose-600/30 flex items-center justify-center gap-2 transition-all cursor-pointer text-sm sm:text-base disabled:opacity-50"
+              className="w-full py-3 sm:py-3.5 px-4 bg-emerald-800 hover:bg-emerald-900 active:scale-[0.99] text-white font-bold rounded-xl shadow-lg border-2 border-emerald-950 flex items-center justify-center gap-2 transition-all cursor-pointer text-sm sm:text-base disabled:opacity-50"
             >
               {loading ? (
                 <span>Memverifikasi Akun...</span>
@@ -366,35 +361,6 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
               )}
             </button>
           </form>
-
-          {/* Quick Account Credentials Guide Box */}
-          <div className="mx-5 mb-6 p-3.5 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-2">
-            <p className="font-extrabold text-slate-800 flex items-center gap-1.5 uppercase text-[11px]">
-              🔑 Panduan Kredensial Akun Resmi Pengurus:
-            </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 font-mono text-[11px] text-slate-700">
-              <div className="p-1.5 bg-white rounded border border-slate-200">
-                <span className="block font-sans text-[10px] font-bold text-amber-800">Admin:</span>
-                <span>riyan / 123456</span>
-              </div>
-              <div className="p-1.5 bg-white rounded border border-slate-200">
-                <span className="block font-sans text-[10px] font-bold text-rose-800">Bendahara:</span>
-                <span>bendahara / 123456</span>
-              </div>
-              <div className="p-1.5 bg-white rounded border border-slate-200">
-                <span className="block font-sans text-[10px] font-bold text-teal-800">Usser RT 08:</span>
-                <span>rt08 / 123456</span>
-              </div>
-              <div className="p-1.5 bg-white rounded border border-slate-200">
-                <span className="block font-sans text-[10px] font-bold text-teal-800">Usser RT 09:</span>
-                <span>rt09 / 123456</span>
-              </div>
-              <div className="p-1.5 bg-white rounded border border-slate-200">
-                <span className="block font-sans text-[10px] font-bold text-teal-800">Usser RT 10:</span>
-                <span>rt10 / 123456</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Footer info */}

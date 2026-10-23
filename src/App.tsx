@@ -20,7 +20,7 @@ import {
   PeriodArchive,
   VisitorStats
 } from './types';
-import { RefreshCw, Wifi, WifiOff, LogOut, Shield, HeartHandshake, Wallet, Users, Archive, Home, Eye } from 'lucide-react';
+import { RefreshCw, LogOut, Shield, HeartHandshake, Wallet, Users, Archive, Home, Eye } from 'lucide-react';
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState<UserAccount | null>(() => {
@@ -312,7 +312,7 @@ export default function App() {
   const sisaSaldo = totalMasuk - totalKeluar;
 
   return (
-    <div className="min-h-screen bg-slate-100 bg-container flex flex-col font-sans selection:bg-rose-200 selection:text-rose-900">
+    <div className="min-h-screen bg-slate-100 bg-container flex flex-col font-sans selection:bg-emerald-200 selection:text-emerald-900">
       {/* Header with Islamic Emblem & Animated Running Text Address */}
       <Header 
         currentUser={currentUser}
@@ -364,12 +364,12 @@ export default function App() {
               <div className="flex items-center gap-2.5">
                 <div className={`p-2 rounded-lg text-white font-bold ${
                   activeUser.role === 'admin'
-                    ? 'bg-purple-700'
+                    ? 'bg-emerald-800'
                     : activeUser.role === 'bendahara'
-                    ? 'bg-amber-600'
+                    ? 'bg-emerald-700'
                     : activeUser.role === 'warga'
-                    ? 'bg-teal-700'
-                    : 'bg-rose-700'
+                    ? 'bg-emerald-700'
+                    : 'bg-emerald-700'
                 }`}>
                   {activeUser.role === 'admin' ? (
                     <Shield className="w-4 h-4" />
@@ -389,12 +389,12 @@ export default function App() {
                     </span>
                     <span className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full ${
                       activeUser.role === 'admin'
-                        ? 'bg-purple-100 text-purple-800'
+                        ? 'bg-emerald-100 text-emerald-800'
                         : activeUser.role === 'bendahara'
-                        ? 'bg-amber-100 text-amber-800'
+                        ? 'bg-emerald-100 text-emerald-800'
                         : activeUser.role === 'warga'
-                        ? 'bg-teal-100 text-teal-800'
-                        : 'bg-rose-100 text-rose-800'
+                        ? 'bg-emerald-100 text-emerald-800'
+                        : 'bg-emerald-100 text-emerald-800'
                     }`}>
                       {activeUser.role === 'admin' 
                         ? 'ADMINISTRATOR' 
@@ -407,7 +407,7 @@ export default function App() {
                   </div>
                   <p className="text-[11px] text-slate-500 flex flex-wrap items-center gap-1.5">
                     <span>Aplikasi Iuran Isra Miraj Nabi Muhammad SAW <strong>{activePeriodLabel}</strong></span>
-                    <span className="inline-flex items-center gap-1 px-2 py-0.2 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold text-[10px]">
+                    <span className="inline-flex items-center gap-1 px-2 py-0.2 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold text-[10px]">
                       <Archive className="w-2.5 h-2.5" />
                       {periodArchives.length} Arsip Periode
                     </span>
@@ -417,29 +417,6 @@ export default function App() {
 
               {/* Online indicator, Manual Refresh & Logout */}
               <div className="flex items-center gap-2">
-                {/* Real-time Online Sync Badge */}
-                <div 
-                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold border ${
-                    isOnline 
-                      ? 'bg-rose-50 text-rose-700 border-rose-200' 
-                      : 'bg-rose-50 text-rose-700 border-rose-200'
-                  }`}
-                  title={isOnline ? 'Terhubung online real-time' : 'Koneksi terputus, mencoba menghubungkan kembali...'}
-                >
-                  {isOnline ? (
-                    <>
-                      <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
-                      <Wifi className="w-3 h-3 text-rose-600" />
-                      <span className="hidden sm:inline">Online Real-time</span>
-                    </>
-                  ) : (
-                    <>
-                      <WifiOff className="w-3 h-3 text-rose-500" />
-                      <span className="hidden sm:inline">Offline</span>
-                    </>
-                  )}
-                </div>
-
                 {/* Button to return to Tampilan Awal (Welcome Screen) */}
                 <button
                   type="button"
@@ -447,10 +424,10 @@ export default function App() {
                     setShowWelcome(true);
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
-                  className="p-1.5 sm:px-2.5 sm:py-1 bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-200 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer transition-colors"
+                  className="p-1.5 sm:px-2.5 sm:py-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer transition-colors"
                   title="Lihat Tampilan Awal / Halaman Sambutan"
                 >
-                  <Home className="w-3.5 h-3.5 text-rose-700" />
+                  <Home className="w-3.5 h-3.5 text-emerald-700" />
                   <span className="hidden sm:inline">Tampilan Awal</span>
                 </button>
 
@@ -462,7 +439,7 @@ export default function App() {
                   className="p-1.5 sm:px-2.5 sm:py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer transition-colors"
                   title="Sinkronkan data terbaru"
                 >
-                  <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-rose-600' : ''}`} />
+                  <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-emerald-600' : ''}`} />
                   <span className="hidden md:inline">Sinkron</span>
                 </button>
 
@@ -472,7 +449,7 @@ export default function App() {
                     type="button"
                     id="btn-logout"
                     onClick={handleLogout}
-                    className="px-3 py-1 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors"
+                    className="px-3 py-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 rounded-lg text-xs font-bold flex items-center gap-1 cursor-pointer transition-colors"
                     title="Keluar & Kembali ke Dasbor Warga"
                   >
                     <LogOut className="w-3.5 h-3.5" />
@@ -567,13 +544,13 @@ export default function App() {
       <footer className="mt-8 py-4 border-t border-slate-200 bg-white text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 space-y-2">
           {/* WhatsApp Group Invitation Banner */}
-          <div className="inline-flex flex-wrap items-center justify-center gap-2 px-3.5 py-1.5 bg-rose-50 border border-rose-200 text-rose-900 rounded-full text-xs font-semibold">
+          <div className="inline-flex flex-wrap items-center justify-center gap-2 px-3.5 py-1.5 bg-emerald-50 border border-emerald-200 text-emerald-950 rounded-full text-xs font-semibold">
             <span>💬 Undangan Resmi Grup WhatsApp Warga & Panitia:</span>
             <a
               href={committeeSettings?.waGroupLink || 'https://chat.whatsapp.com/FTB3kD2JXXNHOxKGj4f5X6?s=cl&p=a&mlu=0&ilr=4'}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-rose-700 hover:text-rose-900 underline flex items-center gap-1"
+              className="font-bold text-emerald-700 hover:text-emerald-900 underline flex items-center gap-1"
             >
               Gabung Grup WhatsApp Kp. Kedung Sapi
             </a>
@@ -589,7 +566,7 @@ export default function App() {
           {visitorStats && (
             <div className="flex items-center justify-center gap-2 pt-1 text-slate-500">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-[11px] font-medium shadow-2xs">
-                <Eye className="w-3.5 h-3.5 text-rose-600" />
+                <Eye className="w-3.5 h-3.5 text-emerald-600" />
                 <span>Total Akses Link: <strong className="text-slate-800 font-bold">{visitorStats.totalVisits.toLocaleString('id-ID')}</strong> kali</span>
                 <span>·</span>
                 <span>Hari Ini: <strong className="text-slate-800 font-bold">{visitorStats.todayVisits.toLocaleString('id-ID')}</strong></span>

@@ -490,17 +490,17 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
   return (
     <div className="space-y-5">
       {/* Top Banner Control */}
-      <div className="bg-gradient-to-r from-rose-950 via-slate-900 to-teal-950 text-white rounded-2xl p-4 sm:p-5 shadow-lg border border-rose-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <div className="bg-gradient-to-r from-emerald-950 via-slate-900 to-teal-950 text-white rounded-2xl p-4 sm:p-5 shadow-lg border border-emerald-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <div className="space-y-1">
           <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-400 text-slate-950">
             <ShieldCheck className="w-3 h-3 text-slate-950" />
             Panel Pengelola Keuangan & Verifikasi Transfer
           </div>
           <h2 className="text-lg sm:text-2xl font-black text-white flex items-center gap-2">
-            <Building2 className="w-6 h-6 text-rose-400 flex-shrink-0" />
+            <Building2 className="w-6 h-6 text-emerald-400 flex-shrink-0" />
             Verifikasi Transfer, Rekening Bank & QRIS
           </h2>
-          <p className="text-xs sm:text-sm text-rose-200/90 font-medium">
+          <p className="text-xs sm:text-sm text-emerald-200/90 font-medium">
             Kelola data rekening bank panitia, e-wallet, dan kode QRIS serta verifikasi bukti transfer warga.
           </p>
         </div>
@@ -521,14 +521,14 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
         <div
           className={`p-4 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2.5 animate-in fade-in ${
             actionMessage.type === 'success'
-              ? 'bg-rose-50 text-rose-900 border border-rose-300'
-              : 'bg-rose-50 text-rose-900 border border-rose-300'
+              ? 'bg-emerald-50 text-emerald-900 border border-emerald-300'
+              : 'bg-emerald-50 text-emerald-900 border border-emerald-300'
           }`}
         >
           {actionMessage.type === 'success' ? (
-            <CheckCircle2 className="w-5 h-5 text-rose-600 flex-shrink-0" />
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
           ) : (
-            <AlertCircle className="w-5 h-5 text-rose-600 flex-shrink-0" />
+            <AlertCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
           )}
           <span>{actionMessage.text}</span>
         </div>
@@ -542,7 +542,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
             onClick={() => setManagerTab('verifikasi')}
             className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer ${
               managerTab === 'verifikasi'
-                ? 'bg-rose-700 text-white shadow-xs'
+                ? 'bg-emerald-700 text-white shadow-xs'
                 : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
@@ -560,7 +560,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
             onClick={() => setManagerTab('rekening')}
             className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer ${
               managerTab === 'rekening'
-                ? 'bg-rose-700 text-white shadow-xs'
+                ? 'bg-emerald-700 text-white shadow-xs'
                 : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
@@ -587,7 +587,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
             type="button"
             onClick={() => handleSavePaymentSettings()}
             disabled={isProcessing}
-            className="w-full sm:w-auto px-4 py-2.5 bg-rose-600 hover:bg-rose-700 text-white font-black text-xs rounded-xl shadow-xs flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50"
+            className="w-full sm:w-auto px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow-xs flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50"
           >
             <Save className="w-4 h-4" />
             <span>Simpan Pengaturan Pembayaran</span>
@@ -603,7 +603,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
           <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100">
             <div>
               <h3 className="text-base font-black text-slate-900 flex items-center gap-2">
-                <Clock className="w-5 h-5 text-rose-700" />
+                <Clock className="w-5 h-5 text-emerald-700" />
                 Daftar Pengajuan Transfer Pembayaran Warga
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
@@ -654,7 +654,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
 
           {filteredConfirmations.length === 0 ? (
             <div className="text-center py-12 bg-slate-50 rounded-2xl border border-dashed border-slate-300">
-              <CheckCircle2 className="w-10 h-10 text-rose-500 mx-auto mb-2 opacity-60" />
+              <CheckCircle2 className="w-10 h-10 text-emerald-500 mx-auto mb-2 opacity-60" />
               <p className="text-sm font-bold text-slate-700">Tidak ada data transfer pada filter ini</p>
               <p className="text-xs text-slate-500 mt-0.5">
                 {filterStatus === 'pending'
@@ -672,7 +672,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                       ? 'bg-amber-50/50 border-amber-300 shadow-xs'
                       : item.status === 'verified'
                       ? 'bg-white border-slate-200'
-                      : 'bg-rose-50/50 border-rose-200'
+                      : 'bg-emerald-50/50 border-emerald-200'
                   }`}
                 >
                   <div className="space-y-1.5 flex-1">
@@ -680,7 +680,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                       <span className="font-black text-base text-slate-900">
                         {item.citizenName}
                       </span>
-                      <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md bg-rose-100 text-rose-900 border border-rose-200">
+                      <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 border border-emerald-200">
                         {item.metode.toUpperCase()}
                       </span>
                       <span className="text-xs text-slate-400">
@@ -696,7 +696,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     <div className="flex flex-wrap items-center gap-3 text-xs">
                       <div>
                         <span className="text-slate-400 font-medium">Nominal: </span>
-                        <span className="font-black text-rose-800 text-sm">
+                        <span className="font-black text-emerald-800 text-sm">
                           Rp {item.nominal.toLocaleString('id-ID')}
                         </span>
                       </div>
@@ -726,7 +726,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                           href={getWhatsAppUrl(item, currentUser?.name)} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-rose-600 hover:bg-rose-700 text-white font-bold text-[11px] shadow-2xs transition-all active:scale-95 cursor-pointer"
+                          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[11px] shadow-2xs transition-all active:scale-95 cursor-pointer"
                           title="Klik untuk membuka WhatsApp dengan pesan konfirmasi otomatis untuk si penerima"
                         >
                           <MessageSquare className="w-3 h-3 text-white flex-shrink-0" />
@@ -739,14 +739,14 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     </div>
 
                     {item.status === 'verified' && (
-                      <div className="text-[11px] text-rose-700 font-medium flex items-center gap-1 pt-1">
+                      <div className="text-[11px] text-emerald-700 font-medium flex items-center gap-1 pt-1">
                         <CheckCircle2 className="w-3.5 h-3.5" />
                         <span>Diverifikasi oleh: <strong>{item.verifiedBy || 'Bendahara'}</strong> pada {item.verifiedAt}</span>
                       </div>
                     )}
 
                     {item.status === 'rejected' && (
-                      <div className="text-[11px] text-rose-700 font-medium flex items-center gap-1 pt-1">
+                      <div className="text-[11px] text-emerald-700 font-medium flex items-center gap-1 pt-1">
                         <XCircle className="w-3.5 h-3.5" />
                         <span>Ditolak oleh: <strong>{item.verifiedBy || 'Bendahara'}</strong>. Alasan: {item.rejectReason}</span>
                       </div>
@@ -763,7 +763,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                         className="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs rounded-xl border border-slate-300 flex items-center gap-1.5 cursor-pointer transition-colors"
                         title="Lihat Foto Bukti Struk"
                       >
-                        <Eye className="w-4 h-4 text-rose-700" />
+                        <Eye className="w-4 h-4 text-emerald-700" />
                         <span>Lihat Bukti Foto</span>
                       </button>
                     ) : (
@@ -776,7 +776,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                         href={getWhatsAppUrl(item, currentUser?.name)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-3 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
+                        className="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-all active:scale-95"
                         title="Buka WhatsApp dengan pesan otomatis untuk si penerima"
                       >
                         <MessageSquare className="w-4 h-4 text-white flex-shrink-0" />
@@ -790,7 +790,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                           type="button"
                           onClick={() => handleVerifyConfirmation(item.id)}
                           disabled={isProcessing}
-                          className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-colors disabled:opacity-50"
+                          className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-colors disabled:opacity-50"
                         >
                           <Check className="w-4 h-4" />
                           <span>Setujui & Masukkan Kas</span>
@@ -800,7 +800,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                           type="button"
                           onClick={() => setRejectingId(item.id)}
                           disabled={isProcessing}
-                          className="px-3 py-2 bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-xs rounded-xl border border-rose-200 flex items-center gap-1 cursor-pointer transition-colors"
+                          className="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold text-xs rounded-xl border border-emerald-200 flex items-center gap-1 cursor-pointer transition-colors"
                         >
                           <XCircle className="w-4 h-4" />
                           <span>Tolak</span>
@@ -812,10 +812,10 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                       type="button"
                       id={`btn-delete-transfer-${item.id}`}
                       onClick={() => setDeletingConfirmation(item)}
-                      className="px-2.5 py-1.5 text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-xl transition-all cursor-pointer flex items-center gap-1 text-xs font-bold shadow-xs active:scale-95"
+                      className="px-2.5 py-1.5 text-emerald-600 hover:text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-xl transition-all cursor-pointer flex items-center gap-1 text-xs font-bold shadow-xs active:scale-95"
                       title="Hapus data transfer ini"
                     >
-                      <Trash2 className="w-3.5 h-3.5 text-rose-600 flex-shrink-0" />
+                      <Trash2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
                       <span>Hapus</span>
                     </button>
                   </div>
@@ -836,7 +836,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <h3 className="text-base font-black text-slate-900 flex items-center gap-2">
-                  <Building2 className="w-5 h-5 text-rose-700" />
+                  <Building2 className="w-5 h-5 text-emerald-700" />
                   Daftar Rekening Bank Panitia PHBI
                 </h3>
                 <p className="text-xs text-slate-500 mt-0.5">
@@ -847,7 +847,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
               <button
                 type="button"
                 onClick={() => setShowAddBank(true)}
-                className="px-3 py-2 bg-rose-50 hover:bg-rose-100 text-rose-800 font-bold text-xs rounded-xl border border-rose-200 flex items-center gap-1.5 cursor-pointer transition-colors"
+                className="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold text-xs rounded-xl border border-emerald-200 flex items-center gap-1.5 cursor-pointer transition-colors"
               >
                 <Plus className="w-4 h-4" />
                 <span>Tambah Rekening Bank</span>
@@ -856,8 +856,8 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
 
             {/* Form Tambah Bank Baru */}
             {showAddBank && (
-              <div className="p-4 bg-rose-50/70 rounded-xl border border-rose-200 space-y-3">
-                <div className="font-bold text-xs text-rose-950 flex items-center justify-between">
+              <div className="p-4 bg-emerald-50/70 rounded-xl border border-emerald-200 space-y-3">
+                <div className="font-bold text-xs text-emerald-950 flex items-center justify-between">
                   <span>Input Data Rekening Bank Baru</span>
                   <button
                     type="button"
@@ -913,7 +913,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                   <button
                     type="button"
                     onClick={handleAddBank}
-                    className="px-4 py-2 bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs rounded-lg cursor-pointer"
+                    className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-lg cursor-pointer"
                   >
                     Tambahkan ke Daftar
                   </button>
@@ -941,14 +941,14 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                           type="button"
                           id={`btn-delete-bank-${b.id || idx}`}
                           onClick={() => setDeletingBank(b)}
-                          className="px-2 py-1 text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-lg cursor-pointer transition-all flex items-center gap-1 text-[11px] font-bold shadow-2xs active:scale-95"
+                          className="px-2 py-1 text-emerald-600 hover:text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg cursor-pointer transition-all flex items-center gap-1 text-[11px] font-bold shadow-2xs active:scale-95"
                           title="Hapus Rekening Bank Ini"
                         >
-                          <Trash2 className="w-3.5 h-3.5 text-rose-600 flex-shrink-0" />
+                          <Trash2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
                           <span>Hapus</span>
                         </button>
                       </div>
-                      <div className="font-mono font-black text-base text-rose-900">
+                      <div className="font-mono font-black text-base text-emerald-900">
                         {b.accountNumber}
                       </div>
                       <div className="text-xs text-slate-600">
@@ -1064,10 +1064,10 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                           type="button"
                           id={`btn-delete-wallet-${w.id || idx}`}
                           onClick={() => setDeletingWallet(w)}
-                          className="px-2 py-1 text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-lg cursor-pointer transition-all flex items-center gap-1 text-[11px] font-bold shadow-2xs active:scale-95"
+                          className="px-2 py-1 text-emerald-600 hover:text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg cursor-pointer transition-all flex items-center gap-1 text-[11px] font-bold shadow-2xs active:scale-95"
                           title="Hapus Akun E-Wallet Ini"
                         >
-                          <Trash2 className="w-3.5 h-3.5 text-rose-600 flex-shrink-0" />
+                          <Trash2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
                           <span>Hapus</span>
                         </button>
                       </div>
@@ -1118,7 +1118,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     value={qrisConfig.qrisName}
                     onChange={(e) => setQrisConfig({ ...qrisConfig, qrisName: e.target.value })}
                     placeholder="Contoh: PHBI ISRA MI'RAJ KP BARANI"
-                    className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-bold focus:bg-white focus:outline-rose-600"
+                    className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-bold focus:bg-white focus:outline-emerald-600"
                   />
                 </div>
 
@@ -1131,19 +1131,19 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     value={qrisConfig.qrisNmid || ''}
                     onChange={(e) => setQrisConfig({ ...qrisConfig, qrisNmid: e.target.value })}
                     placeholder="Contoh: ID1024356789012"
-                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-mono text-slate-900 focus:bg-white focus:outline-rose-600"
+                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-mono text-slate-900 focus:bg-white focus:outline-emerald-600"
                   />
                 </div>
 
                 {/* Metode 1: Upload File Gambar QRIS */}
-                <div className="p-3.5 bg-rose-50/60 rounded-xl border border-rose-200 space-y-2">
+                <div className="p-3.5 bg-emerald-50/60 rounded-xl border border-emerald-200 space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="font-extrabold text-xs text-rose-950 flex items-center gap-1.5">
-                      <Upload className="w-4 h-4 text-rose-700" />
+                    <span className="font-extrabold text-xs text-emerald-950 flex items-center gap-1.5">
+                      <Upload className="w-4 h-4 text-emerald-700" />
                       Cara 1: Upload File Gambar QRIS (PNG / JPG)
                     </span>
                     {qrisConfig.qrisImageUrl && (
-                      <span className="text-[10px] font-bold text-rose-700 bg-rose-100 px-2 py-0.5 rounded-full">
+                      <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
                         Foto Tersedia
                       </span>
                     )}
@@ -1163,7 +1163,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     <button
                       type="button"
                       onClick={() => qrisFileInputRef.current?.click()}
-                      className="px-3.5 py-2 bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-colors"
+                      className="px-3.5 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer transition-colors"
                     >
                       <Upload className="w-3.5 h-3.5" />
                       <span>{qrisConfig.qrisImageUrl ? 'Ganti Foto QRIS' : 'Pilih Foto QRIS dari Perangkat'}</span>
@@ -1176,7 +1176,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                           setQrisConfig(updated);
                           handleSavePaymentSettings(updated);
                         }}
-                        className="text-xs text-rose-600 font-bold hover:underline cursor-pointer"
+                        className="text-xs text-emerald-600 font-bold hover:underline cursor-pointer"
                       >
                         Hapus Foto (Gunakan Barcode Generator)
                       </button>
@@ -1198,7 +1198,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     value={qrisConfig.qrisPayloadString || ''}
                     onChange={(e) => setQrisConfig({ ...qrisConfig, qrisPayloadString: e.target.value })}
                     placeholder="00020101021126590014ID.GO.QRIS..."
-                    className="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-[11px] font-mono text-slate-900 focus:outline-rose-600"
+                    className="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-[11px] font-mono text-slate-900 focus:outline-emerald-600"
                   />
                 </div>
 
@@ -1211,7 +1211,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     rows={2}
                     value={qrisConfig.instructions || ''}
                     onChange={(e) => setQrisConfig({ ...qrisConfig, instructions: e.target.value })}
-                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-900 focus:bg-white focus:outline-rose-600"
+                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-900 focus:bg-white focus:outline-emerald-600"
                   />
                 </div>
 
@@ -1219,7 +1219,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                   type="button"
                   onClick={() => handleSavePaymentSettings()}
                   disabled={isProcessing}
-                  className="w-full py-3 bg-rose-600 hover:bg-rose-700 text-white font-black text-xs rounded-xl shadow-xs flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow-xs flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Save className="w-4 h-4" />
                   <span>Simpan Perubahan QRIS</span>
@@ -1232,7 +1232,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                   Pratinjau Tampilan QRIS Warga
                 </span>
 
-                <div className="bg-white p-5 rounded-2xl border-2 border-rose-600 shadow-md text-center max-w-xs w-full">
+                <div className="bg-white p-5 rounded-2xl border-2 border-emerald-600 shadow-md text-center max-w-xs w-full">
                   <div className="inline-flex items-center gap-1 px-2.5 py-0.5 bg-red-600 text-white font-black text-[10px] rounded-md mb-2">
                     <span>QRIS</span>
                   </div>
@@ -1321,7 +1321,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                   Ada 2 pilihan cara yang sangat mudah:
                 </p>
                 <div className="space-y-1.5 text-[11px]">
-                  <div className="p-2 bg-rose-50 rounded-lg border border-rose-100 text-rose-950">
+                  <div className="p-2 bg-emerald-50 rounded-lg border border-emerald-100 text-emerald-950">
                     <strong>Paling Mudah:</strong> Simpan foto/screenshot barcode QRIS dari HP Anda, lalu klik tombol <strong>"Pilih Foto QRIS dari Perangkat"</strong> di atas.
                   </div>
                   <div className="p-2 bg-slate-50 rounded-lg border border-slate-200 text-slate-700">
@@ -1403,8 +1403,8 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between border-b pb-2">
-              <span className="font-black text-sm text-rose-800 flex items-center gap-1.5">
-                <XCircle className="w-4 h-4 text-rose-600" />
+              <span className="font-black text-sm text-emerald-800 flex items-center gap-1.5">
+                <XCircle className="w-4 h-4 text-emerald-600" />
                 Alasan Penolakan Transfer
               </span>
               <button
@@ -1424,7 +1424,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                 rows={3}
                 value={rejectReason}
                 onChange={(e) => setRejectReason(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-900 focus:bg-white focus:outline-rose-600"
+                className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-900 focus:bg-white focus:outline-emerald-600"
               />
             </div>
 
@@ -1440,7 +1440,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                 type="button"
                 onClick={handleRejectConfirmation}
                 disabled={isProcessing}
-                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl cursor-pointer disabled:opacity-50"
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl cursor-pointer disabled:opacity-50"
               >
                 Konfirmasi Tolak Transfer
               </button>
@@ -1456,13 +1456,13 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
           onClick={() => setDeletingConfirmation(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-rose-200"
+            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-emerald-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2.5 bg-rose-100 text-rose-700 rounded-xl">
-                  <Trash2 className="w-5 h-5 text-rose-600" />
+                <div className="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl">
+                  <Trash2 className="w-5 h-5 text-emerald-600" />
                 </div>
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
@@ -1489,7 +1489,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Nominal:</span>
-                <span className="font-black text-rose-800">Rp {deletingConfirmation.nominal.toLocaleString('id-ID')}</span>
+                <span className="font-black text-emerald-800">Rp {deletingConfirmation.nominal.toLocaleString('id-ID')}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Kategori:</span>
@@ -1510,7 +1510,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     href={getWhatsAppUrl(deletingConfirmation, currentUser?.name)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-rose-800 underline hover:text-rose-950 flex items-center gap-1"
+                    className="font-bold text-emerald-800 underline hover:text-emerald-950 flex items-center gap-1"
                     title="Buka WhatsApp dengan pesan otomatis untuk warga ini"
                   >
                     <MessageSquare className="w-3.5 h-3.5" />
@@ -1522,9 +1522,9 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                 <span className="text-slate-500">Status Saat Ini:</span>
                 <span className={`font-bold uppercase ${
                   deletingConfirmation.status === 'verified'
-                    ? 'text-rose-700'
+                    ? 'text-emerald-700'
                     : deletingConfirmation.status === 'rejected'
-                    ? 'text-rose-700'
+                    ? 'text-emerald-700'
                     : 'text-amber-700'
                 }`}>
                   {deletingConfirmation.status}
@@ -1544,7 +1544,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                 type="button"
                 onClick={() => executeDeleteConfirmation(deletingConfirmation.id)}
                 disabled={isProcessing}
-                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
               >
                 <Trash2 className="w-4 h-4" />
                 <span>Ya, Hapus Data Sekarang</span>
@@ -1561,13 +1561,13 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
           onClick={() => setDeletingBank(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-rose-200"
+            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-emerald-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2.5 bg-rose-100 text-rose-700 rounded-xl">
-                  <Trash2 className="w-5 h-5 text-rose-600" />
+                <div className="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl">
+                  <Trash2 className="w-5 h-5 text-emerald-600" />
                 </div>
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
@@ -1594,7 +1594,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Nomor Rekening:</span>
-                <span className="font-mono font-bold text-rose-800">{deletingBank.accountNumber}</span>
+                <span className="font-mono font-bold text-emerald-800">{deletingBank.accountNumber}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Atas Nama:</span>
@@ -1620,7 +1620,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                 type="button"
                 onClick={() => executeDeleteBank(deletingBank.id)}
                 disabled={isProcessing}
-                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
               >
                 <Trash2 className="w-4 h-4" />
                 <span>Ya, Hapus Rekening</span>
@@ -1637,13 +1637,13 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
           onClick={() => setDeletingWallet(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-rose-200"
+            className="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 relative shadow-2xl space-y-4 border border-emerald-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
-                <div className="p-2.5 bg-rose-100 text-rose-700 rounded-xl">
-                  <Trash2 className="w-5 h-5 text-rose-600" />
+                <div className="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl">
+                  <Trash2 className="w-5 h-5 text-emerald-600" />
                 </div>
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
@@ -1696,7 +1696,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                 type="button"
                 onClick={() => executeDeleteWallet(deletingWallet.id)}
                 disabled={isProcessing}
-                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl cursor-pointer shadow-md transition-colors flex items-center gap-1.5 disabled:opacity-50"
               >
                 <Trash2 className="w-4 h-4" />
                 <span>Ya, Hapus E-Wallet</span>

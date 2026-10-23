@@ -93,15 +93,15 @@ export default function WelcomeScreen({
   return (
     <div className="w-full max-w-5xl mx-auto py-4 sm:py-8">
       {/* Hanya Bagian Portal Resmi PHBI */}
-      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-rose-950 via-rose-900 to-teal-900 text-white shadow-xl border border-rose-800/80">
+      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-950 via-emerald-900 to-slate-950 text-white shadow-xl border border-emerald-800/80">
         {/* Subtle Ambient Glow */}
-        <div className="pointer-events-none absolute -top-24 -right-24 w-80 h-80 rounded-full bg-amber-400/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-teal-400/10 blur-3xl" />
+        <div className="pointer-events-none absolute -top-24 -right-24 w-80 h-80 rounded-full bg-emerald-400/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-emerald-400/10 blur-3xl" />
 
         <div className="relative z-10 p-6 sm:p-10 lg:p-12 space-y-8">
           {/* Top Metadata Line */}
-          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-rose-800/80 pb-5">
-            <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-rose-200/90 font-medium">
+          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-emerald-800/80 pb-5">
+            <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-emerald-200/90 font-medium">
               <span className="text-amber-300 font-semibold">Portal Resmi PHBI</span>
               <span aria-hidden="true">·</span>
               <span className="inline-flex items-center gap-1.5">
@@ -110,20 +110,20 @@ export default function WelcomeScreen({
               </span>
               <span aria-hidden="true">·</span>
               <span className="inline-flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-rose-300" />
+                <MapPin className="w-3.5 h-3.5 text-emerald-300" />
                 <span>Kp. Kedung Sapi</span>
               </span>
             </div>
 
             {visitorStats && visitorStats.totalVisits > 0 && (
               <div 
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-900/80 border border-rose-700/60 text-xs text-amber-200 font-medium shadow-xs"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/80 border border-emerald-700/60 text-xs text-emerald-200 font-medium shadow-xs"
                 title={`Total ${visitorStats.totalVisits} kali link diakses oleh warga`}
               >
                 <Eye className="w-3.5 h-3.5 text-amber-300" />
                 <span>{visitorStats.totalVisits.toLocaleString('id-ID')} Kali Diakses</span>
                 {visitorStats.todayVisits > 0 && (
-                  <span className="text-rose-300 text-[11px]">({visitorStats.todayVisits} hari ini)</span>
+                  <span className="text-emerald-300 text-[11px]">({visitorStats.todayVisits} hari ini)</span>
                 )}
               </div>
             )}
@@ -136,7 +136,7 @@ export default function WelcomeScreen({
               <p className="text-amber-300 font-serif text-xl sm:text-2xl tracking-wide">
                 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
               </p>
-              <p className="text-rose-200 text-xs sm:text-sm font-semibold italic">
+              <p className="text-emerald-200 text-xs sm:text-sm font-semibold italic">
                 {salam}
               </p>
             </div>
@@ -151,14 +151,14 @@ export default function WelcomeScreen({
               {headline}
             </h1>
 
-            <p className="text-xs sm:text-sm font-semibold text-amber-200/95 tracking-wide">
+            <p className="text-xs sm:text-sm font-semibold text-emerald-200/95 tracking-wide">
               {namaKegiatan} — {wilayah}
             </p>
           </div>
 
           {/* Main Welcome Message Body */}
-          <div className="bg-rose-950/45 border border-rose-800/80 rounded-xl p-5 sm:p-6 space-y-3 max-w-4xl">
-            <p className="text-sm sm:text-base text-rose-50/95 leading-relaxed">
+          <div className="bg-emerald-950/50 border border-emerald-800/80 rounded-xl p-5 sm:p-6 space-y-3 max-w-4xl">
+            <p className="text-sm sm:text-base text-emerald-50/95 leading-relaxed">
               {body}
             </p>
             <p className="text-xs sm:text-sm font-semibold text-amber-300 pt-1">
@@ -167,7 +167,7 @@ export default function WelcomeScreen({
           </div>
 
           {/* Primary Navigation CTA */}
-          <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 border-t border-rose-800/80">
+          <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 border-t border-emerald-800/80">
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
               <button
                 type="button"
@@ -185,7 +185,7 @@ export default function WelcomeScreen({
 
               </div>
 
-            <p className="text-xs text-rose-200/90 text-center sm:text-right">
+            <p className="text-xs text-emerald-200/90 text-center sm:text-right">
               Klik tombol untuk masuk ke dasbor transparansi kas.
             </p>
           </div>

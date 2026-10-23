@@ -330,7 +330,7 @@ export default function RekapitulasiTable({
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <div>
           <div className="flex items-center gap-2.5">
-            <div className="p-2.5 bg-rose-100 text-rose-800 rounded-xl">
+            <div className="p-2.5 bg-emerald-100 text-emerald-800 rounded-xl">
               <Users className="w-5 h-5" />
             </div>
             <div>
@@ -338,7 +338,7 @@ export default function RekapitulasiTable({
                 <h2 className="text-base sm:text-lg font-bold text-slate-800">
                   Rekapitulasi Iuran Warga (12 Minggu — 3 Bagian RT)
                 </h2>
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-rose-700 text-amber-300 text-[11px] font-black">
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-emerald-700 text-amber-300 text-[11px] font-black">
                   <Calendar className="w-3 h-3" />
                   Minggu Berjalan: M-{activeWeek}
                 </span>
@@ -362,18 +362,18 @@ export default function RekapitulasiTable({
               setErrorMsg('');
               setIsAddModalOpen(true);
             }}
-            className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-2 bg-rose-700 hover:bg-rose-800 text-white rounded-lg text-xs sm:text-sm font-semibold shadow-sm transition-all cursor-pointer"
+            className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg text-xs sm:text-sm font-semibold shadow-sm transition-all cursor-pointer"
           >
             <Plus className="w-4 h-4" />
             <span>Tambah Warga RT</span>
           </button>
 
           {/* Download PDF Per Minggu */}
-          <div className="flex items-center gap-1 bg-rose-50 border border-rose-300 rounded-lg p-1">
+          <div className="flex items-center gap-1 bg-emerald-50 border border-emerald-300 rounded-lg p-1">
             <select
               value={rekapPdfWeek}
               onChange={(e) => setRekapPdfWeek(Number(e.target.value))}
-              className="bg-white text-rose-950 font-bold text-xs py-1 px-2 rounded border border-rose-200 cursor-pointer focus:outline-none"
+              className="bg-white text-emerald-950 font-bold text-xs py-1 px-2 rounded border border-emerald-200 cursor-pointer focus:outline-none"
               title="Pilih minggu untuk download PDF"
             >
               {Array.from({ length: 12 }, (_, i) => i + 1).map((w) => (
@@ -386,7 +386,7 @@ export default function RekapitulasiTable({
               type="button"
               id="btn-download-pdf-per-minggu"
               onClick={() => generatePdfLaporanMingguanUsser(rekapPdfWeek, citizens, [], currentUser.name)}
-              className="inline-flex items-center gap-1 px-2.5 py-1 bg-rose-700 hover:bg-rose-800 text-white rounded text-xs font-semibold cursor-pointer shadow-xs whitespace-nowrap"
+              className="inline-flex items-center gap-1 px-2.5 py-1 bg-emerald-700 hover:bg-emerald-800 text-white rounded text-xs font-semibold cursor-pointer shadow-xs whitespace-nowrap"
               title={`Download PDF Resmi Minggu Ke-${rekapPdfWeek}`}
             >
               <FileDown className="w-3.5 h-3.5 text-amber-300" />
@@ -401,7 +401,7 @@ export default function RekapitulasiTable({
             onClick={() => generatePdfKolomMingguanAdmin(citizens, totalSukarela, totalKeluar)}
             className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-lg text-xs sm:text-sm font-semibold shadow-sm transition-all cursor-pointer"
           >
-            <FileDown className="w-4 h-4 text-rose-400" />
+            <FileDown className="w-4 h-4 text-emerald-400" />
             <span>Download PDF 12 Minggu</span>
           </button>
         </div>
@@ -420,7 +420,7 @@ export default function RekapitulasiTable({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Cari nama warga di semua RT (RT 08, RT 09, RT 10)..."
-              className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-300 rounded-lg text-xs sm:text-sm focus:bg-white focus:border-rose-600 focus:ring-1 focus:ring-rose-500 font-medium"
+              className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-300 rounded-lg text-xs sm:text-sm focus:bg-white focus:border-emerald-600 focus:ring-1 focus:ring-emerald-500 font-medium"
             />
           </div>
           {searchQuery && (
@@ -435,12 +435,12 @@ export default function RekapitulasiTable({
         </div>
 
         {successMsg && (
-          <div className="p-2.5 bg-rose-50 text-rose-800 border border-rose-200 rounded-lg text-xs flex items-center justify-between gap-2">
+          <div className="p-2.5 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-lg text-xs flex items-center justify-between gap-2">
             <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-rose-600" />
+              <Check className="w-4 h-4 text-emerald-600" />
               <span>{successMsg}</span>
             </div>
-            <button type="button" onClick={() => setSuccessMsg('')} className="text-rose-700 hover:text-rose-950">
+            <button type="button" onClick={() => setSuccessMsg('')} className="text-emerald-700 hover:text-emerald-950">
               <X className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -450,10 +450,10 @@ export default function RekapitulasiTable({
       {/* ===================================================================== */}
       {/* BAGIAN 1: RT 08                                                       */}
       {/* ===================================================================== */}
-      <div className="bg-white rounded-xl shadow-sm border border-rose-200 overflow-hidden">
-        <div className="p-3.5 sm:p-4 bg-rose-50/70 border-b border-rose-100 flex flex-wrap items-center justify-between gap-2">
+      <div className="bg-white rounded-xl shadow-sm border border-emerald-200 overflow-hidden">
+        <div className="p-3.5 sm:p-4 bg-emerald-50/70 border-b border-emerald-100 flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="px-2.5 py-1 rounded-lg bg-rose-700 text-white font-black text-xs flex items-center gap-1">
+            <span className="px-2.5 py-1 rounded-lg bg-emerald-700 text-white font-black text-xs flex items-center gap-1">
               <Building2 className="w-3.5 h-3.5" />
               <span>RT 08</span>
             </span>
@@ -467,10 +467,10 @@ export default function RekapitulasiTable({
             </div>
           </div>
           <div className="text-right">
-            <span className="text-[10px] font-bold uppercase text-rose-700 block">
+            <span className="text-[10px] font-bold uppercase text-emerald-700 block">
               Subtotal RT 08 (Masuk Kas)
             </span>
-            <span className="text-sm sm:text-base font-black font-mono text-rose-900">
+            <span className="text-sm sm:text-base font-black font-mono text-emerald-900">
               Rp {formatRupiah(rt08WeekTotals.grandTotal)}
             </span>
             {rt08WeekTotals.excludedTotal > 0 && (
@@ -493,18 +493,18 @@ export default function RekapitulasiTable({
                   <th
                     key={w}
                     className={`py-2.5 px-2 text-center min-w-[74px] border-r border-slate-700 whitespace-nowrap ${
-                      w === activeWeek ? 'bg-rose-700 text-amber-300 font-black' : ''
+                      w === activeWeek ? 'bg-emerald-700 text-amber-300 font-black' : ''
                     }`}
                   >
                     <div>M-{w}</div>
                     {w === activeWeek && (
-                      <div className="text-[9px] font-bold text-rose-100 leading-none mt-0.5">
+                      <div className="text-[9px] font-bold text-emerald-100 leading-none mt-0.5">
                         AKTIF
                       </div>
                     )}
                   </th>
                 ))}
-                <th className="py-2.5 px-3 text-right min-w-[105px] border-r border-slate-700 bg-rose-900 text-amber-200">
+                <th className="py-2.5 px-3 text-right min-w-[105px] border-r border-slate-700 bg-emerald-900 text-amber-200">
                   Total
                 </th>
                 <th className="py-2.5 px-2 text-center min-w-[80px]">
@@ -521,15 +521,15 @@ export default function RekapitulasiTable({
                 </tr>
               ) : (
                 filteredRt08.map((citizen, idx) => (
-                  <tr key={citizen.id} className="hover:bg-rose-50/50 transition-colors group">
+                  <tr key={citizen.id} className="hover:bg-emerald-50/50 transition-colors group">
                     <td className="py-2 px-2 text-center text-slate-500 font-mono border-r border-slate-100">
                       {idx + 1}
                     </td>
-                    <td className="py-2 px-3 font-semibold text-slate-800 border-r border-slate-100 sticky left-0 bg-white group-hover:bg-rose-50/90 z-10 shadow-sm">
+                    <td className="py-2 px-3 font-semibold text-slate-800 border-r border-slate-100 sticky left-0 bg-white group-hover:bg-emerald-50/90 z-10 shadow-sm">
                       <div className="flex items-center justify-between gap-1.5">
                         <span className="truncate">Warga {idx + 1}</span>
                         {citizen.totalPaid > 0 && (
-                          <span className="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0" title="Sudah Berdonasi" />
+                          <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" title="Sudah Berdonasi" />
                         )}
                       </div>
                     </td>
@@ -544,7 +544,7 @@ export default function RekapitulasiTable({
                             val > 0
                               ? isExcl
                                 ? 'bg-amber-50/80 text-amber-800'
-                                : 'text-rose-700 font-bold bg-rose-50/30'
+                                : 'text-emerald-700 font-bold bg-emerald-50/30'
                               : 'text-slate-300'
                           }`}
                         >
@@ -560,7 +560,7 @@ export default function RekapitulasiTable({
                                 className={`px-1.5 py-0.2 rounded text-[9px] font-sans font-bold cursor-pointer transition-colors ${
                                   isExcl
                                     ? 'bg-amber-200/90 hover:bg-amber-300 text-amber-950'
-                                    : 'bg-rose-100/90 hover:bg-rose-200 text-rose-800'
+                                    : 'bg-emerald-100/90 hover:bg-emerald-200 text-emerald-800'
                                 }`}
                               >
                                 {isBusy ? '...' : isExcl ? 'Ditahan' : 'Masuk Kas'}
@@ -572,7 +572,7 @@ export default function RekapitulasiTable({
                         </td>
                       );
                     })}
-                    <td className="py-2 px-3 text-right font-mono font-bold text-rose-800 bg-rose-50/40 border-r border-slate-100">
+                    <td className="py-2 px-3 text-right font-mono font-bold text-emerald-800 bg-emerald-50/40 border-r border-slate-100">
                       <div>Rp {formatRupiah(citizen.totalPaid)}</div>
                       {(citizen.totalExcluded || 0) > 0 && (
                         <div className="text-[10px] font-semibold text-amber-700">
@@ -585,7 +585,7 @@ export default function RekapitulasiTable({
                         <button
                           type="button"
                           onClick={() => handleOpenEdit(citizen)}
-                          className="p-1.5 text-blue-600 hover:bg-blue-100 rounded transition-colors cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded transition-colors cursor-pointer"
                           title="Edit"
                         >
                           <Edit2 className="w-3.5 h-3.5" />
@@ -593,7 +593,7 @@ export default function RekapitulasiTable({
                         <button
                           type="button"
                           onClick={() => setDeletingCitizen(citizen)}
-                          className="p-1.5 text-rose-600 hover:bg-rose-100 rounded transition-colors cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded transition-colors cursor-pointer"
                           title="Hapus"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
@@ -610,7 +610,7 @@ export default function RekapitulasiTable({
                   TOTAL RT 08
                 </td>
                 {Array.from({ length: 12 }, (_, i) => i + 1).map((w) => (
-                  <td key={w} className="py-2.5 px-1 text-right font-mono text-[11px] text-rose-300 whitespace-nowrap">
+                  <td key={w} className="py-2.5 px-1 text-right font-mono text-[11px] text-emerald-300 whitespace-nowrap">
                     {formatRupiah(rt08WeekTotals.totals[w])}
                   </td>
                 ))}
@@ -627,10 +627,10 @@ export default function RekapitulasiTable({
       {/* ===================================================================== */}
       {/* BAGIAN 2: RT 09                                                       */}
       {/* ===================================================================== */}
-      <div className="bg-white rounded-xl shadow-sm border border-blue-200 overflow-hidden">
-        <div className="p-3.5 sm:p-4 bg-blue-50/70 border-b border-blue-100 flex flex-wrap items-center justify-between gap-2">
+      <div className="bg-white rounded-xl shadow-sm border border-emerald-200 overflow-hidden">
+        <div className="p-3.5 sm:p-4 bg-emerald-50/70 border-b border-emerald-100 flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="px-2.5 py-1 rounded-lg bg-blue-700 text-white font-black text-xs flex items-center gap-1">
+            <span className="px-2.5 py-1 rounded-lg bg-emerald-700 text-white font-black text-xs flex items-center gap-1">
               <Building2 className="w-3.5 h-3.5" />
               <span>RT 09</span>
             </span>
@@ -644,10 +644,10 @@ export default function RekapitulasiTable({
             </div>
           </div>
           <div className="text-right">
-            <span className="text-[10px] font-bold uppercase text-blue-700 block">
+            <span className="text-[10px] font-bold uppercase text-emerald-700 block">
               Subtotal RT 09 (Masuk Kas)
             </span>
-            <span className="text-sm sm:text-base font-black font-mono text-blue-900">
+            <span className="text-sm sm:text-base font-black font-mono text-emerald-900">
               Rp {formatRupiah(rt09WeekTotals.grandTotal)}
             </span>
             {rt09WeekTotals.excludedTotal > 0 && (
@@ -670,18 +670,18 @@ export default function RekapitulasiTable({
                   <th
                     key={w}
                     className={`py-2.5 px-2 text-center min-w-[74px] border-r border-slate-700 whitespace-nowrap ${
-                      w === activeWeek ? 'bg-blue-700 text-amber-300 font-black' : ''
+                      w === activeWeek ? 'bg-emerald-700 text-amber-300 font-black' : ''
                     }`}
                   >
                     <div>M-{w}</div>
                     {w === activeWeek && (
-                      <div className="text-[9px] font-bold text-blue-100 leading-none mt-0.5">
+                      <div className="text-[9px] font-bold text-emerald-100 leading-none mt-0.5">
                         AKTIF
                       </div>
                     )}
                   </th>
                 ))}
-                <th className="py-2.5 px-3 text-right min-w-[105px] border-r border-slate-700 bg-blue-900 text-amber-200">
+                <th className="py-2.5 px-3 text-right min-w-[105px] border-r border-slate-700 bg-emerald-900 text-amber-200">
                   Total
                 </th>
                 <th className="py-2.5 px-2 text-center min-w-[80px]">
@@ -698,15 +698,15 @@ export default function RekapitulasiTable({
                 </tr>
               ) : (
                 filteredRt09.map((citizen, idx) => (
-                  <tr key={citizen.id} className="hover:bg-blue-50/50 transition-colors group">
+                  <tr key={citizen.id} className="hover:bg-emerald-50/50 transition-colors group">
                     <td className="py-2 px-2 text-center text-slate-500 font-mono border-r border-slate-100">
                       {idx + 1}
                     </td>
-                    <td className="py-2 px-3 font-semibold text-slate-800 border-r border-slate-100 sticky left-0 bg-white group-hover:bg-blue-50/90 z-10 shadow-sm">
+                    <td className="py-2 px-3 font-semibold text-slate-800 border-r border-slate-100 sticky left-0 bg-white group-hover:bg-emerald-50/90 z-10 shadow-sm">
                       <div className="flex items-center justify-between gap-1.5">
                         <span className="truncate">{citizen.name}</span>
                         {citizen.totalPaid > 0 && (
-                          <span className="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" title="Sudah Berdonasi" />
+                          <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" title="Sudah Berdonasi" />
                         )}
                       </div>
                     </td>
@@ -721,7 +721,7 @@ export default function RekapitulasiTable({
                             val > 0
                               ? isExcl
                                 ? 'bg-amber-50/80 text-amber-800'
-                                : 'text-blue-700 font-bold bg-blue-50/30'
+                                : 'text-emerald-700 font-bold bg-emerald-50/30'
                               : 'text-slate-300'
                           }`}
                         >
@@ -737,7 +737,7 @@ export default function RekapitulasiTable({
                                 className={`px-1.5 py-0.2 rounded text-[9px] font-sans font-bold cursor-pointer transition-colors ${
                                   isExcl
                                     ? 'bg-amber-200/90 hover:bg-amber-300 text-amber-950'
-                                    : 'bg-blue-100/90 hover:bg-blue-200 text-blue-800'
+                                    : 'bg-emerald-100/90 hover:bg-emerald-200 text-emerald-800'
                                 }`}
                               >
                                 {isBusy ? '...' : isExcl ? 'Ditahan' : 'Masuk Kas'}
@@ -749,7 +749,7 @@ export default function RekapitulasiTable({
                         </td>
                       );
                     })}
-                    <td className="py-2 px-3 text-right font-mono font-bold text-blue-800 bg-blue-50/40 border-r border-slate-100">
+                    <td className="py-2 px-3 text-right font-mono font-bold text-emerald-800 bg-emerald-50/40 border-r border-slate-100">
                       <div>Rp {formatRupiah(citizen.totalPaid)}</div>
                       {(citizen.totalExcluded || 0) > 0 && (
                         <div className="text-[10px] font-semibold text-amber-700">
@@ -762,7 +762,7 @@ export default function RekapitulasiTable({
                         <button
                           type="button"
                           onClick={() => handleOpenEdit(citizen)}
-                          className="p-1.5 text-blue-600 hover:bg-blue-100 rounded transition-colors cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded transition-colors cursor-pointer"
                           title="Edit"
                         >
                           <Edit2 className="w-3.5 h-3.5" />
@@ -770,7 +770,7 @@ export default function RekapitulasiTable({
                         <button
                           type="button"
                           onClick={() => setDeletingCitizen(citizen)}
-                          className="p-1.5 text-rose-600 hover:bg-rose-100 rounded transition-colors cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded transition-colors cursor-pointer"
                           title="Hapus"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
@@ -787,7 +787,7 @@ export default function RekapitulasiTable({
                   TOTAL RT 09
                 </td>
                 {Array.from({ length: 12 }, (_, i) => i + 1).map((w) => (
-                  <td key={w} className="py-2.5 px-1 text-right font-mono text-[11px] text-blue-300 whitespace-nowrap">
+                  <td key={w} className="py-2.5 px-1 text-right font-mono text-[11px] text-emerald-300 whitespace-nowrap">
                     {formatRupiah(rt09WeekTotals.totals[w])}
                   </td>
                 ))}
@@ -914,7 +914,7 @@ export default function RekapitulasiTable({
                                 className={`px-1.5 py-0.2 rounded text-[9px] font-sans font-bold cursor-pointer transition-colors ${
                                   isExcl
                                     ? 'bg-amber-200/90 hover:bg-amber-300 text-amber-950'
-                                    : 'bg-rose-100/90 hover:bg-rose-200 text-rose-800'
+                                    : 'bg-emerald-100/90 hover:bg-emerald-200 text-emerald-800'
                                 }`}
                               >
                                 {isBusy ? '...' : isExcl ? 'Ditahan' : 'Masuk Kas'}
@@ -939,7 +939,7 @@ export default function RekapitulasiTable({
                         <button
                           type="button"
                           onClick={() => handleOpenEdit(citizen)}
-                          className="p-1.5 text-blue-600 hover:bg-blue-100 rounded transition-colors cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded transition-colors cursor-pointer"
                           title="Edit"
                         >
                           <Edit2 className="w-3.5 h-3.5" />
@@ -947,7 +947,7 @@ export default function RekapitulasiTable({
                         <button
                           type="button"
                           onClick={() => setDeletingCitizen(citizen)}
-                          className="p-1.5 text-rose-600 hover:bg-rose-100 rounded transition-colors cursor-pointer"
+                          className="p-1.5 text-emerald-600 hover:bg-emerald-100 rounded transition-colors cursor-pointer"
                           title="Hapus"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
@@ -979,12 +979,12 @@ export default function RekapitulasiTable({
       </div>
 
       {/* Ringkasan Gabungan ke Menu Uang Masuk */}
-      <div className="bg-gradient-to-r from-rose-900 via-teal-900 to-slate-900 rounded-xl p-4 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-sm">
+      <div className="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 rounded-xl p-4 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-sm">
         <div className="space-y-0.5">
           <span className="text-xs font-bold text-amber-300 uppercase tracking-wider">
             Total Gabungan Iuran Masuk (RT 08 + RT 09 + RT 10)
           </span>
-          <p className="text-xs text-rose-100">
+          <p className="text-xs text-emerald-100">
             RT 08 (<strong className="text-amber-200">Rp {formatRupiah(rt08WeekTotals.grandTotal)}</strong>) + RT 09 (<strong className="text-amber-200">Rp {formatRupiah(rt09WeekTotals.grandTotal)}</strong>) + RT 10 (<strong className="text-amber-200">Rp {formatRupiah(rt10WeekTotals.grandTotal)}</strong>)
           </p>
           {grandExcludedAllRt > 0 && (
@@ -994,7 +994,7 @@ export default function RekapitulasiTable({
           )}
         </div>
         <div className="text-left sm:text-right">
-          <span className="text-[10px] uppercase text-rose-300 font-semibold block">
+          <span className="text-[10px] uppercase text-emerald-300 font-semibold block">
             Total Masuk Kas Donasi Warga
           </span>
           <span className="text-lg sm:text-xl font-black font-mono text-amber-300">
@@ -1006,10 +1006,10 @@ export default function RekapitulasiTable({
       {/* Modal Tambah Warga */}
       {isAddModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-rose-100 animate-in fade-in zoom-in-95">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-5 sm:p-6 border border-emerald-100 animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <h3 className="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
-                <Plus className="w-4 h-4 text-rose-600" />
+                <Plus className="w-4 h-4 text-emerald-600" />
                 Tambah Warga Baru (Pilih RT)
               </h3>
               <button
@@ -1023,7 +1023,7 @@ export default function RekapitulasiTable({
 
             <form onSubmit={handleAddCitizen} className="mt-4 space-y-4">
               {errorMsg && (
-                <div className="p-3 bg-rose-50 text-rose-700 rounded-xl text-xs font-semibold border border-rose-200">
+                <div className="p-3 bg-emerald-50 text-emerald-700 rounded-xl text-xs font-semibold border border-emerald-200">
                   {errorMsg}
                 </div>
               )}
@@ -1040,7 +1040,7 @@ export default function RekapitulasiTable({
                       onClick={() => setNewCitizenRt(rtVal)}
                       className={`py-2 px-3 rounded-xl text-xs font-bold border transition-all cursor-pointer ${
                         newCitizenRt === rtVal
-                          ? 'bg-rose-700 text-white border-rose-700 shadow-xs'
+                          ? 'bg-emerald-700 text-white border-emerald-700 shadow-xs'
                           : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                       }`}
                     >
@@ -1061,7 +1061,7 @@ export default function RekapitulasiTable({
                   value={newCitizenName}
                   onChange={(e) => setNewCitizenName(e.target.value)}
                   placeholder="Contoh: Bpk. Sulaeman"
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:bg-white focus:border-rose-600 focus:ring-2 focus:ring-rose-500/20"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20"
                 />
               </div>
 
@@ -1076,7 +1076,7 @@ export default function RekapitulasiTable({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="px-5 py-2 bg-rose-700 hover:bg-rose-800 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50 cursor-pointer"
+                  className="px-5 py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50 cursor-pointer"
                 >
                   {loading ? 'Menyimpan...' : 'Simpan Warga'}
                 </button>
@@ -1089,11 +1089,11 @@ export default function RekapitulasiTable({
       {/* Modal Edit Warga & 12 Weeks */}
       {editingCitizen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/60 backdrop-blur-xs overflow-y-auto">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-xl w-full p-4 sm:p-6 border border-rose-100 max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-xl w-full p-4 sm:p-6 border border-emerald-100 max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <div>
                 <h3 className="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
-                  <Edit2 className="w-4 h-4 text-blue-600" />
+                  <Edit2 className="w-4 h-4 text-emerald-600" />
                   Edit Data Warga, RT &amp; Iuran 12 Minggu
                 </h3>
               </div>
@@ -1108,7 +1108,7 @@ export default function RekapitulasiTable({
 
             <form onSubmit={handleSaveEdit} className="mt-4 space-y-4 overflow-y-auto pr-1 flex-1">
               {errorMsg && (
-                <div className="p-3 bg-rose-50 text-rose-700 rounded-xl text-xs font-semibold border border-rose-200">
+                <div className="p-3 bg-emerald-50 text-emerald-700 rounded-xl text-xs font-semibold border border-emerald-200">
                   {errorMsg}
                 </div>
               )}
@@ -1123,7 +1123,7 @@ export default function RekapitulasiTable({
                     required
                     value={editName}
                     onChange={(e) => setEditName(e.target.value)}
-                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs font-semibold focus:bg-white focus:border-rose-600"
+                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs font-semibold focus:bg-white focus:border-emerald-600"
                   />
                 </div>
                 <div>
@@ -1133,7 +1133,7 @@ export default function RekapitulasiTable({
                   <select
                     value={editRt}
                     onChange={(e) => setEditRt(e.target.value as '08' | '09' | '10')}
-                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs font-semibold focus:bg-white focus:border-rose-600"
+                    className="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs font-semibold focus:bg-white focus:border-emerald-600"
                   >
                     <option value="08">RT 08</option>
                     <option value="09">RT 09</option>
@@ -1170,7 +1170,7 @@ export default function RekapitulasiTable({
                           setEditWeeks(prev => ({ ...prev, [w]: formatInputNumber(e.target.value) }))
                         }
                         placeholder="0"
-                        className="w-full px-2 py-1 bg-slate-50 border border-slate-200 rounded text-xs font-mono font-bold text-right focus:bg-white focus:border-rose-600"
+                        className="w-full px-2 py-1 bg-slate-50 border border-slate-200 rounded text-xs font-mono font-bold text-right focus:bg-white focus:border-emerald-600"
                       />
                     </div>
                   ))}
@@ -1188,7 +1188,7 @@ export default function RekapitulasiTable({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="px-5 py-2 bg-rose-700 hover:bg-rose-800 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50 cursor-pointer"
+                  className="px-5 py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50 cursor-pointer"
                 >
                   {loading ? 'Menyimpan...' : 'Simpan Perubahan'}
                 </button>
@@ -1201,8 +1201,8 @@ export default function RekapitulasiTable({
       {/* Modal Konfirmasi Hapus Warga */}
       {deletingCitizen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-xs">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-sm w-full p-5 sm:p-6 border border-rose-100 text-center space-y-4 animate-in fade-in zoom-in-95">
-            <div className="w-12 h-12 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mx-auto">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-sm w-full p-5 sm:p-6 border border-emerald-100 text-center space-y-4 animate-in fade-in zoom-in-95">
+            <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
               <Trash2 className="w-6 h-6" />
             </div>
             <div>
@@ -1223,7 +1223,7 @@ export default function RekapitulasiTable({
                 type="button"
                 disabled={loading}
                 onClick={handleConfirmDeleteCitizen}
-                className="flex-1 py-2 px-4 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50 cursor-pointer"
+                className="flex-1 py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md disabled:opacity-50 cursor-pointer"
               >
                 {loading ? 'Menghapus...' : 'Ya, Hapus'}
               </button>
