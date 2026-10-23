@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128;
+    }
+
+    match /appState/{stateId} {
+      allow read, write: if isValidId(stateId);
+    }
+
+    match /citizens/{citizenId} {
+      allow read, write: if isValidId(citizenId);
+    }
+
+    match /wargaPayments/{paymentId} {
+      allow read, write: if isValidId(paymentId);
+    }
+
+    match /sukarelaPayments/{paymentId} {
+      allow read, write: if isValidId(paymentId);
+    }
+
+    match /pengeluaranList/{expenseId} {
+      allow read, write: if isValidId(expenseId);
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,1251 @@
+{
+  "version": 179,
+  "visitorStats": {
+    "lastVisitedAt": "Jumat, 23 Oktober 2026 23:24:33 WIB",
+    "dailyCounts": {
+      "2026-10-23": 8
+    },
+    "uniqueVisitorIds": [
+      "v-1791962935265-z6mce6w"
+    ],
+    "totalVisits": 8,
+    "weekVisits": 8,
+    "todayVisits": 8,
+    "uniqueVisitors": 1,
+    "recentVisits": [
+      {
+        "pageVisited": "/",
+        "deviceType": "mobile",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa",
+        "id": "vis-1792772673483-0k7y5",
+        "roleViewed": "tamu",
+        "formattedTime": "Jumat, 23 Oktober 2026 23:24:33 WIB",
+        "timestamp": "2026-10-23T16:24:33.483Z"
+      },
+      {
+        "deviceType": "mobile",
+        "timestamp": "2026-10-23T16:24:33.467Z",
+        "formattedTime": "Jumat, 23 Oktober 2026 23:24:33 WIB",
+        "id": "vis-1792772673467-fvndo",
+        "pageVisited": "/",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa",
+        "roleViewed": "tamu"
+      },
+      {
+        "id": "vis-1792758870866-w7t93",
+        "timestamp": "2026-10-23T12:34:30.866Z",
+        "pageVisited": "/",
+        "deviceType": "mobile",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa",
+        "formattedTime": "Jumat, 23 Oktober 2026 19:34:30 WIB",
+        "roleViewed": "tamu"
+      },
+      {
+        "timestamp": "2026-10-23T12:34:30.845Z",
+        "id": "vis-1792758870845-hg19c",
+        "roleViewed": "tamu",
+        "formattedTime": "Jumat, 23 Oktober 2026 19:34:30 WIB",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa",
+        "pageVisited": "/",
+        "deviceType": "mobile"
+      },
+      {
+        "roleViewed": "admin",
+        "id": "vis-1792757946710-4jied",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa",
+        "deviceType": "mobile",
+        "formattedTime": "Jumat, 23 Oktober 2026 19:19:06 WIB",
+        "pageVisited": "/",
+        "timestamp": "2026-10-23T12:19:06.710Z"
+      },
+      {
+        "pageVisited": "/",
+        "timestamp": "2026-10-23T12:19:06.691Z",
+        "deviceType": "mobile",
+        "formattedTime": "Jumat, 23 Oktober 2026 19:19:06 WIB",
+        "id": "vis-1792757946691-6gk4y",
+        "roleViewed": "admin",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa"
+      },
+      {
+        "id": "vis-1792756504198-r1fma",
+        "deviceType": "mobile",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa",
+        "formattedTime": "Jumat, 23 Oktober 2026 18:55:04 WIB",
+        "roleViewed": "admin",
+        "pageVisited": "/",
+        "timestamp": "2026-10-23T11:55:04.198Z"
+      },
+      {
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Sa",
+        "pageVisited": "/",
+        "deviceType": "mobile",
+        "timestamp": "2026-10-23T11:55:04.135Z",
+        "id": "vis-1792756504134-qi3u5",
+        "roleViewed": "admin",
+        "formattedTime": "Jumat, 23 Oktober 2026 18:55:04 WIB"
+      }
+    ]
+  },
+  "targetPerPerson": 250000,
+  "citizens": [],
+  "proposalData": {
+    "penceramah": "KH. Mubaligh Undangan (Penceramah Tabligh Akbar)",
+    "penasehat": "",
+    "bentukKegiatanDeskripsi": "Bentuk kegiatan yang akan dilaksanakan dalam rangka Peringatan Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M di Lingkungan Kp. Kedung Sapi dikemas dalam rangkaian acara keagamaan dan kemasyarakatan sebagai berikut:",
+    "signers": {
+      "tokohPenanggungJawab": "",
+      "ketuaRt": "",
+      "sekretaris": "Rama",
+      "wakilKetua": "Riki",
+      "ketuaPanitia": "Sahroji",
+      "kepalaDesa": "",
+      "bendahara": "Alwi",
+      "ketuaPemuda": ""
+    },
+    "waktuPelaksanaan": "Pukul 19.30 WIB (Ba'da Isya) s/d Selesai",
+    "temaKegiatan": "Meneladani Akhlak Mulia Rasulullah SAW serta Memperkokoh Ukhuwah Islamiyah dan Semangat Gotong Royong Warga Kp. Kedung Sapi melalui Momentum Isra Mi'raj 1448 H / 2027 M",
+    "penanggungJawab": "",
+    "kopBaris1": "PANITIA PERINGATAN HARI BESAR ISLAM (PHBI)",
+    "kataPengantar": "Bismillahirrahmanirrahim.\nAssalamu'alaikum Warahmatullahi Wabarakatuh.\n\nPuji dan syukur marilah senantiasa kita panjatkan ke hadirat Allah SWT yang telah melimpahkan rahmat, taufik, hidayah, serta nikmat kesehatan dan keimanan kepada kita semua. Shalawat serta salam semoga senantiasa tercurah kepada junjungan kita Nabi Agung Muhammad SAW, beserta keluarga, para sahabat, dan seluruh umatnya yang istiqomah menjalankan sunnah-sunnah beliau hingga akhir zaman.\n\nPeristiwa Isra Mi'raj Nabi Muhammad SAW merupakan salah satu peristiwa paling agung dalam sejarah umat Islam, di mana Rasulullah SAW menerima perintah langsung dari Allah SWT berupa kewajiban melaksanakan shalat lima waktu sehari semalam sebagai tiang agama dan sarana pembentukan akhlak mulia.\n\nSehubungan dengan hal tersebut, kami selaku Panitia Peringatan Hari Besar Islam (PHBI) Kp Kedung Sapi Desa Kp Baru Kec Pamarayan Serang-BANTEN bermaksud menyelenggarakan kegiatan Pengajian Akbar dalam rangka memperingati Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M. Penyusunan proposal ini bertujuan sebagai pedoman pelaksanaan kegiatan sekaligus wujud keterbukaan informasi mengenai rencana acara, susunan kepanitiaan, serta rincian kebutuhan anggaran dana kepada seluruh warga masyarakat dan para donatur.",
+    "nomorProposal": "001/PHBI-IM/KP-BRN/I/2027",
+    "signerRoles": {
+      "ketuaPemuda": "Ketua Pemuda",
+      "ketuaPanitia": "Ketua Panitia",
+      "kepalaDesa": "Kepala Desa Sangiang",
+      "bendahara": "Bendahara",
+      "sekretaris": "Sekretaris",
+      "wakilKetua": "Wakil Ketua",
+      "tokohPenanggungJawab": "Tokoh (Penanggung Jawab)",
+      "ketuaRt": "Ketua RT 011"
+    },
+    "adminSistem": "Riyan",
+    "lastUpdatedAt": "Kamis, 08 Oktober 2026 18:33:54 WIB",
+    "kopAlamat": "Lingkungan Kp Kedung Sapi Desa Kp Baru Kec Pamarayan Serang-BANTEN",
+    "judulProposal": "PROPOSAL KEGIATAN PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MI'RAJ NABI MUHAMMAD SAW 1448 H/2027 M",
+    "kopBaris2": "ISRA MI'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M",
+    "kopSekretariat": "Sekretariat: Majelis Kp. Kedung Sapi • Hotline / WhatsApp Resmi: 081414033436",
+    "pelindung": "",
+    "bentukKegiatanList": [
+      "Tabligh Akbar / Pengajian Umum Peringatan Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M bersama Mubaligh / Penceramah Undangan.",
+      "Lantunan Pembacaan Ayat Suci Al-Qur'an (Tilawah) oleh Qori Undangan.",
+      "Kegiatan Pra-Acara & Syiar Lingkungan bersama Warga dan Pemuda Kp. Kedung Sapi.",
+      "Doa Bersama untuk Keselamatan, Kerukunan, dan Keberkahan Seluruh Warga Kp. Kedung Sapi Desa Kp Baru."
+    ],
+    "hariTanggal": "Sabtu Malam Minggu, 14 Februari 2026 (26 Sya'ban 1448 H / 2027 M)",
+    "sumberDanaDeskripsi": "Untuk memenuhi kebutuhan anggaran biaya kegiatan Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M tersebut, sumber pendanaan diperoleh secara gotong royong, halal, dan tidak mengikat yang berasal dari:",
+    "lampiran": "1 (Satu) Bundel Berkas",
+    "perihal": "Permohonan Dukungan & Partisipasi Kegiatan PHBI Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M",
+    "penutup": "Demikian Proposal Kegiatan Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M Kp Kedung Sapi Desa Kp Baru Kec Pamarayan Serang-BANTEN ini kami susun sebagai acuan pelaksanaan kegiatan.\n\nKami menyadari sepenuhnya bahwa kesuksesan dan kelancaran acara mulia ini tidak terlepas dari rahmat Allah SWT serta dukungan moril maupun materiil dari seluruh warga masyarakat, tokoh agama, pemuda, pemerintahan desa, serta para donatur yang dermawan. Atas segala perhatian, doa restu, bantuan, dan kerja sama yang diberikan, kami ucapkan terima kasih yang sebesar-besarnya. Semoga Allah SWT mencatat setiap langkah dan infaq terbaik Bapak/Ibu/Saudara/i sebagai amal jariyah yang berlipat ganda. Aamiin Ya Rabbal 'Alamiin.\n\nWassalamu'alaikum Warahmatullahi Wabarakatuh.",
+    "anggaranDana": [
+      {
+        "jumlah": 6000000,
+        "volume": "1 Paket",
+        "uraian": "Bisaroh / Transport Penceramah (Mubaligh Inti)",
+        "id": "rab-1",
+        "kategori": "Acara & Mubaligh"
+      },
+      {
+        "kategori": "Acara & Qori",
+        "jumlah": 5000000,
+        "volume": "1 Paket",
+        "uraian": "Bisaroh / Honor Qori Tilawah Al-Qur'an & Pengisi Acara",
+        "id": "rab-2"
+      },
+      {
+        "uraian": "Konsumsi Jamaah Pengajian, Tamu VIP, Penceramah & Kerja Bakti Panitia",
+        "kategori": "Seksi Konsumsi",
+        "volume": "850 Kotak / Paket",
+        "jumlah": 8000000,
+        "id": "rab-3"
+      },
+      {
+        "kategori": "Tenda & Venue",
+        "id": "rab-4",
+        "uraian": "Sewa Tenda, Panggung Utama, Kursi Tamu & Karpet Jamaah",
+        "jumlah": 5500000,
+        "volume": "1 Set Lengkap"
+      },
+      {
+        "kategori": "Multimedia & Sound",
+        "jumlah": 3500000,
+        "volume": "1 Paket",
+        "id": "rab-5",
+        "uraian": "Sewa Sound System, Pencahayaan (Lighting) & Dokumentasi"
+      },
+      {
+        "kategori": "Seksi Dekorasi",
+        "volume": "1 Paket",
+        "jumlah": 1500000,
+        "uraian": "Dekorasi Panggung, Cetak Banner / Spanduk Utama & Umbul-Umbul",
+        "id": "rab-6"
+      },
+      {
+        "kategori": "Seksi Logistik",
+        "uraian": "Sewa Genset, BBM Solar, Instalasi Listrik & Perlengkapan Lapangan",
+        "volume": "1 Paket",
+        "jumlah": 1500000,
+        "id": "rab-7"
+      },
+      {
+        "uraian": "Cetak Proposal, Surat Undangan, Amplop, ATK & Operasional Humas",
+        "id": "rab-8",
+        "volume": "1 Paket",
+        "jumlah": 800000,
+        "kategori": "Kesekretariatan & Humas"
+      },
+      {
+        "kategori": "Keamanan & Kebersihan",
+        "id": "rab-9",
+        "jumlah": 700000,
+        "volume": "1 Paket",
+        "uraian": "Operasional Keamanan, Parkir, Plastik Sampah & Kebersihan Lingkungan"
+      }
+    ],
+    "qori": "Ust. Qori Undangan (Qori Tilawah Al-Qur'an)",
+    "tanggalSurat": "Serang, Januari 2027",
+    "kepadaYth": "Bapak/Ibu Warga Masyarakat Kp. Kedung Sapi, Para Donatur, Tokoh Masyarakat & Simpatisan",
+    "tempatPelaksanaan": "Lingkungan Majelis / Lapangan Kp Kedung Sapi Desa Kp Baru Kec Pamarayan Serang-BANTEN",
+    "coverWilayah": "KP KEDUNG SAPI DESA KP BARU KEC PAMARAYAN SERANG-BANTEN",
+    "rundownAcara": [
+      {
+        "pengisi": "Seksi Acara, Humas & Tim Marhaban",
+        "id": "rd-1",
+        "waktu": "19.00 – 19.30 WIB",
+        "kegiatan": "Persiapan Panitia, Penyambutan Jamaah & Pra-Acara (Hadroh / Shalawat)",
+        "keterangan": "Pengondisian tempat duduk tamu & warga"
+      },
+      {
+        "waktu": "19.30 – 19.45 WIB",
+        "id": "rd-2",
+        "pengisi": "Master of Ceremony (MC)",
+        "kegiatan": "Pembukaan Acara Resmi (Muqaddimah)",
+        "keterangan": "Pembacaan Ummul Kitab (Al-Fatihah)"
+      },
+      {
+        "kegiatan": "Pembacaan Ayat Suci Al-Qur'an & Tilawah",
+        "id": "rd-3",
+        "pengisi": "Qori Undangan",
+        "waktu": "19.45 – 20.15 WIB",
+        "keterangan": "Seksi Acara & Sound System"
+      },
+      {
+        "waktu": "20.15 – 20.40 WIB",
+        "id": "rd-4",
+        "pengisi": "Grup Marhaban / Jamaah Kp. Kedung Sapi",
+        "keterangan": "Dipimpin tokoh agama setempat",
+        "kegiatan": "Lantunan Shalawat Nabi Muhammad SAW / Marhaban"
+      },
+      {
+        "keterangan": "Laporan kepanitiaan & sambutan pemerintahan",
+        "pengisi": "Sahroji, Bpk. Rt Salaman, Bpk H.Marta",
+        "waktu": "20.40 – 21.15 WIB",
+        "kegiatan": "Sambutan-Sambutan:\n1. Ketua Panitia PHBI Isra Mi'raj\n2. Ketua RT 011 / Tokoh Masyarakat\n3. Kepala Desa Kp Baru",
+        "id": "rd-5"
+      },
+      {
+        "kegiatan": "Acara Inti: Mau'idhoh Hasanah (Tausiyah Hikmah Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M)",
+        "id": "rd-6",
+        "keterangan": "Acara inti pengajian akbar",
+        "pengisi": "Penceramah / Mubaligh Undangan",
+        "waktu": "21.15 – 23.00 WIB"
+      },
+      {
+        "waktu": "23.00 – 23.15 WIB",
+        "keterangan": "Doa keselamatan & keberkahan warga",
+        "kegiatan": "Pembacaan Doa Penutup",
+        "pengisi": "Kyai / Tokoh Ulama Setempat",
+        "id": "rd-7"
+      },
+      {
+        "pengisi": "MC, Seksi Konsumsi & Seluruh Panitia",
+        "id": "rd-8",
+        "waktu": "23.15 – Selesai",
+        "kegiatan": "Penutup, Ramah Tamah & Pembagian Konsumsi",
+        "keterangan": "Tertib & kebersihan lokasi"
+      }
+    ],
+    "sections": [],
+    "lastUpdatedBy": "Warga Kp Barani",
+    "tujuanKegiatan": [
+      "Memperingati peristiwa agung Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M dengan penuh khidmat dan keberkahan.",
+      "Meningkatkan kualitas keimanan, ketakwaan, serta kesadaran mengamalkan ibadah shalat lima waktu dalam kehidupan sehari-hari.",
+      "Mempererat tali silaturahmi, kerukunan, dan ukhuwah Islamiyah antar warga Kp. Kedung Sapi Desa Kp Baru.",
+      "Menumbuhkan semangat kebersamaan, gotong royong, dan kepedulian sosial di lingkungan masyarakat serta generasi muda (pemuda/i).",
+      "Menghidupkan syiar dakwah Islam yang menyejukkan, santun, dan membawa manfaat nyata bagi lingkungan Kp. Kedung Sapi."
+    ],
+    "sumberDanaList": [
+      {
+        "estimasi": 33000000,
+        "sumber": "Iuran Gotong Royong Warga Utama Kp. Kedung Sapi",
+        "uraian": "Iuran bertahap 12 Minggu (132 Warga × Rp 250.000)",
+        "id": "sd-1"
+      },
+      {
+        "estimasi": 1500000,
+        "id": "sd-2",
+        "uraian": "Partisipasi sukarela warga kontrakan di lingkungan Kp. Kedung Sapi",
+        "sumber": "Partisipasi Warga Ngontrak & Kas Pendukung"
+      },
+      {
+        "estimasi": 3500000,
+        "id": "sd-3",
+        "uraian": "Sumbangan sukarela para dermawan, tokoh masyarakat, pengusaha & instansi yang tidak mengikat",
+        "sumber": "Donasi Sukarela, Donatur & Simpatisan"
+      }
+    ],
+    "maksudKegiatan": "Kegiatan Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M ini dimaksudkan sebagai wadah syiar Islam, pembinaan mental spiritual, serta sarana mempererat ukhuwah Islamiyah seluruh warga Kp. Kedung Sapi Desa Kp Baru dan sekitarnya."
+  },
+  "transferConfirmations": [],
+  "pengeluaranList": [],
+  "accounts": [
+    {
+      "password": "123456",
+      "username": "riyan",
+      "role": "admin",
+      "name": "Riyan (Admin PHBI)",
+      "createdAt": "Rabu, 16 September 2026 12:50:27 WIB",
+      "id": "acc-admin"
+    },
+    {
+      "id": "acc-bendahara",
+      "name": "Alwi (Bendahara PHBI)",
+      "role": "bendahara",
+      "createdAt": "Rabu, 16 September 2026 12:50:27 WIB",
+      "username": "bendahara",
+      "password": "123456"
+    },
+    {
+      "username": "warga",
+      "password": "123",
+      "createdAt": "Kamis, 16 September 2026 11:30:00 WIB",
+      "role": "warga",
+      "name": "Warga Kp Kedung Sapi",
+      "id": "acc-warga"
+    },
+    {
+      "id": "acc-rt08",
+      "username": "rt08",
+      "password": "123456",
+      "name": "Petugas RT 08",
+      "role": "usser1",
+      "assignedRt": "08",
+      "createdAt": "23/10/2026, 23.38.54"
+    },
+    {
+      "id": "acc-rt09",
+      "username": "rt09",
+      "password": "123456",
+      "name": "Petugas RT 09",
+      "role": "usser2",
+      "assignedRt": "09",
+      "createdAt": "23/10/2026, 23.38.54"
+    },
+    {
+      "id": "acc-rt10",
+      "username": "rt10",
+      "password": "123456",
+      "name": "Petugas RT 10",
+      "role": "usser3",
+      "assignedRt": "10",
+      "createdAt": "23/10/2026, 23.38.54"
+    }
+  ],
+  "wargaPayments": [],
+  "committeeSettings": {
+    "autoRotateWeekly": true,
+    "penasehat": [],
+    "wakilKetua": "Riki",
+    "pelindung": [],
+    "wilayah": "Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten",
+    "week1StartDate": "2026-10-04",
+    "bendahara": "Alwi",
+    "penanggungJawab": [],
+    "namaKegiatan": "Peringatan Hari Besar Islam (PHBI) Isra Miraj Nabi Muhammad SAW 1448 H / 2027 M",
+    "ketuaPanitia": "Sahroji",
+    "sekretaris": "Rama",
+    "targetPerPerson": 250000,
+    "activeWeek": 3,
+    "nomorWa": "081414033436",
+    "waGroupLink": "https://chat.whatsapp.com/C6lRr2xPLjJCmAtBArdw2B",
+    "sections": [
+      {
+        "coordinator": "Imat",
+        "name": "Seksi Acara",
+        "members": [
+          "Yoga",
+          "Ara",
+          "Bila",
+          "Rahma"
+        ]
+      },
+      {
+        "coordinator": "Darma",
+        "name": "Logistik",
+        "members": [
+          "Rangga",
+          "Imam P",
+          "Herti",
+          "Heriah"
+        ]
+      },
+      {
+        "name": "Seksi Konsumsi",
+        "coordinator": "Feby",
+        "members": [
+          "Naya",
+          "Indah",
+          "Andre",
+          "Hendar",
+          "Ika"
+        ]
+      },
+      {
+        "coordinator": "Wulan",
+        "members": [
+          "Ina",
+          "Fajri",
+          "Dimas",
+          "Siroj"
+        ],
+        "name": "Seksi Dekorasi"
+      },
+      {
+        "name": "Seksi Dokumentasi",
+        "members": [
+          "Hikmat",
+          "Diah",
+          "Lee",
+          "Rijal"
+        ],
+        "coordinator": "Lulu"
+      },
+      {
+        "members": [
+          "Odih",
+          "Sarif",
+          "Agung",
+          "Ilham"
+        ],
+        "name": "Humas",
+        "coordinator": "Anwar"
+      },
+      {
+        "name": "Seksi Kebersihan",
+        "members": [
+          "Seluruh Panitia"
+        ],
+        "coordinator": "Halik"
+      },
+      {
+        "coordinator": "Hopipah",
+        "members": [
+          "Reni",
+          "Erwin",
+          "Riyan",
+          "Anas"
+        ],
+        "name": "Sekretariat"
+      },
+      {
+        "name": "Keamanan",
+        "members": [
+          "Egi",
+          "Mulya",
+          "Usup",
+          "Jalu"
+        ],
+        "coordinator": "Candra"
+      }
+    ],
+    "adminSistem": "Riyan"
+  },
+  "sukarelaPayments": [],
+  "paymentSettings": {
+    "qris": {
+      "qrisImageUrl": "",
+      "instructions": "Scan QRIS ini menggunakan m-Banking (BCA, BRImo, Livin Mandiri, BSI, BNI, Jago, dll) atau E-Wallet (DANA, GoPay, OVO, ShopeePay, LinkAja).",
+      "qrisPayloadString": "00020101021126590014ID.GO.QRIS.WWW01189360099900000000000209ID10243567890120303UMI51440014ID.CO.QRIS.WWW02150000000000000000303UMI5204541153033605802ID5927PHBI ISRA MIRAJ KP BARANI6007SERANG61054217762070703A0163041A2B",
+      "qrisName": "PHBI ISRA MI'RAJ KP BARANI",
+      "qrisNmid": "ID1024356789012"
+    },
+    "bankAccounts": [
+      {
+        "bankName": "Bank BRI",
+        "catatan": "Dapat transfer dari ATM BRI, BRImo, atau transfer Antar-Bank (Kode: 002)",
+        "accountNumber": "0123-01-045678-50-9",
+        "id": "bank-bri-1",
+        "accountHolder": "Alwi (Bendahara PHBI)"
+      },
+      {
+        "catatan": "Transfer via BCA Mobile, KlikBCA, atau ATM BCA (Kode: 014)",
+        "accountNumber": "7890-1234-56",
+        "accountHolder": "Alwi",
+        "bankName": "Bank BCA",
+        "id": "bank-bca-1"
+      },
+      {
+        "bankName": "Bank BSI",
+        "accountHolder": "Panitia Isra Miraj Kp Kedung Sapi",
+        "id": "bank-bsi-1",
+        "accountNumber": "719-8765-432",
+        "catatan": "Bank Syariah Indonesia (Kode: 451) / Rekening Panitia"
+      }
+    ],
+    "eWallets": [
+      {
+        "accountNumber": "0857-1234-5678",
+        "accountHolder": "Alwi / PHBI Kedung Sapi",
+        "walletName": "DANA",
+        "catatan": "Transfer saldo via aplikasi DANA (Bebas biaya admin)",
+        "id": "ewallet-dana-1"
+      },
+      {
+        "walletName": "GoPay",
+        "accountHolder": "Alwi (Bendahara)",
+        "accountNumber": "0857-1234-5678",
+        "id": "ewallet-gopay-1",
+        "catatan": "Transfer via Gojek / GoPay ke nomor HP"
+      },
+      {
+        "walletName": "OVO",
+        "accountHolder": "Alwi",
+        "accountNumber": "0857-1234-5678",
+        "id": "ewallet-ovo-1",
+        "catatan": "Transfer antar akun OVO"
+      }
+    ]
+  },
+  "activePeriodLabel": "1448 H / 2027 M",
+  "periodArchives": [],
+  "auditLogs": [
+    {
+      "id": "log-1792756839266",
+      "action": "HAPUS",
+      "details": "HAPUS SEMUA DATA WARGA SECARA PERMANEN: Menghapus seluruh 144 nama warga (termasuk Aam, Abah Udi, dan lainnya). Daftar warga kini kosong (0 warga) siap untuk input baru.",
+      "category": "PENGATURAN",
+      "accountName": "Admin",
+      "timestamp": "23/10/2026, 19.00.39"
+    },
+    {
+      "timestamp": "23/10/2026, 18.46.18",
+      "id": "log-1792755978743",
+      "action": "HAPUS",
+      "category": "PENGATURAN",
+      "details": "KOSONGKAN SEMUA DONASI MASUK & KELUAR: Mengosongkan seluruh iuran warga, donasi sukarela, dan uang keluar. Saldo kas kembali Rp 0.",
+      "accountName": "Admin"
+    },
+    {
+      "id": "log-1791459234375",
+      "timestamp": "Kamis, 08 Oktober 2026 18:33:54 WIB",
+      "category": "PROPOSAL",
+      "action": "EDIT",
+      "accountName": "Warga Kp Barani",
+      "details": "Warga Kp Barani memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan)."
+    },
+    {
+      "timestamp": "Kamis, 08 Oktober 2026 18:32:22 WIB",
+      "category": "PROPOSAL",
+      "accountName": "Warga Kp Barani",
+      "action": "EDIT",
+      "details": "Warga Kp Barani memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan).",
+      "id": "log-1791459142501"
+    },
+    {
+      "category": "PROPOSAL",
+      "timestamp": "Kamis, 08 Oktober 2026 18:24:16 WIB",
+      "details": "Warga Kp Barani memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan).",
+      "id": "log-1791458656163",
+      "accountName": "Warga Kp Barani",
+      "action": "EDIT"
+    },
+    {
+      "details": "Warga Kp Barani memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan).",
+      "category": "PROPOSAL",
+      "id": "log-1791458602368",
+      "action": "EDIT",
+      "timestamp": "Kamis, 08 Oktober 2026 18:23:22 WIB",
+      "accountName": "Warga Kp Barani"
+    },
+    {
+      "accountName": "Warga Kp Barani",
+      "category": "PROPOSAL",
+      "timestamp": "Kamis, 08 Oktober 2026 18:22:46 WIB",
+      "details": "Warga Kp Barani memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan).",
+      "id": "log-1791458566043",
+      "action": "EDIT"
+    },
+    {
+      "category": "PROPOSAL",
+      "accountName": "Warga Kp Barani",
+      "action": "EDIT",
+      "timestamp": "Kamis, 08 Oktober 2026 16:46:31 WIB",
+      "details": "Warga Kp Barani memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan).",
+      "id": "log-1791452791522"
+    },
+    {
+      "category": "PROPOSAL",
+      "details": "Warga Kp Barani memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan).",
+      "id": "log-1791452584599",
+      "timestamp": "Kamis, 08 Oktober 2026 16:43:04 WIB",
+      "action": "EDIT",
+      "accountName": "Warga Kp Barani"
+    },
+    {
+      "details": "Menambahkan warga baru: Budi Test Sementara",
+      "accountName": "Petugas",
+      "category": "REKAPITULASI",
+      "action": "TAMBAH",
+      "timestamp": "Rabu, 07 Oktober 2026 00:04:22 WIB",
+      "id": "log-1791306262021"
+    },
+    {
+      "category": "DONASI WARGA",
+      "details": "Input iuran Iwan Lp Minggu ke-1 sebesar Rp 10.000",
+      "accountName": "Petugas Usser 1",
+      "action": "TAMBAH",
+      "timestamp": "Selasa, 06 Oktober 2026 09:38:45 WIB",
+      "id": "log-1791254325877"
+    },
+    {
+      "action": "HAPUS",
+      "timestamp": "Kamis, 01 Oktober 2026 09:45:08 WIB",
+      "category": "PEMBAYARAN",
+      "details": "Alwi menghapus catatan konfirmasi transfer QRIS Rp 20.000 atas nama Test Warga.",
+      "id": "log-1790822708515",
+      "accountName": "Alwi"
+    },
+    {
+      "category": "PEMBAYARAN",
+      "id": "log-1790822708490",
+      "action": "EDIT",
+      "accountName": "Alwi",
+      "details": "Alwi MENYETUJUI bukti transfer QRIS Rp 20.000 dari Test Warga. Dana berhasil dibukukan ke kas.",
+      "timestamp": "Kamis, 01 Oktober 2026 09:45:08 WIB"
+    },
+    {
+      "accountName": "Test Warga",
+      "category": "PEMBAYARAN",
+      "timestamp": "Kamis, 01 Oktober 2026 09:45:08 WIB",
+      "details": "Pengajuan konfirmasi transfer QRIS sebesar Rp 20.000 atas nama Test Warga (Iuran Pekanan). Menunggu verifikasi bendahara.",
+      "id": "log-1790822708431",
+      "action": "TAMBAH"
+    },
+    {
+      "action": "HAPUS",
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "RESET DATA AWAL: Mengembalikan seluruh daftar 132 warga ke kondisi awal (semua kolom iuran kosong/Rp 0) dan mereset pengeluaran kas ke Rp 0.",
+      "category": "PENGATURAN",
+      "id": "log-1790821943355",
+      "timestamp": "Kamis, 01 Oktober 2026 02:32:23 WIB"
+    },
+    {
+      "id": "log-1790821830443",
+      "action": "EDIT",
+      "details": "Riyan (Admin PHBI) MENYETUJUI bukti transfer QRIS Rp 20.000 dari Agung. Dana berhasil dibukukan ke kas.",
+      "category": "PEMBAYARAN",
+      "accountName": "Riyan (Admin PHBI)",
+      "timestamp": "Kamis, 01 Oktober 2026 02:30:30 WIB"
+    },
+    {
+      "action": "TAMBAH",
+      "category": "PEMBAYARAN",
+      "accountName": "Agung",
+      "timestamp": "Kamis, 01 Oktober 2026 02:29:58 WIB",
+      "id": "log-1790821798840",
+      "details": "Pengajuan konfirmasi transfer QRIS sebesar Rp 20.000 atas nama Agung (Iuran Pekanan). Menunggu verifikasi bendahara."
+    },
+    {
+      "accountName": "Riyan (Admin PHBI)",
+      "id": "log-1790821699620",
+      "action": "EDIT",
+      "details": "Riyan (Admin PHBI) memperbarui data rekening Bank, E-Wallet & Kode QRIS resmi.",
+      "category": "PEMBAYARAN",
+      "timestamp": "Kamis, 01 Oktober 2026 02:28:19 WIB"
+    },
+    {
+      "details": "Riyan (Admin PHBI) memperbarui data rekening Bank, E-Wallet & Kode QRIS resmi.",
+      "accountName": "Riyan (Admin PHBI)",
+      "action": "EDIT",
+      "id": "log-1790820797554",
+      "timestamp": "Kamis, 01 Oktober 2026 02:13:17 WIB",
+      "category": "PEMBAYARAN"
+    },
+    {
+      "accountName": "Sahroji",
+      "details": "Pengajuan konfirmasi transfer QRIS sebesar Rp 20.000 atas nama Sahroji (Iuran Pekanan). Menunggu verifikasi bendahara.",
+      "id": "log-1790818671644",
+      "timestamp": "Kamis, 01 Oktober 2026 01:37:51 WIB",
+      "action": "TAMBAH",
+      "category": "PEMBAYARAN"
+    },
+    {
+      "id": "log-1790735752739",
+      "timestamp": "Rabu, 30 September 2026 02:35:52 WIB",
+      "category": "PENGATURAN",
+      "action": "TAMBAH",
+      "accountName": "TestAdmin",
+      "details": "PULIHKAN DATABASE (RESTORE): Berhasil memulihkan 132 warga, 0 riwayat iuran, dan 0 pengeluaran kas dari berkas cadangan."
+    },
+    {
+      "timestamp": "Rabu, 30 September 2026 02:14:42 WIB",
+      "id": "log-1790734482114",
+      "action": "HAPUS",
+      "details": "RESET DATA AWAL: Mengembalikan seluruh daftar 132 warga ke kondisi awal (semua kolom iuran kosong/Rp 0) dan mereset pengeluaran kas ke Rp 0.",
+      "category": "PENGATURAN",
+      "accountName": "Riyan (Admin PHBI)"
+    },
+    {
+      "timestamp": "Rabu, 30 September 2026 02:14:28 WIB",
+      "id": "log-1790734468796",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "REKAPITULASI",
+      "action": "HAPUS",
+      "details": "Menghapus data warga Adsss dari daftar rekapitulasi"
+    },
+    {
+      "id": "log-1790734449665",
+      "category": "PENGATURAN",
+      "accountName": "Riyan (Admin PHBI)",
+      "timestamp": "Rabu, 30 September 2026 02:14:09 WIB",
+      "details": "Pembaruan susunan panitia: anggota seksi diperbarui (9 Seksi).",
+      "action": "EDIT"
+    },
+    {
+      "details": "Pembaruan susunan panitia: anggota seksi diperbarui (9 Seksi).",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "PENGATURAN",
+      "id": "log-1790734404474",
+      "action": "EDIT",
+      "timestamp": "Rabu, 30 September 2026 02:13:24 WIB"
+    },
+    {
+      "action": "TAMBAH",
+      "accountName": "Petugas Usser 1",
+      "category": "DONASI WARGA",
+      "id": "log-1790721501329",
+      "timestamp": "Selasa, 29 September 2026 22:38:21 WIB",
+      "details": "Input iuran Adsss Minggu ke-1 sebesar Rp 10.000"
+    },
+    {
+      "id": "log-1790721501207",
+      "category": "REKAPITULASI",
+      "timestamp": "Selasa, 29 September 2026 22:38:21 WIB",
+      "details": "Menambahkan warga baru: Adsss",
+      "action": "TAMBAH",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "Pembaruan susunan panitia: anggota seksi diperbarui (9 Seksi).",
+      "id": "log-1790721394065",
+      "timestamp": "Selasa, 29 September 2026 22:36:34 WIB",
+      "category": "PENGATURAN",
+      "action": "EDIT"
+    },
+    {
+      "accountName": "Petugas Usser 2",
+      "id": "log-1790704975195",
+      "timestamp": "Selasa, 29 September 2026 18:02:55 WIB",
+      "action": "TAMBAH",
+      "category": "DONASI WARGA",
+      "details": "Input iuran Maksum Minggu ke-1 sebesar Rp 20.000"
+    },
+    {
+      "category": "DONASI WARGA",
+      "action": "TAMBAH",
+      "timestamp": "Selasa, 29 September 2026 18:00:37 WIB",
+      "accountName": "Petugas Usser 1",
+      "details": "Input iuran Agus guru Minggu ke-1 sebesar Rp 10.000",
+      "id": "log-1790704837315"
+    },
+    {
+      "action": "EDIT",
+      "timestamp": "Selasa, 29 September 2026 17:45:07 WIB",
+      "id": "log-1790703907618",
+      "details": "Pembaruan susunan panitia: anggota seksi diperbarui (9 Seksi).",
+      "category": "PENGATURAN",
+      "accountName": "Riyan (Admin PHBI)"
+    },
+    {
+      "action": "EDIT",
+      "category": "PENGATURAN",
+      "timestamp": "Selasa, 29 September 2026 17:26:18 WIB",
+      "id": "log-1790702778804",
+      "details": "Test update endpoint struktur",
+      "accountName": "Admin Test"
+    },
+    {
+      "details": "Penerimaan Donasi Suka Rela dari boy pazri sebesar Rp 5.000.000",
+      "category": "DONASI SUKA RELA",
+      "timestamp": "Senin, 28 September 2026 17:57:08 WIB",
+      "id": "log-1790618228130",
+      "action": "TAMBAH",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "timestamp": "Senin, 28 September 2026 17:54:35 WIB",
+      "id": "log-1790618075052",
+      "category": "DONASI SUKA RELA",
+      "details": "Penerimaan Donasi Suka Rela dari edi sebesar Rp 2.000.000",
+      "accountName": "Petugas Usser 1",
+      "action": "TAMBAH"
+    },
+    {
+      "id": "log-1790617865704",
+      "action": "TAMBAH",
+      "details": "Input iuran Suprajat Minggu ke-1 sebesar Rp 10.000",
+      "accountName": "Petugas Usser 1",
+      "timestamp": "Senin, 28 September 2026 17:51:05 WIB",
+      "category": "DONASI WARGA"
+    },
+    {
+      "accountName": "Petugas Usser 1",
+      "category": "DONASI WARGA",
+      "details": "Input iuran Suprajat Minggu ke-1 sebesar Rp 20.000",
+      "action": "TAMBAH",
+      "timestamp": "Senin, 28 September 2026 17:49:18 WIB",
+      "id": "log-1790617758371"
+    },
+    {
+      "id": "log-1790617661372",
+      "accountName": "Petugas Usser 1",
+      "details": "Input iuran Suprajat Minggu ke-1 sebesar Rp 10.000",
+      "timestamp": "Senin, 28 September 2026 17:47:41 WIB",
+      "action": "TAMBAH",
+      "category": "DONASI WARGA"
+    },
+    {
+      "timestamp": "Senin, 28 September 2026 17:45:34 WIB",
+      "id": "log-1790617534522",
+      "category": "DONASI WARGA",
+      "accountName": "Petugas Usser 1",
+      "action": "TAMBAH",
+      "details": "Input iuran Suprajat Minggu ke-1 sebesar Rp 20.000"
+    },
+    {
+      "action": "TAMBAH",
+      "details": "Input iuran Suprajat Minggu ke-1 sebesar Rp 50.000",
+      "accountName": "Petugas Usser 1",
+      "category": "DONASI WARGA",
+      "id": "log-1790617430764",
+      "timestamp": "Senin, 28 September 2026 17:43:50 WIB"
+    },
+    {
+      "action": "EDIT",
+      "details": "Admin memperbarui pengaturan panitia & sistem (Ketua: Sahroji, Wk. Ketua: Riki, Sekretaris: Rama, Target: Rp 250.000).",
+      "category": "PENGATURAN",
+      "id": "log-1790598308922",
+      "accountName": "Riyan (Admin PHBI)",
+      "timestamp": "Senin, 28 September 2026 12:25:08 WIB"
+    },
+    {
+      "timestamp": "Senin, 28 September 2026 12:24:14 WIB",
+      "details": "Admin memperbarui pengaturan panitia & sistem (Ketua: Sahroji, Wk. Ketua: Riki, Sekretaris: Rama, Target: Rp 250.000).",
+      "id": "log-1790598254793",
+      "category": "PENGATURAN",
+      "accountName": "Riyan (Admin PHBI)",
+      "action": "EDIT"
+    },
+    {
+      "category": "PENGATURAN",
+      "accountName": "Riyan (Admin PHBI)",
+      "action": "HAPUS",
+      "id": "log-1790595717025",
+      "details": "RESET DATA AWAL: Mengembalikan seluruh daftar 132 warga ke kondisi awal (semua kolom iuran kosong/Rp 0) dan mereset pengeluaran kas ke Rp 0.",
+      "timestamp": "Senin, 28 September 2026 11:41:57 WIB"
+    },
+    {
+      "accountName": "Alwi (Bendahara PHBI)",
+      "action": "TAMBAH",
+      "details": "Pengeluaran kas untuk \"Uang jalan penagihan\" sebesar Rp 20.000 (Roko & Minum)",
+      "timestamp": "Senin, 28 September 2026 11:36:56 WIB",
+      "category": "BENDAHARA",
+      "id": "log-1790595416304"
+    },
+    {
+      "details": "Mengubah anggaran Snak Jama'ah -> Snak Jama'ah (Rp 7.000.000)",
+      "action": "EDIT",
+      "category": "ANGGARAN",
+      "timestamp": "Senin, 28 September 2026 04:22:30 WIB",
+      "id": "log-1790569350432",
+      "accountName": "Riyan (Admin PHBI)"
+    },
+    {
+      "accountName": "Riyan (Admin PHBI)",
+      "action": "EDIT",
+      "timestamp": "Senin, 28 September 2026 04:22:06 WIB",
+      "details": "Mengubah anggaran Snak Jama'ah -> Snak Jama'ah (Rp 7.000.000)",
+      "id": "log-1790569326474",
+      "category": "ANGGARAN"
+    },
+    {
+      "id": "log-1790569214027",
+      "details": "Menambah anggaran: [H] Snak Jama'ah (1000) senilai Rp 1.000",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "ANGGARAN",
+      "action": "TAMBAH",
+      "timestamp": "Senin, 28 September 2026 04:20:14 WIB"
+    },
+    {
+      "action": "EDIT",
+      "accountName": "Riyan (Admin PHBI)",
+      "id": "log-1790568960089",
+      "details": "Mengubah anggaran Sound System + Panggung -> Sound System + Panggung (Rp 3.700.000)",
+      "category": "ANGGARAN",
+      "timestamp": "Senin, 28 September 2026 04:16:00 WIB"
+    },
+    {
+      "id": "log-1790568935979",
+      "timestamp": "Senin, 28 September 2026 04:15:35 WIB",
+      "action": "EDIT",
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "Mengubah anggaran Sound System + Panggung -> Sound System + Panggung (Rp 3.700.000)",
+      "category": "ANGGARAN"
+    },
+    {
+      "category": "ANGGARAN",
+      "action": "HAPUS",
+      "id": "log-1790568659934",
+      "details": "Menghapus item anggaran: [A] Item Uji Coba Diedit (Rp 75.000)",
+      "timestamp": "Senin, 28 September 2026 04:10:59 WIB",
+      "accountName": "Admin"
+    },
+    {
+      "accountName": "Admin",
+      "details": "Mengubah anggaran Item Uji Coba Penambahan -> Item Uji Coba Diedit (Rp 75.000)",
+      "timestamp": "Senin, 28 September 2026 04:10:59 WIB",
+      "category": "ANGGARAN",
+      "action": "EDIT",
+      "id": "log-1790568659911"
+    },
+    {
+      "action": "TAMBAH",
+      "accountName": "Admin",
+      "details": "Menambah anggaran: [A] Item Uji Coba Penambahan (1 Buah) senilai Rp 50.000",
+      "timestamp": "Senin, 28 September 2026 04:10:59 WIB",
+      "category": "ANGGARAN",
+      "id": "log-1790568659870"
+    },
+    {
+      "id": "log-1790566303008",
+      "details": "Input iuran Sutisna Minggu ke-1 sebesar Rp 10.000",
+      "action": "TAMBAH",
+      "timestamp": "Senin, 28 September 2026 03:31:43 WIB",
+      "category": "DONASI WARGA",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "category": "DONASI WARGA",
+      "details": "Input iuran Madura Minggu ke-1 sebesar Rp 10.000",
+      "accountName": "Petugas Usser 1",
+      "action": "TAMBAH",
+      "timestamp": "Senin, 28 September 2026 03:31:36 WIB",
+      "id": "log-1790566296134"
+    },
+    {
+      "action": "TAMBAH",
+      "category": "DONASI WARGA",
+      "details": "Input iuran Ring ring Minggu ke-1 sebesar Rp 10.000",
+      "id": "log-1790566289754",
+      "timestamp": "Senin, 28 September 2026 03:31:29 WIB",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "details": "Edit data warga Andi (Kecil) (Andi Dimas). Total iuran sekarang: Rp 0",
+      "id": "log-1790528688917",
+      "category": "REKAPITULASI",
+      "timestamp": "Minggu, 27 September 2026 17:04:48 WIB",
+      "action": "EDIT",
+      "accountName": "Riyan (Admin PHBI)"
+    },
+    {
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "Menambahkan warga baru: Agus guru",
+      "id": "log-1790528658144",
+      "timestamp": "Minggu, 27 September 2026 17:04:18 WIB",
+      "category": "REKAPITULASI",
+      "action": "TAMBAH"
+    },
+    {
+      "category": "REKAPITULASI",
+      "id": "log-1790527725089",
+      "action": "TAMBAH",
+      "details": "Menambahkan warga baru: Sutisna",
+      "timestamp": "Minggu, 27 September 2026 16:48:45 WIB",
+      "accountName": "Riyan (Admin PHBI)"
+    },
+    {
+      "timestamp": "Minggu, 27 September 2026 16:47:30 WIB",
+      "category": "REKAPITULASI",
+      "details": "Menambahkan warga baru: Ring ring",
+      "accountName": "Riyan (Admin PHBI)",
+      "id": "log-1790527650983",
+      "action": "TAMBAH"
+    },
+    {
+      "id": "log-1790526688286",
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "Menambahkan warga baru: Madura",
+      "category": "REKAPITULASI",
+      "action": "TAMBAH",
+      "timestamp": "Minggu, 27 September 2026 16:31:28 WIB"
+    },
+    {
+      "action": "HAPUS",
+      "category": "REKAPITULASI",
+      "details": "Menghapus data warga Wahyu (Blk) dari daftar rekapitulasi",
+      "accountName": "Riyan (Admin PHBI)",
+      "id": "log-1790526578389",
+      "timestamp": "Minggu, 27 September 2026 16:29:38 WIB"
+    },
+    {
+      "timestamp": "Minggu, 27 September 2026 16:27:42 WIB",
+      "accountName": "Riyan (Admin PHBI)",
+      "action": "EDIT",
+      "category": "REKAPITULASI",
+      "details": "Edit data warga Ka rasim (Rasim). Total iuran sekarang: Rp 0",
+      "id": "log-1790526462039"
+    },
+    {
+      "details": "Edit data warga Ka iyok (Iyok). Total iuran sekarang: Rp 0",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "REKAPITULASI",
+      "id": "log-1790526449029",
+      "timestamp": "Minggu, 27 September 2026 16:27:29 WIB",
+      "action": "EDIT"
+    },
+    {
+      "timestamp": "Minggu, 27 September 2026 16:27:05 WIB",
+      "action": "EDIT",
+      "accountName": "Riyan (Admin PHBI)",
+      "id": "log-1790526425067",
+      "category": "REKAPITULASI",
+      "details": "Edit data warga Iwan LPG (Iwan LPNG). Total iuran sekarang: Rp 0"
+    },
+    {
+      "action": "EDIT",
+      "id": "log-1790526410200",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "REKAPITULASI",
+      "details": "Edit data warga Hjh Euis (Hj.Euis). Total iuran sekarang: Rp 0",
+      "timestamp": "Minggu, 27 September 2026 16:26:50 WIB"
+    },
+    {
+      "accountName": "Riyan (Admin PHBI)",
+      "id": "log-1790526399931",
+      "category": "REKAPITULASI",
+      "details": "Edit data warga Hj Uem (Hj.Uem). Total iuran sekarang: Rp 0",
+      "timestamp": "Minggu, 27 September 2026 16:26:39 WIB",
+      "action": "EDIT"
+    },
+    {
+      "timestamp": "Minggu, 27 September 2026 16:26:29 WIB",
+      "action": "EDIT",
+      "details": "Edit data warga Hj Marta (H.Marta). Total iuran sekarang: Rp 0",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "REKAPITULASI",
+      "id": "log-1790526389262"
+    },
+    {
+      "timestamp": "Minggu, 27 September 2026 16:26:15 WIB",
+      "category": "REKAPITULASI",
+      "id": "log-1790526375338",
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "Edit data warga Hj Asma (H.Asma). Total iuran sekarang: Rp 0",
+      "action": "EDIT"
+    },
+    {
+      "details": "Edit data warga Hj Ara (H.Ara). Total iuran sekarang: Rp 0",
+      "action": "EDIT",
+      "category": "REKAPITULASI",
+      "id": "log-1790526365738",
+      "accountName": "Riyan (Admin PHBI)",
+      "timestamp": "Minggu, 27 September 2026 16:26:05 WIB"
+    },
+    {
+      "timestamp": "Minggu, 27 September 2026 16:25:32 WIB",
+      "action": "EDIT",
+      "category": "REKAPITULASI",
+      "id": "log-1790526332026",
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "Edit data warga Asep O (Asep Onay). Total iuran sekarang: Rp 0"
+    },
+    {
+      "details": "Edit data warga Agus (Agus Nayah). Total iuran sekarang: Rp 0",
+      "category": "REKAPITULASI",
+      "id": "log-1790526300167",
+      "action": "EDIT",
+      "accountName": "Riyan (Admin PHBI)",
+      "timestamp": "Minggu, 27 September 2026 16:25:00 WIB"
+    },
+    {
+      "action": "HAPUS",
+      "details": "RESET DATA AWAL: Mengembalikan seluruh daftar 129 warga ke kondisi awal (semua kolom iuran kosong/Rp 0) dan mereset pengeluaran kas ke Rp 0.",
+      "id": "log-1790526270629",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "PENGATURAN",
+      "timestamp": "Minggu, 27 September 2026 16:24:30 WIB"
+    },
+    {
+      "action": "TAMBAH",
+      "details": "Input iuran Darma Minggu ke-1 sebesar Rp 15.000",
+      "timestamp": "Minggu, 27 September 2026 14:13:53 WIB",
+      "category": "DONASI WARGA",
+      "id": "log-1790518433225",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "id": "log-1790515586171",
+      "details": "Mengubah target iuran per orang dari Rp 300.000 menjadi Rp 250.000",
+      "action": "EDIT",
+      "timestamp": "Minggu, 27 September 2026 13:26:26 WIB",
+      "category": "TARGET",
+      "accountName": "Riyan (Admin PHBI)"
+    },
+    {
+      "category": "DONASI WARGA",
+      "action": "TAMBAH",
+      "details": "Input iuran Agung Minggu ke-1 sebesar Rp 50.000",
+      "id": "log-1790209583033",
+      "timestamp": "Kamis, 24 September 2026 00:26:23 WIB",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "category": "DONASI WARGA",
+      "id": "log-1790209576975",
+      "timestamp": "Kamis, 24 September 2026 00:26:16 WIB",
+      "details": "Input iuran Adim Minggu ke-1 sebesar Rp 10.000",
+      "action": "TAMBAH",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "action": "TAMBAH",
+      "category": "DONASI WARGA",
+      "accountName": "Petugas Usser 1",
+      "timestamp": "Kamis, 24 September 2026 00:26:07 WIB",
+      "details": "Input iuran Abah Udi Minggu ke-1 sebesar Rp 20.000",
+      "id": "log-1790209567789"
+    },
+    {
+      "timestamp": "Kamis, 24 September 2026 00:25:41 WIB",
+      "category": "TARGET",
+      "action": "EDIT",
+      "details": "Mengubah target iuran per orang dari Rp 250.000 menjadi Rp 300.000",
+      "id": "log-1790209541226",
+      "accountName": "Riyan (Admin PHBI)"
+    },
+    {
+      "action": "HAPUS",
+      "details": "RESET DATA AWAL: Mengembalikan seluruh daftar 129 warga ke kondisi awal (semua kolom iuran kosong/Rp 0) dan mereset pengeluaran kas ke Rp 0.",
+      "timestamp": "Senin, 21 September 2026 11:50:00 WIB",
+      "category": "PENGATURAN",
+      "accountName": "Riyan (Admin PHBI)",
+      "id": "log-1789991400691"
+    },
+    {
+      "accountName": "Petugas Usser 1",
+      "action": "TAMBAH",
+      "category": "DONASI WARGA",
+      "details": "Input iuran Saeni Minggu ke-1 sebesar Rp 20.000",
+      "timestamp": "Minggu, 20 September 2026 05:06:21 WIB",
+      "id": "log-1789880781078"
+    },
+    {
+      "accountName": "Petugas Usser 1",
+      "timestamp": "Sabtu, 19 September 2026 18:43:19 WIB",
+      "action": "TAMBAH",
+      "category": "DONASI WARGA",
+      "id": "log-1789843399427",
+      "details": "Input iuran Abah Udi Minggu ke-1 sebesar Rp 10.000"
+    },
+    {
+      "id": "log-1789843394315",
+      "timestamp": "Sabtu, 19 September 2026 18:43:14 WIB",
+      "details": "Input iuran Agung Minggu ke-1 sebesar Rp 10.000",
+      "accountName": "Petugas Usser 1",
+      "action": "TAMBAH",
+      "category": "DONASI WARGA"
+    },
+    {
+      "accountName": "Petugas Usser 1",
+      "id": "log-1789843390359",
+      "action": "TAMBAH",
+      "timestamp": "Sabtu, 19 September 2026 18:43:10 WIB",
+      "category": "DONASI WARGA",
+      "details": "Input iuran Agus Minggu ke-1 sebesar Rp 10.000"
+    },
+    {
+      "details": "RESET DATA AWAL: Mengembalikan seluruh daftar 129 warga ke kondisi awal (semua kolom iuran kosong/Rp 0) dan mereset pengeluaran kas ke Rp 0.",
+      "accountName": "Riyan (Admin PHBI)",
+      "category": "PENGATURAN",
+      "action": "HAPUS",
+      "id": "log-1789843209138",
+      "timestamp": "Sabtu, 19 September 2026 18:40:09 WIB"
+    },
+    {
+      "category": "DONASI WARGA",
+      "id": "log-1789843170939",
+      "action": "TAMBAH",
+      "details": "Input iuran Adim Minggu ke-1 sebesar Rp 10.000",
+      "timestamp": "Sabtu, 19 September 2026 18:39:30 WIB",
+      "accountName": "Petugas Usser 1"
+    },
+    {
+      "accountName": "Riyan (Admin PHBI)",
+      "timestamp": "Kamis, 17 September 2026 13:11:13 WIB",
+      "id": "log-1789650673079",
+      "category": "PENGATURAN",
+      "details": "RESET DATA AWAL: Mengembalikan seluruh daftar 129 warga ke kondisi awal (semua kolom iuran kosong/Rp 0) dan mereset pengeluaran kas ke Rp 0.",
+      "action": "HAPUS"
+    },
+    {
+      "action": "EDIT",
+      "accountName": "Riyan (Admin PHBI)",
+      "details": "Admin memperbarui pengaturan panitia & sistem (Ketua: Sahroji, Sekretaris: Rama, Target: Rp 250.000).",
+      "timestamp": "Kamis, 17 September 2026 13:10:53 WIB",
+      "category": "PENGATURAN",
+      "id": "log-1789650653940"
+    },
+    {
+      "timestamp": "Kamis, 17 September 2026 13:10:33 WIB",
+      "category": "PENGATURAN",
+      "details": "Admin memperbarui pengaturan panitia & sistem (Ketua: Sahroji, Sekretaris: Rama, Target: Rp 250.000).",
+      "accountName": "Riyan (Admin PHBI)",
+      "action": "EDIT",
+      "id": "log-1789650633149"
+    },
+    {
+      "accountName": "Petugas Usser 1",
+      "details": "Input iuran Iyas Minggu ke-2 sebesar Rp 10.000",
+      "action": "TAMBAH",
+      "timestamp": "Rabu, 16 September 2026 15:23:05 WIB",
+      "id": "log-1789572185126",
+      "category": "DONASI WARGA"
+    },
+    {
+      "action": "TAMBAH",
+      "timestamp": "Rabu, 16 September 2026 15:22:58 WIB",
+      "id": "log-1789572178430",
+      "category": "DONASI WARGA",
+      "accountName": "Petugas Usser 1",
+      "details": "Input iuran Parman Minggu ke-1 sebesar Rp 10.000"
+    },
+    {
+      "category": "DONASI WARGA",
+      "details": "Input iuran Agus Minggu ke-1 sebesar Rp 10.000",
+      "accountName": "Petugas Usser 1",
+      "action": "TAMBAH",
+      "id": "log-1789572172727",
+      "timestamp": "Rabu, 16 September 2026 15:22:52 WIB"
+    },
+    {
+      "details": "Inisialisasi sistem panitia Isra Miraj Kp Barani.",
+      "category": "REKAPITULASI",
+      "accountName": "Sistem",
+      "id": "log-init",
+      "action": "TAMBAH",
+      "timestamp": "Rabu, 16 September 2026 12:50:27 WIB"
+    }
+  ]
+}

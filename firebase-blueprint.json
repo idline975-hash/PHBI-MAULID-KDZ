@@ -1,0 +1,132 @@
+{
+  "entities": {
+    "Citizen": {
+      "title": "Citizen",
+      "description": "Data warga RT 011 / RW 04 Kp Barani",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID unik warga" },
+        "name": { "type": "string", "description": "Nama lengkap warga", "minLength": 1, "maxLength": 100 },
+        "isNgontrak": { "type": "boolean", "description": "Status apakah warga kategori ngontrak" },
+        "weeks": { "type": "object", "description": "Catatan pembayaran per minggu 1-12" },
+        "totalPaid": { "type": "number", "description": "Total iuran yang telah dibayarkan" },
+        "lastEditedBy": { "type": "string", "description": "Pengguna terakhir yang mengubah data" },
+        "lastEditedAt": { "type": "string", "description": "Waktu perubahan terakhir" }
+      },
+      "required": ["id", "name", "totalPaid"]
+    },
+    "DonasiWargaPayment": {
+      "title": "DonasiWargaPayment",
+      "description": "Catatan transaksi pembayaran iuran warga",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID transaksi pembayaran" },
+        "citizenId": { "type": "string", "description": "ID warga pembayar" },
+        "citizenName": { "type": "string", "description": "Nama warga pembayar" },
+        "week": { "type": "number", "description": "Nomor minggu (1-12)" },
+        "amount": { "type": "number", "description": "Jumlah iuran yang disetorkan" },
+        "timestamp": { "type": "string", "description": "Waktu setor" },
+        "dateIso": { "type": "string", "description": "Waktu setor dalam format ISO" },
+        "recordedBy": { "type": "string", "description": "Petugas pencatat transaksi" },
+        "lastEditedBy": { "type": "string", "description": "Pengguna terakhir yang mengubah transaksi" },
+        "lastEditedAt": { "type": "string", "description": "Waktu perubahan terakhir" }
+      },
+      "required": ["id", "citizenId", "citizenName", "week", "amount", "timestamp", "recordedBy"]
+    },
+    "DonasiSukarela": {
+      "title": "DonasiSukarela",
+      "description": "Catatan donasi sukarela dari donatur",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID donasi sukarela" },
+        "donorName": { "type": "string", "description": "Nama donatur", "minLength": 1, "maxLength": 100 },
+        "amount": { "type": "number", "description": "Jumlah donasi sukarela" },
+        "timestamp": { "type": "string", "description": "Waktu terima donasi" },
+        "dateIso": { "type": "string", "description": "Format ISO waktu terima" },
+        "keterangan": { "type": "string", "description": "Keterangan tambahan donasi" },
+        "recordedBy": { "type": "string", "description": "Petugas pencatat donasi" },
+        "lastEditedBy": { "type": "string", "description": "Pengguna terakhir yang mengubah" },
+        "lastEditedAt": { "type": "string", "description": "Waktu perubahan terakhir" }
+      },
+      "required": ["id", "donorName", "amount", "timestamp", "recordedBy"]
+    },
+    "Pengeluaran": {
+      "title": "Pengeluaran",
+      "description": "Catatan beban pengeluaran kas oleh Bendahara",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID transaksi pengeluaran" },
+        "description": { "type": "string", "description": "Uraian pengeluaran kas" },
+        "amount": { "type": "number", "description": "Nominal pengeluaran kas" },
+        "timestamp": { "type": "string", "description": "Waktu transaksi pengeluaran" },
+        "dateIso": { "type": "string", "description": "Format ISO waktu transaksi" },
+        "recipient": { "type": "string", "description": "Penerima atau kategori pengeluaran" },
+        "recordedBy": { "type": "string", "description": "Pencatat pengeluaran (Bendahara/Admin)" },
+        "lastEditedBy": { "type": "string", "description": "Pengguna terakhir yang mengubah" },
+        "lastEditedAt": { "type": "string", "description": "Waktu pengubahan" }
+      },
+      "required": ["id", "description", "amount", "timestamp", "recipient", "recordedBy"]
+    },
+    "CommitteeSettings": {
+      "title": "CommitteeSettings",
+      "description": "Pengaturan susunan panitia dan target iuran PHBI",
+      "type": "object",
+      "properties": {
+        "namaKegiatan": { "type": "string", "description": "Nama kegiatan PHBI" },
+        "wilayah": { "type": "string", "description": "Wilayah RT / RW" },
+        "ketuaPanitia": { "type": "string", "description": "Nama Ketua Panitia" },
+        "wakilKetua": { "type": "string", "description": "Nama Wakil Ketua Panitia" },
+        "sekretaris": { "type": "string", "description": "Nama Sekretaris" },
+        "adminSistem": { "type": "string", "description": "Nama Administrator Sistem" },
+        "bendahara": { "type": "string", "description": "Nama Bendahara" },
+        "waGroupLink": { "type": "string", "description": "Tautan grup WhatsApp" },
+        "nomorWa": { "type": "string", "description": "Nomor WhatsApp panitia" },
+        "targetPerPerson": { "type": "number", "description": "Target iuran per warga" },
+        "pelindung": { "type": "array", "description": "Daftar pelindung kepanitiaan" },
+        "penasehat": { "type": "array", "description": "Daftar penasehat kepanitiaan" },
+        "penanggungJawab": { "type": "array", "description": "Daftar penanggung jawab kepanitiaan" },
+        "sections": { "type": "array", "description": "Daftar seksi-seksi kepanitiaan beserta koordinator dan anggota" }
+      },
+      "required": ["namaKegiatan", "ketuaPanitia", "bendahara", "targetPerPerson"]
+    },
+    "AppState": {
+      "title": "AppState",
+      "description": "Snapshot kondisi database menyeluruh aplikasi",
+      "type": "object",
+      "properties": {
+        "version": { "type": "number", "description": "Nomor versi state untuk sinkronisasi" },
+        "citizens": { "type": "array", "description": "Daftar warga" },
+        "wargaPayments": { "type": "array", "description": "Daftar riwayat iuran warga" },
+        "sukarelaPayments": { "type": "array", "description": "Daftar riwayat donasi sukarela" },
+        "pengeluaranList": { "type": "array", "description": "Daftar riwayat pengeluaran kas" },
+        "accounts": { "type": "array", "description": "Daftar akun pengguna sistem" },
+        "targetPerPerson": { "type": "number", "description": "Target iuran per warga" },
+        "auditLogs": { "type": "array", "description": "Riwayat aktivitas sistem" },
+        "committeeSettings": { "$ref": "#/entities/CommitteeSettings" }
+      },
+      "required": ["version", "citizens", "wargaPayments", "sukarelaPayments", "pengeluaranList", "accounts"]
+    }
+  },
+  "firestore": {
+    "/appState/{stateId}": {
+      "schema": "#/entities/AppState",
+      "description": "Menyimpan snapshot master state aplikasi untuk sinkronisasi real-time antar perangkat dan link publik"
+    },
+    "/citizens/{citizenId}": {
+      "schema": "#/entities/Citizen",
+      "description": "Data master per warga"
+    },
+    "/wargaPayments/{paymentId}": {
+      "schema": "#/entities/DonasiWargaPayment",
+      "description": "Transaksi iuran warga mingguan"
+    },
+    "/sukarelaPayments/{paymentId}": {
+      "schema": "#/entities/DonasiSukarela",
+      "description": "Transaksi donasi sukarela"
+    },
+    "/pengeluaranList/{expenseId}": {
+      "schema": "#/entities/Pengeluaran",
+      "description": "Transaksi pengeluaran kas bendahara"
+    }
+  }
+}

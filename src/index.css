@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  background-color: transparent;
+}
+
+/* .bg-container::before moved to div::before */
+.bg-container {
+  position: relative;
+  background-color: #f1f5f9;
+}
+
+.bg-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/aistudio/file_000000009fc8821184f6fbe7af68d760_b9edd21b.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 24s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbars for data tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Print optimization so printed proposal / pages are never cut off */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  header,
+  footer,
+  nav,
+  button {
+    display: none !important;
+  }
+
+  table,
+  tr,
+  td,
+  th,
+  .break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  * {
+    overflow: visible !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Guarantee 100% solid opacity on all tab bars and tab buttons so background image never leaks through */
+[id*="tab"], [id*="btn-tab"], [id*="btn-admin-tab"], [id*="btn-bendahara-tab"] {
+  position: relative;
+  z-index: 10;
+  opacity: 1 !important;
+}
+
+div[id*="tab"], div[id*="tabs"] {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+

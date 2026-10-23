@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Iuran Isra Miraj</title>
+    <meta name="description" content="Aplikasi Iuran dan Donasi PHBI Isra Miraj Kp Kedung Sapi Desa Kp Baru dengan dashboard transparansi warga, uang masuk, uang keluar, sisa saldo, multi-akun real-time, dan unduh laporan resmi PDF." />
+    <meta property="og:title" content="Iuran Isra Miraj" />
+    <meta property="og:description" content="Aplikasi Iuran dan Donasi PHBI Isra Miraj Kp Kedung Sapi Desa Kp Baru dengan dashboard transparansi warga, uang masuk, uang keluar, sisa saldo, multi-akun real-time, dan unduh laporan resmi PDF." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- PWA Primary Meta Tags -->
+    <meta name="theme-color" content="#064e3b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PHBI Kedung Sapi" />
+    <meta name="application-name" content="PHBI Kedung Sapi" />
+    <meta name="msapplication-TileColor" content="#064e3b" />
+
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/pwa-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      // 1. Mock Vite HMR WebSocket in cloud preview environment to prevent connection failures
+      (function() {
+        if (typeof window === 'undefined') return;
+        const NativeWS = window.WebSocket;
+        if (!NativeWS) return;
+
+        function isViteHmr(proto) {
+          if (proto === 'vite-hmr') return true;
+          if (Array.isArray(proto) && proto.includes('vite-hmr')) return true;
+          return false;
+        }
+
+        class MockViteHmrSocket extends EventTarget {
+          CONNECTING = 0; OPEN = 1; CLOSING = 2; CLOSED = 3;
+          readyState = 0; url = ''; protocol = 'vite-hmr';
+          extensions = ''; bufferedAmount = 0; binaryType = 'blob';
+          onopen = null; onclose = null; onerror = null; onmessage = null;
+
+          constructor(url) {
+            super();
+            this.url = url;
+            setTimeout(() => {
+              this.readyState = 1;
+              const ev = new Event('open');
+              this.dispatchEvent(ev);
+              if (typeof this.onopen === 'function') this.onopen(ev);
+            }, 0);
+          }
+          send() {}
+          close(code, reason) {
+            this.readyState = 3;
+            const ev = new CloseEvent('close', { code: code || 1000, reason: reason || '', wasClean: true });
+            this.dispatchEvent(ev);
+            if (typeof this.onclose === 'function') this.onclose(ev);
+          }
+        }
+
+        const PatchedWS = function(url, protocols) {
+          if (isViteHmr(protocols)) {
+            return new MockViteHmrSocket(url);
+          }
+          return new NativeWS(url, protocols);
+        };
+        PatchedWS.prototype = NativeWS.prototype;
+        PatchedWS.CONNECTING = 0; PatchedWS.OPEN = 1; PatchedWS.CLOSING = 2; PatchedWS.CLOSED = 3;
+        window.WebSocket = PatchedWS;
+
+        // 2. Suppress any uncaught WebSocket close errors from Vite client
+        window.addEventListener('unhandledrejection', function(e) {
+          if (e && e.reason && (String(e.reason.message || e.reason).includes('WebSocket closed') || String(e.reason.message || e.reason).includes('failed to connect to websocket'))) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+          }
+        });
+        window.addEventListener('error', function(e) {
+          if (e && (String(e.message || '').includes('WebSocket closed') || String(e.message || '').includes('failed to connect to websocket'))) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+          }
+        });
+      })();
+
+      // 3. React Refresh runtime fallback mocks
+      window.$RefreshReg$ = () => {};
+      window.$RefreshSig$ = () => (type) => type;
+      window.__vite_plugin_react_preamble_installed__ = true;
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-emerald-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

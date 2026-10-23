@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Iuran maulid nabi",
+  "description": "Aplikasi Iuran dan Donasi PHBI MAULID NABI ",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
