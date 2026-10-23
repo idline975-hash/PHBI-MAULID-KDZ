@@ -17,6 +17,8 @@ import {
 import { UserAccount, CommitteeSettings, PaymentSettings, TransferConfirmation, Citizen } from '../types';
 import { getCurrentIndonesianTime } from '../utils/formatters';
 
+import logoPhbi from '../assets/images/logo_phbi_round_1792427989839.jpg';
+
 interface HeaderProps {
   currentUser?: UserAccount | null;
   onLogout?: () => void;
@@ -137,7 +139,11 @@ export default function Header({
           {/* PHBI Logo Badge - Sleek compact circular emblem */}
           <div className="relative w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full shadow-md flex items-center justify-center shrink-0 overflow-hidden ring-2 ring-amber-300/90 bg-emerald-950">
             <img
-              src="/src/assets/images/logo_phbi_round_1792427989839.jpg"
+              src={logoPhbi}
+              onError={(e) => {
+                // Fallback to static public file if module fails
+                (e.target as HTMLImageElement).src = '/logo_phbi_round.jpg';
+              }}
               alt="Logo Resmi PHBI Isra Mi'raj"
               className="w-full h-full rounded-full object-cover"
               referrerPolicy="no-referrer"
