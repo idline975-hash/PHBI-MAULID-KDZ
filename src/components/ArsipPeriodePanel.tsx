@@ -120,7 +120,7 @@ export default function ArsipPeriodePanel({
 
   const handleOpenSaveModal = () => {
     setSavePeriodLabel(activePeriodLabel || '1448 H / 2027 M');
-    setSaveCatatan(`Arsip laporan keuangan, rekapitulasi 12 minggu, struktur panitia & proposal PHBI Isra Mi'raj periode ${activePeriodLabel || '1448 H / 2027 M'}.`);
+    setSaveCatatan(`Arsip laporan keuangan, rekapitulasi 12 minggu, struktur panitia & proposal PHBI Maulid Nabi periode ${activePeriodLabel || '1448 H / 2027 M'}.`);
     setOverwriteExisting(true);
     setErrorMsg('');
     setShowSaveModal(true);
@@ -129,7 +129,7 @@ export default function ArsipPeriodePanel({
   const handleOpenNewPeriodModal = () => {
     const curr = activePeriodLabel || '1448 H / 2027 M';
     setArchiveCurrentLabel(curr);
-    setArchiveCurrentCatatan(`Arsip Tutup Buku Resmi PHBI Isra Mi'raj Periode ${curr}.`);
+    setArchiveCurrentCatatan(`Arsip Tutup Buku Resmi PHBI Maulid Nabi Periode ${curr}.`);
 
     // Auto-suggest next Hijri & Masehi year
     const matchH = curr.match(/(\d{4})\s*H/i);

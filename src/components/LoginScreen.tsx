@@ -365,7 +365,7 @@ export default function LoginScreen({ accounts = [], onLoginSuccess, onBackToWar
 
         {/* Footer info */}
         <p className="text-center text-xs text-slate-500 mt-4">
-          Aplikasi Daring Iuran & Donasi PHBI Isra Miraj 1448 H / 2027 M • Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten
+          Aplikasi Daring Iuran & Donasi PHBI Maulid Nabi 1448 H / 2027 M • Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten
         </p>
       </div>
     </div>

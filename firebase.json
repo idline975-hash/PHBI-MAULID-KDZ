@@ -1,7 +1,7 @@
 {
   "firestore": [
     {
-      "database": "ai-studio-iuranisramiraj-f5415c80-d0d0-4776-bcaf-0ae6971a93ba",
+      "database": "ai-studio-iuranmaulid nabi-f5415c80-d0d0-4776-bcaf-0ae6971a93ba",
       "rules": "firestore.rules"
     },
     {

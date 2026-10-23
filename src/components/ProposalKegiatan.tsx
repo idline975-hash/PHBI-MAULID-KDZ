@@ -405,7 +405,7 @@ export default function ProposalKegiatan({
         throw new Error(errData.error || 'Gagal menyimpan proposal ke server');
       }
 
-      setSaveSuccess('Proposal Kegiatan PHBI Isra Mi\'raj berhasil disimpan & disinkronkan secara real-time!');
+      setSaveSuccess('Proposal Kegiatan PHBI Maulid Nabi berhasil disimpan & disinkronkan secara real-time!');
       setIsEditing(false);
       if (onRefresh) onRefresh();
     } catch (err: any) {
@@ -518,7 +518,7 @@ export default function ProposalKegiatan({
           <div className="space-y-1.5">
             <div className="flex flex-wrap items-center gap-2 text-xs text-emerald-300 font-semibold">
               <FileText className="w-4 h-4 text-amber-400" />
-              <span>DOKUMEN RESMI PROPOSAL PHBI ISRA MI'RAJ 1448 H / 2027 M</span>
+              <span>DOKUMEN RESMI PROPOSAL PHBI MAULID NABI 1448 H / 2027 M</span>
               <span>·</span>
               <span>
                 {isAdminCanEdit
@@ -534,11 +534,11 @@ export default function ProposalKegiatan({
             <p className="text-xs sm:text-sm text-emerald-100/90 max-w-3xl leading-relaxed">
               {isAdminCanEdit ? (
                 <>
-                  Dokumen proposal resmi Panitia Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. Seluruh isi <strong>Kop Surat, Bagian A sampai I, Struktur Kepanitiaan,</strong> beserta <strong>8 Penandatangan Lembar Pengesahan</strong> dapat diedit sepenuhnya oleh Admin dan diunduh dalam format PDF A4 rapi tanpa terpotong.
+                  Dokumen proposal resmi Panitia Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. Seluruh isi <strong>Kop Surat, Bagian A sampai I, Struktur Kepanitiaan,</strong> beserta <strong>8 Penandatangan Lembar Pengesahan</strong> dapat diedit sepenuhnya oleh Admin dan diunduh dalam format PDF A4 rapi tanpa terpotong.
                 </>
               ) : (
                 <>
-                  Dokumen proposal resmi Panitia Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. Memuat <strong>Kop Surat, Bagian A sampai I, Struktur Kepanitiaan,</strong> beserta <strong>8 Penandatangan Lembar Pengesahan</strong> yang dapat dibaca dan diunduh dalam format PDF A4 rapi.
+                  Dokumen proposal resmi Panitia Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. Memuat <strong>Kop Surat, Bagian A sampai I, Struktur Kepanitiaan,</strong> beserta <strong>8 Penandatangan Lembar Pengesahan</strong> yang dapat dibaca dan diunduh dalam format PDF A4 rapi.
                 </>
               )}
             </p>
@@ -794,7 +794,7 @@ export default function ProposalKegiatan({
               {/* Event Title */}
               <div className="space-y-1">
                 <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight uppercase font-serif">
-                  {formData.namaKegiatan || formData.judulProposal || "ISRA MI'RAJ NABI MUHAMMAD SAW"}
+                  {formData.namaKegiatan || formData.judulProposal || "MAULID NABI MUHAMMAD SAW"}
                 </h1>
                 <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 font-black text-xs sm:text-sm shadow-xs">
                   <span>{formData.coverTahun || '1448 H / 2027 M'}</span>
@@ -940,7 +940,7 @@ export default function ProposalKegiatan({
                   <label className="block text-[11px] font-bold text-slate-700 mb-1">Baris Kop 2 (Nama Acara & Tahun H / M)</label>
                   <input
                     type="text"
-                    value={formData.kopBaris2 ?? "ISRA MI'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M"}
+                    value={formData.kopBaris2 ?? "MAULID NABI MUHAMMAD SAW 1448 H / 2027 M"}
                     onChange={e => setFormData({ ...formData, kopBaris2: e.target.value })}
                     className="w-full px-3 py-1.5 text-xs font-bold bg-white border border-slate-300 rounded-lg"
                   />
@@ -971,7 +971,7 @@ export default function ProposalKegiatan({
             {formData.kopBaris1 || 'PANITIA PERINGATAN HARI BESAR ISLAM (PHBI)'}
           </p>
           <h1 className="text-lg sm:text-2xl font-black uppercase text-slate-900 tracking-tight">
-            {formData.kopBaris2 || "ISRA MI'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M"}
+            {formData.kopBaris2 || "MAULID NABI MUHAMMAD SAW 1448 H / 2027 M"}
           </h1>
           <p className="text-xs sm:text-sm font-semibold text-slate-600">
             {formData.kopAlamat || 'Lingkungan Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten'}
@@ -2055,7 +2055,7 @@ export default function ProposalKegiatan({
                   <span>LEMBAR PENGESAHAN PROPOSAL KEGIATAN</span>
                 </div>
                 <h4 className="text-sm sm:text-base font-black text-slate-900 uppercase">
-                  PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MI'RAJ 1448 H / 2027 M
+                  PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI 1448 H / 2027 M
                 </h4>
                 <p className="text-xs text-slate-500">
                   Ditetapkan di: Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan — {formData.tanggalSurat}
@@ -2065,7 +2065,7 @@ export default function ProposalKegiatan({
               {/* BARIS 1: PENGURUS INTI PANITIA (4 TTD) */}
               <div className="space-y-3">
                 <p className="text-center text-xs font-black uppercase tracking-wider text-emerald-800">
-                  Hormat Kami, Panitia Pelaksana PHBI Isra Mi'raj 1448 H / 2027 M
+                  Hormat Kami, Panitia Pelaksana PHBI Maulid Nabi 1448 H / 2027 M
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-1">
                   {([

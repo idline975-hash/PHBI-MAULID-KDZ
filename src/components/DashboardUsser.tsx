@@ -501,7 +501,7 @@ export default function DashboardUsser({
           donorName: cleanName,
           amount: numAmount,
           week: sukarelaWeek,
-          keterangan: sukarelaKet || 'Donasi Sukarela PHBI Isra Miraj',
+          keterangan: sukarelaKet || 'Donasi Sukarela PHBI Maulid Nabi',
           recordedBy: currentUser.name
         })
       });
@@ -1923,7 +1923,7 @@ export default function DashboardUsser({
               Cek Total Donasi Warga & Donasi Suka Rela
             </h3>
             <p className="text-xs sm:text-sm text-slate-500">
-              Laporan ringkasan akumulasi seluruh penerimaan dana panitia Isra Miraj secara real-time.
+              Laporan ringkasan akumulasi seluruh penerimaan dana panitia Maulid Nabi secara real-time.
             </p>
           </div>
 
@@ -2080,7 +2080,7 @@ export default function DashboardUsser({
                 Download Laporan PDF Rekapitulasi Keseluruhan (Warga + Suka Rela)
               </h4>
               <p className="text-xs text-slate-600 mt-1 max-w-xl">
-                File PDF laporan resmi lengkap dengan KOP SURAT PHBI Isra Miraj Kp Kedung Sapi,
+                File PDF laporan resmi lengkap dengan KOP SURAT PHBI Maulid Nabi Kp Kedung Sapi,
                 rincian data donasi warga & suka rela, serta kolom tanda tangan resmi
                 <strong> Ketua Panitia (Sahroji)</strong> dan <strong>{currentUser.name}</strong>.
               </p>

@@ -66,7 +66,7 @@ export default function PaymentModal({
 
         {/* Footer */}
         <div className="p-3 sm:p-3.5 bg-white border-t border-slate-200 flex items-center justify-between text-[11px] sm:text-xs text-slate-500 flex-shrink-0">
-          <span className="truncate pr-2">Panitia PHBI Isra Mi'raj 1448 H / 2027 M – Kp. Kedung Sapi</span>
+          <span className="truncate pr-2">Panitia PHBI Maulid Nabi 1448 H / 2027 M – Kp. Kedung Sapi</span>
           <button
             type="button"
             onClick={onClose}

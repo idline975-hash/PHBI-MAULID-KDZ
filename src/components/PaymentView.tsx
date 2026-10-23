@@ -107,7 +107,7 @@ export default function PaymentView({
       id: 'bank-bsi-1',
       bankName: 'Bank BSI',
       accountNumber: '719-8765-432',
-      accountHolder: 'Panitia Isra Miraj Kp Kedung Sapi',
+      accountHolder: 'Panitia Maulid Nabi Kp Kedung Sapi',
       catatan: 'Bank Syariah Indonesia (Kode: 451) / Rekening Panitia'
     }
   ];
@@ -137,10 +137,10 @@ export default function PaymentView({
   ];
 
   const qris = paymentSettings?.qris || {
-    qrisName: "PHBI ISRA MI'RAJ KP. KEDUNG SAPI",
+    qrisName: "PHBI MAULID NABI KP. KEDUNG SAPI",
     qrisNmid: 'ID1024356789012',
     qrisImageUrl: '',
-    qrisPayloadString: '00020101021126590014ID.GO.QRIS.WWW01189360099900000000000209ID10243567890120303UMI51440014ID.CO.QRIS.WWW02150000000000000000303UMI5204541153033605802ID5932PHBI ISRA MIRAJ KP KEDUNG SAPI6007SERANG61054217762070703A0163041A2B',
+    qrisPayloadString: '00020101021126590014ID.GO.QRIS.WWW01189360099900000000000209ID10243567890120303UMI51440014ID.CO.QRIS.WWW02150000000000000000303UMI5204541153033605802ID5932PHBI MAULID NABI KP KEDUNG SAPI6007SERANG61054217762070703A0163041A2B',
     instructions: 'Scan QRIS ini menggunakan m-Banking (BCA, BRImo, Livin Mandiri, BSI, BNI, Jago, dll) atau E-Wallet (DANA, GoPay, OVO, ShopeePay, LinkAja).'
   };
 
@@ -187,7 +187,7 @@ export default function PaymentView({
     if (qris.qrisImageUrl) {
       const link = document.createElement('a');
       link.href = qris.qrisImageUrl;
-      link.download = `QRIS_PHBI_Isra_Miraj_Kp_Kedung_Sapi.png`;
+      link.download = `QRIS_PHBI_Maulid_Nabi_Kp_Kedung_Sapi.png`;
       link.click();
     } else {
       // Create canvas from SVG QR
@@ -223,12 +223,12 @@ export default function PaymentView({
           ctx.fillText('BCA • BRI • Mandiri • BSI • BNI • DANA • OVO • GoPay • ShopeePay', 300, 640);
           ctx.fillStyle = '#64748b';
           ctx.font = '12px sans-serif';
-          ctx.fillText('Dicetak resmi oleh Panitia PHBI Isra Mi\'raj 1448 H / 2027 M', 300, 680);
+          ctx.fillText('Dicetak resmi oleh Panitia PHBI Maulid Nabi 1448 H / 2027 M', 300, 680);
 
           const pngUrl = canvas.toDataURL('image/png');
           const downloadLink = document.createElement('a');
           downloadLink.href = pngUrl;
-          downloadLink.download = `QRIS_PHBI_Isra_Miraj_Kp_Kedung_Sapi.png`;
+          downloadLink.download = `QRIS_PHBI_Maulid_Nabi_Kp_Kedung_Sapi.png`;
           downloadLink.click();
         }
       };
@@ -363,7 +363,7 @@ export default function PaymentView({
               Transfer Bank, E-Wallet & QRIS PHBI
             </h2>
             <p className="text-xs sm:text-sm text-emerald-200/90 font-medium">
-              Iuran Pekanan & Donasi Peringatan Isra Mi'raj 1448 H / 2027 M Kp. Kedung Sapi
+              Iuran Pekanan & Donasi Peringatan Maulid Nabi 1448 H / 2027 M Kp. Kedung Sapi
             </p>
           </div>
 
@@ -481,7 +481,7 @@ export default function PaymentView({
                 {qris.qrisImageUrl ? (
                   <img 
                     src={qris.qrisImageUrl} 
-                    alt="QRIS PHBI Isra Miraj" 
+                    alt="QRIS PHBI Maulid Nabi" 
                     className="w-56 h-56 object-contain rounded-lg"
                   />
                 ) : (

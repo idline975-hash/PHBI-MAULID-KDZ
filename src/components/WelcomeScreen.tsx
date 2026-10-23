@@ -17,8 +17,8 @@ export const WELCOME_GREETING_OPTIONS: WelcomeGreetingOption[] = [
     label: '1. Islami & Penuh Berkah',
     category: 'Rekomendasi Utama',
     salam: 'Assalamu’alaikum Warahmatullahi Wabarakatuh',
-    headline: 'Selamat Datang di Portal Resmi Iuran & Kas PHBI Isra Mi’raj Nabi Muhammad SAW',
-    body: 'Marhaban yaa Dhiyafurrahman. Terima kasih atas kehadiran dan partisipasi Bapak, Ibu, serta Saudara/i warga Kp. Kedung Sapi. Melalui aplikasi ini, mari bersama-sama kita sukseskan syiar Peringatan Hari Besar Islam (PHBI) Isra Mi’raj Nabi Muhammad SAW dengan semangat kebersamaan, keterbukaan, dan keikhlasan. Semoga setiap rupiah yang kita infakkan menjadi amal jariyah yang melipatgandakan keberkahan bagi keluarga dan lingkungan kita.',
+    headline: 'Selamat Datang di Portal Resmi Iuran & Kas PHBI Maulid Nabi Nabi Muhammad SAW',
+    body: 'Marhaban yaa Dhiyafurrahman. Terima kasih atas kehadiran dan partisipasi Bapak, Ibu, serta Saudara/i warga Kp. Kedung Sapi. Melalui aplikasi ini, mari bersama-sama kita sukseskan syiar Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW dengan semangat kebersamaan, keterbukaan, dan keikhlasan. Semoga setiap rupiah yang kita infakkan menjadi amal jariyah yang melipatgandakan keberkahan bagi keluarga dan lingkungan kita.',
     closing: 'Wassalamu’alaikum Warahmatullahi Wabarakatuh'
   },
   {
@@ -36,7 +36,7 @@ export const WELCOME_GREETING_OPTIONS: WelcomeGreetingOption[] = [
     category: 'Semangat Warga',
     salam: 'Assalamu’alaikum Warahmatullahi Wabarakatuh',
     headline: 'Ahlan wa Sahlan, Keluarga Besar Warga Kp. Kedung Sapi',
-    body: 'Selamat datang di pusat informasi kegiatan peringatan Isra Mi’raj Nabi Muhammad SAW. Acara kita adalah dari warga, oleh warga, dan untuk keberkahan seluruh warga. Mari kita jaga kekompakan dan gotong royong lingkungan Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten dengan mendukung jalannya kegiatan keagamaan ini. Dukungan dan doa restu dari Bapak/Ibu sekalian adalah kunci kesuksesan acara kita bersama.',
+    body: 'Selamat datang di pusat informasi kegiatan peringatan Maulid Nabi Nabi Muhammad SAW. Acara kita adalah dari warga, oleh warga, dan untuk keberkahan seluruh warga. Mari kita jaga kekompakan dan gotong royong lingkungan Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten dengan mendukung jalannya kegiatan keagamaan ini. Dukungan dan doa restu dari Bapak/Ibu sekalian adalah kunci kesuksesan acara kita bersama.',
     closing: 'Salam Hangat & Ukhuwah — Panitia PHBI Kp. Kedung Sapi'
   },
   {
@@ -44,7 +44,7 @@ export const WELCOME_GREETING_OPTIONS: WelcomeGreetingOption[] = [
     label: '4. Singkat, Padat & Jelas',
     category: 'Gaya Ringkas',
     salam: 'Assalamu’alaikum Warahmatullahi Wabarakatuh',
-    headline: 'Selamat Datang di Portal Digital PHBI Isra Mi’raj Kp. Kedung Sapi',
+    headline: 'Selamat Datang di Portal Digital PHBI Maulid Nabi Kp. Kedung Sapi',
     body: 'Selamat datang di layanan informasi kas dan iuran warga Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. Silakan tekan tombol navigasi di bawah untuk melihat ringkasan saldo kas terkini, rincian pemasukan, pengeluaran kepanitiaan, serta layanan konfirmasi pembayaran online.',
     closing: 'Terima kasih atas partisipasi dan dukungan seluruh warga.'
   },
@@ -53,9 +53,9 @@ export const WELCOME_GREETING_OPTIONS: WelcomeGreetingOption[] = [
     label: '5. Sambutan Resmi Panitia',
     category: 'Formal Kepanitiaan',
     salam: 'Assalamu’alaikum Warahmatullahi Wabarakatuh',
-    headline: 'Sambutan Panitia Pelaksana PHBI Isra Mi’raj Nabi Muhammad SAW',
-    body: 'Puji syukur ke hadirat Allah SWT serta shalawat dan salam semoga senantiasa tercurah kepada Baginda Nabi Muhammad SAW. Atas nama Panitia Pelaksana PHBI Kp. Kedung Sapi, kami mengucapkan selamat datang dan terima kasih yang sebesar-besarnya kepada seluruh warga dan donatur atas kepercayaan serta kontribusinya dalam mendukung terselenggaranya peringatan Isra Mi’raj tahun ini.',
-    closing: 'Hormat Kami, Panitia Pelaksana PHBI Isra Mi’raj Kp. Kedung Sapi'
+    headline: 'Sambutan Panitia Pelaksana PHBI Maulid Nabi Nabi Muhammad SAW',
+    body: 'Puji syukur ke hadirat Allah SWT serta shalawat dan salam semoga senantiasa tercurah kepada Baginda Nabi Muhammad SAW. Atas nama Panitia Pelaksana PHBI Kp. Kedung Sapi, kami mengucapkan selamat datang dan terima kasih yang sebesar-besarnya kepada seluruh warga dan donatur atas kepercayaan serta kontribusinya dalam mendukung terselenggaranya peringatan Maulid Nabi tahun ini.',
+    closing: 'Hormat Kami, Panitia Pelaksana PHBI Maulid Nabi Kp. Kedung Sapi'
   }
 ];
 
@@ -85,7 +85,7 @@ export default function WelcomeScreen({
 
   const namaKegiatan =
     committeeSettings?.namaKegiatan ||
-    'PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MIRAJ NABI MUHAMMAD SAW';
+    'PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI MUHAMMAD SAW';
   const wilayah =
     committeeSettings?.wilayah ||
     'Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten';

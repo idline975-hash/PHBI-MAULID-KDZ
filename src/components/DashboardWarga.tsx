@@ -176,10 +176,10 @@ export default function DashboardWarga({
             </div>
 
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight">
-              Keterbukaan Dana Isra Miraj {activePeriodLabel}
+              Keterbukaan Dana Maulid Nabi {activePeriodLabel}
             </h2>
             <p className="text-xs sm:text-sm text-emerald-100/90 mt-1 max-w-2xl leading-relaxed">
-              Selamat datang di portal transparansi keuangan Panitia PHBI Isra Miraj Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. 
+              Selamat datang di portal transparansi keuangan Panitia PHBI Maulid Nabi Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten. 
               Seluruh warga dapat memantau uang masuk, uang keluar, dan sisa saldo kas panitia secara jujur, amanah, dan terverifikasi.
             </p>
 
@@ -225,7 +225,7 @@ export default function DashboardWarga({
         </div>
 
         <a
-          href="https://wa.me/6281414033436?text=Assalamualaikum%20Panitia%20Isra%20Miraj%20Kp%20Kedung%20Sapi,%20saya%20warga%20ingin%20bertanya/menyampaikan%20pengaduan"
+          href="https://wa.me/6281414033436?text=Assalamualaikum%20Panitia%20Maulid%20Nabi%20Kp%20Kedung%20Sapi,%20saya%20warga%20ingin%20bertanya/menyampaikan%20pengaduan"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-shrink-0 px-3.5 py-2 bg-emerald-700 hover:bg-emerald-800 active:scale-98 text-white rounded-xl text-xs font-bold transition-all shadow-xs flex items-center gap-1.5 cursor-pointer"
@@ -479,7 +479,7 @@ export default function DashboardWarga({
                   <span>Periode Iuran</span>
                 </div>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                  Iuran Warga dijadwalkan selama <strong>12 Minggu</strong> menuju Peringatan Isra Miraj Nabi Muhammad SAW 1448 H / 2027 M.
+                  Iuran Warga dijadwalkan selama <strong>12 Minggu</strong> menuju Peringatan MAULID NABI MUHAMMAD SAW 1448 H / 2027 M.
                 </p>
               </div>
 
@@ -751,7 +751,7 @@ export default function DashboardWarga({
               <div>
                 <strong className="block text-amber-900">Tambahan Pendanaan Donasi Suka Rela / Dermawan:</strong>
                 <p className="mt-0.5 leading-relaxed text-slate-700">
-                  Selain dari target iuran warga di atas, panitia PHBI Isra Miraj Kp Kedung Sapi juga menerima <strong>Donasi Suka Rela</strong> dari para dermawan yang saat ini terkumpul sebesar <strong>Rp {formatRupiah(totalSukarela)}</strong> ({sukarelaPayments.length} donatur), sehingga memperkuat kas panitia dalam menyukseskan acara.
+                  Selain dari target iuran warga di atas, panitia PHBI Maulid Nabi Kp Kedung Sapi juga menerima <strong>Donasi Suka Rela</strong> dari para dermawan yang saat ini terkumpul sebesar <strong>Rp {formatRupiah(totalSukarela)}</strong> ({sukarelaPayments.length} donatur), sehingga memperkuat kas panitia dalam menyukseskan acara.
                 </p>
               </div>
             </div>
@@ -919,7 +919,7 @@ export default function DashboardWarga({
           </div>
         )}
 
-        {/* TAB 5: STRUKTUR KEPANITIAAN ISRA MIRAJ 1448 H / 2027 M */}
+        {/* TAB 5: STRUKTUR KEPANITIAAN MAULID NABI 1448 H / 2027 M */}
         {activeTab === 'struktur' && (
           <div className="p-4 sm:p-6">
             <StrukturPanitiaCard 

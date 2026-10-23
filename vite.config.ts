@@ -14,9 +14,9 @@ export default defineConfig(() => {
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg', 'pwa-192x192.png', 'pwa-512x512.png', 'pwa-maskable-512x512.png'],
         manifest: {
           id: '/',
-          name: "Iuran & Kas PHBI Isra Mi'raj",
+          name: "Iuran & Kas PHBI Maulid Nabi",
           short_name: 'PHBI Kedung Sapi',
-          description: "Aplikasi Resmi Pengelolaan Iuran dan Kas PHBI Isra Mi'raj Nabi Muhammad SAW Warga Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten.",
+          description: "Aplikasi Resmi Pengelolaan Iuran dan Kas PHBI Maulid Nabi Nabi Muhammad SAW Warga Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten.",
           theme_color: '#064e3b',
           background_color: '#022c22',
           display: 'standalone',

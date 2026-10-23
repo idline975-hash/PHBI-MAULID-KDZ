@@ -139,7 +139,7 @@ export default function BaganStrukturOrganisasi({
       // Download PNG
       const a4DataUrl = a4Canvas.toDataURL('image/png', 1.0);
       const link = document.createElement('a');
-      link.download = `Bagan_Struktur_Panitia_Isra_Miraj_A4_${orientation.toUpperCase()}_${Date.now()}.png`;
+      link.download = `Bagan_Struktur_Panitia_Maulid_Nabi_A4_${orientation.toUpperCase()}_${Date.now()}.png`;
       link.href = a4DataUrl;
       link.click();
 
@@ -210,7 +210,7 @@ export default function BaganStrukturOrganisasi({
 
       const imgData = sourceCanvas.toDataURL('image/png', 1.0);
       pdf.addImage(imgData, 'PNG', drawX, drawY, drawWidthMm, drawHeightMm);
-      pdf.save(`Bagan_Panitia_Isra_Miraj_A4_${orientation.toUpperCase()}.pdf`);
+      pdf.save(`Bagan_Panitia_Maulid_Nabi_A4_${orientation.toUpperCase()}.pdf`);
 
       setExportStatus({ 
         type: 'success', 
@@ -465,7 +465,7 @@ export default function BaganStrukturOrganisasi({
               BAGAN STRUKTUR ORGANISASI PHBI
             </div>
             <h3 className="text-base sm:text-xl font-black text-slate-900 tracking-tight leading-snug">
-              ISRA MI'RAJ 1448 H / 2027 M
+              MAULID NABI 1448 H / 2027 M
             </h3>
             <p className="text-[11px] text-slate-600 font-medium mt-0.5">
               Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten
@@ -781,7 +781,7 @@ export default function BaganStrukturOrganisasi({
 
           {/* BAGAN FOOTER */}
           <div className="pt-4 border-t border-slate-200 text-center text-[10px] sm:text-xs text-slate-500 font-medium">
-            <span>Diterbitkan resmi oleh <strong>Panitia PHBI Isra Mi'raj 1448 H / 2027 M</strong> – Kp. Kedung Sapi</span>
+            <span>Diterbitkan resmi oleh <strong>Panitia PHBI Maulid Nabi 1448 H / 2027 M</strong> – Kp. Kedung Sapi</span>
           </div>
         </div>
       ) : (
@@ -801,7 +801,7 @@ export default function BaganStrukturOrganisasi({
                 BAGAN STRUKTUR ORGANISASI KEPANITIAAN RESMI
               </div>
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MI'RAJ 1448 H / 2027 M
+                PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI 1448 H / 2027 M
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1">
                 Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten
@@ -1176,7 +1176,7 @@ export default function BaganStrukturOrganisasi({
             <div className="mt-10 pt-6 border-t border-slate-200">
               <div className="flex flex-wrap items-center justify-between text-xs text-slate-500 font-medium">
                 <div>
-                  <span>Diterbitkan oleh: <strong>Panitia PHBI Isra Mi'raj 1448 H / 2027 M</strong></span>
+                  <span>Diterbitkan oleh: <strong>Panitia PHBI Maulid Nabi 1448 H / 2027 M</strong></span>
                 </div>
                 <div className="text-right">
                   <span>Dokumen Resmi Kepanitiaan Kp. Kedung Sapi (Format Kertas A4)</span>

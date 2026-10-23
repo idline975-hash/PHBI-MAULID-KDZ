@@ -89,7 +89,7 @@ export default function AdminPaymentManager({
 `Assalamu'alaikum Wr. Wb.
 Halo Bpk/Ibu/Sdr *${item.citizenName || item.pengirimNama}*,
 
-Saya *${admin}* dari *Panitia PHBI Isra Mi'raj 1448 H / 2027 M Kp. Kedung Sapi*, mengonfirmasi bukti transfer pembayaran yang Anda kirimkan:
+Saya *${admin}* dari *Panitia PHBI Maulid Nabi 1448 H / 2027 M Kp. Kedung Sapi*, mengonfirmasi bukti transfer pembayaran yang Anda kirimkan:
 
 📋 *Rincian Pembayaran:*
 • Nama Warga: *${item.citizenName}*
@@ -104,7 +104,7 @@ ${statusKeterangan}
 Terima kasih. Jazakumullah Khairan Katsiran.
 Wassalamu'alaikum Wr. Wb.
 
-_Panitia PHBI Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M_
+_Panitia PHBI Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M_
 _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
 
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -143,7 +143,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
       id: 'bank-bsi-1',
       bankName: 'Bank BSI',
       accountNumber: '719-8765-432',
-      accountHolder: 'Panitia Isra Miraj Kp Kedung Sapi',
+      accountHolder: 'Panitia Maulid Nabi Kp Kedung Sapi',
       catatan: 'Bank Syariah Indonesia (Kode: 451) / Rekening Panitia'
     }
   ]);
@@ -174,10 +174,10 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
 
   // QRIS State
   const [qrisConfig, setQrisConfig] = useState<QrisConfig>(paymentSettings?.qris || {
-    qrisName: "PHBI ISRA MI'RAJ KP. KEDUNG SAPI",
+    qrisName: "PHBI MAULID NABI KP. KEDUNG SAPI",
     qrisNmid: 'ID1024356789012',
     qrisImageUrl: '',
-    qrisPayloadString: '00020101021126590014ID.GO.QRIS.WWW01189360099900000000000209ID10243567890120303UMI51440014ID.CO.QRIS.WWW02150000000000000000303UMI5204541153033605802ID5932PHBI ISRA MIRAJ KP KEDUNG SAPI6007SERANG61054217762070703A0163041A2B',
+    qrisPayloadString: '00020101021126590014ID.GO.QRIS.WWW01189360099900000000000209ID10243567890120303UMI51440014ID.CO.QRIS.WWW02150000000000000000303UMI5204541153033605802ID5932PHBI MAULID NABI KP KEDUNG SAPI6007SERANG61054217762070703A0163041A2B',
     instructions: 'Scan QRIS ini menggunakan m-Banking (BCA, BRImo, Livin Mandiri, BSI, BNI, Jago, dll) atau E-Wallet (DANA, GoPay, OVO, ShopeePay, LinkAja).'
   });
 
@@ -1117,7 +1117,7 @@ _Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten_`;
                     type="text"
                     value={qrisConfig.qrisName}
                     onChange={(e) => setQrisConfig({ ...qrisConfig, qrisName: e.target.value })}
-                    placeholder="Contoh: PHBI ISRA MI'RAJ KP BARANI"
+                    placeholder="Contoh: PHBI MAULID NABI KP BARANI"
                     className="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 font-bold focus:bg-white focus:outline-emerald-600"
                   />
                 </div>

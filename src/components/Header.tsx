@@ -112,7 +112,7 @@ export default function Header({
       {/* Running Marquee Banner moving from right to left */}
       <div className="bg-emerald-700 text-white text-[11px] sm:text-xs font-semibold py-1 px-3 sm:px-4 overflow-hidden shadow-inner flex items-center border-b border-emerald-600/40">
         <div className="whitespace-nowrap flex items-center gap-3 animate-marquee">
-          <span>🕌 <strong>PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MIRAJ</strong></span>
+          <span>🕌 <strong>PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI</strong></span>
           <span className="text-emerald-200">•</span>
           <span>💬 <strong>Undangan Grup WhatsApp:</strong> <a href={waGroupLink} target="_blank" rel="noopener noreferrer" className="underline font-bold text-amber-300">Gabung Grup Warga & Panitia</a></span>
           <span className="text-emerald-200">•</span>
@@ -144,7 +144,7 @@ export default function Header({
                 // Fallback to static public file if module fails
                 (e.target as HTMLImageElement).src = '/logo_phbi_round.jpg';
               }}
-              alt="Logo Resmi PHBI Isra Mi'raj"
+              alt="Logo Resmi PHBI Maulid Nabi"
               className="w-full h-full rounded-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -153,7 +153,7 @@ export default function Header({
           <div className="min-w-0">
             <div className="flex items-center gap-1.5">
               <h1 className="text-xs sm:text-sm md:text-base font-extrabold tracking-tight text-white flex items-center gap-1 truncate">
-                PANITIA ISRA MIRAJ
+                PANITIA MAULID NABI
               </h1>
               <span className="hidden sm:inline-block text-[9px] uppercase font-bold tracking-wider bg-emerald-800/80 text-emerald-200 px-1.5 py-0.2 rounded border border-emerald-600/50 shrink-0">
                 Kp. Kedung Sapi
@@ -257,7 +257,7 @@ export default function Header({
                 Grup WhatsApp Panitia & Warga Kp. Kedung Sapi
               </h3>
               <p className="text-xs text-emerald-200/90 leading-relaxed">
-                Saluran resmi komunikasi, informasi pengumuman, transparansi donasi, dan silaturahmi warga PHBI Isra Miraj 1448 H / 2027 M.
+                Saluran resmi komunikasi, informasi pengumuman, transparansi donasi, dan silaturahmi warga PHBI Maulid Nabi 1448 H / 2027 M.
               </p>
             </div>
 
@@ -329,7 +329,7 @@ export default function Header({
                   <strong>2. Konfirmasi Donasi:</strong> Hubungi panitia langsung jika ada kesalahan nama/nominal.
                 </div>
                 <div className="p-2 bg-emerald-950/50 rounded-lg border border-emerald-800/40">
-                  <strong>3. Jadwal & Rundown:</strong> Agenda dan susunan acara peringatan Isra Miraj.
+                  <strong>3. Jadwal & Rundown:</strong> Agenda dan susunan acara peringatan Maulid Nabi.
                 </div>
                 <div className="p-2 bg-emerald-950/50 rounded-lg border border-emerald-800/40">
                   <strong>4. Komunikasi Warga:</strong> Diskusi dan musyawarah demi kesuksesan acara.

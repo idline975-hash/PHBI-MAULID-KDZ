@@ -78,7 +78,7 @@ app.use((req, res, next) => {
 });
 
 const DATA_DIR = path.join(process.cwd(), 'data');
-const DB_FILE = path.join(DATA_DIR, 'isra_miraj_db.json');
+const DB_FILE = path.join(DATA_DIR, 'maulid_nabi_db.json');
 
 // Initialize Firebase Firestore for persistent cloud data
 let firestoreDb: Firestore | null = null;
@@ -97,7 +97,7 @@ if (fs.existsSync(configPath)) {
 export const defaultCommitteeSections: CommitteeSection[] = [];
 
 export const defaultCommitteeSettings: CommitteeSettings = {
-  namaKegiatan: 'Peringatan Hari Besar Islam (PHBI) Isra Miraj Nabi Muhammad SAW 1448 H / 2027 M',
+  namaKegiatan: 'Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M',
   wilayah: 'Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten',
   ketuaPanitia: '',
   wakilKetua: '',
@@ -137,7 +137,7 @@ export const defaultPaymentSettings: PaymentSettings = {
       id: 'bank-bsi-1',
       bankName: 'Bank BSI',
       accountNumber: '719-8765-432',
-      accountHolder: 'Panitia Isra Miraj Kp Kedung Sapi',
+      accountHolder: 'Panitia Maulid Nabi Kp Kedung Sapi',
       catatan: 'Bank Syariah Indonesia (Kode: 451) / Rekening Panitia'
     }
   ],
@@ -168,7 +168,7 @@ export const defaultPaymentSettings: PaymentSettings = {
     qrisName: 'PHBI ISRA MI\'RAJ KP BARANI',
     qrisNmid: 'ID1024356789012',
     qrisImageUrl: '',
-    qrisPayloadString: '00020101021126590014ID.GO.QRIS.WWW01189360099900000000000209ID10243567890120303UMI51440014ID.CO.QRIS.WWW02150000000000000000303UMI5204541153033605802ID5927PHBI ISRA MIRAJ KP BARANI6007SERANG61054217762070703A0163041A2B',
+    qrisPayloadString: '00020101021126590014ID.GO.QRIS.WWW01189360099900000000000209ID10243567890120303UMI51440014ID.CO.QRIS.WWW02150000000000000000303UMI5204541153033605802ID5927PHBI MAULID NABI KP BARANI6007SERANG61054217762070703A0163041A2B',
     instructions: 'Scan QRIS ini menggunakan m-Banking (BCA, BRImo, Livin Mandiri, BSI, BNI, Jago, dll) atau E-Wallet (DANA, GoPay, OVO, ShopeePay, LinkAja).'
   }
 };
@@ -287,7 +287,7 @@ function getInitialDbState(): AppState {
         category: 'REKAPITULASI',
         action: 'TAMBAH',
         accountName: 'Sistem',
-        details: 'Inisialisasi sistem panitia Isra Miraj Kp Kedung Sapi.'
+        details: 'Inisialisasi sistem panitia Maulid Nabi Kp Kedung Sapi.'
       }
     ]
   };
@@ -2560,7 +2560,7 @@ app.post('/api/proposal', (req, res) => {
     category: 'PROPOSAL',
     action: 'EDIT',
     accountName: String(updatedBy || 'Admin / Panitia').trim(),
-    details: `${updatedBy || 'Panitia'} memperbarui dokumen Proposal Kegiatan PHBI Isra Mi'raj (Bagian A s/d I & Lembar Pengesahan).`
+    details: `${updatedBy || 'Panitia'} memperbarui dokumen Proposal Kegiatan PHBI Maulid Nabi (Bagian A s/d I & Lembar Pengesahan).`
   });
 
   broadcastState();
@@ -3082,10 +3082,10 @@ function buildPeriodArchiveFromState(
     periodLabel,
     hijriYear,
     masehiYear,
-    namaKegiatan: cs.namaKegiatan || `Peringatan Hari Besar Islam (PHBI) Isra Miraj Nabi Muhammad SAW ${periodLabel}`,
+    namaKegiatan: cs.namaKegiatan || `Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW ${periodLabel}`,
     archivedAt: getIndonesianDateTime(),
     archivedBy: String(opts.archivedBy || 'Admin PHBI').trim(),
-    catatan: opts.catatan ? String(opts.catatan).trim() : `Arsip resmi laporan keuangan, rekapitulasi 12 minggu, struktur panitia, dan proposal PHBI Isra Mi'raj periode ${periodLabel}.`,
+    catatan: opts.catatan ? String(opts.catatan).trim() : `Arsip resmi laporan keuangan, rekapitulasi 12 minggu, struktur panitia, dan proposal PHBI Maulid Nabi periode ${periodLabel}.`,
     summary: {
       totalCitizens: citizensList.length,
       wargaUtamaCount: wargaUtama.length,
@@ -3476,7 +3476,7 @@ async function start() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server PANITIA ISRA MIRAJ running on port ${PORT}`);
+    console.log(`Server PANITIA MAULID NABI running on port ${PORT}`);
   });
 
   // Initialize Cloud Firestore synchronization in background so port binds immediately for Cloud Run health check

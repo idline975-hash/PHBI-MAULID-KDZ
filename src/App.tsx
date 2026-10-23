@@ -25,13 +25,13 @@ import { RefreshCw, LogOut, Shield, HeartHandshake, Wallet, Users, Archive, Home
 export default function App() {
   const [currentUser, setCurrentUser] = useState<UserAccount | null>(() => {
     try {
-      localStorage.removeItem('isra_miraj_user');
+      localStorage.removeItem('maulid_nabi_user');
     } catch {
       // ignore
     }
 
     try {
-      const saved = sessionStorage.getItem('isra_miraj_user_session');
+      const saved = sessionStorage.getItem('maulid_nabi_user_session');
       if (saved) {
         const parsed = JSON.parse(saved) as UserAccount;
         if (parsed && parsed.role !== 'warga') {
@@ -68,7 +68,7 @@ export default function App() {
   // Load offline cached state if available so data is never blank on reload
   const cachedInitial = (() => {
     try {
-      const raw = localStorage.getItem('isra_miraj_offline_cache');
+      const raw = localStorage.getItem('maulid_nabi_offline_cache');
       return raw ? JSON.parse(raw) : null;
     } catch {
       return null;
@@ -127,7 +127,7 @@ export default function App() {
         setIsOnline(true);
         // Persist fresh snapshot to offline cache for permanent protection against reload or sudden shutdown
         try {
-          localStorage.setItem('isra_miraj_offline_cache', JSON.stringify({
+          localStorage.setItem('maulid_nabi_offline_cache', JSON.stringify({
             citizens: data.citizens,
             wargaPayments: data.wargaPayments,
             sukarelaPayments: data.sukarelaPayments,
@@ -159,13 +159,13 @@ export default function App() {
   useEffect(() => {
     const recordVisit = async () => {
       try {
-        let visitorId = localStorage.getItem('isra_miraj_visitor_id');
+        let visitorId = localStorage.getItem('maulid_nabi_visitor_id');
         if (!visitorId) {
           visitorId = `v-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
-          localStorage.setItem('isra_miraj_visitor_id', visitorId);
+          localStorage.setItem('maulid_nabi_visitor_id', visitorId);
         }
 
-        const lastRecorded = sessionStorage.getItem('isra_miraj_visit_recorded_time');
+        const lastRecorded = sessionStorage.getItem('maulid_nabi_visit_recorded_time');
         const now = Date.now();
         // Record visit if first time in session or more than 15 minutes since last recorded
         if (lastRecorded && now - Number(lastRecorded) < 15 * 60 * 1000) {
@@ -193,7 +193,7 @@ export default function App() {
           if (json.stats) {
             setVisitorStats(json.stats);
           }
-          sessionStorage.setItem('isra_miraj_visit_recorded_time', String(now));
+          sessionStorage.setItem('maulid_nabi_visit_recorded_time', String(now));
         }
       } catch {
         // Silently ignore if offline
@@ -263,16 +263,16 @@ export default function App() {
     if (user.role === 'warga') {
       setCurrentUser(null);
       try {
-        sessionStorage.removeItem('isra_miraj_user_session');
-        localStorage.removeItem('isra_miraj_user');
+        sessionStorage.removeItem('maulid_nabi_user_session');
+        localStorage.removeItem('maulid_nabi_user');
       } catch (e) {
         console.error(e);
       }
     } else {
       setCurrentUser(user);
       try {
-        sessionStorage.setItem('isra_miraj_user_session', JSON.stringify(user));
-        localStorage.removeItem('isra_miraj_user');
+        sessionStorage.setItem('maulid_nabi_user_session', JSON.stringify(user));
+        localStorage.removeItem('maulid_nabi_user');
       } catch (e) {
         console.error(e);
       }
@@ -285,8 +285,8 @@ export default function App() {
     setCurrentUser(null);
     setIsLoginOpen(false);
     try {
-      sessionStorage.removeItem('isra_miraj_user_session');
-      localStorage.removeItem('isra_miraj_user');
+      sessionStorage.removeItem('maulid_nabi_user_session');
+      localStorage.removeItem('maulid_nabi_user');
     } catch (e) {
       console.error(e);
     }
@@ -406,7 +406,7 @@ export default function App() {
                     </span>
                   </div>
                   <p className="text-[11px] text-slate-500 flex flex-wrap items-center gap-1.5">
-                    <span>Aplikasi Iuran Isra Miraj Nabi Muhammad SAW <strong>{activePeriodLabel}</strong></span>
+                    <span>Aplikasi Iuran MAULID NABI MUHAMMAD SAW <strong>{activePeriodLabel}</strong></span>
                     <span className="inline-flex items-center gap-1 px-2 py-0.2 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold text-[10px]">
                       <Archive className="w-2.5 h-2.5" />
                       {periodArchives.length} Arsip Periode
@@ -557,7 +557,7 @@ export default function App() {
           </div>
 
           <p className="font-semibold text-slate-700">
-            PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MIRAJ NABI MUHAMMAD SAW
+            PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI MUHAMMAD SAW
           </p>
           <p className="text-[11px] text-slate-500">
             Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten

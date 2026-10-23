@@ -8,7 +8,7 @@ interface Signer {
   name: string;
 }
 
-// Draw official KOP SURAT PHBI Isra Miraj (with automatic multi-line wrapping so nothing is cut off)
+// Draw official KOP SURAT PHBI Maulid Nabi (with automatic multi-line wrapping so nothing is cut off)
 function addKopSurat(
   doc: jsPDF,
   title: string,
@@ -39,7 +39,7 @@ function addKopSurat(
   y += b1Lines.length * 5.2 + 0.8;
 
   // Baris 2: Event Name & Year
-  const baris2 = (customKop?.baris2 || 'ISRA MIRAJ NABI MUHAMMAD SAW 1448 H / 2027 M').toUpperCase();
+  const baris2 = (customKop?.baris2 || 'MAULID NABI MUHAMMAD SAW 1448 H / 2027 M').toUpperCase();
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(13.5);
   doc.setTextColor(17, 24, 39);
@@ -242,7 +242,7 @@ function addPageFooters(
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(7.5);
       doc.setTextColor(15, 81, 40);
-      doc.text('PANITIA PHBI ISRA MIRAJ 1448 H / 2027 M • KP BARANI RT 011 / RW 04', sideMargin, 10);
+      doc.text('PANITIA PHBI MAULID NABI 1448 H / 2027 M • KP BARANI RT 011 / RW 04', sideMargin, 10);
 
       const pageNumStr = hasCover ? `${i - 1} dari ${totalPages - 1}` : `${i} dari ${totalPages}`;
       doc.setFont('helvetica', 'normal');
@@ -268,7 +268,7 @@ function addPageFooters(
     doc.setFontSize(7);
     doc.setTextColor(148, 163, 184);
     doc.text(
-      `Dokumen Resmi PHBI Isra Miraj 1448 H / 2027 M • WA Info & Pengaduan: 081414033436 • ${pageDisplay}`,
+      `Dokumen Resmi PHBI Maulid Nabi 1448 H / 2027 M • WA Info & Pengaduan: 081414033436 • ${pageDisplay}`,
       pageWidth / 2,
       pageHeight - 5.5,
       { align: 'center' }
@@ -289,7 +289,7 @@ export function generatePdfLaporanMingguanUsser(
   const startY = addKopSurat(
     doc,
     `Laporan Penerimaan Iuran Warga - Minggu Ke-${weekNumber}`,
-    `Dicetak oleh: ${usserName} • Sistem Daring PHBI Isra Miraj Kp Kedung Sapi`
+    `Dicetak oleh: ${usserName} • Sistem Daring PHBI Maulid Nabi Kp Kedung Sapi`
   );
 
   // Pisahkan Warga Utama vs Warga Ngontrak (Hanya jumlah warga utama yang dihitung di jumlah warga)
@@ -510,7 +510,7 @@ export function generatePdfLaporanUsser(
   const startY = addKopSurat(
     doc,
     'Laporan Resmi Penerimaan Donasi Warga & Suka Rela',
-    `Dicetak oleh: ${usserName} • Sistem Daring Panitia Isra Miraj 1448 H / 2027 M`
+    `Dicetak oleh: ${usserName} • Sistem Daring Panitia Maulid Nabi 1448 H / 2027 M`
   );
 
   const totalWarga = wargaPayments.reduce(
@@ -652,7 +652,7 @@ export function generatePdfLaporanBendahara(
   const startY = addKopSurat(
     doc,
     'Laporan Pertanggungjawaban Kas & Pengeluaran Bendahara',
-    'Panitia Peringatan Hari Besar Islam (PHBI) Isra Miraj 1448 H / 2027 M'
+    'Panitia Peringatan Hari Besar Islam (PHBI) Maulid Nabi 1448 H / 2027 M'
   );
 
   const totalKeluar = pengeluaranList.reduce((s, p) => s + (Number(p.amount) || 0), 0);
@@ -723,7 +723,7 @@ export function generatePdfLaporanBendahara(
   ]);
 
   addPageFooters(doc, 'Laporan Kas Bendahara');
-  doc.save(`Laporan_Kas_Bendahara_Isra_Miraj_${Date.now()}.pdf`);
+  doc.save(`Laporan_Kas_Bendahara_Maulid_Nabi_${Date.now()}.pdf`);
 }
 
 // ==========================================
@@ -734,7 +734,7 @@ export function generatePdfDonasiWargaAdmin(payments: DonasiWargaPayment[]) {
   const startY = addKopSurat(
     doc,
     'Laporan Data Pemasukan Donasi Warga (Mingguan)',
-    'Lampiran Arsip Resmi Panitia Isra Miraj 1448 H / 2027 M'
+    'Lampiran Arsip Resmi Panitia Maulid Nabi 1448 H / 2027 M'
   );
 
   const total = payments.reduce(
@@ -796,7 +796,7 @@ export function generatePdfDonasiSukarelaAdmin(payments: DonasiSukarela[]) {
   const startY = addKopSurat(
     doc,
     'Laporan Data Pemasukan Donasi Suka Rela',
-    'Lampiran Arsip Resmi Panitia Isra Miraj 1448 H / 2027 M'
+    'Lampiran Arsip Resmi Panitia Maulid Nabi 1448 H / 2027 M'
   );
 
   const total = payments.reduce((s, p) => s + (Number(p.amount) || 0), 0);
@@ -854,7 +854,7 @@ export function generatePdfPengeluaranAdmin(list: Pengeluaran[]) {
   const startY = addKopSurat(
     doc,
     'Laporan Data Pengeluaran Kas (Bendahara)',
-    'Lampiran Arsip Resmi Panitia Isra Miraj 1448 H / 2027 M'
+    'Lampiran Arsip Resmi Panitia Maulid Nabi 1448 H / 2027 M'
   );
 
   const total = list.reduce((s, p) => s + (Number(p.amount) || 0), 0);
@@ -913,7 +913,7 @@ export function generatePdfKolomMingguanAdmin(
   const startY = addKopSurat(
     doc,
     'Rekapitulasi Kolom Mingguan Iuran Warga (Minggu 1 s/d 12)',
-    'Panitia PHBI Isra Miraj Kp kedung sapi Desa Kp baru kec Pamarayan serang - banten'
+    'Panitia PHBI Maulid Nabi Kp kedung sapi Desa Kp baru kec Pamarayan serang - banten'
   );
 
   // Headers: No, Nama Warga, M1..M12, Total
@@ -1212,7 +1212,7 @@ export function generatePdfLaporanKeseluruhanAdmin(
   const startY = addKopSurat(
     doc,
     'Laporan Pertanggungjawaban Keuangan Keseluruhan',
-    'Rekapitulasi Lengkap Pemasukan, Pengeluaran & Sisa Saldo Kas PHBI Isra Miraj 1448 H / 2027 M'
+    'Rekapitulasi Lengkap Pemasukan, Pengeluaran & Sisa Saldo Kas PHBI Maulid Nabi 1448 H / 2027 M'
   );
 
   const ketuaName = committeeSettings?.ketuaPanitia || '';
@@ -1458,7 +1458,7 @@ export function generatePdfLaporanKeseluruhanAdmin(
   doc.setFontSize(7.2);
   doc.setTextColor(71, 85, 105);
   doc.text('1. Laporan ini merupakan rekapitulasi data resmi yang disinkronkan secara digital dan riil.', 18, notesY + 8);
-  doc.text('2. Penerimaan dana donasi warga dan suka rela telah dibukukan secara tertib untuk kegiatan Isra Miraj 1448 H / 2027 M.', 18, notesY + 12);
+  doc.text('2. Penerimaan dana donasi warga dan suka rela telah dibukukan secara tertib untuk kegiatan Maulid Nabi 1448 H / 2027 M.', 18, notesY + 12);
   doc.text(`3. Seluruh pengeluaran diverifikasi dan dipertanggungjawabkan oleh Bendahara Panitia (${bendaharaName}).`, 18, notesY + 15.5);
 
   // 6. Pengesahan Pejabat Panitia Inti (Ketua, Wakil Ketua, Sekretaris, Bendahara)
@@ -1470,7 +1470,7 @@ export function generatePdfLaporanKeseluruhanAdmin(
   ]);
 
   addPageFooters(doc, 'Laporan Pertanggungjawaban Master PHBI');
-  doc.save(`Laporan_Keseluruhan_Panitia_Isra_Miraj_${Date.now()}.pdf`);
+  doc.save(`Laporan_Keseluruhan_Panitia_Maulid_Nabi_${Date.now()}.pdf`);
 }
 
 // Laporan Transparansi Khusus Warga Kp Kedung Sapi (Uang Masuk, Uang Keluar, dan Sisa Saldo Kas)
@@ -1488,7 +1488,7 @@ export function generatePdfTransparansiWarga(
   const startY = addKopSurat(
     doc,
     'Laporan Transparansi Keuangan Terbuka untuk Warga',
-    'Arsip Keterbukaan Uang Masuk, Uang Keluar, dan Sisa Saldo Kas Isra Miraj'
+    'Arsip Keterbukaan Uang Masuk, Uang Keluar, dan Sisa Saldo Kas Maulid Nabi'
   );
 
   const totalMasuk = totalWarga + totalSukarela;
@@ -1635,7 +1635,7 @@ export function generatePdfTransparansiWarga(
   doc.setFontSize(8);
   doc.setTextColor(90, 90, 90);
   doc.text(
-    'Demikian laporan transparansi ini diterbitkan sebagai wujud akuntabilitas dan keterbukaan publik Panitia PHBI Isra Miraj Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten.',
+    'Demikian laporan transparansi ini diterbitkan sebagai wujud akuntabilitas dan keterbukaan publik Panitia PHBI Maulid Nabi Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten.',
     14,
     currentY
   );
@@ -1672,7 +1672,7 @@ export function generatePdfRincianUangMasukWarga(
   let currentY = addKopSurat(
     doc,
     'Laporan Rincian Penerimaan Uang Masuk',
-    'Transparansi Iuran Warga 12 Minggu & Donasi Suka Rela PHBI Isra Miraj 1448 H / 2027 M'
+    'Transparansi Iuran Warga 12 Minggu & Donasi Suka Rela PHBI Maulid Nabi 1448 H / 2027 M'
   );
 
   // 1. Ringkasan Kas Masuk
@@ -1841,7 +1841,7 @@ export function generatePdfRincianUangKeluarWarga(
   let currentY = addKopSurat(
     doc,
     'Laporan Rincian Pengeluaran Kas',
-    'Transparansi Belanja Operasional & Kebutuhan Acara PHBI Isra Miraj 1448 H / 2027 M'
+    'Transparansi Belanja Operasional & Kebutuhan Acara PHBI Maulid Nabi 1448 H / 2027 M'
   );
 
   // 1. Ringkasan Pengeluaran
@@ -1928,7 +1928,7 @@ export function generatePdfRincianUangKeluarWarga(
     currentY
   );
   doc.text(
-    'Seluruh pos belanja telah digunakan sesuai kebutuhan perayaan Hari Besar Islam Isra Miraj Kp Kedung Sapi.',
+    'Seluruh pos belanja telah digunakan sesuai kebutuhan perayaan Hari Besar Islam Maulid Nabi Kp Kedung Sapi.',
     14,
     currentY + 4
   );
@@ -1943,7 +1943,7 @@ export function generatePdfRincianUangKeluarWarga(
   doc.save(`Laporan_Rincian_Uang_Keluar_${Date.now()}.pdf`);
 }
 
-// 12. Cetak Dokumen Resmi Susunan Panitia Isra Mi'raj 1448 H / 2027 M
+// 12. Cetak Dokumen Resmi Susunan Panitia Maulid Nabi 1448 H / 2027 M
 export function generatePdfStrukturPanitia(committeeSettings?: CommitteeSettings): void {
   const doc = new jsPDF({
     orientation: 'portrait',
@@ -1966,7 +1966,7 @@ export function generatePdfStrukturPanitia(committeeSettings?: CommitteeSettings
   let currentY = addKopSurat(
     doc,
     "SURAT KEPUTUSAN SUSUNAN PANITIA PELAKSANA",
-    "PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MI'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M"
+    "PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI MUHAMMAD SAW 1448 H / 2027 M"
   );
 
   // Dewan Pembina & Pengurus Inti Box
@@ -2088,11 +2088,11 @@ export function generatePdfStrukturPanitia(committeeSettings?: CommitteeSettings
     { title: 'Bendahara PHBI', name: bendaharaName }
   ]);
 
-  addPageFooters(doc, 'Susunan Panitia Isra Miraj 1448 H / 2027 M');
-  doc.save(`Susunan_Panitia_Isra_Miraj_1448H_2027M_${Date.now()}.pdf`);
+  addPageFooters(doc, 'Susunan Panitia Maulid Nabi 1448 H / 2027 M');
+  doc.save(`Susunan_Panitia_Maulid_Nabi_1448H_2027M_${Date.now()}.pdf`);
 }
 
-// Draw official Cover Page (Sampul Depan) for Proposal Kegiatan PHBI Isra Mi'raj
+// Draw official Cover Page (Sampul Depan) for Proposal Kegiatan PHBI Maulid Nabi
 function drawProposalCoverPage(
   doc: jsPDF,
   proposal: ProposalData,
@@ -2152,12 +2152,12 @@ function drawProposalCoverPage(
   const subJudul = (proposal.coverSubjudul || 'PERINGATAN HARI BESAR ISLAM (PHBI)').toUpperCase();
   doc.text(subJudul, pageWidth / 2, y, { align: 'center' });
 
-  // 4. Main Event Title: "ISRA MI'RAJ NABI MUHAMMAD SAW"
+  // 4. Main Event Title: "MAULID NABI MUHAMMAD SAW"
   y += 7.5;
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(17.5);
   doc.setTextColor(15, 23, 42);
-  const mainTitle = (proposal.namaKegiatan || proposal.judulProposal || "ISRA MI'RAJ NABI MUHAMMAD SAW").toUpperCase();
+  const mainTitle = (proposal.namaKegiatan || proposal.judulProposal || "MAULID NABI MUHAMMAD SAW").toUpperCase();
   const titleLines: string[] = doc.splitTextToSize(mainTitle, pageWidth - 46);
   doc.text(titleLines, pageWidth / 2, y, { align: 'center' });
   y += titleLines.length * 6.8 + 1.2;
@@ -2319,7 +2319,7 @@ function drawProposalCoverPage(
   doc.addPage();
 }
 
-// 13. Cetak Dokumen Lengkap Proposal Kegiatan PHBI Isra Mi'raj 1448 H / 2027 M (Lengkap Sampul + A s/d I + 8 Tanda Tangan)
+// 13. Cetak Dokumen Lengkap Proposal Kegiatan PHBI Maulid Nabi 1448 H / 2027 M (Lengkap Sampul + A s/d I + 8 Tanda Tangan)
 export function generatePdfProposalKegiatan(
   proposal: ProposalData,
   committeeSettings?: CommitteeSettings,
@@ -2449,7 +2449,7 @@ export function generatePdfProposalKegiatan(
   currentY += k1Lines.length * 4.5 + 1;
 
   // Baris Kop 2
-  const kopBaris2 = (proposal.kopBaris2 || "ISRA MI'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M").toUpperCase();
+  const kopBaris2 = (proposal.kopBaris2 || "MAULID NABI MUHAMMAD SAW 1448 H / 2027 M").toUpperCase();
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(13.5);
   doc.setTextColor(15, 23, 42);
@@ -2559,7 +2559,7 @@ export function generatePdfProposalKegiatan(
   // =========================================================================
   const judulText = (
     proposal.judulProposal ||
-    "PROPOSAL KEGIATAN PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MI'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M"
+    "PROPOSAL KEGIATAN PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI MUHAMMAD SAW 1448 H / 2027 M"
   ).toUpperCase();
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(10.2);
@@ -3118,7 +3118,7 @@ export function generatePdfProposalKegiatan(
   doc.setFontSize(9.5);
   doc.setTextColor(15, 23, 42);
   doc.text(
-    "PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MI'RAJ 1448 H / 2027 M",
+    "PANITIA PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI 1448 H / 2027 M",
     pageWidth / 2,
     currentY + 10.2,
     { align: 'center' }
@@ -3194,7 +3194,7 @@ export function generatePdfProposalKegiatan(
   // BARIS 1: PENGURUS INTI PANITIA (4 Kartu TTD)
   drawFourSignerCards(
     currentY + 21.5,
-    "Hormat Kami, Panitia Pelaksana PHBI Isra Mi'raj 1448 H / 2027 M",
+    "Hormat Kami, Panitia Pelaksana PHBI Maulid Nabi 1448 H / 2027 M",
     [226, 232, 240],
     [51, 65, 85],
     [
@@ -3224,8 +3224,8 @@ export function generatePdfProposalKegiatan(
     ]
   );
 
-  addPageFooters(doc, 'Proposal Kegiatan PHBI Isra Miraj 1448 H / 2027 M Kp Kedung Sapi', { hasCoverPage: true });
-  doc.save(`Proposal_PHBI_Isra_Miraj_Kp_Kedung_Sapi_1448H_2027M_${Date.now()}.pdf`);
+  addPageFooters(doc, 'Proposal Kegiatan PHBI Maulid Nabi 1448 H / 2027 M Kp Kedung Sapi', { hasCoverPage: true });
+  doc.save(`Proposal_PHBI_Maulid_Nabi_Kp_Kedung_Sapi_1448H_2027M_${Date.now()}.pdf`);
 }
 
 

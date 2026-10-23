@@ -204,7 +204,7 @@ export default function StrukturPanitiaCard({
   };
 
   const handleCopyText = () => {
-    let text = `*SUSUNAN PANITIA ISRA MI'RAJ 1448 H / 2027 M*\n`;
+    let text = `*SUSUNAN PANITIA MAULID NABI 1448 H / 2027 M*\n`;
     text += `*Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten*\n\n`;
     text += `*Pelindung:* ${pelindungList.join(', ')}\n`;
     text += `*Penasehat:* ${penasehatList.join(' & ')}\n`;
@@ -244,7 +244,7 @@ export default function StrukturPanitiaCard({
             </div>
             <h2 className="text-lg sm:text-2xl font-black text-white flex items-center gap-2">
               <Users className="w-5 h-5 sm:w-6 sm:h-6 text-amber-300" />
-              SUSUNAN PANITIA ISRA MI'RAJ 1448 H / 2027 M
+              SUSUNAN PANITIA MAULID NABI 1448 H / 2027 M
             </h2>
             <p className="text-xs sm:text-sm text-emerald-100/90 font-medium">
               Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten

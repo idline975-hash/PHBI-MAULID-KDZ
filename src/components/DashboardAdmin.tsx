@@ -123,7 +123,7 @@ export default function DashboardAdmin({
   };
 
   const handleCopyNoteToWa = () => {
-    const text = `📝 *CATATAN & AGENDA PANITIA PHBI ISRA MI'RAJ*\n` +
+    const text = `📝 *CATATAN & AGENDA PANITIA PHBI MAULID NABI*\n` +
       `*Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten*\n\n` +
       `${noteContent || 'Belum ada catatan'}\n\n` +
       `_Diperbarui oleh: Admin (${currentUser.name}) pada ${getCurrentIndonesianTime()}_\n` +
@@ -169,7 +169,7 @@ export default function DashboardAdmin({
 
   // --- EDITABLE PENGATURAN STATE ---
   const [settingsForm, setSettingsForm] = useState({
-    namaKegiatan: committeeSettings?.namaKegiatan || 'Peringatan Hari Besar Islam (PHBI) Isra Miraj Nabi Muhammad SAW 1448 H / 2027 M',
+    namaKegiatan: committeeSettings?.namaKegiatan || 'Peringatan Hari Besar Islam (PHBI) MAULID NABI MUHAMMAD SAW 1448 H / 2027 M',
     wilayah: committeeSettings?.wilayah || 'Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten',
     ketuaPanitia: committeeSettings?.ketuaPanitia || '',
     wakilKetua: committeeSettings?.wakilKetua || '',
@@ -795,7 +795,7 @@ export default function DashboardAdmin({
     };
     const now = getCurrentIndonesianTime();
     const text = `📊 *LAPORAN STATISTIK PENGUNJUNG LINK APLIKASI PHBI*
-*Peringatan Isra Mi'raj Nabi Muhammad SAW*
+*Peringatan Maulid Nabi Nabi Muhammad SAW*
 *Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten*
 
 🌐 *Total Akses Link:* ${stats.totalVisits.toLocaleString('id-ID')} kali
@@ -1178,7 +1178,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 space-y-4">
             <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
               <FileDown className="w-5 h-5 text-emerald-700" />
-              Ekspor Laporan Master Panitia Isra Miraj (PDF)
+              Ekspor Laporan Master Panitia Maulid Nabi (PDF)
             </h3>
             <p className="text-xs sm:text-sm text-slate-500">
               Cetak laporan resmi bertanda tangan sah <strong>Ketua Panitia (Sahroji)</strong> dan <strong>Admin (Riyan)</strong>.
@@ -2261,7 +2261,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     value={settingsForm.namaKegiatan}
                     onChange={(e) => setSettingsForm(prev => ({ ...prev, namaKegiatan: e.target.value }))}
                     className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-none"
-                    placeholder="Contoh: Peringatan Hari Besar Islam (PHBI) Isra Miraj Nabi Muhammad SAW 1448 H / 2027 M"
+                    placeholder="Contoh: Peringatan Hari Besar Islam (PHBI) MAULID NABI MUHAMMAD SAW 1448 H / 2027 M"
                   />
                 </div>
 
@@ -2673,7 +2673,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                   <span className="text-slate-400 font-semibold uppercase text-[10px] block">Kelengkapan Otomatis</span>
                   <span className="text-slate-700 text-[11px] block mt-0.5">
-                    • Kop Surat Resmi Panitia PHBI Isra Miraj Kp Kedung Sapi<br />
+                    • Kop Surat Resmi Panitia PHBI Maulid Nabi Kp Kedung Sapi<br />
                     • Kontak WhatsApp Pengaduan Warga ({settingsForm.nomorWa})<br />
                     • Nomor Halaman Otomatis & Tanggal Cetak Real-Time<br />
                     • Tanda Tangan Resmi Ketua Panitia & Pengurus
@@ -3329,7 +3329,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 </div>
                 <h2 className="text-lg sm:text-2xl font-black text-white flex items-center gap-2">
                   <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-amber-300" />
-                  CATATAN & AGENDA PANITIA PHBI ISRA MI'RAJ
+                  CATATAN & AGENDA PANITIA PHBI MAULID NABI
                 </h2>
                 <p className="text-xs sm:text-sm text-amber-100/90 font-medium">
                   Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten
@@ -3400,7 +3400,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                   {[
                     {
                       label: '📋 Agenda Rapat PHBI',
-                      template: `*AGENDA RAPAT PANITIA PHBI ISRA MI'RAJ*\nTanggal: \nTempat: Majelis Kp. Kedung Sapi\nPembahasan:\n1. Penetapan tanggal & penceramah Tabligh Akbar\n2. Evaluasi progres iuran warga pekan berjalan\n3. Pembagian tugas seksi perlengkapan & konsumsi\n4. Lain-lain`
+                      template: `*AGENDA RAPAT PANITIA PHBI MAULID NABI*\nTanggal: \nTempat: Majelis Kp. Kedung Sapi\nPembahasan:\n1. Penetapan tanggal & penceramah Tabligh Akbar\n2. Evaluasi progres iuran warga pekan berjalan\n3. Pembagian tugas seksi perlengkapan & konsumsi\n4. Lain-lain`
                     },
                     {
                       label: '📦 Checklist Perlengkapan',
@@ -3412,7 +3412,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                     },
                     {
                       label: '📢 Pengumuman Warga',
-                      template: `*PENGUMUMAN UNTUK WARGA KP. KEDUNG SAPI*\nAssalamu'alaikum Wr. Wb.\nDiberitahukan kepada seluruh warga Kp. Kedung Sapi bahwa gotong royong kebersihan dan pemasangan tenda PHBI Isra Mi'raj akan dilaksanakan pada:\nHari/Tgl: Sabtu\nWaktu: 08.00 WIB s/d selesai\nMohon partisipasi dan kehadirannya. Terima kasih.`
+                      template: `*PENGUMUMAN UNTUK WARGA KP. KEDUNG SAPI*\nAssalamu'alaikum Wr. Wb.\nDiberitahukan kepada seluruh warga Kp. Kedung Sapi bahwa gotong royong kebersihan dan pemasangan tenda PHBI Maulid Nabi akan dilaksanakan pada:\nHari/Tgl: Sabtu\nWaktu: 08.00 WIB s/d selesai\nMohon partisipasi dan kehadirannya. Terima kasih.`
                     }
                   ].map((tpl, i) => (
                     <button
@@ -3494,7 +3494,7 @@ _Laporan otomatis diperbarui dari Sistem Informasi Kas & Iuran PHBI._`;
                 <div className="bg-amber-50/50 rounded-xl p-4 border border-amber-200/80 space-y-2 min-h-[300px]">
                   <div className="border-b border-amber-200/60 pb-2">
                     <h4 className="font-bold text-xs text-amber-950 uppercase">
-                      Panitia PHBI Isra Mi'raj 1448 H / 2027 M
+                      Panitia PHBI Maulid Nabi 1448 H / 2027 M
                     </h4>
                     <p className="text-[11px] text-amber-800 font-medium">
                       Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten

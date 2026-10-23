@@ -24,15 +24,15 @@ export function getDefaultProposalData(committeeSettings?: CommitteeSettings, ta
 
   return {
     kopBaris1: 'PANITIA PERINGATAN HARI BESAR ISLAM (PHBI)',
-    kopBaris2: 'ISRA MI\'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M',
+    kopBaris2: 'MAULID NABI NABI MUHAMMAD SAW 1448 H / 2027 M',
     kopAlamat: 'Lingkungan Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten',
     kopSekretariat: `Sekretariat: Majelis Kp. Kedung Sapi • Hotline / WhatsApp Resmi: ${committeeSettings?.nomorWa || '081414033436'}`,
     nomorProposal: '001/PHBI-IM/KP-KDS/I/2027',
     lampiran: '1 (Satu) Bundel Berkas',
-    perihal: 'Permohonan Dukungan & Partisipasi Kegiatan PHBI Isra Mi\'raj Nabi Muhammad SAW 1448 H / 2027 M',
+    perihal: 'Permohonan Dukungan & Partisipasi Kegiatan PHBI Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M',
     kepadaYth: 'Bapak/Ibu Warga Masyarakat Kp. Kedung Sapi, Para Donatur, Tokoh Masyarakat & Simpatisan',
-    judulProposal: 'PROPOSAL KEGIATAN PERINGATAN HARI BESAR ISLAM (PHBI) ISRA MI\'RAJ NABI MUHAMMAD SAW 1448 H / 2027 M',
-    temaKegiatan: 'Meneladani Akhlak Mulia Rasulullah SAW serta Memperkokoh Ukhuwah Islamiyah dan Semangat Gotong Royong Warga Kp. Kedung Sapi melalui Momentum Isra Mi\'raj 1448 H / 2027 M',
+    judulProposal: 'PROPOSAL KEGIATAN PERINGATAN HARI BESAR ISLAM (PHBI) MAULID NABI NABI MUHAMMAD SAW 1448 H / 2027 M',
+    temaKegiatan: 'Meneladani Akhlak Mulia Rasulullah SAW serta Memperkokoh Ukhuwah Islamiyah dan Semangat Gotong Royong Warga Kp. Kedung Sapi melalui Momentum Maulid Nabi 1448 H / 2027 M',
     tanggalSurat: 'Serang, Januari 2027',
     coverJudul: 'PROPOSAL KEGIATAN',
     coverSubjudul: 'PERINGATAN HARI BESAR ISLAM (PHBI)',
@@ -41,12 +41,12 @@ export function getDefaultProposalData(committeeSettings?: CommitteeSettings, ta
     coverWilayah: 'KP. KEDUNG SAPI, DESA KP. BARU, KEC. PAMARAYAN, KAB. SERANG – BANTEN',
 
     // A. Kata Pengantar
-    kataPengantar: `Bismillahirrahmanirrahim.\nAssalamu'alaikum Warahmatullahi Wabarakatuh.\n\nPuji dan syukur marilah senantiasa kita panjatkan ke hadirat Allah SWT yang telah melimpahkan rahmat, taufik, hidayah, serta nikmat kesehatan dan keimanan kepada kita semua. Shalawat serta salam semoga senantiasa tercurah kepada junjungan kita Nabi Agung Muhammad SAW, beserta keluarga, para sahabat, dan seluruh umatnya yang istiqomah menjalankan sunnah-sunnah beliau hingga akhir zaman.\n\nPeristiwa Isra Mi'raj Nabi Muhammad SAW merupakan salah satu peristiwa paling agung dalam sejarah umat Islam, di mana Rasulullah SAW menerima perintah langsung dari Allah SWT berupa kewajiban melaksanakan shalat lima waktu sehari semalam sebagai tiang agama dan sarana pembentukan akhlak mulia.\n\nSehubungan dengan hal tersebut, kami selaku Panitia Peringatan Hari Besar Islam (PHBI) Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten bermaksud menyelenggarakan kegiatan Pengajian Akbar dalam rangka memperingati Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M. Penyusunan proposal ini bertujuan sebagai pedoman pelaksanaan kegiatan sekaligus wujud keterbukaan informasi mengenai rencana acara, susunan kepanitiaan, serta rincian kebutuhan anggaran dana kepada seluruh warga masyarakat dan para donatur.`,
+    kataPengantar: `Bismillahirrahmanirrahim.\nAssalamu'alaikum Warahmatullahi Wabarakatuh.\n\nPuji dan syukur marilah senantiasa kita panjatkan ke hadirat Allah SWT yang telah melimpahkan rahmat, taufik, hidayah, serta nikmat kesehatan dan keimanan kepada kita semua. Shalawat serta salam semoga senantiasa tercurah kepada junjungan kita Nabi Agung Muhammad SAW, beserta keluarga, para sahabat, dan seluruh umatnya yang istiqomah menjalankan sunnah-sunnah beliau hingga akhir zaman.\n\nPeristiwa Maulid Nabi Nabi Muhammad SAW merupakan salah satu peristiwa paling agung dalam sejarah umat Islam, di mana Rasulullah SAW menerima perintah langsung dari Allah SWT berupa kewajiban melaksanakan shalat lima waktu sehari semalam sebagai tiang agama dan sarana pembentukan akhlak mulia.\n\nSehubungan dengan hal tersebut, kami selaku Panitia Peringatan Hari Besar Islam (PHBI) Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten bermaksud menyelenggarakan kegiatan Pengajian Akbar dalam rangka memperingati Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M. Penyusunan proposal ini bertujuan sebagai pedoman pelaksanaan kegiatan sekaligus wujud keterbukaan informasi mengenai rencana acara, susunan kepanitiaan, serta rincian kebutuhan anggaran dana kepada seluruh warga masyarakat dan para donatur.`,
 
     // B. Maksud dan Tujuan
-    maksudKegiatan: `Kegiatan Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M ini dimaksudkan sebagai wadah syiar Islam, pembinaan mental spiritual, serta sarana mempererat ukhuwah Islamiyah seluruh warga Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten dan sekitarnya.`,
+    maksudKegiatan: `Kegiatan Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M ini dimaksudkan sebagai wadah syiar Islam, pembinaan mental spiritual, serta sarana mempererat ukhuwah Islamiyah seluruh warga Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten dan sekitarnya.`,
     tujuanKegiatan: [
-      'Memperingati peristiwa agung Isra Mi\'raj Nabi Muhammad SAW 1448 H / 2027 M dengan penuh khidmat dan keberkahan.',
+      'Memperingati peristiwa agung Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M dengan penuh khidmat dan keberkahan.',
       'Meningkatkan kualitas keimanan, ketakwaan, serta kesadaran mengamalkan ibadah shalat lima waktu dalam kehidupan sehari-hari.',
       'Mempererat tali silaturahmi, kerukunan, dan ukhuwah Islamiyah antar warga Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten.',
       'Menumbuhkan semangat kebersamaan, gotong royong, dan kepedulian sosial di lingkungan masyarakat serta generasi muda (pemuda/i).',
@@ -54,9 +54,9 @@ export function getDefaultProposalData(committeeSettings?: CommitteeSettings, ta
     ],
 
     // C. Bentuk Kegiatan
-    bentukKegiatanDeskripsi: `Bentuk kegiatan yang akan dilaksanakan dalam rangka Peringatan Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M di Lingkungan Kp. Kedung Sapi dikemas dalam rangkaian acara keagamaan dan kemasyarakatan sebagai berikut:`,
+    bentukKegiatanDeskripsi: `Bentuk kegiatan yang akan dilaksanakan dalam rangka Peringatan Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M di Lingkungan Kp. Kedung Sapi dikemas dalam rangkaian acara keagamaan dan kemasyarakatan sebagai berikut:`,
     bentukKegiatanList: [
-      'Tabligh Akbar / Pengajian Umum Peringatan Isra Mi\'raj Nabi Muhammad SAW 1448 H / 2027 M bersama Mubaligh / Penceramah Undangan.',
+      'Tabligh Akbar / Pengajian Umum Peringatan Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M bersama Mubaligh / Penceramah Undangan.',
       'Lantunan Pembacaan Ayat Suci Al-Qur\'an (Tilawah) oleh Qori Undangan.',
       'Gema Shalawat Nabi, Marhaban, dan Penampilan Kreasi Islami Santri / Pemuda-Pemudi Kp. Kedung Sapi.',
       'Kegiatan Pra-Acara & Syiar Lingkungan bersama Warga dan Pemuda Kp. Kedung Sapi.',
@@ -103,14 +103,14 @@ export function getDefaultProposalData(committeeSettings?: CommitteeSettings, ta
       {
         id: 'rd-5',
         waktu: '20.40 – 21.15 WIB',
-        kegiatan: 'Sambutan-Sambutan:\n1. Ketua Panitia PHBI Isra Mi\'raj\n2. Ketua RT / Tokoh Masyarakat\n3. Kepala Desa Kp Baru',
+        kegiatan: 'Sambutan-Sambutan:\n1. Ketua Panitia PHBI Maulid Nabi\n2. Ketua RT / Tokoh Masyarakat\n3. Kepala Desa Kp Baru',
         pengisi: `${ketua}, ${ketuaRt}, ${kepalaDesa}`,
         keterangan: 'Laporan kepanitiaan & sambutan pemerintahan'
       },
       {
         id: 'rd-6',
         waktu: '21.15 – 23.00 WIB',
-        kegiatan: 'Acara Inti: Mau\'idhoh Hasanah (Tausiyah Hikmah Isra Mi\'raj Nabi Muhammad SAW 1448 H / 2027 M)',
+        kegiatan: 'Acara Inti: Mau\'idhoh Hasanah (Tausiyah Hikmah Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M)',
         pengisi: 'Penceramah / Mubaligh Undangan',
         keterangan: 'Acara inti pengajian akbar'
       },
@@ -198,7 +198,7 @@ export function getDefaultProposalData(committeeSettings?: CommitteeSettings, ta
     ],
 
     // G. Sumber Dana
-    sumberDanaDeskripsi: `Untuk memenuhi kebutuhan anggaran biaya kegiatan Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M tersebut, sumber pendanaan diperoleh secara gotong royong, halal, dan tidak mengikat yang berasal dari:`,
+    sumberDanaDeskripsi: `Untuk memenuhi kebutuhan anggaran biaya kegiatan Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M tersebut, sumber pendanaan diperoleh secara gotong royong, halal, dan tidak mengikat yang berasal dari:`,
     sumberDanaList: [
       {
         id: 'sd-1',
@@ -228,7 +228,7 @@ export function getDefaultProposalData(committeeSettings?: CommitteeSettings, ta
     sections: committeeSettings?.sections ? JSON.parse(JSON.stringify(committeeSettings.sections)) : [],
 
     // I. Penutup
-    penutup: `Demikian Proposal Kegiatan Peringatan Hari Besar Islam (PHBI) Isra Mi'raj Nabi Muhammad SAW 1448 H / 2027 M Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten ini kami susun sebagai acuan pelaksanaan kegiatan.\n\nKami menyadari sepenuhnya bahwa kesuksesan dan kelancaran acara mulia ini tidak terlepas dari rahmat Allah SWT serta dukungan moril maupun materiil dari seluruh warga masyarakat, tokoh agama, pemuda, pemerintahan desa, serta para donatur yang dermawan. Atas segala perhatian, doa restu, bantuan, dan kerja sama yang diberikan, kami ucapkan terima kasih yang sebesar-besarnya. Semoga Allah SWT mencatat setiap langkah dan infaq terbaik Bapak/Ibu/Saudara/i sebagai amal jariyah yang berlipat ganda. Aamiin Ya Rabbal 'Alamiin.\n\nWassalamu'alaikum Warahmatullahi Wabarakatuh.`,
+    penutup: `Demikian Proposal Kegiatan Peringatan Hari Besar Islam (PHBI) Maulid Nabi Nabi Muhammad SAW 1448 H / 2027 M Kp. Kedung Sapi, Desa Kp. Baru, Kec. Pamarayan, Serang - Banten ini kami susun sebagai acuan pelaksanaan kegiatan.\n\nKami menyadari sepenuhnya bahwa kesuksesan dan kelancaran acara mulia ini tidak terlepas dari rahmat Allah SWT serta dukungan moril maupun materiil dari seluruh warga masyarakat, tokoh agama, pemuda, pemerintahan desa, serta para donatur yang dermawan. Atas segala perhatian, doa restu, bantuan, dan kerja sama yang diberikan, kami ucapkan terima kasih yang sebesar-besarnya. Semoga Allah SWT mencatat setiap langkah dan infaq terbaik Bapak/Ibu/Saudara/i sebagai amal jariyah yang berlipat ganda. Aamiin Ya Rabbal 'Alamiin.\n\nWassalamu'alaikum Warahmatullahi Wabarakatuh.`,
 
     // 8 Penandatangan Resmi
     signers: {
