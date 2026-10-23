@@ -1695,226 +1695,244 @@ app.post('/api/warga/toggle-exclude', (req, res) => {
 });
 
 // Add new citizen to rekapitulasi list (with duplicate check!)
-app.post('/api/citizens', (req, res) => {
-  const { name, recordedBy, rt } = req.body;
-  const cleanName = String(name || '').trim().replace(/\s+/g, ' ');
+app.post('/api/citizens', async (req, res) => {
+  try {
+    const { name, recordedBy, rt } = req.body;
+    const cleanName = String(name || '').trim().replace(/\s+/g, ' ');
 
-  if (!cleanName) {
-    res.status(400).json({ error: 'Nama warga tidak boleh kosong!' });
-    return;
+    if (!cleanName) {
+      res.status(400).json({ error: 'Nama warga tidak boleh kosong!' });
+      return;
+    }
+
+    const isDuplicate = db.citizens.some(
+      c => c.name.trim().replace(/\s+/g, ' ').toLowerCase() === cleanName.toLowerCase()
+    );
+
+    if (isDuplicate) {
+      res.status(400).json({ error: `Nama "${cleanName}" sudah terdaftar dalam daftar warga!` });
+      return;
+    }
+
+    const weeks: { [w: number]: number } = {};
+    for (let w = 1; w <= 12; w++) weeks[w] = 0;
+
+    const citizenRt: '08' | '09' | '10' = ['08', '09', '10'].includes(rt) ? rt : '08';
+
+    const newCitizen: Citizen = {
+      id: 'citizen-' + Date.now() + '-' + Math.random().toString(36).substring(2, 6),
+      name: cleanName,
+      rt: citizenRt,
+      weeks,
+      totalPaid: 0,
+      lastEditedBy: recordedBy || 'Petugas',
+      lastEditedAt: getIndonesianDateTime()
+    };
+
+    db.citizens.push(newCitizen);
+    normalizeAndSortCitizens(db);
+
+    db.auditLogs.unshift({
+      id: 'log-' + Date.now(),
+      timestamp: getIndonesianDateTime(),
+      category: 'REKAPITULASI',
+      action: 'TAMBAH',
+      accountName: recordedBy || 'Petugas',
+      details: `Menambahkan warga baru: ${cleanName} (RT ${citizenRt})`
+    });
+
+    await saveDb(db);
+    broadcastState();
+    res.json({ success: true, citizen: newCitizen });
+  } catch (err: any) {
+    console.error('Error adding citizen:', err);
+    res.status(500).json({ error: err?.message || 'Gagal menambahkan warga baru ke server' });
   }
-
-  const isDuplicate = db.citizens.some(
-    c => c.name.trim().replace(/\s+/g, ' ').toLowerCase() === cleanName.toLowerCase()
-  );
-
-  if (isDuplicate) {
-    res.status(400).json({ error: `Nama "${cleanName}" sudah terdaftar dalam daftar warga!` });
-    return;
-  }
-
-  const weeks: { [w: number]: number } = {};
-  for (let w = 1; w <= 12; w++) weeks[w] = 0;
-
-  const citizenRt: '08' | '09' | '10' = ['08', '09', '10'].includes(rt) ? rt : '08';
-
-  const newCitizen: Citizen = {
-    id: 'citizen-' + Date.now() + '-' + Math.random().toString(36).substring(2, 6),
-    name: cleanName,
-    rt: citizenRt,
-    weeks,
-    totalPaid: 0,
-    lastEditedBy: recordedBy || 'Petugas',
-    lastEditedAt: getIndonesianDateTime()
-  };
-
-  db.citizens.push(newCitizen);
-  normalizeAndSortCitizens(db);
-
-  db.auditLogs.unshift({
-    id: 'log-' + Date.now(),
-    timestamp: getIndonesianDateTime(),
-    category: 'REKAPITULASI',
-    action: 'TAMBAH',
-    accountName: recordedBy || 'Petugas',
-    details: `Menambahkan warga baru: ${cleanName} (RT ${citizenRt})`
-  });
-
-  broadcastState();
-  res.json({ success: true, citizen: newCitizen });
 });
 
 // Edit citizen in rekapitulasi (name or weeks)
-app.put('/api/citizens/:id', (req, res) => {
-  const { id } = req.params;
-  const { name, oldName: clientOldName, weeks, excludedWeeks, editedBy, rt } = req.body;
-  const cleanOldName = clientOldName ? String(clientOldName).trim().replace(/\s+/g, ' ') : '';
+app.put('/api/citizens/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { name, oldName: clientOldName, weeks, excludedWeeks, editedBy, rt } = req.body;
+    const cleanOldName = clientOldName ? String(clientOldName).trim().replace(/\s+/g, ' ') : '';
 
-  // Find citizen accurately: verify id + oldName if oldName provided, fallback to oldName, then id
-  let citizen: Citizen | undefined;
-  if (cleanOldName) {
-    citizen = db.citizens.find(
-      c => c.id === id && c.name.trim().replace(/\s+/g, ' ').toLowerCase() === cleanOldName.toLowerCase()
-    ) || db.citizens.find(
-      c => c.name.trim().replace(/\s+/g, ' ').toLowerCase() === cleanOldName.toLowerCase()
-    );
-  }
-  if (!citizen) {
-    citizen = db.citizens.find(c => c.id === id);
-  }
+    // Find citizen accurately: verify id + oldName if oldName provided, fallback to oldName, then id
+    let citizen: Citizen | undefined;
+    if (cleanOldName) {
+      citizen = db.citizens.find(
+        c => c.id === id && c.name.trim().replace(/\s+/g, ' ').toLowerCase() === cleanOldName.toLowerCase()
+      ) || db.citizens.find(
+        c => c.name.trim().replace(/\s+/g, ' ').toLowerCase() === cleanOldName.toLowerCase()
+      );
+    }
+    if (!citizen) {
+      citizen = db.citizens.find(c => c.id === id);
+    }
 
-  if (!citizen) {
-    res.status(404).json({ error: 'Warga tidak ditemukan' });
-    return;
-  }
-
-  const targetId = citizen.id;
-  if (['08', '09', '10'].includes(rt)) {
-    citizen.rt = rt;
-  }
-
-  const oldName = citizen.name;
-  const trimmed = name ? String(name).trim().replace(/\s+/g, ' ') : oldName;
-
-  if (trimmed && trimmed.toLowerCase() !== oldName.toLowerCase()) {
-    const duplicate = db.citizens.find(
-      c => c.id !== targetId && c.name.trim().replace(/\s+/g, ' ').toLowerCase() === trimmed.toLowerCase()
-    );
-    if (duplicate) {
-      res.status(400).json({ error: `Nama "${trimmed}" sudah terdaftar!` });
+    if (!citizen) {
+      res.status(404).json({ error: 'Warga tidak ditemukan' });
       return;
     }
-  }
 
-  if (trimmed) {
-    citizen.name = trimmed;
-    // Remove any accidental duplicate citizen entries that had oldName
-    db.citizens = db.citizens.filter(
-      c => c.id === targetId || c.name.trim().replace(/\s+/g, ' ').toLowerCase() !== oldName.toLowerCase()
-    );
-    // Sync payment log names and transfer confirmations
-    db.wargaPayments.forEach(p => {
-      if (p.citizenId === targetId || p.citizenName.toLowerCase() === oldName.toLowerCase()) {
-        p.citizenId = targetId;
-        p.citizenName = trimmed;
+    const targetId = citizen.id;
+    if (['08', '09', '10'].includes(rt)) {
+      citizen.rt = rt;
+    }
+
+    const oldName = citizen.name;
+    const trimmed = name ? String(name).trim().replace(/\s+/g, ' ') : oldName;
+
+    if (trimmed && trimmed.toLowerCase() !== oldName.toLowerCase()) {
+      const duplicate = db.citizens.find(
+        c => c.id !== targetId && c.name.trim().replace(/\s+/g, ' ').toLowerCase() === trimmed.toLowerCase()
+      );
+      if (duplicate) {
+        res.status(400).json({ error: `Nama "${trimmed}" sudah terdaftar!` });
+        return;
       }
-    });
-    if (Array.isArray(db.transferConfirmations)) {
-      db.transferConfirmations.forEach(tc => {
-        if (tc.citizenId === targetId || (tc.citizenName && tc.citizenName.toLowerCase() === oldName.toLowerCase())) {
-          tc.citizenId = targetId;
-          tc.citizenName = trimmed;
+    }
+
+    if (trimmed) {
+      citizen.name = trimmed;
+      // Remove any accidental duplicate citizen entries that had oldName
+      db.citizens = db.citizens.filter(
+        c => c.id === targetId || c.name.trim().replace(/\s+/g, ' ').toLowerCase() !== oldName.toLowerCase()
+      );
+      // Sync payment log names and transfer confirmations
+      db.wargaPayments.forEach(p => {
+        if (p.citizenId === targetId || p.citizenName.toLowerCase() === oldName.toLowerCase()) {
+          p.citizenId = targetId;
+          p.citizenName = trimmed;
         }
       });
-    }
-  }
-
-  if (weeks && typeof weeks === 'object') {
-    if (!citizen.excludedWeeks) citizen.excludedWeeks = {};
-    for (let w = 1; w <= 12; w++) {
-      if (weeks[w] !== undefined) {
-        const val = parseInt(weeks[w], 10) || 0;
-        citizen.weeks[w] = val;
-        const isExcl = val > 0 && excludedWeeks && typeof excludedWeeks === 'object'
-          ? Boolean(excludedWeeks[w])
-          : (val > 0 ? Boolean(citizen.excludedWeeks[w]) : false);
-        citizen.excludedWeeks[w] = isExcl;
-        // Sync into wargaPayments
-        const existing = db.wargaPayments.find(p => p.citizenId === targetId && p.week === w);
-        if (val > 0) {
-          if (existing) {
-            existing.amount = val;
-            existing.citizenName = citizen.name;
-            existing.excludedFromTotal = isExcl;
-            existing.lastEditedBy = editedBy || 'Petugas';
-            existing.lastEditedAt = getIndonesianDateTime();
-          } else {
-            db.wargaPayments.unshift({
-              id: 'wp-' + Date.now() + '-' + w,
-              citizenId: citizen.id,
-              citizenName: citizen.name,
-              week: w,
-              amount: val,
-              excludedFromTotal: isExcl,
-              timestamp: getIndonesianDateTime(),
-              dateIso: new Date().toISOString(),
-              recordedBy: editedBy || 'Petugas'
-            });
+      if (Array.isArray(db.transferConfirmations)) {
+        db.transferConfirmations.forEach(tc => {
+          if (tc.citizenId === targetId || (tc.citizenName && tc.citizenName.toLowerCase() === oldName.toLowerCase())) {
+            tc.citizenId = targetId;
+            tc.citizenName = trimmed;
           }
-        } else if (existing) {
-          const idx = db.wargaPayments.indexOf(existing);
-          if (idx > -1) db.wargaPayments.splice(idx, 1);
+        });
+      }
+    }
+
+    if (weeks && typeof weeks === 'object') {
+      if (!citizen.excludedWeeks) citizen.excludedWeeks = {};
+      for (let w = 1; w <= 12; w++) {
+        if (weeks[w] !== undefined) {
+          const val = parseInt(weeks[w], 10) || 0;
+          citizen.weeks[w] = val;
+          const isExcl = val > 0 && excludedWeeks && typeof excludedWeeks === 'object'
+            ? Boolean(excludedWeeks[w])
+            : (val > 0 ? Boolean(citizen.excludedWeeks[w]) : false);
+          citizen.excludedWeeks[w] = isExcl;
+          // Sync into wargaPayments
+          const existing = db.wargaPayments.find(p => p.citizenId === targetId && p.week === w);
+          if (val > 0) {
+            if (existing) {
+              existing.amount = val;
+              existing.citizenName = citizen.name;
+              existing.excludedFromTotal = isExcl;
+              existing.lastEditedBy = editedBy || 'Petugas';
+              existing.lastEditedAt = getIndonesianDateTime();
+            } else {
+              db.wargaPayments.unshift({
+                id: 'wp-' + Date.now() + '-' + w,
+                citizenId: citizen.id,
+                citizenName: citizen.name,
+                week: w,
+                amount: val,
+                excludedFromTotal: isExcl,
+                timestamp: getIndonesianDateTime(),
+                dateIso: new Date().toISOString(),
+                recordedBy: editedBy || 'Petugas'
+              });
+            }
+          } else if (existing) {
+            const idx = db.wargaPayments.indexOf(existing);
+            if (idx > -1) db.wargaPayments.splice(idx, 1);
+          }
         }
       }
     }
+
+    citizen.lastEditedBy = editedBy || 'Petugas';
+    citizen.lastEditedAt = getIndonesianDateTime();
+    normalizeAndSortCitizens(db);
+
+    db.auditLogs.unshift({
+      id: 'log-' + Date.now(),
+      timestamp: getIndonesianDateTime(),
+      category: 'REKAPITULASI',
+      action: 'EDIT',
+      accountName: editedBy || 'Petugas',
+      details: `Edit data warga ${oldName} -> ${citizen.name}. Total iuran sekarang: Rp ${citizen.totalPaid.toLocaleString('id-ID')}`
+    });
+
+    await saveDb(db);
+    broadcastState();
+    res.json({ success: true, citizen });
+  } catch (err: any) {
+    console.error('Error editing citizen:', err);
+    res.status(500).json({ error: err?.message || 'Gagal menyimpan perubahan data warga' });
   }
-
-  citizen.lastEditedBy = editedBy || 'Petugas';
-  citizen.lastEditedAt = getIndonesianDateTime();
-  normalizeAndSortCitizens(db);
-
-  db.auditLogs.unshift({
-    id: 'log-' + Date.now(),
-    timestamp: getIndonesianDateTime(),
-    category: 'REKAPITULASI',
-    action: 'EDIT',
-    accountName: editedBy || 'Petugas',
-    details: `Edit data warga ${oldName} -> ${citizen.name}. Total iuran sekarang: Rp ${citizen.totalPaid.toLocaleString('id-ID')}`
-  });
-
-  broadcastState();
-  res.json({ success: true, citizen });
 });
 
 // Delete citizen from rekapitulasi
-app.delete('/api/citizens/:id', (req, res) => {
-  const { id } = req.params;
-  const user = req.query.user ? String(req.query.user) : 'Petugas';
-  const queryName = req.query.name ? String(req.query.name).trim().replace(/\s+/g, ' ') : '';
+app.delete('/api/citizens/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const user = req.query.user ? String(req.query.user) : 'Petugas';
+    const queryName = req.query.name ? String(req.query.name).trim().replace(/\s+/g, ' ') : '';
 
-  let targetCitizen: Citizen | undefined;
-  if (queryName) {
-    targetCitizen = db.citizens.find(
-      c => c.id === id && c.name.trim().replace(/\s+/g, ' ').toLowerCase() === queryName.toLowerCase()
-    ) || db.citizens.find(
-      c => c.name.trim().replace(/\s+/g, ' ').toLowerCase() === queryName.toLowerCase()
+    let targetCitizen: Citizen | undefined;
+    if (queryName) {
+      targetCitizen = db.citizens.find(
+        c => c.id === id && c.name.trim().replace(/\s+/g, ' ').toLowerCase() === queryName.toLowerCase()
+      ) || db.citizens.find(
+        c => c.name.trim().replace(/\s+/g, ' ').toLowerCase() === queryName.toLowerCase()
+      );
+    }
+    if (!targetCitizen) {
+      targetCitizen = db.citizens.find(c => c.id === id);
+    }
+
+    if (!targetCitizen) {
+      res.status(404).json({ error: 'Warga tidak ditemukan' });
+      return;
+    }
+
+    const deletedName = targetCitizen.name;
+    const deletedId = targetCitizen.id;
+
+    // Remove all entries matching either deletedId or deletedName so duplicates can never remain
+    db.citizens = db.citizens.filter(
+      c => c.id !== deletedId && c.name.trim().replace(/\s+/g, ' ').toLowerCase() !== deletedName.toLowerCase()
     );
+
+    // Remove any payments associated with this citizen
+    db.wargaPayments = db.wargaPayments.filter(
+      p => p.citizenId !== deletedId && p.citizenName.trim().replace(/\s+/g, ' ').toLowerCase() !== deletedName.toLowerCase()
+    );
+
+    normalizeAndSortCitizens(db);
+
+    db.auditLogs.unshift({
+      id: 'log-' + Date.now(),
+      timestamp: getIndonesianDateTime(),
+      category: 'REKAPITULASI',
+      action: 'HAPUS',
+      accountName: user,
+      details: `Menghapus data warga ${deletedName} dari daftar rekapitulasi`
+    });
+
+    await saveDb(db);
+    broadcastState();
+    res.json({ success: true, deletedName });
+  } catch (err: any) {
+    console.error('Error deleting citizen:', err);
+    res.status(500).json({ error: err?.message || 'Gagal menghapus warga dari server' });
   }
-  if (!targetCitizen) {
-    targetCitizen = db.citizens.find(c => c.id === id);
-  }
-
-  if (!targetCitizen) {
-    res.status(404).json({ error: 'Warga tidak ditemukan' });
-    return;
-  }
-
-  const deletedName = targetCitizen.name;
-  const deletedId = targetCitizen.id;
-
-  // Remove all entries matching either deletedId or deletedName so duplicates can never remain
-  db.citizens = db.citizens.filter(
-    c => c.id !== deletedId && c.name.trim().replace(/\s+/g, ' ').toLowerCase() !== deletedName.toLowerCase()
-  );
-
-  // Remove any payments associated with this citizen
-  db.wargaPayments = db.wargaPayments.filter(
-    p => p.citizenId !== deletedId && p.citizenName.trim().replace(/\s+/g, ' ').toLowerCase() !== deletedName.toLowerCase()
-  );
-
-  normalizeAndSortCitizens(db);
-
-  db.auditLogs.unshift({
-    id: 'log-' + Date.now(),
-    timestamp: getIndonesianDateTime(),
-    category: 'REKAPITULASI',
-    action: 'HAPUS',
-    accountName: user,
-    details: `Menghapus data warga ${deletedName} dari daftar rekapitulasi`
-  });
-
-  broadcastState();
-  res.json({ success: true, deletedName });
 });
 
 // Donasi Sukarela: Add (with duplicate name check)
