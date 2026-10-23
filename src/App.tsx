@@ -6,7 +6,6 @@ import DashboardBendahara from './components/DashboardBendahara';
 import DashboardAdmin from './components/DashboardAdmin';
 import DashboardWarga from './components/DashboardWarga';
 import WelcomeScreen from './components/WelcomeScreen';
-import OfflineIndicator from './components/OfflineIndicator';
 import { 
   Citizen, 
   DonasiWargaPayment, 
@@ -605,9 +604,6 @@ export default function App() {
           </p>
         </div>
       </footer>
-
-      {/* Floating Offline Indicator with Auto-Reconnect */}
-      <OfflineIndicator isOnline={isOnline} onRetrySync={fetchFullState} isSyncing={isSyncing} />
     </div>
   );
 }
